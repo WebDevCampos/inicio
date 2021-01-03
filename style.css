@@ -18,3 +18,9 @@ h6{font-size:60%;}
 a{text-decoration:none; font-size:3vw;}
 
 p,label,input,option, select,button{font-size:160%}
+
+
+.labelform{
+
+    width:25%; padding:1%;
+}
