@@ -6,7 +6,7 @@
         <title>WebDevCampos - inicio</title>
         <link href="style.css" rel="stylesheet" type="text/css" media="all"/>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+        <script src="index.js"></script>
         <style>
            
             
@@ -27,40 +27,7 @@
 
 
     <script>
-     class MeuH1 extends HTMLElement{
-         connectedCallback(){
-
-            this.innerHTML = `<h1> Olá mundo</h1>`;
-         }
-     }
-
-     customElements.define('meu-h1', MeuH1);
-
-     class MeuForm extends HTMLElement{
-         connectedCallback(){
-
-            this.innerHTML = `
-            <div style="display:grid; grid-template-columns:auto ; grid-template-rows:auto; width: 30vw; text-align:center;">
-
-            <form action="" method="GET">
-                <label>Nome </label> <input type="" id="" name="" value="" placeholder="Digite seu nome" required;/>
-                <label>E-mail </label> <input type="email" id="" name="" value="" placeholder="Digite seu e-mail" required;/>
-                
-            </form>
-            
-            </div>`;
-         }
-     }
-
-     customElements.define('meu-form', MeuForm );
      
-
-     
-     const usuario = {
-         nome: "username",
-         id:1
-     };
-
     </script>
 
     </body>
