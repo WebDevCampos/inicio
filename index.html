@@ -17,7 +17,7 @@
 
     </head>
     <body>
-    
+    <meu-comp></meu-comp>
         
 
 
@@ -25,7 +25,15 @@
 
 
     <script>
-     
+     class MeuComp extends HTMLElement{
+         connectedCallBack(){
+
+            this.innerHTML = `<h1> Olá mundo</h1>`;
+         }
+     }
+
+     customElements.define('meu-comp', MeuComp);
+
     </script>
 
     </body>
