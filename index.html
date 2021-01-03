@@ -18,16 +18,51 @@
     </head>
     <body>
     <meu-h1></meu-h1>
-    <form>
-       <meu-form></meu-form>
-    </form>  
+  
+    <meu-form></meu-form>
+  
 
 
 
 
 
     <script>
-     
+     class MeuForm extends HTMLElement{
+    connectedCallback(){
+
+       this.innerHTML = `
+        <div style="width:100%; background-color:grey;">
+            <div>
+                <form action="" method="GET">
+                   <div style="display:flex; flex-flow: row wrap;">
+                        <div class="labelform ">
+                            <label> Usuário &nbsp
+                            </label>
+                        </div>
+                        <div style="width:75%;">
+                            <input style="width: 100%;">
+                        </div>   
+                        <div style="width:25%;">
+                            <label> E-mail &nbsp
+                            </label>
+                        </div>
+                        <div style="width:75%;">
+                            <input style="width: 100%;">
+                        </div>        
+                   </div>
+                </form>
+            </div>    
+
+            
+        </div>
+                
+            
+       `;
+    }
+}
+
+customElements.define('meu-form', MeuForm );
+
     </script>
 
     </body>
