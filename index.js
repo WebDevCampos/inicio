@@ -25,6 +25,4 @@ shadowRoot.innerHTML = `
 
 </style>
 
-<div class="inicio"><p style="color:blue;">odoj</p>
-
-`
+<div class="inicio"><p style="color:blue;">odoj</p>`
