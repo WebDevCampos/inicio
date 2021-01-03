@@ -7,11 +7,11 @@ class MeuH1 extends HTMLElement{
 
 customElements.define('meu-h1', MeuH1);
 
-class MeuForm extends HTMLElement{
+/*class MeuForm extends HTMLElement{
     connectedCallback(){
 
        this.innerHTML = `
-       <div style="display:grid; grid-template-columns:auto; width: 50vw; text-align:center; position:relative; left:30%; top:50%; transform: translate(-50% -50%);">
+       <div style="display:grid; grid-template-columns:auto auto auto auto ; grid-template-rows: auto auto; width: 50vw; text-align:center; position:relative; left:30%; top:50%; transform: translate(-50% -50%);">
 
        <form action="" method="GET">
            <label>Nome </label> <input type="" id="" name="" value="" placeholder="Digite seu nome" required;/>
@@ -23,7 +23,7 @@ class MeuForm extends HTMLElement{
     }
 }
 
-customElements.define('meu-form', MeuForm );
+customElements.define('meu-form', MeuForm );*/
 
 
 
