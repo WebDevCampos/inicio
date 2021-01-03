@@ -8,7 +8,9 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="index.js"></script>
         <style>
-           
+           body{
+               background-color:white;
+           }
             
 
         
@@ -17,11 +19,11 @@
 
     </head>
     <body>
-       
-    <meu-h1></meu-h1>
+        <meu-h1></meu-h1>
+    
 
     <div id="inicio"></div>
-  
+        <div id="meio"></div>
    
   
 
@@ -30,9 +32,61 @@
 
 
     <script>
+        const shadowRoot = document.querySelector('#inicio').attachShadow({mode:'open'});
+shadowRoot.innerHTML = `
+<style>
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        clear:both;
+
+    }
+label{
+    padding:1% 1%;
+    display:inline-block;
+    margin:1%;
+    font-size:3vw;
+}
+    input{
+        margin:1%;
+        font-size:3vw;
         
+    }
+.inicio{
+    width:100%;
+    background-color:lightgrey;
+}
 
-     </script>
+</style>
 
-     </body>
-     </html>
+<div class="inicio">
+    <form action="" method="">
+        <div style="display:flex; flex-flow:row wrap;">
+            <div style="flex:10%;">
+                <label style="color:black;">Nome</label>
+            </div>
+            <div style="flex:87%;">
+                <input type="" id="" name="" value="" style="width:100%;"required/>
+            </div>   
+            <div style="flex:10%;">
+                <label style="color:black;">Senha</label>
+            </div>
+            <div style="flex:87%;">
+                <input type="password" id="" name="" value="" style="width:100%;"required/>
+            </div>    
+            <div style="flex:23%;">
+                <input type="submit" value="Submit" style="background-color:green; color:white; float:right; border-style:none; padding:1%; border-radius:10px;">
+            </div>        
+    </form>    
+</div>  
+    
+    `
+
+    const shadowRoot1 = document.querySelector('#meio').attachShadow({mode:'open'});
+shadowRoot1.innerHTML = `
+    <div>
+    <meu-h1 style="color:blue;"></meu-h1>
+    </div>
+     `
