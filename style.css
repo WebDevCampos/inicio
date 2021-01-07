@@ -16,28 +16,19 @@ body{
 }
 
 
-h1{font-size:400%; font-weight:bold;}
-h2{font-size:320%;}
-h3{font-size:220%;}
-h4{font-size:120%;}
-h5{font-size:80%;}
-h6{font-size:60%;}
+h1{font-size:600%; font-weight:bold;}
+h2{font-size:500%; font-weight:bold;}
+h3{font-size:400%; font-weight:bold;}
+h4{font-size:300%; font-weight:bold;}
+h5{font-size:200%; font-weight:bold;}
+h6{font-size:100%; font-weight:bold;}
 a{text-decoration:none; font-size:3vw;}
 
-p,label,input,option, select,button{font-size:160%}
+p,label,input,option, select,button{font-size:200%}
 
 
 ul{
     list-style-type: none;
 }
 
-.listaform{
 
-    list-style-type: none;
-
-}
-
-.listaform>li{
-    width:100%;
-    background-color:bisque;
-}
