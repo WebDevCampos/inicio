@@ -24,7 +24,7 @@ h5{font-size:200%; font-weight:bold;}
 h6{font-size:100%; font-weight:bold;}
 a{text-decoration:none; font-size:3vw;}
 
-p,label,input,option, select,button{font-size:200%}
+p,label,input[type=text],option, select,button{font-size:260%}
 
 
 ul{
@@ -32,3 +32,4 @@ ul{
 }
 
 
+/*
