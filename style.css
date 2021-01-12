@@ -24,12 +24,69 @@ h5{font-size:200%; font-weight:bold;}
 h6{font-size:100%; font-weight:bold;}
 a{text-decoration:none; font-size:3vw;}
 
-p,label,input[type=text], input[type=email], textarea, option, select,button, button[type=submit],{font-size:260%}
+p,label,input[type=text], input[type=email], textarea, option, select, button, button[type=submit]{font-size:260%; padding:1%;}
 
 
 ul{
     list-style-type: none;
 }
 
+.button{
+    width:96%; margin:0 3.5%
 
-/*
+}
+
+.formu{
+    width:100%; 
+    display:grid; 
+    grid-template-columns:20% 80%; 
+    padding:0; 
+    margin:1%;
+    grid-gap:1%;
+
+}
+
+
+.formulabel{
+
+    border: 1px solid red; 
+    text-align:center;
+}
+.inpuformu{
+    width:100%; text-align:center;
+}
+.formuinput{
+   
+    border: 1px solid green;
+}
+
+.button{
+    border-radius:20px;
+    background-color:green;
+    color:white;
+    font-weight: bolder;
+    border-style: none;
+    padding:1%;
+}
+
+
+
+/*Inicio MQs*/
+
+@media screen and ( max-width: 300px ){
+    .formu{
+       
+        display:inline-block;
+        width:100%;
+        
+    }
+
+  input[type="text"], input[type="email"]{
+
+        font-size: 100%;
+    }
+
+}
+
+
+
