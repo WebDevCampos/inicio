@@ -45,6 +45,8 @@ ul{
     list-style-type: none;
 }
         */
+
+       
         </style>
     
 
@@ -57,22 +59,45 @@ ul{
             <form action="index.html" method="post">
       
                     <ul>
-                        <li style="">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="user_name">
-                        </li>
-                        <li>
-                            <label for="mail">E-mail:</label>
-                            <input type="email" id="mail" name="user_email">
-                        </li>
-                        <li>
-                            <label for="msg">Message:</label>
-                            <textarea id="msg" name="user_message"></textarea>
-                        </li>
+                        <div class="formu">
+                            <div class="formulabel">
+                                <li  >
+                                    <label for="name">Name:</label>
+                                
+                                </li>
+                            </div>
 
-                        <li class="button">
-                            <button type="submit"> Send your message </button>
-                        </li>
+                            <div class="formuinput">
+                                <li >
+                                    <input class="inpuformu" type="text" name="name" placeholder="Your name here" />
+                                
+                                </li>
+                            </div>
+
+                         </div>   
+
+                         <div class="formu">
+                            <div class="formulabel">
+                                <li  >
+                                    <label for="email">E-mail:</label>
+                                
+                                </li>
+                            </div>
+
+                            <div class="formuinput">
+                                <li >
+                                    <input  class="inpuformu" type="email" name="email"  placeholder="example@email.com here" />
+                                
+                                </li>
+                            </div>
+
+                         </div>  
+                           <div>
+                               <li>
+                                <button class="button" type="submit" >Send</button>
+                               </li>
+                           </div>
+                       
                     </ul>
            </form>
 <details >
