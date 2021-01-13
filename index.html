@@ -1,210 +1,28 @@
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
+
+    
 <html>
-  <head>
+
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WebDevCampos - inicio</title>
         <link href="style.css" rel="stylesheet" type="text/css" media="all"/>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="index.js"></script>
-        <style>
-          /*
-          @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&family=Quicksand:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-
-
-
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-    font-size:10px;
-    }
-body{
-   background-color:white;
-   color:black;
-}
-
-
-h1{font-size:600%; font-weight:bold;}
-h2{font-size:500%; font-weight:bold;}
-h3{font-size:400%; font-weight:bold;}
-h4{font-size:300%; font-weight:bold;}
-h5{font-size:200%; font-weight:bold;}
-h6{font-size:100%; font-weight:bold;}
-a{text-decoration:none; font-size:3vw;}
-
-p,input,option, select,button{font-size:250%}
-.labelform{
-    background-color: lightblue;
-    font-size:1232%; 
-}
-
-ul{
-    list-style-type: none;
-}
-        */
-
-       
-        </style>
-    
-
-    </head>
-    <body>
-
-    
-   <meu-h1 class="meuhum"></meu-h1>     
-   
-   <h1 class="meuhum">Sistema de Cadastro</h1>
-            <form action="indice.php" method="post">
-      
-                    <ul>
-                        <div class="formu">
-                            <div class="formulabel">
-                                <li  >
-                                    <label for="name" >Name:</label>
-                                
-                                </li>
-                            </div>
-
-                            <div class="formuinput">
-                                <li >
-                                    <input class="inpuformu" type="text" name="nome" placeholder="Your name here" />
-                                
-                                </li>
-                            </div>
-
-                         </div>   
-
-                         <div class="formu">
-                            <div class="formulabel">
-                                <li  >
-                                    <label for="email">E-mail:</label>
-                                
-                                </li>
-                            </div>
-
-                            <div class="formuinput">
-                                <li >
-                                    <input  class="inpuformu" type="email" name="e-mail"  placeholder="example@email.com here" />
-                                
-                                </li>
-                            </div>
-
-                         </div>  
-                           <div>
-                               <li>
-                                <button class="button" type="submit" >Send</button>
-                               </li>
-                           </div>
-                       
-                    </ul>
-           </form>
-
-
-
-
-
-
-
-
-    <script>
-    /* class MeuH1 extends HTMLElement{
-    connectedCallback(){
-
-       this.innerHTML = `<h1> Sistema de Cadastro</h1>`;
-    }
-}
-
-customElements.define('meu-h1', MeuH1);*/
-    </script>
-
-
-
-
-</body>
-</html>-->
-
-
-<html>
-    <script src="https://kit.fontawesome.com/d450f38345.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d450f38345.js" crossorigin="anonymous"></script>
 
 
     <style>
-
-            body{
-                widows: 9px;
-            }
-
-        .divembaixo{
-            position:relative;
-            left:-14px;
-            top:  60px;
-            width:90%;
-            height:100px;
-            background-color:rgb(68, 74, 156); 
-            color:white; 
-            font-size: 9vw; 
-            text-align:center;  
-            padding:12%; 
-            margin: 0 auto;
-            border-top-left-radius: 10vw;
-            border-top-right-radius:10vw; 
             
-           
-            
-        }
-        .categoriabutton {
-                background-color:white; position:relative; float:right; font-size: 11vw; top:8vh; z-index:1;
-            }
-        .inputform{
-            padding:2vw; 
-            margin-bottom:11%; 
-            border:none; 
-            border-bottom:1px solid lightgrey; 
-            width:100%;
-            font-size:3vw;
-        }
-
-     
-
-        .labelform{
-
-            font-size:5vw; padding:1%; margin:1%;
-
-        }
-
-        @media screen and ( max-width:750px ) {
-           
-            .categoriabutton {
-                background-color:white; position:relative; float:right; font-size: 6vw; top:5vh; z-index:1;
-            }
-
-        }
-
-
-        @media screen and ( max-width:500px ) {
-            .categoriabutton {
-                background-color:white; position:relative; float:right; font-size: 6vw; top:4vh; z-index:1;
-            }
-
-        }
-
-
-        @media screen and ( max-width:300px ) {
-            .categoriabutton {
-                background-color:white; position:relative; float:right; font-size: 6vw; top:3.6vh; z-index:1;
-            }
-
-        }
     </style>
+    </head>
 <body style="background-color: white; color: lightgrey; ">
-    <div style=" display:table;width:90%; height:auto; font-size:6vw;margin:0 auto;">
-        <div style="display:table-row">
-            <div style=" display:table-cell; float:left;"><i class="fas fa-arrow-left"></i></div>
-            <div style=" display:table-cell; text-align:center;"><h2>Nova Despesa</h2></div>
-            <div style=" display:table-cell;  float:right;"><i class="fas fa-check"></i></div>
+    <div class="topodapagina">
+        <div class="linhatabela">
+            <div class="celulatabelaesq"><i class="fas fa-arrow-left"></i></div>
+            <div class="celulatabelameio"><h5>Nova Despesa</h5></div>
+            <div class="celulatabeladir"><i class="fas fa-check"></i></div>
         </div>
         
     </div>    
@@ -247,5 +65,17 @@ customElements.define('meu-h1', MeuH1);*/
 
 
 
+
+
+    <script>
+        /* class MeuH1 extends HTMLElement{
+        connectedCallback(){
+    
+           this.innerHTML = `<h1> Sistema de Cadastro</h1>`;
+        }
+    }
+    
+    customElements.define('meu-h1', MeuH1);*/
+        </script>
 </body>
 </html>
