@@ -66,7 +66,11 @@ p,input[type="text"],option, select,button{font-size:250%}
     font-size:6vw;
    }
  /*formulário*/
-
+ 
+ 
+ .categoriabutton {
+    background-color:white; position:relative; float:right; font-size: 11vw; top:8vh; z-index:1;
+}
 
  .inputform{
     padding:2vw; 
@@ -86,7 +90,15 @@ font-size:5vw; padding:1%; margin:1%;
 }
 
 
+.inputform{
 
+    width:100%;
+    font-size:4vw;
+    border:none;
+    border-bottom-style: 1px solid lightgrey;
+}
+
+/*fim da página*/
 .divembaixo{
     position:relative;
     left:-14px;
@@ -105,9 +117,7 @@ font-size:5vw; padding:1%; margin:1%;
 
     
 }
-.categoriabutton {
-        background-color:white; position:relative; float:right; font-size: 11vw; top:8vh; z-index:1;
-    }
+
 
 @media screen and ( max-width:750px ) {
 
