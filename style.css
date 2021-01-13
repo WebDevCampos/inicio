@@ -10,11 +10,13 @@
     padding:0;
     font-size:10px;
     }
-body{
-   background-color:white;
-   color:black;
-}
 
+
+body{
+
+    background-color:white;
+    color:black;
+}
 
 h1{font-size:600%; font-weight:bold;}
 h2{font-size:500%; font-weight:bold;}
@@ -24,104 +26,116 @@ h5{font-size:200%; font-weight:bold;}
 h6{font-size:100%; font-weight:bold;}
 a{text-decoration:none; font-size:3vw;}
 
-p,label,input[type=text], input[type=email], textarea, option, select, button, button[type=submit]{font-size:260%; padding:1%;}
+p,input[type="text"],option, select,button{font-size:250%}
 
 
-ul{
-    list-style-type: none;
-}
 
-.button{
-    border-radius:20px;
-    background-color:green;
-    color:white;
-    font-weight: bolder;
-    border-style: none;
-    padding:1%;
-    width:96%; 
-    margin:0 3.5%;
-   
-}
+/*inicio da página*/
+.topodapagina{ 
+   display:table;
+   width:100%; 
+   margin:16% auto; 
+   }
+    .topodapagina > div{
+        
 
+    }
+   .linhatabela{
+    display:table-row;
+  
+   }
 
-.formu{
-    width:100%; 
-    display:grid; 
-    grid-template-columns:20% 80%; 
-    padding:0; 
-    margin:1%;
-    grid-gap:1%;
+   .celulatabelaesq{
+    display:table-cell; 
+    float:left;
+    font-size:6vw;
+   }
 
-}
+   .celulatabelameio{
 
-
-.formulabel{
-
-    border: 1px solid red; 
+    display:table-cell; 
     text-align:center;
+    font-size:6vw;
+
+   }
+
+   .celulatabeladir{
+
+    display:table-cell; 
+    float:right;
+    font-size:6vw;
+   }
+ /*formulário*/
+
+
+ .inputform{
+    padding:2vw; 
+    margin-bottom:11%; 
+    border:none; 
+    border-bottom:1px solid lightgrey; 
+    width:100%;
+    font-size:3vw;
 }
-.inpuformu{
-    width:100%; text-align:center;
+
+
+
+.labelform{
+
+font-size:5vw; padding:1%; margin:1%;
+
 }
-.formuinput{
-   
-    border: 1px solid green;
-}
-
-.meuhum{
-    text-align: center;
-    transition:0.6s;
-}
+.formu{
 
 
-
-
-/*Inicio MQs*/
-
-@media screen and ( max-width: 300px ){
-    .formu{
-       
-        display:inline-block;
-        width:100%;
-        
-    }
-
-    input[type="text"], input[type="email"]{
-
-        font-size: 100%;
-    }
-
-    .meuhum{
-        text-align: left;
-        font-size:10px;
-        color:green;
-    }
 
 
 }
 
 
-@media screen and ( max-width: 600px ){
-    .formu{
-       
-        display:inline-block;
-        width:100%;
-        
-    }
-    label{
-        font-size: 200%;
-    }
-    input[type="text"], input[type="email"]{
 
-        font-size: 100%;
+.divembaixo{
+    position:relative;
+    left:-14px;
+    top:  60px;
+    width:90%;
+    height:100px;
+    background-color:rgb(68, 74, 156); 
+    color:white; 
+    font-size: 9vw; 
+    text-align:center;  
+    padding:12%; 
+    margin: 0 auto;
+    border-top-left-radius: 10vw;
+    border-top-right-radius:10vw; 
+    
+
+    
+}
+.categoriabutton {
+        background-color:white; position:relative; float:right; font-size: 11vw; top:8vh; z-index:1;
     }
 
-    .meuhum{
-        text-align: center;
-        font-size:180%;
-    }
+@media screen and ( max-width:750px ) {
+
+.categoriabutton {
+    background-color:white; position:relative; float:right; font-size: 6vw; top:5vh; z-index:1;
+}
 
 }
 
 
+@media screen and ( max-width:500px ) {
+.categoriabutton {
+    background-color:white; position:relative; float:right; font-size: 6vw; top:4vh; z-index:1;
+}
+
+}
+
+
+@media screen and ( max-width:300px ) {
+.categoriabutton {
+    background-color:white; position:relative; float:right; font-size: 6vw; top:3.6vh; z-index:1;
+}
+
+}
 
