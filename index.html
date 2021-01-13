@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
   <head>
         <meta charset="UTF-8">
@@ -57,20 +57,20 @@ ul{
    <meu-h1 class="meuhum"></meu-h1>     
    
    <h1 class="meuhum">Sistema de Cadastro</h1>
-            <form action="index.html" method="post">
+            <form action="indice.php" method="post">
       
                     <ul>
                         <div class="formu">
                             <div class="formulabel">
                                 <li  >
-                                    <label for="name">Name:</label>
+                                    <label for="name" >Name:</label>
                                 
                                 </li>
                             </div>
 
                             <div class="formuinput">
                                 <li >
-                                    <input class="inpuformu" type="text" name="name" placeholder="Your name here" />
+                                    <input class="inpuformu" type="text" name="nome" placeholder="Your name here" />
                                 
                                 </li>
                             </div>
@@ -87,7 +87,7 @@ ul{
 
                             <div class="formuinput">
                                 <li >
-                                    <input  class="inpuformu" type="email" name="email"  placeholder="example@email.com here" />
+                                    <input  class="inpuformu" type="email" name="e-mail"  placeholder="example@email.com here" />
                                 
                                 </li>
                             </div>
@@ -101,19 +101,10 @@ ul{
                        
                     </ul>
            </form>
-<details >
-<summary>PIjjpeidd</summary>
-<summary>PIjjpeidd</summary>
-<summary>PIjjpeidd</summary>
-</details>
 
 
 
-<form action="indice.php" method="post">
-Name: <input type="text" name='nome'><br>
-E-mail: <input type="text" name='e-mail'><br>
-<input type="submit">
-</form>
+
 
 
 
@@ -129,6 +120,88 @@ E-mail: <input type="text" name='e-mail'><br>
 customElements.define('meu-h1', MeuH1);*/
     </script>
 
+
+
+
+</body>
+</html>-->
+
+
+<html>
+    <script src="https://kit.fontawesome.com/d450f38345.js" crossorigin="anonymous"></script>
+
+
+    <style>
+
+        .inputform{
+            padding:2vw; 
+            margin-bottom:11%; 
+            border:none; 
+            border-bottom:1px solid lightgrey; 
+            width:100%;
+            font-size:3vw;
+        }
+
+     
+
+        .labelform{
+
+            font-size:5vw; padding:1%; margin:1%;
+
+        }
+
+        @media screen and ( max-width:300px ) {
+            .categoriabutton {
+                background-color:white; position:relative; float:right; font-size: 11vw; top:3vh; z-index:1;
+            }
+
+        }
+    </style>
+<body style="background-color: white; color: lightgrey; ">
+    <div style=" display:table;width:90%; height:auto; font-size:6vw;margin:0 auto;">
+        <div style="display:table-row">
+            <div style=" display:table-cell; float:left;"><i class="fas fa-arrow-left"></i></div>
+            <div style=" display:table-cell; text-align:center;"><h2>Nova Despesa</h2></div>
+            <div style=" display:table-cell;  float:right;"><i class="fas fa-check"></i></div>
+        </div>
+        
+    </div>    
+    
+    
+    <div>
+
+        <form>
+            <div>
+                <label for="descricao" class="labelform" style="">Descrição</label><br/>
+                <input id="descricao" name="descricao" class="inputform"/>
+            </div>
+
+            <div>
+                <label for="valor" style="font-size:5vw; padding:1%; margin:1%;">Valor</label><br/>
+                <input id="valor" name="valor"class="inputform"/>
+            </div>
+
+
+            <div>
+                <label for="categoria" style="font-size:5vw; padding:1%; margin:1%;">Categoria <i class="far fa-arrow-alt-circle-right categoriabutton" style=" "></i></label><br/>
+                <input id="categoria" name="categoria" class="inputform"/>
+            </div>
+
+            <div>
+                <label for="data" style="font-size:5vw; padding:1%; margin:1%;">Data</label><br/>
+                <input id="data" name="data" class="inputform"/>
+            </div>
+            
+        </form>
+
+        <div style="background-color:rgb(68, 74, 156); height:100px; color:white; font-size: 9vw; text-align:center;  padding:12%; border-top-left-radius: 10vw; border-top-right-radius:10vw; width:100%;left:-10%; position:relative;">
+            <div style=""> <i class="far fa-trash-alt"></i></div>
+
+        </div>
+        
+        
+        </div>
+    </div>
 
 
 
