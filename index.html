@@ -133,18 +133,22 @@ customElements.define('meu-h1', MeuH1);*/
 
     <style>
 
+            body{
+                widows: 9px;
+            }
+
         .divembaixo{
             position:relative;
-            
+            left:-14px;
             top:  60px;
-            width:100%;
+            width:90%;
             height:100px;
             background-color:rgb(68, 74, 156); 
             color:white; 
             font-size: 9vw; 
             text-align:center;  
             padding:12%; 
-            /*margin:auto;*/
+            margin: 0 auto;
             border-top-left-radius: 10vw;
             border-top-right-radius:10vw; 
             
@@ -172,6 +176,7 @@ customElements.define('meu-h1', MeuH1);*/
         }
 
         @media screen and ( max-width:750px ) {
+           
             .categoriabutton {
                 background-color:white; position:relative; float:right; font-size: 6vw; top:5vh; z-index:1;
             }
