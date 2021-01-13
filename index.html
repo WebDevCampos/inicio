@@ -133,6 +133,27 @@ customElements.define('meu-h1', MeuH1);*/
 
     <style>
 
+        .divembaixo{
+            position:relative;
+            left:-10%; 
+            top:  60px;
+            width:100%;
+            height:100px;
+            background-color:rgb(68, 74, 156); 
+            color:white; 
+            font-size: 9vw; 
+            text-align:center;  
+            padding:12%; 
+            /*margin:auto;*/
+            border-top-left-radius: 10vw;
+            border-top-right-radius:10vw; 
+            
+           
+            
+        }
+        .categoriabutton {
+                background-color:white; position:relative; float:right; font-size: 11vw; top:8vh; z-index:1;
+            }
         .inputform{
             padding:2vw; 
             margin-bottom:11%; 
@@ -152,7 +173,7 @@ customElements.define('meu-h1', MeuH1);*/
 
         @media screen and ( max-width:300px ) {
             .categoriabutton {
-                background-color:white; position:relative; float:right; font-size: 11vw; top:3vh; z-index:1;
+                background-color:white; position:relative; float:right; font-size: 6vw; top:3.6vh; z-index:1;
             }
 
         }
@@ -172,7 +193,7 @@ customElements.define('meu-h1', MeuH1);*/
 
         <form>
             <div>
-                <label for="descricao" class="labelform" style="">Descrição</label><br/>
+                <label for="descricao" class="labelform" >Descrição</label><br/>
                 <input id="descricao" name="descricao" class="inputform"/>
             </div>
 
@@ -183,7 +204,7 @@ customElements.define('meu-h1', MeuH1);*/
 
 
             <div>
-                <label for="categoria" style="font-size:5vw; padding:1%; margin:1%;">Categoria <i class="far fa-arrow-alt-circle-right categoriabutton" style=" "></i></label><br/>
+                <label for="categoria" style="font-size:5vw; padding:1%; margin:1%;">Categoria <a href="#"><i class="far fa-arrow-alt-circle-right categoriabutton"></i></a></label><br/>
                 <input id="categoria" name="categoria" class="inputform"/>
             </div>
 
@@ -194,8 +215,8 @@ customElements.define('meu-h1', MeuH1);*/
             
         </form>
 
-        <div style="background-color:rgb(68, 74, 156); height:100px; color:white; font-size: 9vw; text-align:center;  padding:12%; border-top-left-radius: 10vw; border-top-right-radius:10vw; width:100%;left:-10%; position:relative;">
-            <div style=""> <i class="far fa-trash-alt"></i></div>
+        <div class="divembaixo">
+            <div> <i class="far fa-trash-alt"></i></div>
 
         </div>
         
