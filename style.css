@@ -37,7 +37,7 @@ p,input[type="text"],option, select,button{font-size:250%}
    margin:16% auto; 
    }
     .topodapagina > div{
-        
+        font-size:6vw;
 
     }
    .linhatabela{
@@ -82,12 +82,6 @@ p,input[type="text"],option, select,button{font-size:250%}
 .labelform{
 
 font-size:5vw; padding:1%; margin:1%;
-
-}
-.formu{
-
-
-
 
 }
 
