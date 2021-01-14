@@ -37,11 +37,11 @@
 					<div class="col-md-4">
                         <?php
                         
-                        $id_produto = $GET['id_produto']
-							$detalhes[1] = "Detalhes da cadeira";
-							$detalhes[2] = "Detalhes do fogão";
-							$detalhes[3] = "Detalhes do roteador";
-							$detalhes[4] = "Detalhes da TV ";
+                        $id_produto = $GET['id_produto'];
+							$detalhe[1] = 'Detalhes da cadeira';
+							$detalhe[2] = "Detalhes do fogão";
+							$detalhe[3] = "Detalhes do roteador";
+							$detalhe[4] = "Detalhes da TV ";
 
 						?>
 					</div>
