@@ -18,7 +18,7 @@
 			</div>
   			<div class="row">
     			<div class="col-md-4">
-    				<form role="form">
+    				<form role="form" action="catalogo_produtos.php" method="get">
 					  <div class="form-group">
 					    <label for="Produto">Nome do produto:</label>
 					    <select class="form-control" name="id_produto" id="id_produto">
@@ -33,15 +33,20 @@
     			</div>
     			<div class="col-md-4"></div>
 				<div class="col-md-4"></div>
-				<div class="row">
+				
+					<div class="row">
+						<h1>Detalhes do produto</h1>
+					</div>	
 					<div class="col-md-4">
                         <?php
                         
-                        $id_produto = $GET['id_produto'];
+                        	$id_produto = $GET['id_produto'];
 							$detalhe[1] = 'Detalhes da cadeira';
 							$detalhe[2] = "Detalhes do fogão";
 							$detalhe[3] = "Detalhes do roteador";
 							$detalhe[4] = "Detalhes da TV ";
+
+							echo $detalhe[$id_produto];
 
 						?>
 					</div>
