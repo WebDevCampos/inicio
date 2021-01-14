@@ -1,14 +1,73 @@
+<head>
+
+  <style>
+
+*{
+        font-family: 'Dosis', sans-serif;;
+      }
+
+     
+
+        .botaonavega{
+
+            background-color:transparent; 
+            position:relative; 
+            float:right; 
+            right: 0; 
+            padding:0; 
+            margin:0;
+            border:none; 
+            border-radius:20px;
+            box-shadow: 2px 2px 22px lightgrey; 
+            font-size:15px;
+        }
+        .navegatopo{
+            position:fixed;
+            padding: 2% 0;
+            margin:2%;
+            top:2%;
+            right:0;
+            width:70%;
+            
+            border-radius:60px;
+            box-shadow:1px 1px 11px lightgrey;
+            z-index:1;
+        }
+  </style>
+</head>
+
+<div class="w3-container">
+  <div>
+      
+      <nav>
+          <div class="w3-bar  w3-white navegatopo">
+              <a href="#" class="w3-bar-item w3-button w3-mobile txtnav">COMO FUNCIONA</a>
+              <a href="#" class="w3-bar-item w3-button w3-mobile txtnav">MONTE SEU PACOTE</a>
+              <a href="#" class="w3-bar-item w3-button w3-mobile txtnav">BENEFÍCIOS</a>
+              <a href="#" class="w3-bar-item w3-button w3-mobile txtnav">PROGRAMAÇÃO</a>
+              <a href="#" class="w3-bar-item w3-button w3-mobile txtnav">2ª VIA</a>
+              <a href="#" class="w3-bar-item w3-button w3-mobile txtnav">PODEMOS AJUDAR?</a>
+              <a href="#" class="w3-bar-item w3-button w3-mobile txtnav">QUEM SOMOS</a>
+              <button  class="w3-bar-item w3-button w3-mobile botaonavega">JÁ SOU CLIENTE</a></button>
+            </div>
+
+      </nav>
+
+  </div>
+
+</div>
+
 <div class="w3-container">
     <h2>Slideshow Indicators</h2>
     <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
   </div>
   
-  <div class="w3-content w3-display-container" style="width:100%;">
-    <img class="mySlides animate__bounceInRight" src="imagens/caminho_montanhoso.jpg" style="width:100%; object-fit:fill;">
-    <img class="mySlides animate__bounceInRight" src="imagens/cidade_do_tarrasque.jpg" style="width:100%; object-fit:cover;">
-    <img class="mySlides animate__bounceInRight" src="imagens/floresta_devastada2.jpg" style="width:100%; object-fit:cover;">
+  <div class="w3-content w3-display-container" style="width:500%;">
+    <img class="mySlides " src="imagens/caminho_montanhoso.jpg" style="width:100%; object-fit:cover;">
+    <img class="mySlides " src="imagens/cidade_do_tarrasque.jpg" style="width:100%; object-fit:cover;">
+    <img class="mySlides " src="imagens/floresta_devastada2.jpg" style="width:100%; object-fit:cover;">
     <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-      <div class="w3-left w3-hover-text-khanp,ki" onclick="plusDivs(-1)">&#10094;</div>
+      <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
       <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
       <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
       <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
