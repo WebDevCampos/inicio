@@ -29,8 +29,7 @@
 
 
 body{
-    width:500px;
-    height:700px;
+    
     background-color:white;
     color:lightgrey;
     margin: 0 auto;;
@@ -47,6 +46,17 @@ a{text-decoration:none; font-size:3vw;}
 p,input[type="text"], input[type="email"], option, select,button{font-size:250%}
 
 
+
+
+
+
+.allcontainer{
+
+    
+    width:900px;
+    height:200px;
+    border:1px solid red;
+}
 
 /*inicio da página*/
     .topodapagina{ 
@@ -190,52 +200,58 @@ margin:1%;
     </style>
     </head>
 <body >
-    <div class="topodapagina">
-        <div class="linhatabela">
-            <div class="celulatabelaesq"><i class="fas fa-arrow-left"></i></div>
-            <div class="celulatabelameio"><h2>Nova Despesa</h2></div>
-            <div class="celulatabeladir"><i class="fas fa-check"></i></div>
-        </div>
+
+    <div class="allcontainer" >
         
-    </div>    
-    
-    
-    <div>
+                    <div class="topodapagina">
+                        <div class="linhatabela">
+                            <div class="celulatabelaesq"><i class="fas fa-arrow-left"></i></div>
+                            <div class="celulatabelameio"><h2>Nova Despesa</h2></div>
+                            <div class="celulatabeladir"><i class="fas fa-check"></i></div>
+                        </div>
+                        
+                    </div>    
+                    
+                    
+                    <div>
 
-        <form>
-            <div>
-                <label for="descricao" class="labelform" >Descrição</label><br/>
-                <input id="descricao" name="descricao" class="inputform"/>
-            </div>
+                        <form>
+                            <div>
+                                <label for="descricao" class="labelform" >Descrição</label><br/>
+                                <input id="descricao" name="descricao" class="inputform"/>
+                            </div>
 
-            <div>
-                <label for="valor" class="labelform">Valor</label><br/>
-                <input id="valor" name="valor"class="inputform" />
-            </div>
+                            <div>
+                                <label for="valor" class="labelform">Valor</label><br/>
+                                <input id="valor" name="valor"class="inputform" />
+                            </div>
 
 
-            <div>
-                <label for="categoria" class="labelform">Categoria <a href="#"><i class="far fa-arrow-alt-circle-right categoriabutton"></i></a></label><br/>
-                <input id="categoria" name="categoria" class="inputform"/>
-            </div>
+                            <div>
+                                <label for="categoria" class="labelform">Categoria <a href="#"><i class="far fa-arrow-alt-circle-right categoriabutton"></i></a></label><br/>
+                                <input id="categoria" name="categoria" class="inputform"/>
+                            </div>
 
-            <div>
-                <label for="data" class="labelform">Data</label><br/>
-                <input id="data" name="data" class="inputform"/>
-            </div>
-            
-        </form>
+                            <div>
+                                <label for="data" class="labelform">Data</label><br/>
+                                <input id="data" name="data" class="inputform"/>
+                            </div>
+                            
+                        </form>
 
-        <div class="divembaixo">
-            <div> <i class="far fa-trash-alt" style="font-size:9vw;"></i></div>
+                    </div>
 
-        </div>
-        
-        
-        </div>
+                        <div class="divembaixo">
+
+                            <div> <i class="far fa-trash-alt" style="font-size:9vw;"></i></div>
+
+                        </div>
+                        
+                        
+                      
+                    
+
     </div>
-
-
 
 
 
