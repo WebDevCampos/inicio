@@ -32,7 +32,18 @@
 					</form>
     			</div>
     			<div class="col-md-4"></div>
-    			<div class="col-md-4"></div>
+				<div class="col-md-4"></div>
+				<div class="row">
+					<div class="col-md-4">
+						<? php
+							$detalhes_produtos[1] = "Detalhes da cadeira";
+							$detalhes_produtos[2] = "Detalhes do fogão";
+							$detalhes_produtos[3] = "Detalhes do roteador";
+							$detalhes_produtos[4] = "Detalhes da TV ";
+
+						?>
+					</div>
+				</div>
   			</div>
 		</div>
 	</body>
