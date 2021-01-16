@@ -9,6 +9,18 @@
        
         <title>Ultra tecnologias - Rastreamento via satélite </title>   
 
+
+        <!-- icon in the highest resolution we need it for -->
+          <link rel="icon" sizes="192x192" href="logoUltra.png">
+
+          <!-- reuse same icon for Safari -->
+          <link rel="apple-touch-icon" href="logoUltra.png">
+
+          <!-- multiple icons for IE -->
+          <meta name="msapplication-square310x310logo" content="logoUltra.png">
+
+
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         
@@ -108,7 +120,11 @@
        <header>
          <div style="width:100%; padding: 2%; margin: 0 auto; position:fixed; top:0;">
                 <div style="position:fixed; left:10%;">
-                   <img src="imagens/logoesq-svg.svg"   class="img-fluid" style="position:fixed; top:-20px; z-index:1;">
+                  <picture>
+                    <source media="(min-width:650px)" srcset="imagens/logoesq-svg.svg">
+                    <source media="(min-width:465px)" srcset="imagens/logoUltra.png">
+                    <img src="imagens/logoUltra.png" alt="logo ultra" >
+                  </picture>
                 </div>
           
                 
