@@ -96,6 +96,10 @@
        right: 35px;
        }
      }
+     .minhaimagem{
+
+        position:fixed; left:10%; top:-1%;
+     }
            .bd-placeholder-img {
              font-size: 1.125rem;
              text-anchor: middle;
@@ -103,94 +107,139 @@
              -moz-user-select: none;
              user-select: none;
            }
+           .minha-barra{
+                width:1000px !important; 
+                position:fixed; 
+                left:33%; 
+                top:50px;
+                }   
      
-           @media (min-width: 768px) {
+           @media all and (min-width: 768px) {
              .bd-placeholder-img-lg {
                font-size: 3.5rem;
+
              }
+             .minha-barra{
+               
+                width:1000px !important; position:fixed; left:33%; top:50px;
+           
+           }
+           }
+
+           @media all and (max-width:700px){
+            .minha-barra{
+               
+               width:1000px !important; position:fixed; left:33%; top:0px;
+          
+          }
+
+           }
+
+
+           @media all and (max-width:700px){
+            .minha-barra{
+               
+               width:1000px !important; position:fixed; left:33%; top:0px;
+          
+          }
+
+           }
+           @media all and (max-width:565px){
+            .minha-barra{
+               
+               width:1000px !important; position:fixed; left:33%; top:0px;
+          
+          }
+
            }
      #myCarousel{
        z-index:-1;
      }
+
+  
          </style>
      
   </head>
           <body>
     
-              <header>
-         <div style="width:100%; padding: 2%; margin: 0 auto; position:fixed; top:0;">
-                <div style="position:fixed; left:10%;">
-                  <picture style="position:fixed; top:0;">
+            <header>
+                   
+              <div class="minhaimagem" >
+                    <picture >
                     <source media="(min-width:650px)" srcset="imagens/logoesq-svg.svg">
+                    <source media="(min-width:565px)" srcset="imagens/logoUltra.png">
                     <source media="(min-width:465px)" srcset="imagens/logoUltra.png">
                     <img src="imagens/logoUltra.png" alt="logo ultra" >
-                  </picture>
+                    </picture>
                 </div>
-          
-                
-                <div  style="position:fixed; left:30%; width: 100%;">
-                <nav class="navbar navbar-expand-lg navbar-light bg-transparent " style="width:60%;">
-                    <div class="container-fluid"  >
-                      <a class="navbar-brand" href="#" >Menu</a>
-                      <button class="navbar-toggler bg-white" type="button" data-bs="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction()">
-                        <span class="navbar-toggler-icon bg-white"></span>
-                      </button>
-                      <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-white rounded-pill " style="padding:2%; font-size:20px; width:100%;">
-                          <li class="nav-item" style="margin-right:3%; ">
-                            <a class="nav-link "  href="#" >inicio</a>
-                          </li>
-                          <li class="nav-item" style="margin-right:3%; ">
-                            <a class="nav-link" href="#">Link</a>
-                          </li>
-                          <li class="nav-item" style="margin-right:3%; ">
-                            <a class="nav-link" href="#">Link</a>
-                          </li>
-                          <li class="nav-item" style="margin-right:3%; ">
-                            <a class="nav-link" href="#">Link</a>
-                          </li>
-                          <li class="nav-item" style="margin-right:3%; ">
-                            <a class="nav-link" href="#">Link</a>
-                          </li>
-                          <li class="nav-item" style="margin-right:3%; ">
-                            <a class="nav-link" href="#">Link</a>
-                          </li>
-                          <li class="nav-item" style="margin-right:3%; ">
-                            <a class="nav-link" href="#">Link</a>
-                          </li>
-                          <li class="nav-item" style="margin-right:3%; "> 
-                            <a class="nav-link btn rounded-pill" href="#">Link</a>
-                          </li>
-                          <li class="nav-item" style="margin-right:3%; ">
-                            <a class="nav-link" href="#">Link</a>
-                          </li>
-                        </ul>
-                        
-                      </div>
-                    </div>
-         
-     
-                     <div id="myNav" class="overlay" >
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
-                        <div class="overlay-content">
-                          <a href="#">1</a>
-                          <a href="#">2</a>
-                          <a href="#">3</a>
-                          <a href="#">4</a>
-                          <a href="#">5</a>
-                          <a href="#">6</a>
-                          <a href="#">7</a>
-                          <a href="#">8</a>
-                        </div>
-     
-                       </div>
-              </nav>
+
+    
+                <div class="minha-barra">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-transparent " style="width:16%;">
+<div class="container-fluid"  >
+ <a class="navbar-brand" href="#" >Menu</a>
+    <button class="navbar-toggler bg-white" type="button" data-bs="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction()" >
+    <span class="navbar-toggler-icon bg-white"></span></button>
+
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo02" >
+                            <ul class="navbar-nav  mb-2 mb-lg-0 bg-white rounded-pill " >
+                                    <li class="nav-item" style="margin-right:3%; ">
+                                        <a class="nav-link "  href="#" >inicio</a>
+                                    </li>
+
+                                    <li class="nav-item" style="margin-right:3%; ">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+
+                                    <li class="nav-item" style="margin-right:3%; ">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+
+                                    <li class="nav-item" style="margin-right:3%; ">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+
+                                    <li class="nav-item" style="margin-right:3%; ">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    
+                                    <li class="nav-item" style="margin-right:3%; ">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+
+                                    <li class="nav-item" style="margin-right:3%; ">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+
+                                    <li class="rounded-pill" style="margin-right:3%; "> 
+                                        <a class="nav-link btn " href="#">Link</a>
+                                    </li>
+
+                                    <li class="" style="margin-right:3%; ">
+                                        <a class="nav-link btn btn-primary " href="#">Link</a>
+                                    </li>
+                            </ul>
+                        </nav>
+                 </div>
+        
 
 
-                </div>
-        </div>    
-              
-              </header>
+         <div id="myNav" class="overlay" >
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+            <div class="overlay-content">
+              <a href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">7</a>
+              <a href="#">8</a>
+            </div>
+
+           </div>
+  
+            </header>
               
               <main>
                <!--Inicio Carousel-->
@@ -261,14 +310,14 @@
                       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                       <p><a class="btn btn-secondary" href="#" role="button" >View details &raquo;</a></p>
                     </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4 col-sm-1">
+                    <div class="col-lg-4 ">
                       <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
                       <h2>Heading</h2>
                       <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                       <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                     </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4 col-sm-1">
+                    <div class="col-lg-4 ">
                       <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
                       <h2>Heading</h2>
