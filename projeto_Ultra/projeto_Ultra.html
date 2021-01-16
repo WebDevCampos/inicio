@@ -117,7 +117,7 @@
   </head>
           <body>
     
-       <header>
+              <header>
          <div style="width:100%; padding: 2%; margin: 0 auto; position:fixed; top:0;">
                 <div style="position:fixed; left:10%;">
                   <picture style="position:fixed; top:0;">
@@ -191,10 +191,10 @@
         </div>    
               
               </header>
-              <!--Inicio Carousel-->
-              <main id="oi">
-               
-                <div id="myCarousel" class="carousel slide " data-bs-touch= true data-bs-ride="carousel">
+              
+              <main>
+               <!--Inicio Carousel-->
+                <div id="myCarousel" class="carousel slide " data-bs-touch = "true" data-bs-ride="carousel">
                   <ol class="carousel-indicators">
                     <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
                     <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
@@ -363,11 +363,14 @@
                
               }
 
+
+              $(document).ready(function(){
+                        // Activate Carousel
+                        $("#myCarousel").carousel({touch: "true"});
+                        }
             </script>
-             
           
             </body>
-
 
 
 </html>
