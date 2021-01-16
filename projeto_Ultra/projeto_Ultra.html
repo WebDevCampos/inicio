@@ -34,7 +34,7 @@
 
         <style>
           a{text-decoration:none; padding: 1%;}
-          
+         
      .overlay {
        height: 0%;
        width: 100%;
@@ -87,19 +87,45 @@
      box-shadow:1px 1px 3px grey;
      border-radius:20px;}
 
-     @media screen and (max-height: 450px) {
-       .overlay {overflow-y: auto;}
-       .overlay a {font-size: 20px}
-       .overlay .closebtn {
-       font-size: 40px;
-       top: 15px;
-       right: 35px;
-       }
-     }
-     .minhaimagem{
+    
 
-        position:fixed; left:10%; top:-1%;
+     .minha-barra{
+        position: fixed; top:0; right:0;
      }
+
+     @media all and (min-width: 1039px) {
+             .bd-placeholder-img-lg {
+               font-size: 3.5rem;
+
+             }
+          
+
+           .minhaimagem{
+
+                position:fixed; left:20%;
+                }
+                .minha-barra{
+                    position: fixed;top:7%; right:11%; margin-right: 0;
+     }
+
+}          
+
+     @media all and (max-width: 1026px) {
+             .bd-placeholder-img-lg {
+               font-size: 3.5rem;
+
+             }
+          
+
+           .minhaimagem{
+
+                position:fixed; left:20%;
+                }
+                .minha-barra{
+                    position: fixed;top:7%; right:12%; margin-right: 0;
+     }
+
+}          
            .bd-placeholder-img {
              font-size: 1.125rem;
              text-anchor: middle;
@@ -107,47 +133,111 @@
              -moz-user-select: none;
              user-select: none;
            }
-         
-     
-
-@media all and (max-width: 2400px) {
+           @media all and (max-width: 1020px) {
              .bd-placeholder-img-lg {
                font-size: 3.5rem;
 
              }
-            
+          
 
            .minhaimagem{
 
-position:fixed; left:0;
-}
-     
-           }
-          
-           
-           @media all and (max-width: 900px) {
+                position:fixed; left:20%;
+                }
+                .minha-barra{
+                    position: fixed;top:7%; right:18%; margin-right: 0;
+     }
+
+}          
+
+           @media all and (max-width: 930px) {
              .bd-placeholder-img-lg {
                font-size: 3.5rem;
 
              }
-            
+          
+
+           .minhaimagem{
+
+                position:fixed; left:20%;
+                }
+                .minha-barra{
+                    position: fixed;top:0; right:0; margin-right: 0;
+     }
+
+}  
+
+@media all and (max-width: 900px) {
+             .bd-placeholder-img-lg {
+               font-size: 3.5rem;
+
+             }
+          
+
+           .minhaimagem{
+
+                position:fixed; left:20%;
+                }
+                .minha-barra{
+                    position: fixed;top:0; right:0; margin-right: 0;
+     }
+
+}      
+    
+     
+       
+          
+           
+           @media all and (max-width: 720px) {
+             .bd-placeholder-img-lg {
+               font-size: 3.5rem;
+
+             }
+           
            .minhaimagem{
 
 position:relative; left:0;
+
+
 }
+.minha-barra{
+        position: fixed; top:0; right:0; margin-right: 0;
+     }
            }
 
+@media screen and (max-height: 600px) {
+       .overlay {overflow-y: auto;}
+       .overlay a {font-size: 20px}
+       .overlay .closebtn {
+       font-size: 40px;
+       top: 15px;
+       right: 35px;
+       }
 
-           @media all and (max-width: 400px) {
-             .bd-placeholder-img-lg {
-               font-size: 3.5rem;
+       .minhaimagem{
+
+position: absolute;; left:0; top:0;
+}
+.minha-barra{
+        position:absolute; margin:0;
+     }
+}
+
+     
+     
+@media all and (max-width: 400px) {
+     .bd-placeholder-img-lg {
+           font-size: 3.5rem;
 
              }
-             
+            
             .minhaimagem{
 
                         position:relative; left:0;
                         }
+                        .minha-barra{
+        position:absolute; margin:0;
+     }
               }
 
          
@@ -167,15 +257,15 @@ position:relative; left:0;
                    
                           <div  >
                                 <picture  >
-                                <source media ="(min-width:900px)" srcset="imagens/logoesq-svg.svg">
+                                <source media ="(max-width:900px)" srcset="imagens/logoUltra.png">
                              
-                                <img src="imagens/logoUltra.png" alt="logo ultra" class="minhaimagem">
+                                <img src="imagens/logoesq-svg.svg" alt="logo ultra" class="minhaimagem">
                                 </picture>
                             </div>
 
-<div  class="minha-barra sticky-xl-top">
-   <nav class="navbar navbar-expand-lg navbar-light bg-transparent " style="width:16%;">
-        <div class="container-fluid bg-white rounded-pill"  >
+                            <div  class="minha-barra sticky-xl-top" >
+                                    <nav class="navbar navbar-expand-lg navbar-light bg-transparent " >
+        <div class="container bg-white rounded-pill"  >
             <a class="navbar-brand" href="#" >Menu</a>
                 <button class="navbar-toggler bg-white" type="button" data-bs="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction()" >
                 <span class="navbar-toggler-icon bg-white"></span></button>
@@ -226,14 +316,14 @@ position:relative; left:0;
                             <div id="myNav" class="overlay" >
                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
                                 <div class="overlay-content" >
-                                        <div style="display:flex; flex-flow:row nowrap;  align-items: baseline; justify-content:flex-end; ">
+                                        
                                             <div> <button class="btn btn-light bg-white me-md-2 rounded-pill btn-sm fs-3 shadow-sm;" type="button">Button</button> </div>
                                         
                                             <div> <button class="btn btn-light bg-white me-md-2 rounded-pill btn-sm fs-3 shadow-sm ;" type="button">Button</button></div> 
                                            
-                                      </div>
+                                      
 
-                                      <div style="margin: 10% 2%; text-align:right; position:relative;">
+                                      <div >
 
                                         <a href="#">COMO FUNCIONA</a>
                                         <a href="#">MONTE SEU PACOTE</a>
@@ -243,7 +333,7 @@ position:relative; left:0;
                                         <a href="#">CONTATO</a>
                                         </div>
                                             
-                              </div>
+                                </div>
             
                             </div>
                               
