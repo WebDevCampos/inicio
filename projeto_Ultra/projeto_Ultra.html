@@ -74,6 +74,7 @@
      background-color:white;
      box-shadow:1px 1px 3px grey;
      border-radius:20px;}
+
      @media screen and (max-height: 450px) {
        .overlay {overflow-y: auto;}
        .overlay a {font-size: 20px}
@@ -105,67 +106,78 @@
           <body>
     
        <header>
-           
-            <nav class="navbar navbar-expand-lg  navbar-light bg-transparent " style=" position: fixed; top:-19px;z-index: 1;">
-              <div class="container-fluid ">
-                <a class="navbar-brand" href="#"><img src="imagens/logoesq.svg"></a>
-                <button class="navbar-toggler bg-white" type="button" data-bs="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction()">
-                  <span class="navbar-toggler-icon bg-white"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-white rounded-pill ">
-                    <li class="nav-item">
-                      <a class="active navbar-brand" aria-current="page" href="#">MENU</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                  </ul>
-                  
+         <div style="width:100%; padding: 2%; margin: 0 auto; position:fixed; top:0;">
+                <div style="position:fixed; left:10%;">
+                   <img src="imagens/logoesq-svg.svg"   class="img-fluid" style="position:fixed; top:-20px; z-index:1;">
                 </div>
-              </div>
-            </nav>
-       
-                       <div id="myNav" class="overlay" >
-                          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
-                          <div class="overlay-content">
-                            <a href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#">6</a>
-                            <a href="#">7</a>
-                            <a href="#">8</a>
-                          </div>
-       
-                         </div>
-                </nav>
+          
+                
+                <div  style="position:fixed; left:30%; width: 100%;">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent " style="width:60%;">
+                    <div class="container-fluid"  >
+                      <a class="navbar-brand" href="#" >Menu</a>
+                      <button class="navbar-toggler bg-white" type="button" data-bs="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction()">
+                        <span class="navbar-toggler-icon bg-white"></span>
+                      </button>
+                      <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-white rounded-pill " style="padding:2%; font-size:20px; width:100%;">
+                          <li class="nav-item" style="margin-right:3%; ">
+                            <a class="nav-link "  href="#" >inicio</a>
+                          </li>
+                          <li class="nav-item" style="margin-right:3%; ">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item" style="margin-right:3%; ">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item" style="margin-right:3%; ">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item" style="margin-right:3%; ">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item" style="margin-right:3%; ">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item" style="margin-right:3%; ">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item" style="margin-right:3%; "> 
+                            <a class="nav-link btn rounded-pill" href="#">Link</a>
+                          </li>
+                          <li class="nav-item" style="margin-right:3%; ">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                        </ul>
+                        
+                      </div>
+                    </div>
+         
+     
+                     <div id="myNav" class="overlay" >
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+                        <div class="overlay-content">
+                          <a href="#">1</a>
+                          <a href="#">2</a>
+                          <a href="#">3</a>
+                          <a href="#">4</a>
+                          <a href="#">5</a>
+                          <a href="#">6</a>
+                          <a href="#">7</a>
+                          <a href="#">8</a>
+                        </div>
+     
+                       </div>
+              </nav>
+
+
+                </div>
+        </div>    
+              
               </header>
               <!--Inicio Carousel-->
               <main id="oi">
-
+                <div class="row">
                 <div id="myCarousel" class="carousel slide touch" data-bs-ride="carousel">
                   <ol class="carousel-indicators">
                     <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
@@ -217,7 +229,7 @@
                   </a>
                 </div>
                 <!--Fim Carousel-->
-
+                </div>
                 <!-- Marketing messaging and featurettes
                 ================================================== -->
                 <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -225,22 +237,22 @@
                 <div class="container marketing">
 
                   <!-- Three columns of text below the carousel -->
-                  <div class="row">
-                    <div class="col-lg-4">
+                 <div class="row ">
+                    <div class="col-lg-4 ">
                       <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
                       <h2>Heading</h2>
                       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                       <p><a class="btn btn-secondary" href="#" role="button" >View details &raquo;</a></p>
                     </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-sm-1">
                       <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
                       <h2>Heading</h2>
                       <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                       <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                     </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-sm-1">
                       <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
                       <h2>Heading</h2>
@@ -248,7 +260,7 @@
                       <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                     </div><!-- /.col-lg-4 -->
                   </div><!-- /.row -->
-
+                  
 
                   <!-- START THE FEATURETTES -->
 
