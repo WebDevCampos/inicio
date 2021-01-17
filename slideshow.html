@@ -419,7 +419,7 @@ border-radius:20px;}
                 
             <script>
 
-
+                //botão da barra de navegação
               function myFunction() {
                 var x = document.getElementById("myNav");
                 if (x.className.indexOf("w3-show") == -1) {
@@ -433,6 +433,7 @@ border-radius:20px;}
                 document.getElementById("myNav").style.height = "0%";
               }
 
+              // botão assine laranja
               $(document).scroll(function() {
                     var y = $(this).scrollTop();
                     if (y > 100) {
@@ -443,19 +444,19 @@ border-radius:20px;}
                     });
 
 
-
+//carrossel  2
  let cards = $('.card-body');
-let maxHeight = 0;
+        let maxHeight = 0;
 
-for (let i = 0; i < cards.length; i++) {
-  if (maxHeight < $(cards[i]).outerHeight()) {
-    maxHeight = $(cards[i]).outerHeight();
-  }
-}
+        for (let i = 0; i < cards.length; i++) {
+        if (maxHeight < $(cards[i]).outerHeight()) {
+            maxHeight = $(cards[i]).outerHeight();
+        }
+        }
 
-for (var i = 0; i < cards.length; i++) {
-  $(cards[i]).height(maxHeight);
-}
+        for (var i = 0; i < cards.length; i++) {
+        $(cards[i]).height(maxHeight);
+        }
 
  $(document).ready(function(){
                 $('.slider').slick({
@@ -463,6 +464,7 @@ for (var i = 0; i < cards.length; i++) {
                     slidesToShow: 3,
                     adaptiveHeight: true,
                     arrows:false,
+                    dots:true,
                     responsive: [{
                         breakpoint: 768,
                         settings: {
