@@ -36,7 +36,16 @@
         <link rel="stylesheet" type="text/css" href="slick/slick/slick/slick.css"/>
        
         <link rel="stylesheet" type="text/css" href="slick/slick/slick/slick-theme.css"/>
+
+
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 <style>
+
+  *{
+    font-family: 'Quicksand', sans-serif;
+  }
 .overlay {
   height: 0%;
   width: 100%;
@@ -159,8 +168,8 @@ visibility: hidden;
      
         <img src="imagens/logoesq-svg.svg" alt="logo ultra" class="minhaimagem">
         </picture><a class="navbar-brand bg-white rounded-pill text-black-50 w-25 text-center " aria-current="page" href="#" style="margin-right:0;">Home</a></a>
-      <button class="navbar-toggler" type="button" data-bs = "collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction()">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#myModal" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon "></span>
       </button>
       <div class="collapse navbar-collapse bg-white rounded-pill" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -182,8 +191,34 @@ visibility: hidden;
     </div>
   </nav>
 
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Modal Header</h4>
+          <button type="button" class="w3-button w3-white align-content-center" data-bs-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center"> 
+            <button class="btn btn-light bg-white btn-lg meubotao" type="button" ><a href="#" target="_self">Assine já</a></button> 
+            <button class="btn btn-primary btn-lg " type="button" ><a href="#" target="_self">Assine já</a></button>
+        </div>
 
-  <div id="myNav" class="overlay" >
+          <a href="#">COMO FUNCIONA</a>
+          <a href="#">MONTE SEU PACOTE</a>
+          <a href="#">BENEFÍCIOS</a>
+          <a href="#">PROGRAMAÇÃO</a>
+          <a href="#">2ª VIA</a>
+          <a href="#">CONTATO</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+ <!--<div id="myModal" class="modal fade">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
     <div class="overlay-content" >
             
@@ -206,7 +241,7 @@ visibility: hidden;
             <a href="#">CONTATO</a>
             </div>
                 
-    </div>
+    </div>-->
 
 </div>
 </header>
@@ -263,7 +298,7 @@ visibility: hidden;
 
 
 
-  <div class="container marketing">
+  <div class="container marketing" style="height:700px;">
     <div class="container">
       <div><h1 class="text-center " style="font-size:9vw;">Como funciona?</h1></div>
         <div class="row">
@@ -330,44 +365,48 @@ visibility: hidden;
 
 
  <div class="container marketing">
+   <div class="container  row-lg-4">
     <div class="row">
-     <div class="col-lg-4  card border-0" >
+     <div class=" card border-0" style="width:286px; height:180px;">
        <div class="card-header">
-         <img class="card-img-top rounded-2 "src="imagens/rastreamento1.png">
+         <img class="card-img-top rounded-2 "src="imagens/rastreamento1.png" style="width:150px; height:210px;">
        </div>
          
          <div class="card-body shadow-sm">
-         <h2>Heading</h2>
+         <h5>MOBILIDADE</h5>
          <a href="#"><p>Nossa tecnologia disponibiliza uma solução 100% web, garantindo controle total de tudo que acontece na sua base rastreada.</p></a>
          </div>
      </div><!-- /.col-lg-4 -->
-
-     <div class="col-lg-4 card border-0 " >
+        
+     <div class=" card border-0 " style="width:286px; height:180px;" >
        <div class="card-header">
-         <img class="card-img-top rounded-circle "src="imagens/rastreamento1.png">
+         <img class="card-img-top "src="http://ultratecnologias.com.br/images/1.jpg" style="width:150px; height:210px;">
        </div>
          
          <div class="card-body shadow-sm">
-         <h2 >Heading</h2>
-         <a href="#"><p>Nossa tecnologia disponibiliza uma solução 100% web, garantindo controle total de tudo que acontece na sua base rastreada.</p></a>
+         <h5>A SOLUÇÃO COMPLETA PARA SUA CENTRAL</h5>
+         <a href="#"><p>Para o seu negócio, sempre o melhor em software e infraestrutura. Venha para a ULTRA TECNOLOGIAS.
+         </p></a>
          </div>
      </div><!-- /.col-lg-4 -->
 
 
-     <div class="col-lg-4 card border-0 " >
+     <div class="card border-0 " style="width:286px; height:180px;">
        <div class="card-header">
-         <img class="card-img-top rounded-2 "src="imagens/rastreamento1.png">
+         <img class="card-img-top rounded-2 "src="imagens/rastreamento1.png" style="width:150px; height:210px;">
        </div>
          
          <div class="card-body shadow-sm">
-         <h2 >Heading</h2>
-         <a href="#"><p>Nossa tecnologia disponibiliza uma solução 100% web, garantindo controle total de tudo que acontece na sua base rastreada.</p></a>
+         <h5>PERSONALIZAÇÃO DA INTERFACE</h5>
+         <a href="#"><p>
+          Modifique a marca no menu principal do sistema, cores e muito mais. Afinal, <mark>seu</mark>produto tem que ser do <mark>seu jeito.</mark> </p></a>
          </div>
      </div><!-- /.col-lg-4 -->
 
     </div>
      
  
+</div>
 </div>
   <!-- Marketing messaging and featurettes
   ================================================== -->
