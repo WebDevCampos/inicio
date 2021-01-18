@@ -1,7 +1,7 @@
 
      $(document).ready(function(){
          $('.slider').slick({
-             
+             outline:false,
              arrows:false,
              autoplay: false,
              slidesToShow: 3,
