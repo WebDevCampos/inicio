@@ -43,7 +43,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 <style>
-
+.divmeio{position:fixed; top:500px;}
 .topnav {
   overflow: hidden;
   background-color: white;
@@ -80,33 +80,7 @@
   display: none;
 }
 
-@media screen and (max-width: 900px) {
-.topnav {background-color:transparent; box-shadow:none;}
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-     background-color:white;
-     box-shadow:1px 1px 3px lightgrey;
-     border-radius:20px;
-  }
-  
-  .topnav a.active {
-  background-color: transparent;
-  color: white;
-}
-}
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-   
-  }
- 
-}
   *{
     font-family: 'Quicksand', sans-serif;
   }
@@ -163,18 +137,6 @@
 background-color:white;
 box-shadow:1px 1px 3px grey;
 border-radius:20px;}
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  
-  }
-
-  
-}
 
 
 
@@ -212,11 +174,66 @@ visibility: hidden;
         user-select: none;
       }
 
-      @media (min-width: 768px) {
+     
+
+
+ /*Inicio das MQ*/  
+
+ @media screen and (max-width: 900px) {
+.topnav {background-color:transparent; box-shadow:none;}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+     background-color:white;
+     box-shadow:1px 1px 3px lightgrey;
+     border-radius:20px;
+  }
+  
+  .topnav a.active {
+  background-color: transparent;
+  color: white;
+}
+.divmeio{
+
+  position:fixed;
+  top:500px;
+
+}
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+   
+  }
+ 
+}
+ @media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  
+  }
+
+  
+}
+
+
+
+
+
+  @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
-      }
+      }   
     </style>
 
     
@@ -381,7 +398,7 @@ visibility: hidden;
 </div>
 
 
-    <div class="container position-relative " style="height:20vh; top:70vh;">
+    <div class="container position-fixed divmeio" >
       <div><h1 class="text-center " style="font-size:9vw;">Como funciona?</h1>
       </div>
           <div class="slider" >
