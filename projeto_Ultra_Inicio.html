@@ -43,7 +43,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 <style>
-.divmeio{position:absolute; top:500px;}
+.divmeio{position:absolute; top:500px; left:100px;}
+.carousel-indicators > li {
+  
+  width:20px; height: 20px;border-radius: 50%;
+}
 .topnav {
   overflow: hidden;
   background-color: white;
@@ -194,12 +198,7 @@ visibility: hidden;
   background-color: transparent;
   color: white;
 }
-.divmeio{
 
-  position:absolute;
-  top:500px;
-
-}
 }
 
 @media screen and (max-width: 600px) {
@@ -210,12 +209,7 @@ visibility: hidden;
     top: 0;
    
   }
-  .divmeio{
-
-position:absolute;
-top:500px;
-
-}
+ 
 }
  @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
@@ -226,12 +220,7 @@ top:500px;
   right: 35px;
   
   }
-  .divmeio{
 
-position:absolute;
-top:500px;
-
-}
   
 }
 
@@ -408,7 +397,7 @@ top:500px;
 </div>
 
 
-    <div class="container position-fixed divmeio" >
+    <div class="container  divmeio" >
       <div><h1 class="text-center " style="font-size:9vw;">Como funciona?</h1>
       </div>
           <div class="slider" >
