@@ -92,7 +92,7 @@
   position:fixed;
  top:7%;
  right:15%;
-    box-shadow:1px 1px 3px lightgrey;
+    
  
 }
 
@@ -169,15 +169,20 @@ visibility: hidden;
  /*Inicio das MQ*/  
 
  @media screen and (max-width: 900px) {
-.topnav {background-color:transparent; box-shadow:none;}
+.topnav {background-color:transparent;  right:-5px;}
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
-    display: block;
+      display: block;
      background-color:white;
-     box-shadow:1px 1px 3px lightgrey;
-     border-radius:20px;
+    
+     border-radius:50px;
+     
+    
+     
   }
+
+  
   
   .topnav a.active {
   background-color: transparent;
@@ -187,17 +192,13 @@ visibility: hidden;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+  
    
   }
 
   .carroc{ position: relative; top:-100px; height:50vh; margin-bottom:200px;}
  
-}
+
  @media screen and (max-height: 450px) {
   .divmeio{ position: absolute; width: 300px;}
 
@@ -239,7 +240,7 @@ visibility: hidden;
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
             <a href="javascript:void(0);" class="icon" type="button" data-bs-toggle="modal" data-bs-target="#myModal" onclick="myFunction()">
-              <i class="fa fa-bars" style="width:50px;"></i>
+              <i class="fa fa-bars" style="width:25px; text-align:center;"></i>
             </a>
           </div>
 
