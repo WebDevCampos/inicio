@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="rastreamento monitoramento sensor colisão telemetria combustivel corte bloqueador plataforma manaus telemetria hibrido gps track cerca eletronica localização alerta velocidade anti-furto ilimitado aplicativo 24hs gprs amazonas">
+    <meta name="description" content="A ULTRA Tecnologias oferece as tecnologias mais avançadas em monitoramento, rastreamento e telemetria">
+    <title>Ultra tecnologias - Rastreamento via satélite </title>   
+    <meta name="theme-color" content="#6fd5f7">
+    
+    <title>Ultra Tecnologias</title>
+    <link rel="stylesheet" href="slick/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+       
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!--Bootstrap + w3.CSS-->
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">     
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="carousel.css">
+        
+      
+        <!--slick-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick/slick/slick.css"/>
+       
+        <link rel="stylesheet" type="text/css" href="slick/slick/slick/slick-theme.css"/>
+
+
+        <!--Font-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<style>
+.slick-prev,
+.slick-next
+{
+    font-size: 20px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -150%);
+    -ms-transform: translate(0, -150%);
+    transform: translate(0, 50%);
+
+    cursor: pointer;
+
+    color: black;
+    border: none;
+    outline: none;
+    background: orange;
+    text-align:center;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: black;
+    outline:invert;
+    background: orange;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: initial;
+}  
+.carousel-indicators > li {
+  
+  width:20px; height: 20px;border-radius: 50%;
+}
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  border-radius:20px;
+  position:fixed;
+ top:7%;;
+ right:15%;
+    box-shadow:1px 1px 3px lightgrey;
+ 
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+
+}
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+.topnav {background-color:transparent; box-shadow:none;}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+     background-color:white;
+     box-shadow:1px 1px 3px lightgrey;
+     border-radius:20px;
+  }
+  
+  .topnav a.active {
+  background-color: transparent;
+  color: white;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+   
+  }
+ 
+}
+@media screen and (max-height: 450px) {
+  .divmeio{ position: absolute; width: 300px;}
+
+  
+}
+
+@media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }   
+    </style>
+
+</head>
+
+<body>
+<header>
+   <div class="container fixed-top">
+
+    <div class="container-fluid " >
+
+        <div  style=" z-index:2; position:fixed;top:-1%; left:10%;"><img src="imagens/logoesq-svg.svg"></div>
+          <div class="topnav" id="myTopnav" style=" z-index:1;">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" type="button" data-bs-toggle="modal" data-bs-target="#myModal" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
+        </div><!--Navbar-->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  
+                  <h4 class="modal-title">Modal Header</h4>
+                  <button type="button" class="w3-button w3-white align-content-center" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class="text-center"> 
+                    <button class="btn btn-light bg-white btn-lg meubotao" type="button" ><a href="#" target="_self">Assine já</a></button> 
+                    <button class="btn btn-primary btn-lg " type="button" ><a href="#" target="_self">Assine já</a></button>
+                </div>
+
+                  <a href="#">COMO FUNCIONA</a>
+                  <a href="#">MONTE SEU PACOTE</a>
+                  <a href="#">BENEFÍCIOS</a>
+                  <a href="#">PROGRAMAÇÃO</a>
+                  <a href="#">2ª VIA</a>
+                  <a href="#">CONTATO</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div> <!--Modal-->
+   
+   </div>
+    
+</header><!--Navbar + Modal-->
+<div class="fixed-top">
+    <div class="single-item ">
+        <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img src="imagens/londres.jpg">
+               <div class="container">
+                 <div class="carousel-caption text-start">
+                   <h1>Example headline.</h1>
+                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                   <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                 </div>
+               </div>
+             </div>
+         </div>
+         <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img src="imagens/londres.jpg">
+               <div class="container">
+                 <div class="carousel-caption text-start">
+                   <h1>Example headline.</h1>
+                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                   <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                 </div>
+               </div>
+             </div>
+         </div>
+         <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img src="imagens/londres.jpg">
+               <div class="container">
+                 <div class="carousel-caption text-start">
+                   <h1>Example headline.</h1>
+                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                   <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                 </div>
+               </div>
+             </div>
+         </div>
+         </div>
+</div>    
+  
+
+
+
+  <div>
+
+    <div class="container text-center ">
+        <div><h1 class="" style="font-size:9vw;">Como funciona?</h1></div>
+      </div><!--Como funiciona-->
+
+               <div class="slider" >
+                
+                  <div class="card border-0">
+                    
+                  <div class="">
+                    <span class="notify-badge">NEW</span>
+                    <img src="http://placehold.it/200x200"  alt="" />
+                    </div>
+                   
+
+                      <div class="card-body ">
+                        <p class="text-center fs-lg-4 ">MOBILIDADE PARA VOCÊ E SEUS CLIENTES</p>
+                          <p class="text-center fs-lg-4 " style="margin-bottom:0;">Nossa tecnologia disponibiliza uma solução 100% web, cortando seus custos e garantindo  controle total de tudo que acontece na sua base rastreada.
+                           
+                          </p>
+                      </div>
+                      
+                  </div>
+
+                  <div class="card border-0">
+                    <span style="position:absolute; top:0; right:20%;color:white; border: 3px solid lightgrey; padding:1%;border-radius:100%; background-color:blue;">+1 </span>
+                    <img class="card-img-top " src="imagens/rastreamento1.png" style="width:150px; height:150px; margin:0 auto; border-radius:100%;box-shadow:1px 1px 3px  lightgrey" >
+
+                      <div class="card-body ">
+                        <p class="text-center fs-lg-4 ">MOBILIDADE PARA VOCÊ E SEUS CLIENTES</p>
+                          <p class="text-center fs-lg-4 " style="margin-bottom:0;">Nossa tecnologia disponibiliza uma solução 100% web, cortando seus custos e garantindo  controle total de tudo que acontece na sua base rastreada.
+                           
+                          </p>
+                      </div>
+                      
+                  </div>
+
+                  <div class="card border-0">
+                    <span style="position:absolute; top:0; right:20%;color:white; border: 3px solid lightgrey; padding:1%;border-radius:100%; background-color:blue;">+1 </span>
+                    <img class="card-img-top " src="imagens/rastreamento1.png" style="width:150px; height:150px; margin:0 auto; border-radius:100%;box-shadow:1px 1px 3px  lightgrey" >
+
+                      <div class="card-body ">
+                        <p class="text-center fs-lg-4 ">MOBILIDADE PARA VOCÊ E SEUS CLIENTES</p>
+                          <p class="text-center fs-lg-4 " style="margin-bottom:0;">Nossa tecnologia disponibiliza uma solução 100% web, cortando seus custos e garantindo  controle total de tudo que acontece na sua base rastreada.
+                           
+                          </p>
+                      </div>
+                      
+                  </div>
+
+                  <div class="card border-0">
+                    <span style="position:absolute; top:0; right:20%;color:white; border: 3px solid lightgrey; padding:1%;border-radius:100%; background-color:blue;">+1 </span>
+                    <img class="card-img-top " src="imagens/rastreamento1.png" style="width:150px; height:150px; margin:0 auto; border-radius:100%;box-shadow:1px 1px 3px  lightgrey" >
+
+                      <div class="card-body ">
+                        <p class="text-center fs-lg-4 ">MOBILIDADE PARA VOCÊ E SEUS CLIENTES</p>
+                          <p class="text-center fs-lg-4 " style="margin-bottom:0;">Nossa tecnologia disponibiliza uma solução 100% web, cortando seus custos e garantindo  controle total de tudo que acontece na sua base rastreada.
+                           
+                          </p>
+                      </div>
+                      
+                  </div>
+                  
+                 </div>
+
+
+
+  </div>
+
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-sm-10  col-lg-4 m-auto ">
+        <div class="card">
+            
+            <div class="card-img-top"><img src="imagens/rastreamento1.png"></div>
+            <div class="card-body"><h4>Rastreamento especializado</h4></div>
+
+        </div>
+        </div>
+
+        <div class="col-sm-10  col-lg-4  m-auto ">
+            <div class="card">
+                
+                <div class="card-img-top"><img src="imagens/rastreamento1.png"></div>
+                <div class="card-body"><h4>Rastreamento especializado</h4></div>
+    
+            </div>
+        </div>
+
+        <div class="col-sm-10 col-lg-4 m-auto">
+                <div class="card">
+                    
+                    <div class="card-img-top"><img src="imagens/rastreamento1.png"></div>
+                    <div class="card-body"><h4>Rastreamento especializado</h4></div>
+        
+                </div>
+        </div>
+
+        <div class="col-sm-10 col-lg-4  m-auto">
+                    <div class="card">
+                        
+                        <div class="card-img-top"><img src="imagens/rastreamento1.png"></div>
+                        <div class="card-body"><h4>Rastreamento especializado</h4></div>
+            
+                    </div>
+        </div>
+    
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.js"></script>
+ <!-- Provider Scripts -->
+ <script src="jquery/dist/jquery.min.js"></script>
+ <script src="jquery/dist/jquery.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/popper.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+ <script src="slide.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+ <script>
+
+
+$(document).ready(function(){
+    $('.single-item').slick()({
+     arrows:true,
+        autoplay:true,
+    });
+  });
+ </script>
+ 
+
+</body>
+  </html>
