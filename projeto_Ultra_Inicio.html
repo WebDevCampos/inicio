@@ -44,6 +44,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 <style>
 .divmeio{position:absolute; top:500px; left:10px;}
+.item {
+    position:relative;
+    padding-top:20px;
+    display:inline-block;
+}
+.notify-badge{
+    position: absolute;
+    right:-20px;
+    top:10px;
+    background:red;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color:white;
+    padding:5px 10px;
+    font-size:20px;
+}
 .carousel-indicators > li {
   
   width:20px; height: 20px;border-radius: 50%;
@@ -341,8 +357,12 @@ visibility: hidden;
                      <div class="slider" >
                       
                         <div class="card border-0">
-                          <span style="position:absolute; top:0; right:20%;color:white; border: 3px solid lightgrey; padding:1%;border-radius:100%; background-color:blue;">+1 </span>
-                          <img class="card-img-top "src="imagens/rastreamento1.png" style="width:150px; height:150px; margin:0 auto; border-radius:100%;box-shadow:1px 1px 3px  lightgrey" >
+                          
+                        <div class="">
+                          <span class="notify-badge">NEW</span>
+                          <img src="http://placehold.it/200x200"  alt="" />
+                          </div>
+                         
 
                             <div class="card-body ">
                               <p class="text-center fs-lg-4 ">MOBILIDADE PARA VOCÊ E SEUS CLIENTES</p>
@@ -395,7 +415,15 @@ visibility: hidden;
                        </div>
    </div>          
 
+   
+   <div class="col-sm-4" style="position:absolute; top:200%;">
+    <a href="#">
+       
+     </a>   
+       <p>Some text</p>
+   </div>
 
+  </div>
 </main>
 
     <script src="js/bootstrap.bundle.js"></script>
