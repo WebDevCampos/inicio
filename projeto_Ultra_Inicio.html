@@ -49,9 +49,7 @@ a{text-decoration: none;}
   font-family: 'Roboto Condensed', sans-serif;
   }
   
-.meugrid{
-  display:grid; grid-template-columns:auto 2% auto auto; grid-gap:1%;
-}
+
   .modal-inside{
    float:right;
    margin-top:2rem;
@@ -60,7 +58,7 @@ a{text-decoration: none;}
 .modal-inside div { margin:13% 0 13% 0; font-size:20px;}
  #myModal a{text-decoration:none; color:black;}
   
-  .carroc{ position: relative; top:-200px; height:50%; margin-bottom:300px;}
+  .carroc{ position: relative; top:-200px; height:50%; margin-bottom:20px;}
 
 
 .carousel-indicators > li {
@@ -68,19 +66,22 @@ a{text-decoration: none;}
   width:20px; height: 20px;border-radius: 50%;
 }
 
-.minhaimagem{-webkit-box-align: center;
+.minhaimagem{
+  -webkit-box-align: center;
     align-items: center;
 
-    top:0;
+    position:relative; bottom: 2.0625rem;
+    
     
     -webkit-box-pack: end;
     justify-content: flex-end;
     padding-right: 0.9375rem;
     pointer-events: initial;
     right: 0px;
-    width: 50%;
+    width: 20rem;
     z-index:4;}
 .topnav {
+  position:relative;
   -webkit-box-align: center;
     align-items: center;
     border-radius: 6.25rem;
@@ -88,7 +89,7 @@ a{text-decoration: none;}
     height: 4.4375rem;
     -webkit-box-pack: end;
     justify-content: flex-end;
-    padding-right: 0.9375rem;
+    padding-right: 0.0375rem;
     pointer-events: initial;
     right: 0px;
     width: calc(100% - 7.5rem);
@@ -154,11 +155,15 @@ visibility: hidden;
         user-select: none;
       }
 
-     
+.meugrid{
+  display:grid; grid-template-columns:auto 2% auto auto; grid-gap:1%;
+}     
 
 
  /*Inicio das MQ*/  
-
+@media screen and ( max-width: 800px){
+  .meugrid{display:block; margin:0 0 0 30%;}
+}
  @media screen and (max-width: 1000px) {
 
   .modal-inside{
@@ -188,7 +193,7 @@ visibility: hidden;
   .modal-inside{
     float:right;
   }
-.meugrid{display:block;}
+
 }   
 @media screen and (max-width: 600px) {
   .modal-inside{
@@ -498,7 +503,7 @@ visibility: hidden;
           
       </div>
       <!--Carousel 2-->
-  <div class="meugrid" style="">
+  <div class="meugrid" >
    
     <div> 
      <div>
