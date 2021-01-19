@@ -49,7 +49,9 @@ a{text-decoration: none;}
   font-family: 'Roboto Condensed', sans-serif;
   }
   
-
+.meugrid{
+  display:grid; grid-template-columns:auto 2% auto auto; grid-gap:1%;
+}
   .modal-inside{
    float:right;
    margin-top:2rem;
@@ -58,7 +60,7 @@ a{text-decoration: none;}
 .modal-inside div { margin:13% 0 13% 0; font-size:20px;}
  #myModal a{text-decoration:none; color:black;}
   
-  .carroc{ position: relative; top:-100px; height:50vh; margin-bottom:300px;}
+  .carroc{ position: relative; top:-200px; height:50%; margin-bottom:300px;}
 
 
 .carousel-indicators > li {
@@ -66,16 +68,30 @@ a{text-decoration: none;}
   width:20px; height: 20px;border-radius: 50%;
 }
 
-.minhaimagem{position: fixed; z-index:2;  top:-1%;}
-.topnav {
-  overflow: hidden;
-  background-color: white;
-  border-radius:20px;
-  position:fixed;
- width:75%;
- top:6%;
- right:1px;
+.minhaimagem{-webkit-box-align: center;
+    align-items: center;
+
+    top:0;
     
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding-right: 0.9375rem;
+    pointer-events: initial;
+    right: 0px;
+    width: 50%;
+    z-index:4;}
+.topnav {
+  -webkit-box-align: center;
+    align-items: center;
+    border-radius: 6.25rem;
+    bottom: 0.0625rem;
+    height: 4.4375rem;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding-right: 0.9375rem;
+    pointer-events: initial;
+    right: 0px;
+    width: calc(100% - 7.5rem);
  
 }
 
@@ -149,7 +165,7 @@ visibility: hidden;
     float:right;
   }
 
-.topnav {background-color:transparent;  right:0;width:auto;}
+
   .topnav a:not(:first-child) {display: none;}
   .topnav  a.icon {
    
@@ -172,13 +188,13 @@ visibility: hidden;
   .modal-inside{
     float:right;
   }
-
+.meugrid{display:block;}
 }   
 @media screen and (max-width: 600px) {
   .modal-inside{
     float:right;
   }
-  .topnav {background-color:transparent;  right:1px;}
+ 
   .carroc{ position: relative; top:-100px; height:50vh; margin-bottom:200px;}
  
   }
@@ -188,7 +204,7 @@ visibility: hidden;
 
  @media screen and (max-height: 450px) {
   
-  .topnav {background-color:transparent;  right:1px;}
+ 
   .modal-inside{
     float:right;
   }
@@ -290,9 +306,9 @@ visibility: hidden;
           <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
           <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner" style="z-index:1;">
+        <div class="carousel-inner" style="z-index:-1;">
           <div class="carousel-item active">
-            <img src="imagens/rastreiofrota.jpg" >
+            <img src="imagens/rastreiofrota.jpg" style="z-index:-1;">
             <div class="container">
               <div class="carousel-caption text-start" >
                 <h1>Example headline.</h1>
@@ -301,7 +317,7 @@ visibility: hidden;
               </div>
             </div>
           </div>
-          <div class="carousel-item" style="z-index:1;">
+          <div class="carousel-item" style="z-index:-1;">
             <img src="imagens/seguro de automóvel.jfif" style="z-index:-1;">
             <div class="container">
               <div class="carousel-caption">
@@ -340,14 +356,18 @@ visibility: hidden;
 
 
       <!--Carousel 2-->
-      <div>
+      <div >
 
                    <div class="container text-center ">
                       <div><h1 style="font-size:9vw;">Como funciona?</h1></div>
                     </div><!--Como funiciona-->
                 
               <div class="slider" >
-                <div > 
+                <div style="position: relative;
+                margin-bottom: 0.9375rem;
+                width: 100%;
+                height: 0%;
+                padding-bottom: 100%;"> 
                   <div>
                     <div style="position:absolute; "><span style=" 
                       display:flex;
@@ -478,7 +498,41 @@ visibility: hidden;
           
       </div>
       <!--Carousel 2-->
-  
+  <div class="meugrid" style="">
+   
+    <div> 
+     <div>
+      <img src="imagens/rastreandoseucarro.jpg">
+  </div>
+
+  <div>
+    <p>ueyuiy iu iyet uy uyfed eou</p>
+  </div>
+   </div>
+
+
+   <div style="width:30px; height:30px; background-color:black; color:white; border-radius:50%; text-align:center; font-size:20px;">+</div>
+   <div> 
+    <div>
+     <img src="imagens/rastreandoseucarro.jpg">
+ </div>
+
+ <div>
+   <p>ueyuiy iu iyet uy uyfed eou</p>
+ </div>
+  </div>
+
+
+  <div> 
+    <div>
+     <img src="imagens/rastreandoseucarro.jpg">
+ </div>
+
+ <div>
+   <p>ueyuiy iu iyet uy uyfed eou</p>
+ </div>
+  </div>
+</div>
   
 </main>
 
