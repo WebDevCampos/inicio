@@ -19,7 +19,7 @@
 .slick-prev,
 .slick-next
 {
-    font-size: 0;
+    font-size: 20px;
     line-height: 0;
 
     position: absolute;
@@ -36,10 +36,10 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: black;
     border: none;
     outline: none;
-    background: transparent;
+    background: white;
 }
 .slick-prev:hover,
 .slick-prev:focus,
