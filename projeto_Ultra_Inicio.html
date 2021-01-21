@@ -58,7 +58,12 @@
 a:hover{
   text-decoration:none;
 }
-
+.minharow{
+  width:100%;
+  height:200vh;
+  justify-items:center;
+  justify-content:center;
+}
 /*TOP NAV*/  
 .botaotopnavbranco{
   background-color:rgb(255,255,255);  
@@ -352,10 +357,10 @@ width:140px; width:140px; border-radius:50%;
   width:100% !important;
   
   background-image: url(imagens/atendimento.png), url(imagens/curvas_Atendimento.svg);
-  background-position: left bottom, right bottom; 
+  background-position: left center, 20px 420px; 
   background-repeat:no-repeat, no-repeat; 
-  background-size:auto, 200% 200% ; 
-  height:1200vh !important;
+  background-size:auto, contain; 
+  height:150vh;
 
 }
 
@@ -367,7 +372,8 @@ background-image: url(imagens/curvas_Atendimento.svg);
 background-position: -1000px 20px;
 background-repeat:no-repeat;
 background-size:cover;
-height:150vh !important;
+height:200vh;
+
 
 }
 
@@ -426,6 +432,16 @@ box-shadow: rgba(0, 0, 0, 0.13) 0px -3px 33px;
   right:1rem;
 opacity:1;
 }
+}
+
+.whatzapoutel{
+  display:flex; 
+  flex-flow:row; 
+  justify-items:center; align-items:center; justify-content:center; position:relative; margin:0 auto; border:1px solid red; width:10rem;
+}
+
+@media screen and (max-width: 1200px){
+  .whatzapoutel{display:flex; flex-flow:column;}
 }
     </style>
   </head>
@@ -570,7 +586,7 @@ opacity:1;
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing"  >
+    <div class="container marketing mminharow"  >
 
       <!-- Carousel 2 -->
      <div class="container" >
@@ -687,29 +703,30 @@ opacity:1;
                       <a href="#c" class="botaoatendimentorapido">JÁ SOU CLIENTE</a>
                     </div>
                   </div>
+                  
             </div>
 
-
+           
+              <div class="container" style="margin-top:2rem;">
+                <div>
+                  <div ><p>Também dá pra resolver tudo isso<br/> pelo whats ou telefone</p></div> 
+                 <div>
+                 <div><a class="botaoatendimentorapido"><i class="bi bi-whatsapp" style=" color:#2fd155;"></i>Whatsapp</a></div>
+                 <div ><p>ou ligar para</p></div>
+                 <div ><a class="botaoatendimentorapido"><i class="bi bi-telephone" style=" color:#bd10e0;"></i>telefone</a></div>
+                 </div> 
+               
+               </div>
+        
+              </div>
+      
+            </div>
                   
              </div>
            
       </div>
 
-      <div style="position:relative; margin:0 auto; border:1px solid red;width:20vw;">
-        <div class="container" >
-          <div style="display:table">
-            <div style="display:table-row"><p>Também dá pra resolver tudo isso<br/> pelo whats ou telefone</p></div> 
-           <div style="display: table;">
-           <div style="display:table-cell"><a class="botaoatendimentorapido"><i class="bi bi-whatsapp" style=" color:#2fd155;"></i>Whatsapp</a></div>
-           <div style="display:table-cell"><p>ou ligar para</p></div>
-           <div style="display:table-cell"><a class="botaoatendimentorapido"><i class="bi bi-telephone" style=" color:#bd10e0;"></i>telefone</a></div>
-           </div> 
-         
-         </div>
-  
-        </div>
-
-      </div>
+     
       
       
 
