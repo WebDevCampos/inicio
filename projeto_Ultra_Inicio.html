@@ -322,54 +322,49 @@ width:140px; width:140px; border-radius:50%;
 
 
 .iconeatendimentorapido{
-
-    font-size:5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0.1875rem 0.375rem;
+    font-size:450%;
     border-radius:20px; 
-    padding:7px;
+    padding: 0 15px 15px 15px ;
 
   }
   
   
-  .outrogrid{
+  .gridatendimentorapido{
     position:relative; 
-    width:70%; 
-     top:10%; 
-     left:40%; 
-    
+    top:20%;
+    left:15%;
+     width:70%;
     display:grid; 
-    grid-template-columns:auto auto auto auto; 
+    grid-template-columns:auto auto auto ; 
     text-align:center;
-    grid-gap:3px;
+    
   }
 
 
-@media screen and (max-width:850px){
-.outrogrid{display:flex; flex-flow: column; left:13rem; transform: translate(-50% -50%);}
+@media screen and (max-width:1200px){
+  .gridatendimentorapido{display:block; }
 
 }
 
-
-
-
-
-/*Atendimento Rápido*/
 
 .atendimentorapido{
-
+  width:100% !important;
+  
   background-image: url(imagens/atendimento.png), url(imagens/curvas_Atendimento.svg);
-  background-position: left center, right bottom; 
+  background-position: left bottom, right bottom; 
   background-repeat:no-repeat, no-repeat; 
-  background-size:auto, 100% 552px; 
-  height:150vh !important;
+  background-size:auto, 200% 200% ; 
+  height:1200vh !important;
 
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:1200px){
 
   .atendimentorapido{
 
 background-image: url(imagens/curvas_Atendimento.svg);
-background-position: bottom;
+background-position: -1000px 20px;
 background-repeat:no-repeat;
 background-size:cover;
 height:150vh !important;
@@ -659,60 +654,66 @@ opacity:1;
   
    
   <!--Atendimento rápido--> 
-  
- <div class="atendimentorapido">
-  <div class="row text-center"><h1 >ATENDIMENTO RÁPIDO</h1></div>
-  <div class="outrogrid" >
-    <div>  
-      <a href="https://webdevcampos.github.io/inicio/segunda_Via.html" target="_blank">
-        <i class="bi bi-upc-scan shadow iconeatendimentorapido"></i>
-       </a> 
-    <p>Segunda via</p>
-    <p>Você consegue sua fatura aqui<br/>
-       bem rapidinho e sem espera.</p>
-       <a href="#" class="botaoatendimentorapido">JÁ SOU CLIENTE</a>       
-       </div>
-           <a href="#"><div><i class="bi bi-person shadow iconeatendimentorapido"  ></i></a>
-            <p>Alteração Cadastral</p>
-            <p>Mudou de telefone, endereço ou e-mail?<br/> Atualiza pra gente.</p>
-            <a href="#" class="botaoatendimentorapido">JÁ SOU CLIENTE</a>
-          </div>
-          <div><i class="bi bi-box-seam shadow iconeatendimentorapido"  ></i>
-            <p>Meus Pacotes</p>
-            <p>Veja os pacotes que <br/>você tem com a gente.</p>
-            <a href="#c" class="botaoatendimentorapido">JÁ SOU CLIENTE</a>
-          </div>
 
-         
-          
-    </div>
-</div>
-      
-   
-    
-     
-  </div>
-  
  
+      <div class="container-fluid text-center atendimentorapido">
+              <div> <h1 >ATENDIMENTO RÁPIDO</h1> </div>
+             <div class="container">
+
+              <div class="gridatendimentorapido " >
+                <div>  
+              <a href="https://webdevcampos.github.io/inicio/segunda_Via.html" target="_blank">
+                <i class="bi bi-upc-scan shadow iconeatendimentorapido"></i>
+              </a> 
+            <p>Segunda via</p>
+            <p>Você consegue sua fatura aqui<br/>
+              bem rapidinho e sem espera.</p>
+              <a href="#" class="botaoatendimentorapido">JÁ SOU CLIENTE</a>       
+            </div>
+            <div>
+              <a href="#">
+                
+                <i class="bi bi-person shadow iconeatendimentorapido"  ></i>
+              </a>
+              <p>Alteração Cadastral</p>
+              <p>Mudou de telefone, endereço ou e-mail?<br/> Atualiza pra gente.</p>
+              <a href="#" class="botaoatendimentorapido">JÁ SOU CLIENTE</a>
+            </div>
+
+                  <div>
+                    <div><i class="bi bi-box-seam shadow iconeatendimentorapido"  ></i>
+                      <p>Meus Pacotes</p>
+                      <p>Veja os pacotes que <br/>você tem com a gente.</p>
+                      <a href="#c" class="botaoatendimentorapido">JÁ SOU CLIENTE</a>
+                    </div>
+                  </div>
+            </div>
+
+
+                  
+             </div>
+           
+      </div>
+
+      <div style="position:relative; margin:0 auto; border:1px solid red;width:20vw;">
+        <div class="container" >
+          <div style="display:table">
+            <div style="display:table-row"><p>Também dá pra resolver tudo isso<br/> pelo whats ou telefone</p></div> 
+           <div style="display: table;">
+           <div style="display:table-cell"><a class="botaoatendimentorapido"><i class="bi bi-whatsapp" style=" color:#2fd155;"></i>Whatsapp</a></div>
+           <div style="display:table-cell"><p>ou ligar para</p></div>
+           <div style="display:table-cell"><a class="botaoatendimentorapido"><i class="bi bi-telephone" style=" color:#bd10e0;"></i>telefone</a></div>
+           </div> 
+         
+         </div>
   
-  
-  
-   
-  
+        </div>
 
+      </div>
+      
+      
 
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
+     <!-- /.container -->
 
 <div class="container-fluid">
     <div class="divescondida text-center " >
