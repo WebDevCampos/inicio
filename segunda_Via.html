@@ -77,14 +77,14 @@ input[type="number"]{font-size:larger}
   font-size:1.22em; 
 }
 
-p,h2,h3,h5,span {
+/*p,h2,h3,h5,span {
    
     height: 5vh !important;
     line-height: 5vh !important;
     font-size: 5vh !important;
     text-align: center !important;
     margin-bottom:10vh!important;
-}
+}*/
 
 
 .para{
@@ -106,6 +106,46 @@ p,h2,h3,h5,span {
     text-align: center !important;
    
 }
+
+.botaoexp{
+  position:relative;
+  background-color:blue;
+color:white;
+padding:1px 21px;
+border-radius: 10px;
+}
+.botaoexp::after{
+  content:"Olá";
+  position:absolute;
+  background-color:white;
+  color:black;
+  width:0;
+ height:0;
+ 
+  border-radius:50%;
+  bottom: 10px;
+  left: 10px;
+  right: 0;
+  top: 100%;
+  display:none;
+  transition:1.3s;
+  }
+  .botaoexp:hover::after{
+    position:absolute;
+    
+    border-radius:10px;
+top:0;
+bottom: 1px;
+  left: 0;
+  right: 0;
+ width:110%;
+ height:110%;
+display:block;
+  }
+
+
+
+
     </style>
 
 
@@ -116,7 +156,7 @@ p,h2,h3,h5,span {
   <body>
     
 
-    <a href="https://webdevcampos.github.io/inicio/projeto_Ultra_Inicio.html" ><div class="w3-right"><span><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+   <a href="https://webdevcampos.github.io/inicio/projeto_Ultra_Inicio.html" ><div class="w3-right"><span><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
   <g id="close" transform="translate(-256 -375)">
     <g id="Ellipse_49" data-name="Ellipse 49" transform="translate(260 379)" stroke="#fff" stroke-width="4">
       <circle cx="17" cy="17" r="17" stroke="none"/>
@@ -140,7 +180,15 @@ p,h2,h3,h5,span {
 
 
 
-    
+
+
+
+<!--<button class="botaoexp">
+
+<a>Olá</a>
+
+</button>-->
+
     <!-- Provider Scripts -->
     <script src="react.responsive.js"></script>
     <script src="8.83597ed2.chunk.js"></script>
