@@ -51,8 +51,21 @@
       <link rel="stylesheet" href="main.f974d704.chunk.css"/>
 
     <style>
-      *{
-  font-family: 'Roboto Condensed', sans-serif;
+    
+    @import url(https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700&amp;display=swap);
+    @font-face{font-family:"Miso";src:url(/fonts/Miso-Light.ttf) 
+    format("truetype");
+    font-weight:300;
+    font-display:swap}
+    @font-face{font-family:"Miso";src:url(/fonts/Miso-Regular.ttf) format("truetype");
+    font-weight:400;font-display:swap}
+    @font-face{font-family:"Miso";src:url(/fonts/Miso-Bold.ttf) format("truetype");
+    font-weight:700;font-display:swap}
+    
+    *{
+      
+        box-sizing:border-box;
+  font-family: "Miso";
   }
   a{text-decoration:none;}
 a:hover{
@@ -470,7 +483,7 @@ opacity:1;
             
                 <a href="#news">News</a>
                 <a href="#contact" class="botaotopnavbranco" >JÁ SOU CLIENTE</a>
-                <a href="#contact" class="botaotopnavazul" >ASSINAR</a>
+                <a href="https://webdevcampos.github.io/inicio/atendimento.html" class="botaotopnavazul" >ASSINAR</a>
                 
                 <a class="icon"  data-toggle="modal" data-target="#myModal">
                   <i class="fa fa-bars"></i>
@@ -721,7 +734,7 @@ opacity:1;
                       
                           <div class="col w3-left">
                           <a class="botaoatendimentorapido"><i class="bi bi-whatsapp" style=" color:#2fd155;"></i>Whatsapp</a>
-                          <a class="botaoatendimentorapido"><span>ou ligar para</span></a>
+                          <a href="#"><span>ou ligar para</span></a>
                           <a class="botaoatendimentorapido"><i class="bi bi-telephone" style=" color:#bd10e0;"></i>telefone</a>
                           </div>
               
@@ -748,6 +761,8 @@ opacity:1;
   </div>
   </div>
 
+
+  
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
