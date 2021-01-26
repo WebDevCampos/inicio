@@ -433,3 +433,12 @@ opacity:1;
   .duvidas{margin:10rem 0 13rem 0;}
 }
 
+
+.quemE_topo{
+  height:100vh;
+  background-image: url(imagens/nosso-aplicativo-background.svg);
+  background-repeat: no-repeat;
+  background-position: 0 10px;
+  background-size:100%;
+  overflow: visible;
+}
