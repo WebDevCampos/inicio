@@ -42,7 +42,7 @@ a:hover{
   color:white;
 }
 
-.imagemtopo{position:fixed; top:0; left:18%; transform: translateX(-50%);  z-index:2; transition:0.4s ease;}
+.imagemtopo{position:fixed; top:0; left:22%; transform: translateX(-50%);  z-index:2; transition:0.4s ease;}
 
 .topnav {
   overflow: hidden;
@@ -87,7 +87,7 @@ a:hover{
   background-color: transparent; border:none;
 }
 @media screen and (min-width:3000px) and (max-width:1280px){
-  .imagemtopo{position:fixed; top:0; left:0;   z-index:2; transition:0.4s ease;}
+  .imagemtopo{position:fixed; top:0; left:22%;   z-index:2; transition:0.4s ease;}
   .topnav{position:fixed;  z-index:2; transition:0.4s ease; }
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -99,7 +99,7 @@ a:hover{
   .topnav a.active{background-color:transparent; color:white;}
 }
 @media screen and (min-width: 1290px) and (max-width: 1280px){
-  .imagemtopo{position:fixed; top:0; left:-20%;   z-index:2; transition:0.4s ease;}
+  .imagemtopo{position:fixed; top:0; left:10%;   z-index:2; transition:0.4s ease;}
   
   .topnav a:not(:first-child) {display: none;}
   
