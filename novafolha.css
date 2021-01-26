@@ -322,39 +322,37 @@ width:140px; width:140px; border-radius:50%;
     background-color: white;
 
   }
-  
-  
-  .gridatendimentorapido{
-    position:relative; 
-    top:20%;
-    left:15%;
-     width:70%;
-    display:grid; 
-    grid-template-columns:auto auto auto ; 
-    text-align:center;
-    
-  }
-
-
-@media screen and (max-width:1200px){
-  .gridatendimentorapido{display:block; }
-
-}
-
-
-
+ 
 .atendimentorapido{
   width:100% !important;
   
   background-image: url(imagens/atendimento.png), url(imagens/curvas_Atendimento.svg);
-  background-position: left center, 20px 420px; 
+  background-position: 10px 300px, right bottom; 
   background-repeat:no-repeat, no-repeat; 
-  background-size:auto, contain; 
+  background-size:250px 350px, contain; 
   height:150vh;
+  margin:10rem 0 10rem 0;
 
 }
 
 @media screen and (max-width:1200px){
+
+  .atendimentorapido{
+
+background-image: url(imagens/atendimento-mobile.svg);
+background-position:bottom center;
+background-repeat:no-repeat;
+background-size:contain;
+height:200vh;
+
+
+}
+
+}
+
+
+
+@media screen and (max-width:800px){
 
   .atendimentorapido{
 
@@ -424,4 +422,14 @@ opacity:1;
 }
 }
 
+
+.duvidas{
+  margin:40rem 0 13rem 0;
+
+}
+
+@media screen and (max-width:1000px){
+
+  .duvidas{margin:10rem 0 13rem 0;}
+}
 
