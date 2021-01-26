@@ -359,7 +359,7 @@ width:140px; width:140px; border-radius:50%;
   .atendimentorapido{
 
 background-image: url(imagens/atendimento-mobile.svg);
-
+background-position:bottom center;
 background-repeat:no-repeat;
 background-size:contain;
 height:200vh;
@@ -424,13 +424,10 @@ opacity:1;
 }
 }
 
-.whatzapoutel{
-  display:flex; 
-  flex-flow:row; 
-  justify-items:center; align-items:center; justify-content:center; position:relative; margin:0 auto; border:1px solid red; width:10rem;
+
+.divResolveZap{
+
+    position:absolute; 
+    bottom:-10rem;
 }
 
-@media screen and (max-width: 1200px){
-  .whatzapoutel{display:flex; flex-flow:column;}
-}
-  
