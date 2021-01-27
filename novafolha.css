@@ -329,11 +329,11 @@ width:140px; width:140px; border-radius:50%;
   width:100% !important;
   
   background-image: url(imagens/atendimento.png), url(imagens/curvas_Atendimento.svg);
-  background-position: 10px 300px, 1px 520px; 
+  background-position: left center, 1px 500px; 
   background-repeat:no-repeat, no-repeat; 
   background-size:250px 350px, contain; 
-
-  margin:10rem 0 10rem 0;
+  height:900px; overflow-y:hidden;
+  margin:5rem 0 ;
 
 }
 
@@ -342,9 +342,10 @@ width:140px; width:140px; border-radius:50%;
   .atendimentorapido{
 
 background-image: url(imagens/atendimento-mobile.svg);
-background-position:1px 480px;
+background-position:bottom;
 background-repeat:no-repeat;
 background-size:contain;
+height:1300px; overflow-y:hidden;
 
 
 
@@ -352,51 +353,6 @@ background-size:contain;
 
 }
 
-@media screen and (max-width:900px){
-
-  .atendimentorapido{
-
-background-image: url(imagens/atendimento-mobile.svg);
-background-position:1px 520px;
-background-repeat:no-repeat;
-background-size:contain;
-
-
-
-}
-
-}
-
-
-@media screen and (max-width:800px){
-
-  .atendimentorapido{
-
-background-image: url(imagens/atendimento-mobile.svg);
-background-position:1px 720px;
-background-repeat:no-repeat;
-background-size:contain;
-
-
-
-}
-
-}
-
-@media screen and (max-width:600px){
-
-  .atendimentorapido{
-
-background-image: url(imagens/atendimento-mobile.svg);
-background-position:1px 820px;
-background-repeat:no-repeat;
-background-size:contain;
-
-
-
-}
-
-}
 /*Div Saiba Mais*/
 .divescondida{
  
@@ -455,7 +411,7 @@ opacity:1;
 
 
 .duvidas{
-  margin:40rem 0 13rem 0;
+  margin:5rem 0 5rem 0;
 
 }
 
@@ -472,9 +428,40 @@ opacity:1;
 
 .quemE_topo{
   
-  background-image: url(imagens/nosso-aplicativo-background.svg);
-  background-repeat: no-repeat;
-  background-position: 0 10px;
+  background-image: url(imagens/nosso-aplicativo-background.svg), url(imagens/nosso-aplicativo-virado.svg);;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 10px, right bottom;
   background-size:100%;
-  overflow: visible;
+  height:1000px;
+  
+}
+
+.texto_quemE_topo{
+  position:relative; width:70%; line-height:150%; top:1%;left:20%;
+}
+
+.texto_quemE_base{
+  position:relative; width:70%; line-height:150%; bottom:450px; left:10%;
+}
+@media screen and (max-width:1200px){
+
+  .quemE_topo{
+  
+    background-image: url(imagens/nosso-aplicativo-background-mobile.fc17e80a.svg), url(imagens/nosso-aplicativo-background-mobile-virado.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    background-size:auto auto;
+    height:1500px;
+    
+  }
+
+
+  .texto_quemE_topo{
+    position:relative; width:70%; line-height:150%; top:11%;left:20%;
+  }
+  
+  .texto_quemE_base{
+    position:relative; width:70%; line-height:150%; bottom:450px; left:10%;
+  }
+
 }
