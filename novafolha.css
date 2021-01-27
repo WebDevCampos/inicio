@@ -11,7 +11,8 @@ a:hover{
 }
 .minharow{
   width:100%;
- 
+ margin:0;padding:0;
+ overflow-x: visible;
  
 }
 /*TOP NAV*/  
@@ -457,7 +458,7 @@ opacity:1;
     background-image: url(imagens/nosso-aplicativo-background-mobile.fc17e80a.svg), url(imagens/nosso-aplicativo-background-mobile-virado.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: left top, right bottom;
-    background-size:auto auto;
+    background-size:100%;
     height:1500px;
     
   }
