@@ -200,7 +200,7 @@ a:hover{
 .div_imagemtopo
 {background-image:url(imagens/div_topo.svg);background-repeat:no-repeat;background-position:right center;background-size:100%;height:auto;
 }
-.container_comoFunciona{margin-top:10%;}
+.container_comoFunciona{margin-top:0;}
 @media screen and (max-width:1200px){
   .div_imagemtopo{display:none;}
   .container_comoFunciona{margin-top:0;}
