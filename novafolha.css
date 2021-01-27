@@ -433,13 +433,16 @@ opacity:1;
 }
 
 
+.instagram_card{
 
+  display:grid; grid-template-columns: auto; text-align: center; align-items: center; justify-content: center; position:relative;top:10%;
+}
 
 .quemE_topo{
   
-  background-image: url(imagens/nosso-aplicativo-background.svg),  url(imagens/nosso-aplicativo-virado.svg);;
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 10px,  100% 100%;
+  background-image: url(imagens/nosso-aplicativo-background.svg);
+  background-repeat: no-repeat;
+  background-position: 0 10px;
   background-size:100%;
  height:1700px;
   margin-top:20rem;
@@ -463,14 +466,17 @@ opacity:1;
 
 
   .texto_quemE_topo{
-    position:relative; width:100%; line-height:150%; top:31%; left:0;
+    position:relative; width:70%; line-height:150%; top:11%; left:0;
   }
   
   .texto_quemE_base{
     position:relative; width:100%; line-height:150%; top:5%; left:0;
   }
 
+  .instagram_card{
 
+    top:15%;
+  }
 
   
 
@@ -487,7 +493,7 @@ opacity:1;
  
  
    .texto_quemE_topo{
-     position:relative; width:100%; line-height:150%; top:45%;
+     position:relative; width:70%; line-height:150%; top:15%; left:23%;
    }
    
    .texto_quemE_base{
@@ -495,6 +501,10 @@ opacity:1;
    }
  
 
+   .instagram_card{
+
+    top:25%;
+  }
 
   
  }
