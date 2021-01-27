@@ -342,6 +342,21 @@ width:140px; width:140px; border-radius:50%;
   .atendimentorapido{
 
 background-image: url(imagens/atendimento-mobile.svg);
+background-position:1px 480px;
+background-repeat:no-repeat;
+background-size:contain;
+
+
+
+}
+
+}
+
+@media screen and (max-width:900px){
+
+  .atendimentorapido{
+
+background-image: url(imagens/atendimento-mobile.svg);
 background-position:1px 520px;
 background-repeat:no-repeat;
 background-size:contain;
@@ -353,13 +368,27 @@ background-size:contain;
 }
 
 
-
 @media screen and (max-width:800px){
 
   .atendimentorapido{
 
 background-image: url(imagens/atendimento-mobile.svg);
-background-position:1px 520px;;
+background-position:1px 720px;
+background-repeat:no-repeat;
+background-size:contain;
+
+
+
+}
+
+}
+
+@media screen and (max-width:600px){
+
+  .atendimentorapido{
+
+background-image: url(imagens/atendimento-mobile.svg);
+background-position:1px 820px;
 background-repeat:no-repeat;
 background-size:contain;
 
@@ -431,6 +460,11 @@ opacity:1;
 }
 
 @media screen and (max-width:1000px){
+
+  .duvidas{margin:15rem 0 13rem 0;}
+}
+
+@media screen and (max-width:800px){
 
   .duvidas{margin:10rem 0 13rem 0;}
 }
