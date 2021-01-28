@@ -290,7 +290,7 @@ width:140px; width:140px; border-radius:50%;
 .divcards{ 
   
     
-     display:grid; grid-template-columns:auto auto auto auto auto; grid-gap:1%;   
+     display:grid; grid-template-columns:auto auto auto auto auto; grid-gap:1%;   align-items: space-between; justify-content: center;
      
      }  
 .cartao{
