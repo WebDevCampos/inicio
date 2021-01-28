@@ -428,7 +428,7 @@ opacity:1;
 
 @media screen and (max-width:1000px){
 
-  .duvidas{margin-top:20rem;}
+  .duvidas{margin-top:20rem; margin-bottom:30rem;}
 }
 
 @media screen and (max-width:800px){
@@ -449,7 +449,7 @@ opacity:1;
   background-position: 0 10px;
   background-size:100%;
  height:1700px;
-  margin-top:20rem;
+  margin-top:30rem;
   
 }
 
