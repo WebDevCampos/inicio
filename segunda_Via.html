@@ -77,73 +77,45 @@ input[type="number"]{font-size:larger}
   font-size:1.22em; 
 }
 
-/*p,h2,h3,h5,span {
+h4 {
    
     height: 5vh !important;
     line-height: 5vh !important;
     font-size: 5vh !important;
     text-align: center !important;
     margin-bottom:10vh!important;
-}*/
+}
 
 
 .para{
 
    
-  height: 5vh !important;
-    line-height: 5vh !important;
-    font-size: 5vh !important;
+  height: 4vh !important;
+    line-height: 4vh !important;
+    font-size: 4vh !important;
     text-align: center !important;
-    margin-bottom:10vh!important;
+    
 
 }
 
-
+input[type="number"]{
+  height: 6vh;
+    line-height: 6vh;
+    font-size: 3vh;
+  }
+    
 .iconepessoa{
-  height: 5vh !important;
-    line-height: 5vh !important;
-    font-size: 5vh !important;
-    text-align: center !important;
+  height: 10vh;
+    line-height: 10vh;
+    font-size: 5vh;
+    text-align: center;
+    
    
 }
 
-.botaoexp{
-  position:relative;
-  background-color:blue;
-color:white;
-padding:1px 21px;
-border-radius: 10px;
+.meu_input{
+   padding: 0 1rem; margin-bottom:2rem; box-shadow:rgba(0, 0, 0, 0.16) 0px 0.1875rem 0.375rem;
 }
-.botaoexp::after{
-  content:"Olá";
-  position:absolute;
-  background-color:white;
-  color:black;
-  width:0;
- height:0;
- 
-  border-radius:50%;
-  bottom: 10px;
-  left: 10px;
-  right: 0;
-  top: 100%;
-  display:none;
-  transition:1.3s;
-  }
-  .botaoexp:hover::after{
-    position:absolute;
-    
-    border-radius:10px;
-top:0;
-bottom: 1px;
-  left: 0;
-  right: 0;
- width:110%;
- height:110%;
-display:block;
-  }
-
-
   #fechabotao{
   transition:.6s;
 }
@@ -178,7 +150,12 @@ display:block;
   <div style="display:flex; flex-flow:column; align-items: center; justify-content: center; ">
     <div ><h4 id="header"style="font-size:1.375rem; text-align:center;">ACESSE A ÁREA DO <br/>CLIENTE ULTRA</h4></div>
     <div><p class="para">Digite seu CPF:</p></div>
-    <div class=" rounded-3" style="width:23rem; padding: 0 1rem; margin-bottom:2rem; box-shadow:rgba(0, 0, 0, 0.16) 0px 0.1875rem 0.375rem;"><span  ><i class="bi bi-person-lines-fill iconepessoa" style="font-size:2rem;position:relative; left:20px; padding: 0 3px;"></i></span> <input style="margin-left:22px" autocomplete="off" name="referenceNumber" required=required  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="number" ></div>
+    <div class=" rounded-3 meu_input" style="">
+      <span  >
+        <i class="bi bi-person-lines-fill iconepessoa" ></i>
+      </span> 
+      <input  autocomplete="off" name="referenceNumber" required=required  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="number"  >
+    </div>
         
     <div><a href="#" class="botaomodalazul">PRÓXIMA</a></div>
   </div>
