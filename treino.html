@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slick/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick/slick/slick.css">
+    <style>
+        .slick-prev, .slick-next{
+             z-index:1;
+             content:'';
+        }
+
+        .slick-prev:hover, .slick-next:hover{
+            background-color: transparent;
+            color: black;
+            content:'';
+        }
+
+        .slick-prev::after, .slick-next::after{
+            background-color: transparent;
+            color: black;
+        }
+
+        .slick-prev::before, .slick-next::before{
+            background-color: transparent;
+            color: black;
+        }
+       .navbar{
+        width:100%;
+        height: 3rem;
+        background-color:white;
+        border-radius:30px;
+        
+       } 
+
+       .linksnavbar{
+       
+       }
+
+    </style>
+</head>
+<body style="background-color: white; color: black;">
+    
+
+        
+    
+<div class="single-item">
+    
+     <div><img src="imagens/1 (1).jpg" alt=""></div>
+     <div><img src="imagens/rastreamento1.png" alt=""></div>
+     <div><img src="imagens/iOS-Screen-Splash.jpg" alt=""></div>
+      
+    </div>
+    
+   
+
+    <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
+    
+    <script src="slick/slick/slick/slick.min.js"></script>
+
+    <script src="slick/slick/slick/slick.js"></script>
+<script>
+  
+$(document).ready(function(){
+  $('.single-item').slick({
+        autoplay:false,
+        
+        dots:true,
+  });
+});
+
+</script>
+</body>
+</html>
