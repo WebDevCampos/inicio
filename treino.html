@@ -4,63 +4,414 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!--Slick-->
     <link rel="stylesheet" href="slick/slick/slick/slick-theme.css">
     <link rel="stylesheet" href="slick/slick/slick/slick.css">
+
+    <!--Bootstrap-->
+<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="dist/css/bootstrap">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
-        .slick-prev, .slick-next{
-             z-index:1;
-             content:'';
+*{
+    font-family:'Josefin Sans', sans-serif;
+}
+  a{
+      text-decoration:none !important;
+      text-align: center;
+      color:white !important;
+      
+  }   
+ 
+  /*Ainda dá tempo*/
+        .ainda_tempo{
+            display:grid; 
+            grid-template-columns: 30% auto; 
+            background-color:rgb(69, 139, 204); 
+            padding:1%;
+            align-items: center;
+            justify-content:center;
+            text-align: center;
         }
 
-        .slick-prev:hover, .slick-next:hover{
-            background-color: transparent;
-            color: black;
-            content:'';
+        .ainda_tempo_palavras{
+            padding:1%;
+            line-height:65px;
+           
         }
 
-        .slick-prev::after, .slick-next::after{
-            background-color: transparent;
-            color: black;
+        .imagem_topo{
+            height: fit-content;
         }
-
-        .slick-prev::before, .slick-next::before{
-            background-color: transparent;
-            color: black;
+@media screen and (max-width:1200px){
+    .ainda_tempo{
+            display:grid; 
+            grid-template-columns: auto ; 
+            background-color:rgb(69, 139, 204); 
+            padding:1%;
         }
-       .navbar{
-        width:100%;
-        height: 3rem;
-        background-color:white;
-        border-radius:30px;
-        
-       } 
+        .ainda_tempo_palavras{margin:0;}
+        .ainda_tempo_palavras p{
+          display:inline-block;
+          
+    
+        }
+        .imagem_topo{
+            height:auto;
+        }
+}
+  
+/*Ainda dá tempo*/
 
-       .linksnavbar{
-       
-       }
+  
 
+/*compromisso */
+.compromisso{
+    display:grid; 
+    grid-template-columns: 10% auto; 
+    align-items:end; 
+    justify-content:center;
+}
+@media screen and (max-width:1200px){
+    .compromisso{
+        display:block;
+        text-align: center;
+    }
+}
     </style>
 </head>
 <body style="background-color: white; color: black;">
+ <!--Navbar-->   
+
+ <nav class="navbar navbar-default" style="  background-color:rgb(69, 139, 204); " >
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          
+          <li><a href="">projeto</a></li>
+          <li><a href="#">respiradores</a></li>
+          <li><a href="#">sistema</a></li>
+          <li><a href="#">contato</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <form class="navbar-form navbar-left" action="/action_page.php">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </ul>
+      </div>
+    </div>
+  </nav>
     
 
+
+
+<!--Div Ainda dá tempo-->
+<div class="ainda_tempo" >
+
+    <div class="ainda_tempo_palavras" style="border:1px solid red;"> 
+        <p style=" font-size: 4vw; font-weight: bolder; color:white;">ainda <span style=" font-weight:lighter; font-size:3.5vw; color:rgb(50, 194, 134);">DÁ </span>
         
-    
-<div class="single-item">
-    
-     <div><img src="imagens/1 (1).jpg" alt=""></div>
-     <div><img src="imagens/rastreamento1.png" alt=""></div>
-     <div><img src="imagens/iOS-Screen-Splash.jpg" alt=""></div>
+        <span style=" font-size:6vw; color:rgb(50, 194, 134)">tempo </span>
+        <sapn style=" font-size:4vw; color:white;">vamos continuar</span> 
       
+        <span style=" font-size:4vw; color:rgb(50, 194, 134);">salvando</span>
+        <span style=" font-size:8vw; color:white;">vidas</span>
+        </p>
+    </div>
+
+   <div>  <img src="imagens/mulher_repirador.png" class="imagem_topo" > </div>
+    
+      
+
+
+
+</div>
+        
+
+<!--Div Ainda dá tempo-->
+
+<div class="compromisso" style="padding:1%;">
+    <div><img src="imagens/respirador.svg" alt=""></div>
+    <div><h1>Um compromisso com a vida</h1></div>
+</div>
+
+<div class="compromisso_texto" style="padding: 1%;">
+    <p style="font-size: large;">Nascido em Março de 2000, o businessbusiness<img src="imagens/respirador.svg" width="50" height="50">
+        surgiu da inquietação dos empresários sócios(as) EMPRESA 
+        que se viram  na missão de oferecer uma solução rápida, 
+        acesssível e de excelência para a clamitosa situação gerada pela COVID-19.
+        Aplicando sua expertise de mais de quarenta anos em tecnologia de ponta 
+        para o setor de transporte, aliada ao apoio da FIEMG e de diversas empresas e 
+        voluntários, foi possível viabilazr o projeto de um ventilaor pulmonar próprio, o VI-C19. 
+        O equipamento que salva vidas foi construído em 60 dias, e foi aprovado em 100% dos requisitos
+        de homolopgação ANVISA. Em 2020, o PRJETO INSPIRAR, fez a diferença durante a primeira onda 
+        da COVID, muitos leitos foram estruturados, slavando muitas vidas. 
+    </p>
+    
+</div>
+
+<div style="display:grid; grid-template-columns: auto; text-align: center;">
+   
+<div>
+    <h1>AGORA É HORA DE FAZER MAIS!<BR/>PODEMOS SALVAR MAIS VIDAS!</h1>
+</div>
+
+<div style="display:grid; grid-template-columns: auto;  justify-content: center; align-items:center; position:relative; top:41%;">
+    <span style="background-color:rgb(69,139,204); border-radius:30px; font-size:30px; padding:3% 30px; color:white; font-weight: bolder;">QUERO DOAR</span>
+</div>
+
+<div style="background-color: rgb(50, 194, 134); padding:5%;">
+    
+
+    <div class="text-center" style="display:grid; grid-template-columns:auto auto auto; justify-content: space-evenly; align-items:baseline; grid-gap:15%">
+            <div>
+                <h1 style="color:white;">1.617</h1>
+                <p style="color:rgb(69,139,204)">RESPIRADORES<br/> DOADOS</p>
+                <img src="imagens/respirador.svg" alt="Respiradores Doados svg" width="160" height="160">
+            </div>
+
+            <div>
+                <h1 style="color:white;">328</h1>
+                <p style="color:rgb(69,139,204)">UNIDADES<br/> BENEFICIADAS</p>
+                <img src="imagens/unidades_.svg" alt="Unidades Beneficiadas svg">
+            </div>
+
+
+            <div>
+                <h1 style="color:white;">+25.000</h1>
+                <p style="color:rgb(69,139,204)">VIDAS<br/> SALVAS</p>
+                <img src="imagens/vidas_salvas.svg" alt="Vidas Salvas svg">
+            </div>
+
+    </div>
+</div>
+</div>
+
+
+<div style="display: grid; grid-template-columns:auto auto; align-items:center; justify-content: space-around; padding:2%; background-color:lightgrey;margin:2% 0;">
+
+<div>
+    <img src="imagens/unidades_.PNG">
+</div>
+
+
+<div>
+    <img src="imagens/unidades_.PNG">
+</div>
+
+
+</div>
+
+
+<div style="background-image:url(imagens/respiradores.jpeg); background-repeat:no-repeat; background-size:100%;padding:5%; box-shadow: inset 0 0 0 1000px rgba(14, 25, 85, 0.719);">
+
+    <div style="display: grid; grid-template-columns: auto auto; align-items:center; justify-content: space-around;">
+        <iframe width="420" height="315"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+        <div>
+            <ul style="font-size:3vw; line-height:70px;">
+                <li style="color:white">Mais leitos equipados</li>
+     
+                <li  style="color:white">Mais equipamentos doados</li>
+     
+                <li  style="color:white">Mais vidas sendo salvas!</li>
+     
+                <li  style="list-style-type: none;" ><a href="#" style="color: rgb(69,139,204); background-color:white; padding:3% 30px; border-radius:30px;">QUERO  DOAR</a></li>
+            </ul>
+        </div>
+    
     </div>
     
-   
+  
+    </div>
+</div>
 
+<div style="display: grid; grid-template-columns: auto;">
+    <h1>Conheça o VI-C19</h1>
+    <h3>O equipamento que salva vidas</h3>
+    
+    </div>
+<div style="background-image:url(imagens/Arquivo_Comprimido/LP_v1-_06.png); background-repeat:no-repeat; background-position: right bottom; background-size:contain;margin: 2%;">
+  
+
+        <div>
+            <h4>Ventilador Pulmonar Inteligente</h4>
+        </div>   
+
+        <div>
+
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div style="display:grid; grid-template-columns:auto;">
+        <h2>Disponível também para locação</h2>
+        <a href="#">0800-0808-8008</a>
+        
+        </div>
+
+</div>
+
+<div style="background-color:rgb(69,139,204); padding:5%;">
+    <div>
+        <h1>Certificação, qualidade e segurança</h1>
+         <h4>Nosso equipamento é registrado pela ANVISApara fabricação de equipamentos e dispositivos médicos Classe III, garantindo os melhores padrões de qualidade e segurança</h4>
+    </div>
+    
+
+    <div style="display: grid; grid-template-columns:auto; align-items:center; justify-content:center;">
+       
+           <p>Registro ANVISA: 82009460001</p> 
+            <p>Classe: 82009460001</p>
+            <p>Autorização: 82009460001</p>
+            <p>Nº do processo: 82009460001</p>
+        
+    </div>
+</div>
+
+
+<div>
+    <h1 class="text-center">Diferenciais do equipamento</h1>
+    <hr/>
+
+    <div style="display:grid; grid-template-columns: auto auto auto; align-items:baseline; justify-content:center;  text-align:center;">
+        <div class="text-center" >
+            <img src="imagens/Arquivo_Comprimido/LP_v1-_12.png" alt="">
+            <p >Tecnologia que permite a exaustão do ar expirado através de uma central de exaustão (USEAR), reduzindo o risco de contaminação do ambiente;</p>
+        </div>
+
+        <div >
+            <img src="imagens/Arquivo_Comprimido/LP_13.png" alt="">
+            <p>Trabalha com redes de alta e baixa pressão, possibilitando sua fácil implantação;</p>
+        </div>
+        <div>
+            <img src="imagens/Arquivo_Comprimido/LP_v1-_09.png" alt="">
+            <p>Plataforma concebida para garantir a atualização e evolução do equipamento através da implantação de novos módulos ventilatórios e novas funcionalidades;</p>
+        </div>
+        <div>
+            <img src="imagens/Arquivo_Comprimido/LP_v1-_20.png" alt="">
+            <p>Metodologia completa de implantação, treinamento e suporte;</p>
+        </div>
+        <div>
+            <img src="imagens/Arquivo_Comprimido/LP_v1-_26.png" alt="">
+            <p>Monitoramento remoto local da operação pela equipe médica, permitindo ações mais rápidas junto ao paciente atrvés do Centro de Controle de Monitoramento - CCM</p>
+        </div>
+        <div>
+            <img src="imagens/Arquivo_Comprimido/LP_v1-_23.png" alt="">
+            <p>Monitoramento técnico remoto para a detecção precoce de instabilidades operacionais através do Centro de Controle Tecnológico - CCT</p>
+        </div>
+
+
+
+    
+    
+    </div>
+
+    <div style="display:grid; grid-template-columns:auto; align-items: center; justify-content: center;">
+        
+        <a href="#" style="font-size:30px; color: white; background-color:rgb(69,139,204); padding:3% 30px; border-radius:30px;" >Estou interesado</a>
+        
+        </div>
+</div>
+
+
+<div>
+
+<div style="display:grid; grid-template-columns:auto; align-items:center; justify-content:center;" >
+        <div class="text-center">
+         <h1>Monitoramento dos ventiladores pulmonares VI-C19</h1>
+        
+        <p>Desenvolvido com tecnologia totalmente inovadora, os ventiladores pulmonares VI-C19podem ter seu funcionamento
+             monitorado remoto em tempo real, posibilitando maior eficiência na sua operação
+            </p>
+        
+        </div>
+</div>        
+   <div style="display:grid; grid-template-columns:auto auto auto; align-items:baseline; justify-content:center;">
+
+
+
+    <div>
+        <img src="imagens/Arquivo_Comprimido/LP_v1-_32.png" alt="">
+        <p>1º nível</p>
+        <p>Controle individual dos respiradores nos leitos através de uma tela touchscreen de 10'</p>
+    </div>
+
+    <div>
+        <img src="imagens/Arquivo_Comprimido/LP_v1-_35.png" alt="">
+        <p>2º nível</p>
+        <p>Através das telas instaladas no CCM - Centro de Controle e Monitoramento - é possível fazer monitoramento de vários equipamentos por um único intensivista</p>
+    </div>
+
+    <div>
+        <img src="imagens/Arquivo_Comprimido/LP_v1-_37.png" alt="">
+        <p>3º nível</p>
+        <p>No CCT - Centro de Controle de Tecnologia - será feito o monitoramento à distância do funcionamento dos equipamentos possibilitando ações preventivas no caso da detecção de instabilidades em seu funcionamento</p>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+<div style="display:grid; grid-template-columns: auto; align-items: center; justify-content: center;" class="text-center">
+
+    <h1>Entre em contato com a gente</h1>
+    <hr>
+    <form class="form">
+        <input type="text" placeholder="Nome"><br/>
+        <input type="email" placeholder="E-mail"><br/>
+        <textarea>
+
+
+
+        </textarea><br/>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+    
+   
+    <script src="dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
     
-    <script src="slick/slick/slick/slick.min.js"></script>
-
-    <script src="slick/slick/slick/slick.js"></script>
+    
 <script>
   
 $(document).ready(function(){
@@ -70,7 +421,14 @@ $(document).ready(function(){
         dots:true,
   });
 });
-
+function minhaFuncao() {
+  var x = document.getElementById("minhaTopNavbar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 </script>
 </body>
 </html>
