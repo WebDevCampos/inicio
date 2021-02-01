@@ -91,7 +91,7 @@
     grid-template-columns: 10% auto; 
     align-items:baseline; 
    
-    justify-content:space-evenly;
+    justify-content:center;
 }
 
 .compromisso_texto{
