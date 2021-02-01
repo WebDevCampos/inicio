@@ -13,7 +13,7 @@
   /*Ainda dá tempo*/
         .ainda_tempo{
             display:grid; 
-            grid-template-columns: 30% auto; 
+            grid-template-columns: 30% 70%; 
             background-color:
             rgb(25, 93, 156); 
             padding:1%;
