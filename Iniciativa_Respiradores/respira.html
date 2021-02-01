@@ -117,12 +117,49 @@ rgb(25, 93, 156);
 
 }
 
+@media screen and (max-width: 600px){
+    .equipa_salva{
+    background-image:url(Arquivo_Comprimido/LP_v1-_06.png);  background-repeat:no-repeat;  background-position: 100% 200px;
+
+ background-size:200px 550px;  margin: 5% auto; 
+ height:700px;
+ 
+}
+}
 
 
+
+
+.ventiladorInt{
+    color:rgb(25, 93, 156); text-align:left;
+ 
+}
+
+
+@media screen and (max-width:600px){
+    .ventiladorInt{
+    color:rgb(25, 93, 156); text-align:left;
+    width:100px;
+}
+}
 .ul_lista_VIC{
     width: 70%; overflow:scroll;
 }
 
+@media screen and (max-width:1200px) {
+    .ul_lista_VIC{
+    height:200px; width: 60%; overflow:scroll;
+}
+
+}
+
+
+@media screen and (max-width:900px) {
+    .ul_lista_VIC{
+    height:200px; width: 50%; overflow:scroll;
+}
+
+}
 
 @media screen and (max-width:600px) {
     .ul_lista_VIC{
@@ -219,7 +256,7 @@ rgb(25, 93, 156);">
     <span style="background-color:rgb(25, 93, 156); border-radius:30px; font-size:30px; padding:3% 30px; color:white; font-weight: bolder;">QUERO DOAR</span>
 </div>
 
-<div style="background-color: rgb(50, 194, 134); padding:5%;">
+<div style="background-color: rgb(50, 194, 134); padding:1%;">
     
 
     <div class="dados">
@@ -269,15 +306,19 @@ rgb(25, 93, 156);">
                 src="https://www.youtube.com/embed/tgbNymZ7vqY">
         </iframe>
         <div>
-            <ul class="lista_respira" >
+            <ul class="lista_respira"  >
                 <li style="color:white">Mais leitos equipados</li>
      
                 <li  style="color:white">Mais equipamentos doados</li>
      
                 <li  style="color:white">Mais vidas sendo salvas!</li>
-     
-               <a href="#" style="color: rgb(69,139,204)!important; background-color:white; padding:3% 30px; border-radius:30px;">QUERO  DOAR</a>
+
+                <a href="#" class="botao_Lista_Respira">QUERO  DOAR</a>
             </ul>
+
+
+               
+           
         </div>
     
     </div>
@@ -291,12 +332,12 @@ rgb(25, 93, 156);">
     <div style="display:grid; grid-template-columns: auto; align-items:center; justify-content: center; ">
     
         <div style="display:grid; grid-template-columns: auto; align-items:center; justify-content: center;">
-            <h1 style="color:rgb(25, 93, 156); text-align:center; font-size:60px;">Conheça o VI-C19</h1>
-            <h2 style="color: rgb(138, 229, 143);">O equipamento que salva vidas</h2>
+            <h1 style="color:rgb(25, 93, 156); text-align:center; font-size:60px;">Conheça o<br/> VI-C19</h1>
+            <h2 style="color: rgb(50, 194, 134); text-align:left;">O equipamento que salva vidas</h2>
             </div>
             <div>
-                <h2 style="color:rgb(25, 93, 156);">Ventilador Pulmonar Inteligente</h2>
-                <h3 style="color:rgb(25, 93, 156);">Principais Recursos:</h3>
+                <h2 class="ventiladorInt" >Ventilador Pulmonar Inteligente</h2>
+                <h3 style="color:rgb(25, 93, 156); text-align:left;">Principais Recursos:</h3>
                 <ul class="ul_lista_VIC" style="text-align:left;">
 
                     <li>Três módulos de operação:PCV, VCV, e PSV para uso pediátrico e adulto;</li>
@@ -310,7 +351,7 @@ rgb(25, 93, 156);">
                     <li>Gabinete de fácil transporte e manuseio;</li>
                     <li>Tecnologia exclusiva para trabalhar com ar em alta e baixa pressão;</li>
                     <li>Sistema de exaustão do ar expirado pelo paciente;</li>
-                    <li>Plataforma tecnológica que permite a atualização e evolução do equipamento com a implantação de novos módulos ventilatórios e novas funcionalidades;</li>
+                    <li>Plataforma tecnológica que permite a atualização e evolução do equipamento com a implantação de<br/> novos módulos ventilatórios e novas funcionalidades;</li>
                 </ul>
 
                 <div>
@@ -332,7 +373,7 @@ rgb(25, 93, 156);">
 <div style="background-color:rgb(25, 93, 156);  padding:5%; margin:0; ">
     <div>
         <h1 style="text-transform:uppercase; color:white; text-align: center;">Certificação, qualidade e segurança</h1>
-         <h4 style="color:white;">Nosso equipamento é registrado pela ANVISApara fabricação de equipamentos e dispositivos médicos Classe III, garantindo os melhores padrões de qualidade e segurança.</h4>
+         <h4 style="color:white; text-align:center;">Nosso equipamento é registrado pela ANVISApara fabricação de equipamentos e dispositivos médicos Classe III, garantindo os melhores padrões de qualidade e segurança.</h4>
     </div>
     
 
@@ -348,26 +389,26 @@ rgb(25, 93, 156);">
 
 
 <div>
-    <h1 id="sistema" class="text-center" style="color:rgb(25, 93, 156); ">Diferenciais do equipamento</h1>
-    <hr style="width:60%; border: 1px solid rgb(138, 229, 143)"/>
+    <h1 id="sistema" class="text-center" style="color:rgb(25, 93, 156); ">Diferenciais do Equipamento:</h1>
+    <hr style="width:60%; border: 1px solid rgb(50, 194, 134);"/>
 
     <div class="diferen">
         <div class="text-center" >
             <img src="Arquivo_Comprimido/LP_v1-_12.png" alt="">
-            <p >Tecnologia que permite a exaustão do ar expirado através de uma central de exaustão (USEAR), reduzindo o risco de contaminação do ambiente;</p>
+            <p style="width:80%; margin: 0 auto;">Tecnologia que permite a exaustão do ar expirado através de uma central de exaustão (USEAR), reduzindo o risco de contaminação do ambiente;</p>
         </div>
 
         <div >
             <img src="Arquivo_Comprimido/LP_13.png" alt="">
-            <p>Trabalha com redes de alta e baixa pressão, possibilitando sua fácil implantação;</p>
+            <p style="width:80%; margin: 0 auto;">Trabalha com redes de alta e baixa pressão, possibilitando sua fácil implantação;</p>
         </div>
         <div>
             <img src="Arquivo_Comprimido/LP_v1-_09.png" alt="">
-            <p>Plataforma concebida para garantir a atualização e evolução do equipamento através da implantação de novos módulos ventilatórios e novas funcionalidades;</p>
+            <p style="width:80%; margin: 0 auto;">Plataforma concebida para garantir a atualização e evolução doequipamento através da implantação de novos módulos ventilatórios e novas funcionalidades;</p>
         </div>
         <div>
             <img src="Arquivo_Comprimido/LP_v1-_20.png" alt="">
-            <p>Metodologia completa de implantação, treinamento e suporte;</p>
+            <p style="width:80%; margin: 0 auto;">Metodologia completa de implantação, treinamento e suporte;</p>
         </div>
         <div>
             <img src="Arquivo_Comprimido/LP_v1-_26.png" alt="">
@@ -375,7 +416,7 @@ rgb(25, 93, 156);">
         </div>
         <div>
             <img src="Arquivo_Comprimido/LP_v1-_23.png" alt="">
-            <p>Monitoramento técnico remoto para a detecção precoce de instabilidades operacionais através do Centro de Controle Tecnológico - CCT</p>
+            <p style="width:80%; margin: 0 auto;">Monitoramento técnico remoto para a detecção precoce de instabilidades operacionais através do Centro de Controle Tecnológico - CCT</p>
         </div>
 
 
@@ -448,7 +489,7 @@ rgb(25, 93, 156);">
         </textarea><br/>
         <button type="submit" class="botao_form">Enviar</button>
     </form>
-</div>-->
+</div>
 
     
    

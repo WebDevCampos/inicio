@@ -206,10 +206,12 @@ font-size:40px;
 }
 
 .lista_respira{
-    font-size:3vw; line-height:70px;
+    font-size: 4vw; text-align:left; display: grid; grid-template-columns:auto; align-items:center; justify-content: center;margin:1%;
 }
 
-
+.botao_Lista_respira{
+    color: rgb(25, 93, 156)!important; background-color:white; padding:5px 10px; border-radius:30px; font-size:20px;
+}
 @media screen and (max-width:900px){
     .respiradores{
         display:block;
