@@ -25,8 +25,9 @@
 /*Navbar*/
 .navbar{
 background-color:
-rgb(69, 139, 204); 
+rgb(25, 93, 156); 
 border: none !important;
+margin:0;
 }
 
 .navbar a{color: white!important;}
@@ -34,7 +35,7 @@ border: none !important;
 .navbar a:hover{color:rgb(50, 194, 134)!important; border-bottom: 2px solid rgb(50, 194, 134)!important;}
 
 
-.active a{background-color:#1f5fc4!important;}
+.active a{background-color:#0a3780!important;}
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
 }  
@@ -57,6 +58,46 @@ border: none !important;
 .salvando{  font-size:9vw; color:rgb(50, 194, 134);}
 .vidas{font-size:12vw; color:white;}
 }
+
+
+.equipa_salva{
+    background-image:url(Arquivo_Comprimido/LP_v1-_06.png);  background-repeat:no-repeat;  background-position: right bottom;
+ background-size:200px 400px; width:60%; margin: 0 auto; 
+}
+
+
+@media screen and (max-width:900px){
+    .equipa_salva{
+    background-image:url(Arquivo_Comprimido/LP_v1-_06.png);  background-repeat:no-repeat;  background-position: right bottom;
+ background-size:200px 400px; width:70%; margin: 0 auto; 
+}
+}
+
+
+@media screen and (max-width:600px){
+    .equipa_salva{
+    background-image:url(Arquivo_Comprimido/LP_v1-_06.png);  background-repeat:no-repeat;  background-position: right bottom;
+ background-size:200px 400px; width:100%;  
+}
+}
+.ul_lista_VIC{
+    overflow: scroll; width: 70%;
+}
+
+
+@media screen and (max-width:900px) {
+    .ul_lista_VIC{
+    overflow: scroll; height:400px; width: 70%;
+}
+
+}
+.botao_form{
+    width:100%; 
+    background-color: rgb(50, 194, 134); 
+    border:none; 
+    color:white; 
+    font-size:3vw; 
+    margin: 0 2%;}
     </style>
 </head>
 <body style="background-color: white; color: black;">
@@ -82,7 +123,7 @@ border: none !important;
             <li><a href="#contato">contato</a></li>
          
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav ">
           <li><a href="#" style="background-color:rgb(50, 194, 134); border-radius:20px; padding:11px;margin:5px 0;">Área do Cliente <i class="glyphicon glyphicon-user"></i> <i class="glyphicon glyphicon-search"></i> </a>
           
      
@@ -128,7 +169,7 @@ border: none !important;
     <div><h1>Um compromisso com a vida</h1></div>
 </div>
 
-<div class="compromisso_texto" style="padding: 1%;">
+<div class="compromisso_texto" >
     <p style="font-size: large;">Nascido em Março de 2000, o businessbusiness<img src="Arquivo_Comprimido/respirador.svg" width="50" height="50">
         surgiu da inquietação dos empresários sócios(as) EMPRESA 
         que se viram  na missão de oferecer uma solução rápida, 
@@ -158,21 +199,21 @@ border: none !important;
 
     <div class="dados">
             <div>
-                <h1 style="color:white;">1.617</h1>
-                <p style="color:rgb(69,139,204)">RESPIRADORES<br/> DOADOS</p>
+                <h1 >1.617</h1>
+                <p >RESPIRADORES<br/> DOADOS</p>
                 <img src="Arquivo_Comprimido/respirador.svg" alt="Respiradores Doados svg" width="160" height="160">
             </div>
 
             <div>
-                <h1 style="color:white;">328</h1>
-                <p style="color:rgb(69,139,204)">UNIDADES<br/> BENEFICIADAS</p>
+                <h1 >328</h1>
+                <p >UNIDADES<br/> BENEFICIADAS</p>
                 <img src="Arquivo_Comprimido/unidades_.svg" alt="Unidades Beneficiadas svg">
             </div>
 
 
             <div>
-                <h1 style="color:white;">+25.000</h1>
-                <p style="color:rgb(69,139,204)">VIDAS<br/> SALVAS</p>
+                <h1 >+25.000</h1>
+                <p >VIDAS<br/> SALVAS</p>
                 <img src="Arquivo_Comprimido/vidas_salvas.svg" alt="Vidas Salvas svg">
             </div>
 
@@ -181,15 +222,15 @@ border: none !important;
 </div>
 
 
-<div style="display: grid; grid-template-columns:auto auto; align-items:center; justify-content: space-around; padding:2%; background-color:lightgrey;margin:2% 0;">
+<div style="display: grid; grid-template-columns:auto auto; align-items:center; justify-content: center; padding:2%; background-color:lightgrey;">
 
-<div>
-    <img src="Arquivo_Comprimido/unidades_.PNG">
+<div style="margin:2% ;">
+    <img src="Arquivo_Comprimido/unidades_.PNG"  >
 </div>
 
 
-<div>
-    <img src="Arquivo_Comprimido/unidades_.PNG">
+<div style="margin:2%; width:350%; ">
+    <img src="Arquivo_Comprimido/unidades_.PNG"  >
 </div>
 
 
@@ -220,43 +261,49 @@ border: none !important;
     </div>
 </div>
 
-<div id="respiradores" class="conheca_VIC" >
-    <h1>Conheça o VI-C19</h1>
-    <h3>O equipamento que salva vidas</h3>
+<div class="equipa_salva">
+    
+    <div style="display:grid; grid-template-columns: auto; align-items:center; justify-content: center; ">
+    
+        <div>
+            <h1 style="color:rgb(25, 93, 156); text-align:center; font-size:60px;">Conheça o VI-C19</h1>
+            <h2 style="color: rgb(138, 229, 143);">O equipamento que salva vidas</h2>
+            </div>
+            <div>
+                <h2 style="color:rgb(25, 93, 156);">Ventilador Pulmonar Inteligente</h2>
+                <h3 style="color:rgb(25, 93, 156);">Principais Recursos:</h3>
+                <ul class="ul_lista_VIC" >
+
+                    <li>Três módulos de operação:PCV, VCV, e PSV para usop pediátrico e adulto;</li>
+                    <li>Alarmes configuráveis e alertas automáticos;</li>
+                    <li>Auto teste de inicialização para garantir que tudo está funcionando corretamente;</li>
+                    <li>Configuração de dados do paciente para cálculo automático do peso predito para ajudar nas calibragens</li>
+                    <li>Histórico de eventos relacionados ao paciente, com detalhes como data e hora;</li>
+                    <li>Tela 10 polegadas touch screen com interface intuitiva;</li>
+                    <li>Trêsníveis de controle e monitoramento, sendo dois remotos;</li>
+                    <li>Menu em quatro idiomas: português, inglês, espanhol e francês;</li>
+                    <li>Gabinete de fácil transporte e manuseio;</li>
+                    <li>Tecnologia exclusiva para trabalhar com ar em alta e baixa pressão;</li>
+                    <li>Sistema de exaustão do ar expirado pelo paciente;</li>
+                    <li>Plataforma tecnológica que permite a atualização e evolução do equipamento com a implantação de novos módulos ventilatórios e novas funcionalidades;</li>
+                </ul>
+        
+                <a href="#" style="color:white !important; background-color:rgb(69,139,204); padding:3% 30px; border-radius:30px;">QUERO  DOAR</a>
+        
+            </div>
     
     </div>
-<div class="lista_conheca_VIC" >
-  
+    
+    
+   
+    
+    </div>
 
-        <div  style="padding:12px 0;">
-            <h4>Ventilador Pulmonar Inteligente</h4>
-        </div>   
 
-        <div>
 
-            <ul class="ul_lista_VIC">
-                <li>Três módulos de operação:PCV, VCV, e PSV para usop pediátrico e adulto;</li>
-                <li>Alarmes configuráveis e alertas automáticos;</li>
-                <li>Auto teste de inicialização para garantir que tudo está funcionando corretamente;</li>
-                <li>Configuração de dados do paciente para cálculo automático do peso predito para ajudar nas calibragens</li>
-                <li>Histórico de eventos relacionados ao paciente, com detalhes como data e hora;</li>
-                <li>Tela 10 polegadas touch screen com interface intuitiva;</li>
-                <li>Trêsníveis de controle e monitoramento, sendo dois remotos;</li>
-                <li>Menu em quatro idiomas: português, inglês, espanhol e francês;</li>
-                <li>Gabinete de fácil transporte e manuseio;</li>
-                <li>Tecnologia exclusiva para trabalhar com ar em alta e baixa pressão;</li>
-                <li>Sistema de exaustão do ar expirado pelo paciente;</li>
-                <li>Plataforma tecnológica que permite a atualização e evolução do equipamento com a implantação de novos módulos ventilatórios e novas funcionalidades;</li>
-            </ul>
-        </div>
 
-        <div class="locacao_VIC" >
-        <h2>Disponível também para locação</h2>
-        <a href="#" >0800-0808-8008</a>
-        
-        </div>
 
-</div>
+
 
 <div style="background-color:rgb(69,139,204); padding:5%;">
     <div>
@@ -374,7 +421,7 @@ border: none !important;
 
 
         </textarea><br/>
-        <button type="submit" style="width:100%; background-color: rgb(50, 194, 134); border:none; color:white; font-size:3vw; margin: 0 2%;">Enviar</button>
+        <button type="submit" class="botao_form">Enviar</button>
     </form>
 </div>
 
