@@ -90,13 +90,10 @@
     grid-template-columns: 10% auto; 
     align-items:baseline; 
    
-    justify-content:center;
+    justify-content:space-evenly;
 }
 
-.compromisso h1{
-    margin:0 2%;
-    
-}
+
 @media screen and (max-width:1200px){
     .compromisso{
         display:block;
