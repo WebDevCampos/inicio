@@ -49,7 +49,7 @@
     
         }
         .imagem_topo{
-            width:800px; height:auto; 
+            width:100%; height:auto; 
           
         }
 }
@@ -57,26 +57,26 @@
 
 @media screen and (max-width:900px){
     .imagem_topo{
-            width: 700px; height:300px;
+           height:300px;
         }
 } 
 
 
 @media screen and (max-width:750px){
     .imagem_topo{
-            width: 730px; height:300px;
+            height:300px;
         }
 } 
 
 @media screen and (max-width:600px){
     .imagem_topo{
-            width: 580px; height:300px;
+            height:300px;
         }
 } 
 
 @media screen and (max-width:400px){
     .imagem_topo{
-            width: 380px; height:300px;
+             height:300px;
         }
 }
   
@@ -192,7 +192,7 @@ font-size:40px;
     background-repeat:no-repeat; 
     background-size:100%;
     padding:5%; 
-    box-shadow: inset 0 0 0 1000px rgba(17, 46, 209, 0.719);
+    box-shadow: inset 0 0 0 1000px rgba(62, 88, 236, 0.685);
 }
 .respiradores{
     display: grid; 
@@ -205,12 +205,12 @@ font-size:40px;
 }
 
 .lista_respira{
-    font-size: 4vw; text-align:left; display: grid; grid-template-columns:auto; align-items:center; justify-content: center;margin:1%;
+    font-size: 30px; text-align:left; 
+    display: grid; 
+    grid-template-columns:auto; 
+    align-items:center; justify-content: center;margin:1%;
 }
 
-.botao_Lista_respira{
-    color: rgb(25, 93, 156)!important; background-color:white; padding:5px 10px; border-radius:30px; font-size:20px;
-}
 @media screen and (max-width:900px){
     .respiradores{
         display:block;
@@ -224,7 +224,7 @@ font-size:40px;
         width:320px;
         height:215px;
     }
-    .lista_respira{font-size:3vw; line-height:40px;}
+    .lista_respira{font-size:20px; line-height:40px;}
 }
 /*respiradores*/
 
