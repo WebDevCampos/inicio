@@ -11,8 +11,8 @@
 
     <!--Bootstrap-->
 <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="dist/css/bootstrap">
-
+<link rel="stylesheet" href="dist/css/bootstrap.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -27,6 +27,25 @@
       
   }   
  
+/*Navbar*/
+.navbar{
+background-color:
+rgb(69, 139, 204); 
+border: none !important;
+}
+
+.navbar a{color: white!important;}
+
+.navbar a:hover{color:rgb(50, 194, 134)!important; border-bottom: 2px solid rgb(50, 194, 134)!important;}
+
+
+.active a{background-color:#1f5fc4!important;}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}  
+/*Navbar*/
+
+
   /*Ainda dá tempo*/
         .ainda_tempo{
             display:grid; 
@@ -82,45 +101,225 @@
         text-align: center;
     }
 }
+
+/*compromisso */
+
+
+/*dados*/
+.dados{
+    display:grid; 
+    grid-template-columns:auto auto auto; 
+    justify-content: space-evenly; 
+    align-items:baseline; 
+    grid-gap:15%;
+    text-align:center
+}
+
+@media screen and (max-width:900px){
+    .dados{
+        display:block;
+        text-align: center;
+    }
+}
+
+/*dados*/
+
+
+/*respiradores*/
+
+.respiradores_sombra{
+    background-image:url(imagens/respiradores.jpeg); 
+    background-repeat:no-repeat; 
+    background-size:100%;padding:5%; 
+    box-shadow: inset 0 0 0 1000px rgba(14, 25, 85, 0.719);
+}
+.respiradores{
+    display: grid; 
+    grid-template-columns: auto auto; 
+    align-items:center; 
+    justify-content: space-around;
+}
+.some_video{
+    width:420px; height:315px;
+}
+
+.lista_respira{
+    font-size:3vw; line-height:70px;
+}
+
+
+@media screen and (max-width:900px){
+    .respiradores{
+        display:block;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .some_video{
+        width:320px;
+        height:215px;
+    }
+    .lista_respira{font-size:3vw; line-height:40px;}
+}
+/*respiradores*/
+
+
+/*conheça VIC*/
+.conheca_VIC{
+    display: grid; 
+    grid-template-columns: auto;
+}
+
+.conheca_VIC h1{
+    color:rgb(69, 139, 204);
+    text-align:center;
+}
+
+.conheca_VIC h3{
+
+    color:rgb(50, 194, 134) ;
+    text-align:center;
+}
+
+.lista_conheca_VIC{
+    background-image:url(imagens/Arquivo_Comprimido/LP_v1-_06.png); 
+    background-repeat:no-repeat; 
+    background-position: right bottom;
+     background-size:contain;
+     margin: 2%;
+    
+}
+
+.lista_conheca_VIC h4, .lista_conheca_VIC h2{
+    color:rgb(69, 139, 204);
+    text-align:center;
+}
+
+.lista_conheca_VIC ul {
+  list-style: none;
+}
+
+.lista_conheca_VIC ul li::before {
+  content: "\2022";
+  color: rgb(69, 139, 204);
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+.locacao_VIC{
+    display:grid;
+     grid-template-columns:auto; 
+     align-items: center;
+     justify-content: center;
+}
+
+.locacao_VIC a{
+    background-color: rgb(69,139,204); 
+    border-radius: 30px;
+}
+
+
+/*diferen*/
+.diferen{
+    display:grid; 
+    grid-template-columns: auto auto auto; 
+    align-items:baseline; 
+    justify-content:center;  
+    text-align:center;
+   
+}
+
+@media screen and (max-width:600px){
+    .diferen{display: grid; grid-template-columns: auto auto;  margin:10% 0;}
+}
+
+
+/*diferen*/
+
+/*monitora*/
+.monitora{
+    display:grid; 
+    grid-template-columns:auto; 
+    align-items:center; 
+    justify-content:center;
+    text-align:center;
+}
+
+.monitora h1{
+    color: rgb(69, 139, 204);
+}
+
+
+.monitora_niveis{
+    display:grid; 
+    grid-template-columns:auto auto auto; 
+    align-items:baseline; 
+    justify-content:center;
+}
+@media screen and (max-width:600px){
+   .monitora_niveis{display:grid;grid-template-columns:auto;align-items:center; justify-content:center; text-align:center;}
+}
+
+
+/*monitora*/
+
+/*formu*/
+.formu{
+    display:grid; 
+    grid-template-columns: auto; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.formu input[type="text"], .formu input[type="email"], .formu textarea{
+
+    width:100%;
+    padding:2%;
+    font-size:3vw;
+    outline:lightgrey;
+    margin:1%;
+}
+
+/*formu*/
     </style>
 </head>
 <body style="background-color: white; color: black;">
  <!--Navbar-->   
 
- <nav class="navbar navbar-default" style="  background-color:rgb(69, 139, 204); " >
+ <nav class="navbar navbar-default" id="inicio">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#minhaNavBar" >
+          <span class="icon-bar" ></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="#">WebSiteName</a>
+        <a class="navbar-brand" href="#">NomeDoSite</a>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="collapse navbar-collapse" id="minhaNavBar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          
-          <li><a href="">projeto</a></li>
-          <li><a href="#">respiradores</a></li>
-          <li><a href="#">sistema</a></li>
-          <li><a href="#">contato</a></li>
+          <li class="active"><a href="#inicio">Home</a></li>
+            
+            <li><a href="#projeto">projeto</a></li>
+            <li><a href="#respiradores">respiradores</a></li>
+            <li><a href="#sistema">sistema</a></li>
+            <li><a href="#contato">contato</a></li>
+         
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <form class="navbar-form navbar-left" action="/action_page.php">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search">
-              <div class="input-group-btn">
-                <button class="btn btn-default" type="submit">
-                  <i class="glyphicon glyphicon-search"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-        </ul>
-      </div>
-    </div>
+          <li><a href="#" style="background-color:rgb(50, 194, 134); border-radius:20px; padding:11px;margin:5px 0;">Área do Cliente <i class="glyphicon glyphicon-user"></i> <i class="glyphicon glyphicon-search"></i> </a>
+          
+     
+  
+  </li>
+   </ul>
+  
+  </div>
+  
+  </div>
   </nav>
     
 
@@ -151,7 +350,7 @@
 
 <!--Div Ainda dá tempo-->
 
-<div class="compromisso" style="padding:1%;">
+<div id="projeto" class="compromisso" style="padding:1%;">
     <div><img src="imagens/respirador.svg" alt=""></div>
     <div><h1>Um compromisso com a vida</h1></div>
 </div>
@@ -184,7 +383,7 @@
 <div style="background-color: rgb(50, 194, 134); padding:5%;">
     
 
-    <div class="text-center" style="display:grid; grid-template-columns:auto auto auto; justify-content: space-evenly; align-items:baseline; grid-gap:15%">
+    <div class="dados">
             <div>
                 <h1 style="color:white;">1.617</h1>
                 <p style="color:rgb(69,139,204)">RESPIRADORES<br/> DOADOS</p>
@@ -224,21 +423,21 @@
 </div>
 
 
-<div style="background-image:url(imagens/respiradores.jpeg); background-repeat:no-repeat; background-size:100%;padding:5%; box-shadow: inset 0 0 0 1000px rgba(14, 25, 85, 0.719);">
+<div class="respiradores_sombra" >
 
-    <div style="display: grid; grid-template-columns: auto auto; align-items:center; justify-content: space-around;">
-        <iframe width="420" height="315"
+    <div class="respiradores" >
+        <iframe class="some_video"
                 src="https://www.youtube.com/embed/tgbNymZ7vqY">
         </iframe>
         <div>
-            <ul style="font-size:3vw; line-height:70px;">
+            <ul class="lista_respira" >
                 <li style="color:white">Mais leitos equipados</li>
      
                 <li  style="color:white">Mais equipamentos doados</li>
      
                 <li  style="color:white">Mais vidas sendo salvas!</li>
      
-                <li  style="list-style-type: none;" ><a href="#" style="color: rgb(69,139,204); background-color:white; padding:3% 30px; border-radius:30px;">QUERO  DOAR</a></li>
+               <a href="#" style="color: rgb(69,139,204)!important; background-color:white; padding:3% 30px; border-radius:30px;">QUERO  DOAR</a>
             </ul>
         </div>
     
@@ -248,12 +447,12 @@
     </div>
 </div>
 
-<div style="display: grid; grid-template-columns: auto;">
+<div id="respiradores" class="conheca_VIC" >
     <h1>Conheça o VI-C19</h1>
     <h3>O equipamento que salva vidas</h3>
     
     </div>
-<div style="background-image:url(imagens/Arquivo_Comprimido/LP_v1-_06.png); background-repeat:no-repeat; background-position: right bottom; background-size:contain;margin: 2%;">
+<div class="lista_conheca_VIC" >
   
 
         <div>
@@ -262,25 +461,25 @@
 
         <div>
 
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul >
+                <li>Três módulos de operação:PCV, VCV, e PSV para usop pediátrico e adulto;</li>
+                <li>Alarmes configuráveis e alertas automáticos;</li>
+                <li>Auto teste de inicialização para garantir que tudo está funcionando corretamente;</li>
+                <li>Configuração de dados do paciente para cálculo automático do peso predito para ajudar nas calibragens</li>
+                <li>Histórico de eventos relacionados ao paciente, com detalhes como data e hora;</li>
+                <li>Tela 10 polegadas touch screen com interface intuitiva;</li>
+                <li>Trêsníveis de controle e monitoramento, sendo dois remotos;</li>
+                <li>Menu em quatro idiomas: português, inglês, espanhol e francês;</li>
+                <li>Gabinete de fácil transporte e manuseio;</li>
+                <li>Tecnologia exclusiva para trabalhar com ar em alta e baixa pressão;</li>
+                <li>Sistema de exaustão do ar expirado pelo paciente;</li>
+                <li>Plataforma tecnológica que permite a atualização e evolução do equipamento com a implantação de novos módulos ventilatórios e novas funcionalidades;</li>
             </ul>
         </div>
 
-        <div style="display:grid; grid-template-columns:auto;">
+        <div class="locacao_VIC" >
         <h2>Disponível também para locação</h2>
-        <a href="#">0800-0808-8008</a>
+        <a href="#" >0800-0808-8008</a>
         
         </div>
 
@@ -288,27 +487,27 @@
 
 <div style="background-color:rgb(69,139,204); padding:5%;">
     <div>
-        <h1>Certificação, qualidade e segurança</h1>
-         <h4>Nosso equipamento é registrado pela ANVISApara fabricação de equipamentos e dispositivos médicos Classe III, garantindo os melhores padrões de qualidade e segurança</h4>
+        <h1 style="text-transform:uppercase; color:white; text-align: center;">Certificação, qualidade e segurança</h1>
+         <h4 style="color:white;">Nosso equipamento é registrado pela ANVISApara fabricação de equipamentos e dispositivos médicos Classe III, garantindo os melhores padrões de qualidade e segurança.</h4>
     </div>
     
 
-    <div style="display: grid; grid-template-columns:auto; align-items:center; justify-content:center;">
+    <div style="display: grid; grid-template-columns:auto; align-items:center; justify-content:center; color:white">
        
-           <p>Registro ANVISA: 82009460001</p> 
-            <p>Classe: 82009460001</p>
-            <p>Autorização: 82009460001</p>
-            <p>Nº do processo: 82009460001</p>
+           <h4>Registro ANVISA: 82009460001</h4> 
+            <h4>Classe: 82009460001</h4>
+            <h4>Autorização: 82009460001</h4>
+            <h4>Nº do processo: 82009460001</h4>
         
     </div>
 </div>
 
 
 <div>
-    <h1 class="text-center">Diferenciais do equipamento</h1>
-    <hr/>
+    <h1 id="sistema" class="text-center" style="color:rgb(69,139,204);">Diferenciais do equipamento</h1>
+    <hr style="width:60%; border: 1px solid rgb(138, 229, 143)"/>
 
-    <div style="display:grid; grid-template-columns: auto auto auto; align-items:baseline; justify-content:center;  text-align:center;">
+    <div class="diferen">
         <div class="text-center" >
             <img src="imagens/Arquivo_Comprimido/LP_v1-_12.png" alt="">
             <p >Tecnologia que permite a exaustão do ar expirado através de uma central de exaustão (USEAR), reduzindo o risco de contaminação do ambiente;</p>
@@ -340,8 +539,8 @@
     
     
     </div>
-
-    <div style="display:grid; grid-template-columns:auto; align-items: center; justify-content: center;">
+</div>
+        <div style="display:grid; grid-template-columns:auto; align-items: center; justify-content: center;">
         
         <a href="#" style="font-size:30px; color: white; background-color:rgb(69,139,204); padding:3% 30px; border-radius:30px;" >Estou interesado</a>
         
@@ -351,7 +550,7 @@
 
 <div>
 
-<div style="display:grid; grid-template-columns:auto; align-items:center; justify-content:center;" >
+<div class="monitora" >
         <div class="text-center">
          <h1>Monitoramento dos ventiladores pulmonares VI-C19</h1>
         
@@ -361,7 +560,7 @@
         
         </div>
 </div>        
-   <div style="display:grid; grid-template-columns:auto auto auto; align-items:baseline; justify-content:center;">
+   <div class="monitora_niveis" >
 
 
 
@@ -390,27 +589,29 @@
 
 
 
-<div style="display:grid; grid-template-columns: auto; align-items: center; justify-content: center;" class="text-center">
+<div  id="contato" class="formu">
 
-    <h1>Entre em contato com a gente</h1>
-    <hr>
+    <h1>Entre em <span style="color:rgb(50, 194, 134);">contato</span> com a gente</h1>
+    <hr style="width:60%; border: 1px solid rgb(138, 229, 143);">
     <form class="form">
         <input type="text" placeholder="Nome"><br/>
         <input type="email" placeholder="E-mail"><br/>
-        <textarea>
+        <textarea placeholder="Mensagem">
 
 
 
         </textarea><br/>
-        <button type="submit">Enviar</button>
+        <button type="submit" style="width:100%; background-color: rgb(50, 194, 134); border:none; color:white; font-size:3vw; margin: 0 2%;">Enviar</button>
     </form>
 </div>
 
     
    
     <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
 <script>
   
