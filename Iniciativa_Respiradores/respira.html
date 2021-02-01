@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="slick/slick/slick/slick-theme.css">
     <link rel="stylesheet" href="slick/slick/slick/slick.css">
 
+
+    <link rel="stylesheet" href="respira.css"/>
+
     <!--Bootstrap-->
 <link rel="stylesheet" href="dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="dist/css/bootstrap.css">
@@ -19,18 +22,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
-*{
-    font-family:'Josefin Sans', sans-serif;
-}
-  a{
-      text-decoration:none !important;
-      text-align: center;
-      color:white !important;
-      
-  }   
-  ::-webkit-scrollbar {
-  width: 2px;
-}
 /*Navbar*/
 .navbar{
 background-color:
@@ -49,306 +40,6 @@ border: none !important;
 }  
 /*Navbar*/
 
-
-  /*Ainda dá tempo*/
-        .ainda_tempo{
-            display:grid; 
-            grid-template-columns: 30% auto; 
-            background-color:rgb(69, 139, 204); 
-            padding:1%;
-            align-items: center;
-            justify-content:center;
-            text-align: center;
-        }
-
-        .ainda_tempo_palavras{
-            padding:1%;
-            line-height:65px;
-           
-        }
-
-        .imagem_topo{
-            height: fit-content;
-            transition:.5s;
-        }
-@media screen and (max-width:1200px){
-    .ainda_tempo{
-            display:grid; 
-            grid-template-columns: auto ; 
-            background-color:rgb(69, 139, 204); 
-            padding:1%;
-            align-items: center;
-            justify-content: center;
-        }
-        .ainda_tempo_palavras{margin:0; }
-        .ainda_tempo_palavras p{
-          display:inline-block;border:1px solid green;
-          
-    
-        }
-        .imagem_topo{
-            width:800px; height:auto; border: 3px solid green;
-          
-        }
-}
-
-
-@media screen and (max-width:900px){
-    .imagem_topo{
-            width: 700px; height:300px;
-        }
-} 
-
-
-@media screen and (max-width:750px){
-    .imagem_topo{
-            width: 730px; height:300px;
-        }
-} 
-
-@media screen and (max-width:600px){
-    .imagem_topo{
-            width: 580px; height:300px;
-        }
-} 
-
-@media screen and (max-width:400px){
-    .imagem_topo{
-            width: 380px; height:300px;
-        }
-}
-  
-/*Ainda dá tempo*/
-
-  
-
-/*compromisso */
-.compromisso{
-    display:grid; 
-    grid-template-columns: 10% auto; 
-    align-items:end; 
-    justify-content:center;
-}
-@media screen and (max-width:1200px){
-    .compromisso{
-        display:block;
-        text-align: center;
-    }
-}
-
-/*compromisso */
-
-
-/*dados*/
-.dados{
-    display:grid; 
-    grid-template-columns:auto auto auto; 
-    justify-content: space-evenly; 
-    align-items:baseline; 
-    grid-gap:15%;
-    text-align:center
-}
-
-@media screen and (max-width:900px){
-    .dados{
-        display:block;
-        text-align: center;
-    }
-}
-
-/*dados*/
-
-
-/*respiradores*/
-
-.respiradores_sombra{
-    background-image:url(imagens/respiradores.jpeg); 
-    background-repeat:no-repeat; 
-    background-size:100%;padding:5%; 
-    box-shadow: inset 0 0 0 1000px rgba(14, 25, 85, 0.719);
-}
-.respiradores{
-    display: grid; 
-    grid-template-columns: auto auto; 
-    align-items:center; 
-    justify-content: space-around;
-}
-.some_video{
-    width:420px; height:315px;
-}
-
-.lista_respira{
-    font-size:3vw; line-height:70px;
-}
-
-
-@media screen and (max-width:900px){
-    .respiradores{
-        display:block;
-        text-align: center;
-    }
-    
-}
-
-@media screen and (max-width:600px){
-    .some_video{
-        width:320px;
-        height:215px;
-    }
-    .lista_respira{font-size:3vw; line-height:40px;}
-}
-/*respiradores*/
-
-
-/*conheça VIC*/
-.conheca_VIC{
-    display: grid; 
-    grid-template-columns: auto;
-}
-
-.conheca_VIC h1{
-    color:rgb(69, 139, 204);
-    text-align:center;
-}
-
-.conheca_VIC h3{
-
-    color:rgb(50, 194, 134) ;
-    text-align:center;
-}
-
-.lista_conheca_VIC{
-    background-image:url(imagens/Arquivo_Comprimido/LP_v1-_06.png); 
-    background-repeat:no-repeat; 
-    background-position: right bottom;
-     background-size:contain;
-     margin: 2%;
-     
-    
-}
-@media screen and (max-width:1200px) {
-    .ul_lista_VIC{
-        width:700px; height:200px; overflow:scroll; margin:3% 1%;
-    }
-
-    .lista_conheca_VIC{
-        box-shadow: inset 0 0 0 1000px rgba(14, 25, 85, 0.144);
-    }
-}
-
-
-@media screen and (max-width:900px) {
-    .ul_lista_VIC{
-        width:350px; height:200px; overflow:scroll;
-    }
-
-    
-}
-
-
-@media screen and (max-width:600px) {
-    .ul_lista_VIC{
-        width:250px; height:200px; overflow:scroll;
-    }
-
-   
-}
-.lista_conheca_VIC h4, .lista_conheca_VIC h2{
-    color:rgb(69, 139, 204);
-    text-align:center;
-}
-
-.lista_conheca_VIC ul {
-  list-style: none;
-}
-
-.lista_conheca_VIC ul li::before {
-  content: "\2022";
-  color: rgb(69, 139, 204);
-  font-weight: bold;
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em;
-}
-.locacao_VIC{
-    display:grid;
-     grid-template-columns:auto; 
-     align-items: center;
-     justify-content: center;
-}
-
-.locacao_VIC a{
-    background-color: rgb(69,139,204); 
-    border-radius: 30px;
-}
-
-
-/*diferen*/
-.diferen{
-    display:grid; 
-    grid-template-columns: auto auto auto; 
-    align-items:baseline; 
-    justify-content:center;  
-    text-align:center;
-   
-}
-
-@media screen and (max-width:600px){
-    .diferen{display: grid; grid-template-columns: auto auto;  margin:10% 0;}
-}
-
-
-/*diferen*/
-
-/*monitora*/
-.monitora{
-    display:grid; 
-    grid-template-columns:auto; 
-    align-items:center; 
-    justify-content:center;
-    text-align:center;
-}
-
-.monitora h1{
-    color: rgb(69, 139, 204);
-}
-
-
-.monitora_niveis{
-    display:grid; 
-    grid-template-columns:auto auto auto; 
-    align-items:baseline; 
-    justify-content:center;
-}
-@media screen and (max-width:600px){
-   .monitora_niveis{display:grid;
-    grid-template-columns:auto;
-    align-items:center; 
-    justify-content:center;
-     text-align:center;}
-}
-
-
-/*monitora*/
-
-/*formu*/
-.formu{
-    display:grid; 
-    grid-template-columns: auto; 
-    align-items: center; 
-    justify-content: center;
-}
-
-.formu input[type="text"], .formu input[type="email"], .formu textarea{
-
-    width:100%;
-    padding:2%;
-    font-size:3vw;
-    outline:lightgrey;
-    margin:1%;
-}
-
-/*formu*/
     </style>
 </head>
 <body style="background-color: white; color: black;">
@@ -404,7 +95,7 @@ border: none !important;
         </p>
     </div>
 
-   <div>  <img src="imagens/mulher_repirador.png" class="imagem_topo" > </div>
+   <div>  <img src="Arquivo_Comprimido/mulher_repirador.png" class="imagem_topo" > </div>
     
       
 
@@ -416,12 +107,12 @@ border: none !important;
 <!--Div Ainda dá tempo-->
 
 <div id="projeto" class="compromisso" style="padding:1%;">
-    <div><img src="imagens/respirador.svg" alt=""></div>
+    <div><img src="Arquivo_Comprimido/respirador.svg" alt=""></div>
     <div><h1>Um compromisso com a vida</h1></div>
 </div>
 
 <div class="compromisso_texto" style="padding: 1%;">
-    <p style="font-size: large;">Nascido em Março de 2000, o businessbusiness<img src="imagens/respirador.svg" width="50" height="50">
+    <p style="font-size: large;">Nascido em Março de 2000, o businessbusiness<img src="Arquivo_Comprimido/respirador.svg" width="50" height="50">
         surgiu da inquietação dos empresários sócios(as) EMPRESA 
         que se viram  na missão de oferecer uma solução rápida, 
         acesssível e de excelência para a clamitosa situação gerada pela COVID-19.
@@ -452,20 +143,20 @@ border: none !important;
             <div>
                 <h1 style="color:white;">1.617</h1>
                 <p style="color:rgb(69,139,204)">RESPIRADORES<br/> DOADOS</p>
-                <img src="imagens/respirador.svg" alt="Respiradores Doados svg" width="160" height="160">
+                <img src="Arquivo_Comprimido/respirador.svg" alt="Respiradores Doados svg" width="160" height="160">
             </div>
 
             <div>
                 <h1 style="color:white;">328</h1>
                 <p style="color:rgb(69,139,204)">UNIDADES<br/> BENEFICIADAS</p>
-                <img src="imagens/unidades_.svg" alt="Unidades Beneficiadas svg">
+                <img src="Arquivo_Comprimido/unidades_.svg" alt="Unidades Beneficiadas svg">
             </div>
 
 
             <div>
                 <h1 style="color:white;">+25.000</h1>
                 <p style="color:rgb(69,139,204)">VIDAS<br/> SALVAS</p>
-                <img src="imagens/vidas_salvas.svg" alt="Vidas Salvas svg">
+                <img src="Arquivo_Comprimido/vidas_salvas.svg" alt="Vidas Salvas svg">
             </div>
 
     </div>
@@ -476,12 +167,12 @@ border: none !important;
 <div style="display: grid; grid-template-columns:auto auto; align-items:center; justify-content: space-around; padding:2%; background-color:lightgrey;margin:2% 0;">
 
 <div>
-    <img src="imagens/unidades_.PNG">
+    <img src="Arquivo_Comprimido/unidades_.PNG">
 </div>
 
 
 <div>
-    <img src="imagens/unidades_.PNG">
+    <img src="Arquivo_Comprimido/unidades_.PNG">
 </div>
 
 
@@ -574,28 +265,28 @@ border: none !important;
 
     <div class="diferen">
         <div class="text-center" >
-            <img src="imagens/Arquivo_Comprimido/LP_v1-_12.png" alt="">
+            <img src="Arquivo_Comprimido/LP_v1-_12.png" alt="">
             <p >Tecnologia que permite a exaustão do ar expirado através de uma central de exaustão (USEAR), reduzindo o risco de contaminação do ambiente;</p>
         </div>
 
         <div >
-            <img src="imagens/Arquivo_Comprimido/LP_13.png" alt="">
+            <img src="Arquivo_Comprimido/LP_13.png" alt="">
             <p>Trabalha com redes de alta e baixa pressão, possibilitando sua fácil implantação;</p>
         </div>
         <div>
-            <img src="imagens/Arquivo_Comprimido/LP_v1-_09.png" alt="">
+            <img src="Arquivo_Comprimido/LP_v1-_09.png" alt="">
             <p>Plataforma concebida para garantir a atualização e evolução do equipamento através da implantação de novos módulos ventilatórios e novas funcionalidades;</p>
         </div>
         <div>
-            <img src="imagens/Arquivo_Comprimido/LP_v1-_20.png" alt="">
+            <img src="Arquivo_Comprimido/LP_v1-_20.png" alt="">
             <p>Metodologia completa de implantação, treinamento e suporte;</p>
         </div>
         <div>
-            <img src="imagens/Arquivo_Comprimido/LP_v1-_26.png" alt="">
+            <img src="Arquivo_Comprimido/LP_v1-_26.png" alt="">
             <p>Monitoramento remoto local da operação pela equipe médica, permitindo ações mais rápidas junto ao paciente atrvés do Centro de Controle de Monitoramento - CCM</p>
         </div>
         <div>
-            <img src="imagens/Arquivo_Comprimido/LP_v1-_23.png" alt="">
+            <img src="Arquivo_Comprimido/LP_v1-_23.png" alt="">
             <p>Monitoramento técnico remoto para a detecção precoce de instabilidades operacionais através do Centro de Controle Tecnológico - CCT</p>
         </div>
 
@@ -630,19 +321,19 @@ border: none !important;
 
 
     <div>
-        <img src="imagens/Arquivo_Comprimido/LP_v1-_32.png" alt="">
+        <img src="Arquivo_Comprimido/LP_v1-_32.png" alt="">
         <p>1º nível</p>
         <p>Controle individual dos respiradores nos leitos através de uma tela touchscreen de 10'</p>
     </div>
 
     <div>
-        <img src="imagens/Arquivo_Comprimido/LP_v1-_35.png" alt="">
+        <img src="Arquivo_Comprimido/LP_v1-_35.png" alt="">
         <p>2º nível</p>
         <p>Através das telas instaladas no CCM - Centro de Controle e Monitoramento - é possível fazer monitoramento de vários equipamentos por um único intensivista</p>
     </div>
 
     <div>
-        <img src="imagens/Arquivo_Comprimido/LP_v1-_37.png" alt="">
+        <img src="Arquivo_Comprimido/LP_v1-_37.png" alt="">
         <p>3º nível</p>
         <p>No CCT - Centro de Controle de Tecnologia - será feito o monitoramento à distância do funcionamento dos equipamentos possibilitando ações preventivas no caso da detecção de instabilidades em seu funcionamento</p>
     </div>
