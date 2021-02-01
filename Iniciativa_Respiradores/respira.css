@@ -216,7 +216,10 @@ font-size:40px;
         display:block;
         text-align: center;
     }
-    
+    .some_video{
+        width:420px;
+        height:315px;
+    }
 }
 
 @media screen and (max-width:600px){
