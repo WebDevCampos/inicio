@@ -88,9 +88,14 @@
 .compromisso{
     display:grid; 
     grid-template-columns: 10% auto; 
-    align-items:space-between; 
-    align-content: flex-end;
+    align-items:baseline; 
+   
     justify-content:center;
+}
+
+.compromisso h1{
+    margin:0 2%;
+    
 }
 @media screen and (max-width:1200px){
     .compromisso{
@@ -98,6 +103,7 @@
         text-align: center;
     }
 }
+
 
 /*compromisso */
 
