@@ -40,15 +40,16 @@
             padding:1%;
             align-items: center;
             justify-content: center;
+            width:100%;
         }
         .ainda_tempo_palavras{margin:0; }
         .ainda_tempo_palavras p{
-          display:inline-block;border:1px solid green;
+          display:inline-block;
           
     
         }
         .imagem_topo{
-            width:800px; height:auto; border: 3px solid green;
+            width:800px; height:auto; 
           
         }
 }
