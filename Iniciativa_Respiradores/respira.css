@@ -196,12 +196,12 @@ font-size:40px;
 }
 .respiradores{
     display: grid; 
-    grid-template-columns: 25% 75%; 
+    grid-template-columns: 35% 75%; 
     align-items:center; 
     justify-content: center;
 }
 .some_video{
-    width:520px; height:415px;
+    width:620px; height:515px;
 }
 
 .lista_respira{
