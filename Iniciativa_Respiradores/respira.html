@@ -27,6 +27,15 @@
 *{
     font-family: 'Bree Serif', serif;
 }
+.arrow-top{
+display: none;
+position: fixed;
+bottom: 5rem; 
+right:1rem;
+padding: 10px;
+background-color:#ff7b00;;
+color: white;
+}
 .topnav {
   overflow: hidden;
   background-color:
@@ -187,7 +196,7 @@ rgb(25, 93, 156); ">
 
 
 <div class="topnav" id="myTopnav" style="width:80%; left:12%; position: relative;" >
-    <a href="#home" style=" font-size: 40px; text-align:left;">NomeDoSite </a>
+    <a id="home" href="#home" style=" font-size: 40px; text-align:left;">NomeDoSite </a>
   
     <a href="#projeto">projeto</a>
     <a href="#respira">respiradores</a>
@@ -498,7 +507,7 @@ rgb(25, 93, 156); ">
 </div>
 
     
-   
+<a href="#home" class="arrow-top">Voltar ao topo </a>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
@@ -522,6 +531,17 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+
+
+$(document).scroll(function() {
+var y = $(this).scrollTop();
+if (y > 100) {
+$('.arrow-top').fadeIn();
+} else {
+ $('.arrow-top').fadeOut();
+}
+});
 
 </script>
 </body>
