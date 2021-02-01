@@ -88,10 +88,10 @@
 /*compromisso */
 .compromisso{
     display:grid; 
-    grid-template-columns: 10% auto; 
-    align-items:baseline; 
+    grid-template-columns: auto auto; 
+    align-items:end; 
    
-    justify-content:center;
+    justify-content:start;
 }
 
 .compromisso_texto{
