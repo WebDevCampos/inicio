@@ -205,7 +205,7 @@ font-size:40px;
 }
 
 .lista_respira{
-    font-size: 30px; text-align:left; 
+     text-align:left; 
     display: grid; 
     grid-template-columns:auto; 
     align-items:center; justify-content: center;margin:1%;
