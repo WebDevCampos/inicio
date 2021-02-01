@@ -196,7 +196,7 @@ font-size:40px;
 }
 .respiradores{
     display: grid; 
-    grid-template-columns: 35% 75%; 
+    grid-template-columns: 35% 65%; 
     align-items:center; 
     justify-content: center;
 }
