@@ -67,6 +67,7 @@ border: none !important;
 
         .imagem_topo{
             height: fit-content;
+            transition:.5s;
         }
 @media screen and (max-width:1200px){
     .ainda_tempo{
@@ -77,13 +78,13 @@ border: none !important;
         }
         .ainda_tempo_palavras{margin:0; }
         .ainda_tempo_palavras p{
-          display:inline-block;border:1px solid red;
+          display:inline-block;border:1px solid green;
           
     
         }
         .imagem_topo{
-            width: auto; height:auto;
-            transition:.5s;
+            width: 1100px; height:auto;
+          
         }
 }
 
@@ -91,6 +92,13 @@ border: none !important;
 @media screen and (max-width:900px){
     .imagem_topo{
             width: 880px; height:300px;
+        }
+} 
+
+
+@media screen and (max-width:750px){
+    .imagem_topo{
+            width: 730px; height:300px;
         }
 } 
 
@@ -282,7 +290,11 @@ border: none !important;
     justify-content:center;
 }
 @media screen and (max-width:600px){
-   .monitora_niveis{display:grid;grid-template-columns:auto;align-items:center; justify-content:center; text-align:center;}
+   .monitora_niveis{display:grid;
+    grid-template-columns:auto;
+    align-items:center; 
+    justify-content:center;
+     text-align:center;}
 }
 
 
