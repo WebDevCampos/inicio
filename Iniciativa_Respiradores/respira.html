@@ -59,7 +59,8 @@ rgb(25, 93, 156);
 @media screen and (max-width: 1200px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: right;
+   float:right;
+  
     display: block;
     background-color:white;
    
@@ -70,8 +71,8 @@ rgb(25, 93, 156);
   .topnav.responsive {position: relative; }
   .topnav.responsive .icon {
     position: absolute;
-    right: -10px;
-    top: 10px;
+    right: 0;
+    top: 0;
    
     
   }
@@ -182,11 +183,11 @@ rgb(25, 93, 156);
 <body style="background-color: white; color: black;">
  <!--Navbar-->   
 <div style="background-color:
-rgb(25, 93, 156); display:flex; flex-flow: row ; align-items:center; justify-content:center;">
+rgb(25, 93, 156); ">
 
-<a href="#home" style="font-size: 40px; text-align:left;">NomeDoSite </a>
-<div class="topnav" id="myTopnav" >
-    <a href="#home" >NomeDoSite </a>
+
+<div class="topnav" id="myTopnav" style="width:90%; margin: 0 10%;" >
+    <a href="#home" style=" font-size: 40px; text-align:left;">NomeDoSite </a>
   
     <a href="#projeto">projeto</a>
     <a href="#respira">respiradores</a>
