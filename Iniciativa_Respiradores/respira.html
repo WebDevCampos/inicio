@@ -119,7 +119,34 @@ rgb(25, 93, 156);
 .salvando{  font-size:9vw; color:rgb(50, 194, 134);}
 .vidas{font-size:12vw; color:white;}
 }
+.conheca{
+    background-image:url(Arquivo_Comprimido/LP_v1-_06.png); 
+    background-repeat: no-repeat; 
+    background-position: 900px 100px;
+     background-size: 300px 700px;
+     height: 700px; 
+}
 
+.conhe_agaum{
+    color:rgb(25, 93, 156); text-align:center; font-size:60px; font-weight:bolder
+}
+@media screen and (max-width:1280px){
+    .conheca {background-position: right bottom;
+     background-size: contain;}
+}
+
+@media screen and (max-width:780px){
+    .conheca h3 {width:200px;}
+    .conheca h2 {width:200px;}
+    .conhe_agaum {text-align: left;}
+    .conheca {margin: 15rem 0;}
+}
+
+
+.conheca li{font-size: 20px;}
+@media screen and (max-width:900px){
+
+}
 .lista_equipa{margin-left: 70px;}
 .equipa_salva{
     background-image:url(Arquivo_Comprimido/LP_v1-_06.png);  
@@ -172,58 +199,7 @@ rgb(25, 93, 156);
     margin-left:0;
 }
 
-.recursos_equipa{
-    margin-left:0;
-}
-}
-@media screen and (max-width:600px){
-    .ventiladorInt{
-    color:rgb(25, 93, 156); text-align:left;
-    width:100px;
-    margin-left:0;
-}
 
-.recursos_equipa{
-    margin-left:0;
-}
-}
-.ul_lista_VIC{
-    width:100%; overflow:scroll; 
-    text-align:left; margin-left: 150px;
-    height:150px;
-}
-
-
-
-@media screen and (max-width:1200px) {
-    .ul_lista_VIC{
-    height:200px; width: 60%; overflow:scroll;
-    margin-left:0;
-}
-
-}
-
-
-@media screen and (max-width:900px) {
-    .ul_lista_VIC{
-    height:200px; width: 50%; overflow:scroll;
-    margin-left:0;
-}
-
-}
-
-@media screen and (max-width:600px) {
-    .ul_lista_VIC{
-    height:200px; width: 50%; overflow:scroll;
-    margin-left:0;
-}
-
-}
-
-
-.ul_lista_VIC li{
-    font-size: 20px;
-}
 .monitora_fotos{
     display:grid; 
    grid-template-columns:auto auto auto; 
@@ -239,14 +215,27 @@ rgb(25, 93, 156);
     box-shadow: inset 0 0 0 1000px rgba(169, 170, 175, 0.349);
     text-align:center;
 }
-
+}
 }
 
-.ul_lista_VIC ul {
+.lista_conheca {
   list-style: none;
 }
 
-.ul_lista_VIC ul li::before {
+
+.lista_conheca {
+  height:200px; overflow: scroll;
+}
+@media screen and (max-width:1280px){
+
+    .lista_conheca { width: 70%; height:200px; overflow:scroll; }
+}
+
+@media screen and (max-width:980px){
+
+.lista_conheca { width: 60%; height:200px; overflow:scroll;}
+}
+.lista_conheca  li::before {
   content: "\2022";
   color: rgb(69, 139, 204);
   font-weight: bold;
@@ -265,7 +254,7 @@ rgb(25, 93, 156);
 </head>
 <body style="background-color: white; color: black;">
  <!--Navbar-->   
-<div style="background-color:
+<!--<div style="background-color:
 rgb(25, 93, 156); width:100%;">
 
 
@@ -283,7 +272,7 @@ rgb(25, 93, 156); width:100%;">
       <i class="fa fa-bars" style=" color:black;"></i>
     </a>
   </div>
-</div>
+</div>-->
 
 
 
@@ -422,21 +411,22 @@ rgb(25, 93, 156); width:100%;">
     
 </div>
 
-<div class="equipa_salva" style="height:700px; ">
+<div  >
   
     
-        <div style="display:grid; grid-template-columns: auto; align-items:center; justify-content: center;">
-            <h1 style="color:rgb(25, 93, 156); text-align:center; font-size:60px; font-weight:bolder">Conheça o<br/> VI-C19</h1>
+        <div class="conheca" >
+            <div style="margin-left: 10%;">
+            <h1 class="conhe_agaum"style="">Conheça o<br/> VI-C19</h1>
             <h2 style="color: rgb(50, 194, 134); text-align:left;">O equipamento que salva vidas</h2>
-            </div>
-            <div class="lista_equipa" >
+           
+          
                 
-                <h2 class="ventiladorInt" >Ventilador Pulmonar Inteligente</h2>
-                <h3 class="recursos_equipa">Principais Recursos:</h3>
+                <h2 class="" style="color:rgb(69, 139, 204);" >Ventilador Pulmonar Inteligente</h2>
+                <h3 class="" style="color:rgb(50, 194, 134);">Principais Recursos:</h3>
 
                 
                 
-                <ul class="ul_lista_VIC" >
+                <ul class="lista_conheca" >
 
                     <li>Três módulos de operação:PCV, VCV, e PSV para uso pediátrico e adulto;</li>
                     <li>Alarmes configuráveis e alertas automáticos;</li>
@@ -451,23 +441,25 @@ rgb(25, 93, 156); width:100%;">
                     <li>Sistema de exaustão do ar expirado pelo paciente;</li>
                     <li>Plataforma tecnológica que permite a atualização e evolução do equipamento <br/>com a implantação de novos módulos ventilatórios e novas funcionalidades;</li>
                 </ul>
-                </div> 
-
-               
+            </div>
                 <div style="display: grid; grid-template-columns: auto; align-items: center; justify-content: center;">
                     <p style="margin-bottom:0 0 1px 0; ">DISPONÍVEL TAMBÉM PARA LOCAÇÃO</p>
                     <a href="#" style="color:white !important; background-color:rgb(25, 93, 156); padding:15px 30px; border-radius:30px;">SOLICITAR ORÇAMENTO</a>
-            
-                </div>         
+                
+                </div>      
+                </div> 
+
+               
+                 
        
  </div>
 
+ 
 
 
 
 
-
-<div style="background-color:rgb(25, 93, 156);  padding:5%; margin:0; ">
+<div style="background-color:rgb(25, 93, 156);  margin-top: rem; ">
     <div>
         <h1 style="text-transform:uppercase; color:white; text-align: center;">Certificação, qualidade e segurança</h1>
          <h4 style="color:white; text-align:center;">Nosso equipamento é registrado pela ANVISA para fabricação de equipamentos e dispositivos médicos Classe III, garantindo os melhores padrões de qualidade e segurança.</h4>
