@@ -18,7 +18,7 @@
             rgb(25, 93, 156); 
            
             align-items: center;
-            justify-content:center;
+            justify-content:space-evenly;
             text-align: center;
         }
 
