@@ -119,86 +119,8 @@ rgb(25, 93, 156);
 .salvando{  font-size:9vw; color:rgb(50, 194, 134);}
 .vidas{font-size:12vw; color:white;}
 }
-.conheca{
-    background-image:url(Arquivo_Comprimido/LP_v1-_06.png); 
-    background-repeat: no-repeat; 
-    background-position: right bottom;
-     background-size: 300px 700px;
-     height: 800px; 
-}
-
-.conhe_agaum{
-    color:rgb(25, 93, 156); text-align:; font-size:60px; font-weight:bolder
-}
-@media screen and (max-width:1280px){
-    .conheca {background-position: right bottom;
-     background-size: contain;}
-}
-
-@media screen and (max-width:780px){
-    .conheca h3 {width:200px;}
-    .conheca h2 {width:200px;}
-    .conhe_agaum {text-align: left;}
-    .conheca {margin: 15rem 0;}
-}
 
 
-
-@media screen and (max-width:900px){
-
-}
-.lista_equipa{margin-left: 70px;}
-.equipa_salva{
-    background-image:url(Arquivo_Comprimido/LP_v1-_06.png);  
-    background-repeat:no-repeat;  
-    background-position: 100% 0;
-
- background-size:300px 750px;  
- height:750px;
-}
-
-@media screen and (max-width: 900px){
-    .equipa_salva{
-    background-image:url(Arquivo_Comprimido/LP_v1-_06.png);  
-    background-repeat:no-repeat;  
-    background-position: 100% 200px;
-
- background-size:250px 500px;   
- height:700px;
-}
-
-}
-
-@media screen and (max-width: 600px){
-    .equipa_salva{
-    background-image:url(Arquivo_Comprimido/LP_v1-_06.png); 
-     background-repeat:no-repeat;  
-     background-position: 100% 200px;
-
- background-size:200px 550px;  
- height:700px;
- 
-}
-}
-
-
-.recursos_equipa{
-    color:rgb(25, 93, 156); text-align:left;margin-left:170px;
-}
-
-.ventiladorInt{
-    color:rgb(25, 93, 156); text-align:left;
-    margin-left: 170px;
- 
-}
-
-@media screen and (max-width:900px){
-    .ventiladorInt{
-    color:rgb(25, 93, 156); text-align:left;
-    width:300px;
-    margin-left:0;
-}
-}
 
 .monitora_fotos{
     display:grid; 
@@ -218,34 +140,7 @@ rgb(25, 93, 156);
 
 }
 
-.lista_conheca {
-  list-style: none;
-}
 
-.lista_conheca li {
-  font-size: 20px;
-}
-
-.lista_conheca {
-  height:auto; overflow: scroll;
-}
-@media screen and (max-width:1280px){
-
-    .lista_conheca { width: 70%; height:200px; overflow:scroll; }
-}
-
-@media screen and (max-width:980px){
-
-.lista_conheca { width: 60%; height:200px; overflow:scroll;}
-}
-.lista_conheca  li::before {
-  content: "\2022";
-  color: rgb(69, 139, 204);
-  font-weight: bold;
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em;
-}
 .botao_form{
     width:100%; 
     background-color: rgb(50, 194, 134); 
@@ -253,11 +148,31 @@ rgb(25, 93, 156);
     color:white; 
     font-size:3vw; 
     margin: 0 2%;}
+
+
+.conheca{
+    height: 600px;  
+    background-image:url(Arquivo_Comprimido/LP_v1-_06.png); 
+    background-repeat: no-repeat; 
+    background-size:250px  650px; 
+    background-position: 65% 100px; 
+    padding: 20px;
+    width:1600px;
+    border: 1px solid red;
+}    
+
+.lista_conheca{
+    position: relative;  color: black;
+}
+
+.lista_conheca li{
+    font-size: 16px; 
+}
     </style>
 </head>
-<body style="background-color: white; color: black;">
+<body style="background-color: white; color: black; overflow-x:hidden;">
  <!--Navbar-->   
-<!--<div style="background-color:
+<div style="background-color:
 rgb(25, 93, 156); width:100%;">
 
 
@@ -275,7 +190,7 @@ rgb(25, 93, 156); width:100%;">
       <i class="fa fa-bars" style=" color:black;"></i>
     </a>
   </div>
-</div>-->
+</div>
 
 
 
@@ -301,7 +216,7 @@ rgb(25, 93, 156); width:100%;">
     
 
   
-    <div> <img src="Arquivo_Comprimido/mulher_repirador.png" class="imagem_topo" style="width: 105%;"> </div>
+    <div> <img src="Arquivo_Comprimido/mulher_repirador.png" class="imagem_topo" style="width: 100%;"> </div>
 
     
       
@@ -416,53 +331,36 @@ rgb(25, 93, 156); width:100%;">
     
 </div>
 
-<div  >
+<div class="conheca">
+    <div style="border: 1px solid blue; position: relative; left: 200px; width:fit-content; ">
+
+          <h2>Conheça o VI-C19 </h2>
+          <h3>O equipamento que salva vidas</h3>
+          <h3>Principais Recursos:</h3>
+
+      <ul class="lista_conheca"  >
+
+          <li>Três módulos de operação:PCV, VCV, e PSV para uso pediátrico e adulto;</li>
+          <li>Alarmes configuráveis e alertas automáticos;</li>
+          <li>Auto teste de inicialização para garantir que tudo está funcionando corretamente;</li>
+          <li>Configuração de dados do paciente para cálculo automático do peso predito para<br/> ajudar nas calibragens</li>
+          <li>Histórico de eventos relacionados ao paciente, com detalhes como data e hora;</li>
+          <li>Tela 10 polegadas touch screen com interface intuitiva;</li>
+          <li>Trêsníveis de controle e monitoramento, sendo dois remotos;</li>
+          <li>Menu em quatro idiomas: português, inglês, espanhol e francês;</li>
+          <li>Gabinete de fácil transporte e manuseio;</li>
+          <li>Tecnologia exclusiva para trabalhar com ar em alta e baixa pressão;</li>
+          <li>Sistema de exaustão do ar expirado pelo paciente;</li>
+          <li>Plataforma tecnológica que permite a atualização e evolução do equipamento <br/>com a implantação de novos módulos ventilatórios e novas funcionalidades;</li>
+      </ul>
   
-    
-        <div class="conheca" >
-            <div style="position: relative; left: 20%; ">
-                <h1 class="conhe_agaum">Conheça o<br/> VI-C19</h1>
-                <h2 style="color: rgb(50, 194, 134); text-align:left; ">O equipamento que salva vidas</h2>
-           
-          
-                
-                <h2 class="" style="color:rgb(69, 139, 204); text-align: left;" >Ventilador Pulmonar Inteligente</h2>
-                <h3 class="" style="color:rgb(50, 194, 134); text-align:left;">Principais Recursos:</h3>
-            </div>
-            
-            <div style="margin-left: 10%;">
-            
 
-                
-                
-                <ul class="lista_conheca" >
+      <p>DISPONÍVEL TAMBÉM PARA LOCAÇÃO</p>
+      <button>SOLICITAR ORÇAMENTO</button>
+    </div>
 
-                    <li>Três módulos de operação:PCV, VCV, e PSV para uso pediátrico e adulto;</li>
-                    <li>Alarmes configuráveis e alertas automáticos;</li>
-                    <li>Auto teste de inicialização para garantir que tudo está funcionando corretamente;</li>
-                    <li>Configuração de dados do paciente para cálculo automático do peso predito para<br/> ajudar nas calibragens</li>
-                    <li>Histórico de eventos relacionados ao paciente, com detalhes como data e hora;</li>
-                    <li>Tela 10 polegadas touch screen com interface intuitiva;</li>
-                    <li>Trêsníveis de controle e monitoramento, sendo dois remotos;</li>
-                    <li>Menu em quatro idiomas: português, inglês, espanhol e francês;</li>
-                    <li>Gabinete de fácil transporte e manuseio;</li>
-                    <li>Tecnologia exclusiva para trabalhar com ar em alta e baixa pressão;</li>
-                    <li>Sistema de exaustão do ar expirado pelo paciente;</li>
-                    <li>Plataforma tecnológica que permite a atualização e evolução do equipamento <br/>com a implantação de novos módulos ventilatórios e novas funcionalidades;</li>
-                </ul>
-            </div>
-                <div style="display: grid; grid-template-columns: auto; align-items: center; justify-content: center;">
-                    <p style="margin-bottom:0 0 1px 0; ">DISPONÍVEL TAMBÉM PARA LOCAÇÃO</p>
-                    <a href="#" style="color:white !important; background-color:rgb(25, 93, 156); padding:15px 30px; border-radius:30px;">SOLICITAR ORÇAMENTO</a>
-                
-                </div>      
-                </div> 
 
-               
-                 
-       
- </div>
-
+</div>
  
 
 
