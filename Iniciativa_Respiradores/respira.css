@@ -13,10 +13,10 @@
   /*Ainda dá tempo*/
         .ainda_tempo{
             display:grid; 
-            grid-template-columns: 30% 70%; 
-            background-color:
-            rgb(25, 93, 156); 
+            grid-template-columns: 30% 69%; 
            
+           padding:0;
+           margin: 0;
             align-items: center;
             justify-content:space-evenly;
             text-align: center;
@@ -25,7 +25,8 @@
         .ainda_tempo_palavras{
            padding-top:1%;
             line-height:65px;
-           
+            background-color:
+            rgb(25, 93, 156); 
         }
 
         .imagem_topo{
@@ -233,35 +234,7 @@ font-size:40px;
 
 
 /*conheça VIC*/
-.conheca_VIC{
-    display: grid; 
-    grid-template-columns: auto;
-    align-items: start;
-}
 
-.conheca_VIC h1{
-    color:rgb(69, 139, 204);
-    text-align:center;
-}
-
-.conheca_VIC h3{
-
-    color:rgb(50, 194, 134) ;
-    text-align:center;
-}
-
-.lista_conheca_VIC ul {
-  list-style: none;
-}
-
-.lista_conheca_VIC ul li::before {
-  content: "\2022";
-  color: rgb(69, 139, 204);
-  font-weight: bold;
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em;
-}
 
 /*diferen*/
 .diferen{
