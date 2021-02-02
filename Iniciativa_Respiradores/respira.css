@@ -13,20 +13,19 @@
   /*Ainda dá tempo*/
         .ainda_tempo{
             display:grid; 
-            grid-template-columns: 30% 69%; 
+            grid-template-columns: 30% 70.1%; 
            
-           padding:0;
-           margin: 0;
+       background-color:rgb(25, 93, 156);
             align-items: center;
-            justify-content:space-evenly;
+           
             text-align: center;
         }
 
         .ainda_tempo_palavras{
-           padding-top:1%;
+         margin: 0;
+         padding: 0;
             line-height:65px;
-            background-color:
-            rgb(25, 93, 156); 
+            background-color:rgb(25, 93, 156);
         }
 
         .imagem_topo{
