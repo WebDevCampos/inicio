@@ -11,7 +11,7 @@
 
 
   /*Ainda dá tempo*/
-        .ainda_tempo{
+      .ainda_tempo{
             display:grid; 
             grid-template-columns: 30% auto; 
            
