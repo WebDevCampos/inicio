@@ -123,12 +123,12 @@ rgb(25, 93, 156);
     background-image:url(Arquivo_Comprimido/LP_v1-_06.png); 
     background-repeat: no-repeat; 
     background-position: right bottom;
-     background-size: contain;
-     height: 700px; 
+     background-size: 300px 700px;
+     height: 800px; 
 }
 
 .conhe_agaum{
-    color:rgb(25, 93, 156); text-align:center; font-size:60px; font-weight:bolder
+    color:rgb(25, 93, 156); text-align:; font-size:60px; font-weight:bolder
 }
 @media screen and (max-width:1280px){
     .conheca {background-position: right bottom;
@@ -143,7 +143,7 @@ rgb(25, 93, 156);
 }
 
 
-.conheca li{font-size: 20px;}
+
 @media screen and (max-width:900px){
 
 }
@@ -222,9 +222,12 @@ rgb(25, 93, 156);
   list-style: none;
 }
 
+.lista_conheca li {
+  font-size: 20px;
+}
 
 .lista_conheca {
-  height:250px; overflow: scroll;
+  height:auto; overflow: scroll;
 }
 @media screen and (max-width:1280px){
 
@@ -397,10 +400,12 @@ rgb(25, 93, 156); width:100%;">
      
                 <li  style="color:white;"><h1 style=" font-weight: bolder;">Mais vidas sendo salvas!</h1></li>
 
-                <button href="#"  style=" border: none; font-weight: bolder; color:none !important; background-color:white ; padding:5px 10px; border-radius:30px; font-size:20px;">QUERO  DOAR</button>
+                
             </ul>
+            <div style="display; grid; grid-template-columns: auto; align-items: center; justify-content: center;">
+                <button href="#"  style=" border: none; font-weight: bolder; color:none !important; background-color:white ; padding:5px 10px; border-radius:30px; font-size:20px;">QUERO  DOAR</button>
 
-
+            </div>
                
            
         </div>
@@ -415,14 +420,18 @@ rgb(25, 93, 156); width:100%;">
   
     
         <div class="conheca" >
-            <div style="margin-left: 10%;">
-            <h1 class="conhe_agaum"style="">Conheça o<br/> VI-C19</h1>
-            <h2 style="color: rgb(50, 194, 134); text-align:left;">O equipamento que salva vidas</h2>
+            <div style="position: relative; left: 20%; ">
+                <h1 class="conhe_agaum">Conheça o<br/> VI-C19</h1>
+                <h2 style="color: rgb(50, 194, 134); text-align:left; ">O equipamento que salva vidas</h2>
            
           
                 
-                <h2 class="" style="color:rgb(69, 139, 204);" >Ventilador Pulmonar Inteligente</h2>
-                <h3 class="" style="color:rgb(50, 194, 134);">Principais Recursos:</h3>
+                <h2 class="" style="color:rgb(69, 139, 204); text-align: left;" >Ventilador Pulmonar Inteligente</h2>
+                <h3 class="" style="color:rgb(50, 194, 134); text-align:left;">Principais Recursos:</h3>
+            </div>
+            
+            <div style="margin-left: 10%;">
+            
 
                 
                 
@@ -459,7 +468,7 @@ rgb(25, 93, 156); width:100%;">
 
 
 
-<div style="background-color:rgb(25, 93, 156);  margin-top: rem; ">
+<div style="background-color:rgb(25, 93, 156);  margin-top: 0; ">
     <div>
         <h1 style="text-transform:uppercase; color:white; text-align: center;">Certificação, qualidade e segurança</h1>
          <h4 style="color:white; text-align:center;">Nosso equipamento é registrado pela ANVISA para fabricação de equipamentos e dispositivos médicos Classe III, garantindo os melhores padrões de qualidade e segurança.</h4>
