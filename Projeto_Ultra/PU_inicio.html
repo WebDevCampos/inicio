@@ -21,16 +21,28 @@
 <link href="carousel.css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <link rel="stylesheet" href="slick/slick/slick/slick.css">
-
+<link rel="stylesheet" href="slick/slick/slick/slick-theme.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap" rel="stylesheet">
     <style>
 
 *{
   font-family: 'Miso';
+ 
+  word-spacing: normal;
+}
+.navbar a{
+  font-size: 17px; 
+  color: rgb(36, 30, 30);
+  font-family: 'Miso';
 }
 
-.navbar a{
-  font-size: 12px; 
+.navbar a:hover{
+ border-bottom: 2px solid rgb(36, 30, 30)
 }
+
 a{text-decoration: none;}
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -51,33 +63,7 @@ a{text-decoration: none;}
         width:15px; height: 15px; border-radius: 50%;background-color: transparent;border: 2px solid white;
       }
 
-      .s_container {
-  margin: 0 auto;
-  padding: 0 20px 0 20px;
-  width: 100%;
-}
-
-
-
-.slick-track {
-  display: flex !important;
- 
-}
-
-.slick-slide {
-  margin: 5px;
-  height: 300px;
-  max-width:200px;
-  min-width:200px;
-
- 
- 
-}
-
-.slick-frame {
-  visibility: hidden;
-}
-
+    
 
 
 
@@ -110,7 +96,7 @@ a{text-decoration: none;}
   box-shadow: rgba(0, 0, 0, 0.16) 0px 0.1875rem 0.375rem;  
   text-shadow: rgba(0, 0, 0, 0.16) 0px 0.1875rem 0.375rem;  
   padding: 3px 11px;  
-  margin:2px 0;
+  margin:2px 5px;
   text-decoration: none;
   color: rgb(20, 20, 20);
 }  
@@ -124,19 +110,99 @@ a{text-decoration: none;}
   box-shadow: rgba(0, 0, 0, 0.16) 0px 0.1875rem 0.375rem; 
   text-shadow: rgba(0, 0, 0, 0.16) 0px 0.1875rem 0.375rem;  
   padding: 3px 5px;  
-  margin:2px 0;
+  margin:2px 5px;
+  text-decoration: none;
 }  
+
+
+.botaoroxo{
+  background-color:#7000ff;  
+  color: white;
+  border:none; 
+  border-radius: 34px; 
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0.1875rem 0.375rem; 
+  text-shadow: rgba(0, 0, 0, 0.16) 0px 0.1875rem 0.375rem;  
+  padding: 10px 20px;  
+  margin:2px 5px;
+  font-size: 20px;
+  text-decoration: none;
+}
 @media screen and (max-width:1300px){
 
   #div_topo{display:none;}
 }
- @font-face {
-   font-family: 'Miso';
-   src: url('misotwo/miso.otf') 
-   format("truetype")
-   ;
-   
- }
+
+.pacotes{
+  display: grid; 
+  grid-template-columns: auto 3% auto auto; 
+  grid-gap:2%; align-items: center;
+  justify-content: center;
+
+}
+
+@media screen and (max-width:1200px){
+  .pacotes{
+    display: grid; 
+  grid-template-columns: auto; 
+  align-items:center; 
+  justify-content: center;}
+
+  .mais{margin-left: 24%;}
+}
+.card_bene{
+ width:300px;
+ height:350px;
+ box-shadow: inset 0 0 0 1000px rgba(10, 27, 180, 0.2);
+   background-repeat:no-repeat;
+    background-size: 300px 350px;
+  margin:0 10px;}
+
+
+.bene_segu{  background-image: url(imagens/Bene_Segu.png); }
+.bene_cont{background-image: url(imagens/Bene_Cont.png);}
+.bene_faci{background-image: url(imagens/Bene_Faci.png);}
+.bene_disp{background-image: url(imagens/Bene_DIspo.png);}
+.bene_eco{background-image:url(imagens/Bene_Eco.png);}
+
+
+.atende_rap{
+  border:1px solid red;
+  background-image: url(imagens/atendimento.png), url(imagens/curvas_Atendimento.svg);
+  background-position: 10px 100px, 1px 250px; 
+  background-repeat:no-repeat, no-repeat; 
+  background-size:250px 350px, contain; 
+  height:600px; 
+  margin:100px 0;
+}
+
+
+.icone_atende_rap{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0.1875rem 0.375rem;
+    font-size:450%;
+    border-radius:20px; 
+    padding: 0 15px 15px 15px ;
+    background-color: white;
+    
+
+  }
+ 
+
+@media screen and (max-width:1200px){
+
+.atende_rap{
+
+background-image: url(imagens/atendimento-mobile.svg);
+background-position:bottom;
+background-repeat:no-repeat;
+background-size:contain;
+height:1300px; 
+
+
+
+}
+}
+
+
     </style>
 
     
@@ -148,15 +214,15 @@ a{text-decoration: none;}
 <header>
   
   <nav class="navbar navbar-expand-xl  fixed-top  mx-auto rounded-pill"  >
-    <img src="imagens/1 (1).jpg"  width="150" style="position:relative; left:100px; " >
+    <img src="imagens/1 (1).jpg"  class="rounded-pill" width="150" style="position:relative; left:100px; " >
     <a class="navbar-brand d-lg-none " href="#"  style="color: white;">HOME</a>
     <button class="navbar-toggler " type="button" data-toggle="modal" data-target="#exampleModal" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" >
       <span ><i class="fas fa-bars"></i></span>
     </button>
-    <div class="collapse navbar-collapse bg-white rounded-pill p-2" id="navbarCollapse" >
-      <ul class="navbar-nav "  style="margin-left:10%; ">
+    <div class="collapse navbar-collapse bg-white rounded-pill " style="height:80px;"id="navbarCollapse" >
+      <ul class="navbar-nav " style="margin-left:8%; " >
         <li class="nav-item active" >
-          <a href="#comoFunc" class="nav-link"> COMO FUNCIONA </a>
+          <a href="#comoFunc" class="nav-link "> COMO FUNCIONA </a>
           
         </li>
         <li class="nav-item">
@@ -180,11 +246,11 @@ a{text-decoration: none;}
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#" >JÁ SOU CLIENTE</a>
+          <a class="nav-link botaobranco" href="#" >JÁ SOU CLIENTE</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#" >ASSINAR </a>
+          <a class="nav-link botaoazul" href="#" style="color:white;" >ASSINAR </a>
         </li>
       </ul>
      
@@ -289,7 +355,7 @@ a{text-decoration: none;}
 <!--Carousel-->
 
 
-<div id="div_topo" class="  my-0 container-fluid " style="position:relative; top:-5rem; border: 1px solid red">
+<div id="div_topo" class="  container-fluid " style="position:relative; top:-5rem; border: 1px solid red">
   
   <img src="imagens/div_topo.svg" >
    
@@ -298,54 +364,40 @@ a{text-decoration: none;}
          <div class="col-xs-6" style="font-size:25px;">ASSISTA AO VIDEO  E <br/>  CONHEÇA A ULTRA </div> 
          <div class="col-xs-6"><a><img src="imagens/play.e14c959e.svg" style="width:100px; height:100px; "/></a></div>
         
-        </ul>
-       
-       
-
-      
-         
-
-    
-
-
-</div>
-
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
- 
+     </div>
 
 </div>
 </div>
 
-<div class="container ">
-    <h1 class="text-center mb-5">COMO FUNCIONA?</h1>
+
+
+
+<!--Como funciona-->
+<div class="container-fluid ">
+    <h1 class="text-center mb-5" style="font-size:56px">COMO FUNCIONA?</h1>
    
-  <div class="single-item">
+  <div class="single-item" >
   
-      <div class="col text-center ">
-        <img src="imagens/1 (1).jpg" alt="imagem_um" class="mt-2 mx-auto bd-placeholder-img rounded-circle" width="180" height="180"/>
+      <div class="col-3 text-center">
+        <img src="imagens/geo-alt.svg" alt="imagem_um" class="mt-2 mx-auto bd-placeholder-img rounded-circle" width="180" height="180"/>
                    
                 
 
-          <div class="p-3 text-left">   <span class="numerospan">1</span> <p>O seu veiculo é equipado com um pequeno aparelho rastreador posicionado estrategicamente.</p></div>
+          <div class="p-3 text-left ">   <span class="numerospan">1</span> <p>O seu veiculo é equipado com um pequeno aparelho rastreador posicionado estrategicamente.</p></div>
          
       </div>
-      <div class="col text-center ">
-        <img src="imagens/1 (1).jpg" alt="imagem_um" class="mt-2 mx-auto bd-placeholder-img rounded-circle" width="180" height="180"/>     
+      <div class="col-3 text-center ">
+        <img src="imagens/satelite.png" alt="imagem_um" class="mt-2 mx-auto bd-placeholder-img rounded-circle" width="180" height="180"/>     
                  
                   
 
-          <div class="p-3 text-left"> <span class="numerospan">2</span>  
+          <div class="p-3 text-left "> <span class="numerospan">2</span>  
             <p>Satélites recebem as coordenadas de posicionamento do veículo através do módulo GPS integrado.</p>
           </div>
          
       </div>
-      <div class="col text-center ">
-        <img src="imagens/1 (1).jpg" alt="imagem_um" class="mt-2 mx-auto bd-placeholder-img rounded-circle" width="180" height="180"/>
+      <div class="col-3 text-center ">
+        <img src="imagens/broadcast-pin.svg" alt="imagem_um" class="mt-2 mx-auto bd-placeholder-img rounded-circle" width="180" height="180"/>
              
                   
 
@@ -354,8 +406,8 @@ a{text-decoration: none;}
           </div>
          
       </div>
-      <div class="col text-center ">
-        <img src="imagens/1 (1).jpg" alt="imagem_um" class="mt-2 mx-auto bd-placeholder-img rounded-circle" width="180" height="180"/>   
+      <div class="col-3 text-center ">
+        <img src="imagens/server.svg" alt="imagem_um" class="mt-2 mx-auto bd-placeholder-img rounded-circle" width="180" height="180"/>   
                                     
                  
 
@@ -364,8 +416,8 @@ a{text-decoration: none;}
           </div>
          
       </div>
-      <div class="col text-center ">
-        <img src="imagens/1 (1).jpg" alt="imagem_um" class="mt-2 mx-auto bd-placeholder-img rounded-circle" width="180" height="180"/>    
+      <div class="col-3 text-center ">
+        <img src="imagens/headset.svg" alt="imagem_um" class="mt-2 mx-auto bd-placeholder-img rounded-circle" width="180" height="180"/>    
                                    
                  
 
@@ -377,59 +429,229 @@ a{text-decoration: none;}
       
   </div>                
 </div>
+<!--Como funciona-->
 
-  <div class="container marketing">
 
-    <!-- Three columns of text below the carousel -->
+
+<!--Pacotes-->
+  <div class="container text-center">
+    <div><h1 style="font-family:'Miso';font-weight:normal;font-size:70px">MONTE SEU PACOTE</h1></div>
+  </div>
+
+
+<div class="pacotes " style="margin:100px 0" >
+
+  <div style="width:21rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0.1875rem 0.375rem; ;">
+    <img src="imagens/rastreamento1.png" class="img-responsive">
+  
+    <div class="container">
+    <p><span><i class="bi bi-check2-square"></i></span>Posições em tempo real via internet<br/>
+      <span><i class="bi bi-check2-square"></i></span>Sistema integrado de bloqueio à distância<br/>
+      <span><i class="bi bi-check2-square"></i></span>Criação de cercas eletrônicas<br/>
+      <span><i class="bi bi-check2-square"></i></span>Equipamentos de ultima geração<br/>
+      <span><i class="bi bi-check2-square"></i></span>Central de atendimento 24h</p>
+ 
+  </div>
+  </div>
+ 
+<div class="align-self-center mais">
+  <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" class="mais">
+    <g id="Grupo_551" data-name="Grupo 551" transform="translate(0.097 -0.119)">
+      <circle id="Elipse_6" data-name="Elipse 6" cx="23.5" cy="23.5" r="23.5" transform="translate(-0.097 0.119)"/>
+      <g id="Grupo_542" data-name="Grupo 542" transform="translate(14.236 14.452)">
+        <g id="Grupo_552" data-name="Grupo 552" transform="translate(0 0)">
+          <rect id="Retângulo_256" data-name="Retângulo 256" width="3" height="19" rx="1.5" transform="translate(18.667 7.666) rotate(90)" fill="#fff"/>
+          <rect id="Retângulo_257" data-name="Retângulo 257" width="3" height="19" rx="1.5" transform="translate(10.667 18.666) rotate(180)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </svg>
+  
+</div>
+   
+ 
+<div style="width:21rem;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 0.1875rem 0.375rem; ;">
+  <img src="imagens/rastreamento1.png" class="img-responsive">
+  <div class="container">
+    <p><span><i class="bi bi-check2-square"></i></span>Relatórios de gestão <br/>
+                
+      <span><i class="bi bi-check2-square"></i></span>Cobertura Nacional <br/>
+      <span><i class="bi bi-check2-square"></i></span>Controle de Rota <br/>
+      <span><i class="bi bi-check2-square"></i></span>Acesso ao Aplicativo ( APP ) <br/>
+      <span><i class="bi bi-check2-square"></i></span>Bloqueio</p>
+  </div>
+  
+
+</div>
+ 
     
-
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
+   <div style="width:21rem;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 0.1875rem 0.375rem; ;">
+    <img src="imagens/rastreamento1.png" class="img-responsive">
+   <div class="container">
+    <p><span><i class="bi bi-check2-square"></i></span>Historico de Posições <br/>
+      <span><i class="bi bi-check2-square"></i></span>Suporte On-Line <br/>
+      <span><i class="bi bi-check2-square"></i></span>Controle de Rota <br/>
+      <span><i class="bi bi-check2-square"></i></span>Controle de Cerca <br/>
+      <span><i class="bi bi-check2-square"></i></span>Bloqueio <br/>
+      <span><i class="bi bi-check2-square"></i></span>Gestor Plus <br/>
+       </p>
+      </div> 
+   </div>
+       
+       
     </div>
+  
+    
+<div class="container text-center">
+  
+  <a class="botaoazul p-2">FAÇA SUA ASSINATURA HOJE MESMO</a>
 
-    <hr class="featurette-divider">
+</div>
+<!--Pacotes-->  
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
 
-      </div>
+
+
+<!--Benefícios-->
+
+<div class="container ">
+  <div class="row  my-5">
+    <h1 class="text-center mx-auto" style="font-size:70px;">BENEFÍCIOS</h1>
+  </div>
+</div>
+<div class="single-item">
+
+
+<div class="card_bene bene_segu" >
+
+ <div class="container " style="color: rgb(255, 255, 255); text-shadow:rgba(0, 0, 0, 0.16)">  
+   <h3>SEGURANÇA</h3>
+  <p>Bloqueio em situações de <br/> emergência, roubo ou furto.</p>
+</div> 
+</div>
+
+
+
+
+<div class="card_bene bene_cont">
+
+ <div class="container " style="color: white; text-shadow:rgba(0, 0, 0, 0.16)">  
+  <h3>CONTROLE</h3>
+  <p>Rastreio e monitoramento <br/> 24 horas por dia.</p>
+</div> 
+</div>
+
+
+
+
+<div class="card_bene bene_faci" >
+
+ <div class="container " style="color: white;text-shadow:rgba(0, 0, 0, 0.16)">  
+  <h3>FACILIDADE</h3>
+            <p>Acesso via computador <br/>  ou celular.</p>
+</div> 
+</div>
+
+
+
+
+<div class="card_bene bene_disp" >
+
+ <div class="container " style="color: white; text-shadow:rgba(0, 0, 0, 0.16)">  
+  <h3>DISPONIBILIDADE</h3>
+            <p>Monitoramento em qualquer <br/> lugar em tempo real.</p>
+</div> 
+</div>
+
+
+
+<div class="card_bene bene_eco" >
+
+ <div class="container " style="color: white; text-shadow:rgba(0, 0, 0, 0.16)">  
+  <h3>ECONOMIA</h3>
+  <p>A ULTRA TECNOLOGIAS oferece o melhor <br/> serviço pelo menor preço.</p>
+</div> 
+</div>
+
+</div>
+
+<!--Benefícios-->
+
+
+<!--Atendimento Rápido-->
+
+  <div class="atende_rap">
+    <div class=" d-flex flex-row justify-content-end ">
+     
+     <div>
+          <a href="https://webdevcampos.github.io/inicio/segunda_Via.html" target="_self">
+            <i class="bi bi-upc-scan shadow icone_atende_rap"></i>
+          </a>
+                  
+                     
+                      
+          <div class="container my-2">
+           
+    
+    
+            <p >Segunda via</p>
+         
+              <p>Sua fatura aqui<br/>
+                bem rapidinho e sem espera.</p>
+                <a href="#" class="botaoroxo">ACESSE</a>
+          
+          </div>
+        </div>
+    
+        <div>
+          <a href="#">
+                                    
+            <i class="bi bi-person shadow icone_atende_rap"  ></i>
+          </a>
+         
+                     
+                      
+          <div class="container my-2">
+           
+            <p >Alteração Cadastral</p>
+            <p>Mudou  telefone, endereço ou e-mail?<br/>  Atualiza pra gente.</p>
+            <a href="#" class="botaoroxo">ACESSE</a>       
+            </div>
+          </div>
+    
+    
+          <div >
+            <a href="#">
+                                      
+              <i class="bi bi-box-seam shadow icone_atende_rap"  ></i>
+            </a>
+           
+                       
+                        
+            <div class="container my-2">
+             
+              <p >Meus Pacotes</p>
+              <p>Veja os pacotes que <br/>você tem com a gente.</p>
+              <a href="#" class="botaoroxo">ACESSE</a>      
+              </div>
+            </div>
+        </div>
+    
+    <div class="row  align-items-baseline">
+    <div>Também dá pra resolver tudo isso<br/> pelo whats ou telefone</div>
+    
     </div>
+    
+          </div>
+        </div>
 
-    <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
 
-      </div>
-    </div>
+ 
 
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
 
 
   <!-- FOOTER -->
@@ -439,7 +661,8 @@ a{text-decoration: none;}
   </footer>
 </main>
 
-<script src="jquery/dist/jquery.slim.min.js"></script>
+
+
 
 <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -456,20 +679,27 @@ a{text-decoration: none;}
                     autoplay: false,
                     arrows:false,
                     slidesToShow: 5,
-                    infinite:false,
+                   
+                    infinite:true,
                     adaptiveHeight: true,
                     responsive: [{
                         breakpoint: 1300,
                         settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 3,
                         infinite: true,
                     }
                         }, {
+                        breakpoint: 600,
+                        settings: {
+                        slidesToShow: 2,
+                        infinite: true,
+                        }
+                      },{
                         breakpoint: 451,
                         settings: {
                         slidesToShow: 1,
                         infinite: true,
-                        }
+                        },
                     }]
                 });
             });
