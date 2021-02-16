@@ -37,9 +37,7 @@
     background: linear-gradient(90deg, #FFFFFF 50.45%, rgba(255, 255, 255, 0) 71.18%)
 }
 #carouselExampleCaptions .carousel-item img{height:400px;}
-@media screen and (max-width:600px){
-    .carousel-item img{height:200px;}
-}
+
 .carousel-caption {
    position: absolute;
    left:2%;
@@ -90,11 +88,8 @@
     border: 1px solid var(--azul);
 }
 
-#carouselExampleCaptions_two{
-    background-image: url(imagens/produto_cinco.PNG);
-    background-repeat: no-repeat;
-    background-position: right ;
-    background-size: 50%;
+#carouselExampleCaptions_two .carousel-item{
+    background: linear-gradient(90deg, #FFFFFF 50.45%, rgba(255, 255, 255, 0) 71.18%)
 }
 
 #carouselExampleCaptions_two button{
@@ -168,7 +163,7 @@
   
   <div class="carousel-inner" >
     <div class="carousel-item active " >
-      <img src="imagens/images.jpg" class="d-block w-100" alt="Mulher feliz ao usar creme facial da annecaroline global">
+      <img src="imagens/images.jpg" class="d-block w-100 h-250" alt="Mulher feliz ao usar creme facial da annecaroline global">
       <div class="carousel-caption text-start d-none d-sm-block justify-content-start " >
         <h2 >Seja livre e feliz</h2>
         <p>A primeira empresa brasileira de produtos dermocosméticos inovadores e canal de distribuição através de Vendas Diretas, com ferramentas digitais 100% automatizadas para potencializar o seu negócio e os seus resultados</p>
@@ -321,34 +316,54 @@
 
 
 
-<div class="container">
+
     <div id="carouselExampleCaptions_two" class="carousel slide " data-ride="carousel" data-touch="true">
   
         <div class="carousel-inner" >
           <div class="carousel-item active " >
-          
-          <p style="color:#898989; font-size:3vw;" class="my-5 ">Destaques</p>
-             <h1 style="color:black; font-size:5vw;" class="text-wrap ppins600">Conheça o <br/>novo BB Protect</h1>
+          <div class="row">
+
+            <div class="col">
+                <p style="color:#898989; font-size:3vw;" class="my-5 ">Destaques</p>
+                <h1 style="color:black; font-size:5vw;" class="text-wrap ppins600">Conheça o <br/>novo BB Protect</h1>
+               
+                       <button class="btn">Conheça nossos produtos</button>
+              </div>
+             <div class="col">
+                <img src="imagens/produto_cinco.PNG" class="w-100 h-100" >
+             </div>
+          </div>
             
-                    <button class="btn">Conheça nossos produtos</button>
-                  
          </div>
              
          <div class="carousel-item  " >
-          
-            <p style="color:#898989; font-size:3vw;" class="my-5 ">Destaques</p>
-               <h1 style="color:black; font-size:5vw;" class="text-wrap ppins600">Conheça o <br/>novo BB Protect</h1>
-              
-                      <button class="btn">Conheça nossos produtos</button>
-                    
-           </div>
-                 
+            <div class="row">
+
+                <div class="col">
+                    <p style="color:#898989; font-size:3vw;" class="my-5 ">Destaques</p>
+                    <h1 style="color:black; font-size:5vw;" class="text-wrap ppins600">Conheça o <br/>novo BB Protect</h1>
+                   
+                           <button class="btn">Conheça nossos produtos</button>
+                  </div>
+                 <div class="col">
+                    <img src="imagens/produto_cinco.PNG" class="w-100 h-100" >
+                 </div>
+              </div>
+         </div>        
            <div class="carousel-item  " >
           
-            <p style="color:#898989; font-size:3vw;" class="my-5 ">Destaques</p>
-               <h1 style="color:black; font-size:5vw;" class="text-wrap ppins600">Conheça o <br/>novo BB Protect</h1>
-              
-                      <button class="btn">Conheça nossos produtos</button>
+            <div class="row">
+
+                <div class="col">
+                    <p style="color:#898989; font-size:3vw;" class="my-5 ">Destaques</p>
+                    <h1 style="color:black; font-size:5vw;" class="text-wrap ppins600">Conheça o <br/>novo BB Protect</h1>
+                   
+                           <button class="btn">Conheça nossos produtos</button>
+                  </div>
+                 <div class="col">
+                    <img src="imagens/produto_cinco.PNG" class="w-100 h-100" >
+                 </div>
+              </div>
                     
            </div>
             
@@ -364,7 +379,7 @@
       </div>
 
 
-   </div>
+
 <script src="jquery-3.5.1.min.js"></script>
 <script src="jquery-3.5.1.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
