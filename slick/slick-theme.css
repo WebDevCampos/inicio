@@ -36,7 +36,7 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color:black;
     border: none;
     outline: none;
     background: transparent;
@@ -46,7 +46,7 @@
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    color: #18A0FB;
     outline: none;
     background: transparent;
 }
