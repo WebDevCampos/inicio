@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     
   <link rel="stylesheet" href="slick/slick.css">
-  <link rel="stylesheet" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="/slick-theme.css"/>
  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
  
@@ -36,7 +36,17 @@
 #carouselExampleCaptions .carousel-item{
     background: linear-gradient(90deg, #FFFFFF 50.45%, rgba(255, 255, 255, 0) 71.18%)
 }
-#carouselExampleCaptions .carousel-item img{height:400px;}
+
+#carouselExampleCaptions p {color:black; text-shadow:2px 2px 3px rgba(78, 80, 80, 0.356)}
+#carouselExampleCaptions .carousel-item img{height:400px;transition:.5s}
+
+@media screen and (max-width:700px){
+    #carouselExampleCaptions .carousel-item img{height:300px;}
+}
+
+@media screen and (max-width:500px){
+    #carouselExampleCaptions .carousel-item img{height:200px;}
+}
 
 .carousel-caption {
    position: absolute;
@@ -92,16 +102,23 @@
     background: linear-gradient(90deg, #FFFFFF 50.45%, rgba(255, 255, 255, 0) 71.18%)
 }
 
-#carouselExampleCaptions_two button{
+.botao_destaques{
     background-color:var(--azul);
     border:none;
     color:white;
+    font-size: 3vw;
+}
+.titulo_destaques{
+    color:black; font-size:5vw; 
+}
 
+.destaques{
+    color:#898989; font-size:3vw;
 }
  </style>
  
  
- <body class="container">
+ <body >
   
 <div class="container-fluid text-center bg-light p-1 ">
   
@@ -163,7 +180,7 @@
   
   <div class="carousel-inner" >
     <div class="carousel-item active " >
-      <img src="imagens/images.jpg" class="d-block w-100 h-250" alt="Mulher feliz ao usar creme facial da annecaroline global">
+      <img src="imagens/Home_Banner_001.png" class="d-block w-100" alt="Mulher feliz ao usar creme facial da annecaroline global">
       <div class="carousel-caption text-start d-none d-sm-block justify-content-start " >
         <h2 >Seja livre e feliz</h2>
         <p>A primeira empresa brasileira de produtos dermocosméticos inovadores e canal de distribuição através de Vendas Diretas, com ferramentas digitais 100% automatizadas para potencializar o seu negócio e os seus resultados</p>
@@ -172,7 +189,7 @@
       </div>
     </div>
     <div class="carousel-item " >
-        <img src="imagens/images.jpg" class="d-block w-100" alt="Mulher feliz ao usar creme facial da annecaroline global">
+        <img src="imagens/Home_Banner_001.png" class="d-block w-100" alt="Mulher feliz ao usar creme facial da annecaroline global">
         <div class="carousel-caption text-start d-none d-sm-block justify-content-start" >
           <h2 >Seja livre e feliz</h2>
           <p>A primeira empresa brasileira de produtos dermocosméticos inovadores e canal de distribuição através de Vendas Diretas, com ferramentas digitais 100% automatizadas para potencializar o seu negócio e os seus resultados</p>
@@ -180,7 +197,7 @@
         </div>
       </div>
       <div class="carousel-item " >
-        <img src="imagens/images.jpg" class="d-block w-100" alt="Mulher feliz ao usar creme facial da annecaroline global">
+        <img src="imagens/Home_Banner_001.png" class="d-block w-100" alt="Mulher feliz ao usar creme facial da annecaroline global">
         <div class="carousel-caption text-start d-none d-sm-block justify-content-start" >
           <h2 >Seja livre e feliz</h2>
           <p>A primeira empresa brasileira de produtos dermocosméticos inovadores e canal de distribuição através de Vendas Diretas, com ferramentas digitais 100% automatizadas para potencializar o seu negócio e os seus resultados</p>
@@ -323,13 +340,13 @@
           <div class="carousel-item active " >
           <div class="row">
 
-            <div class="col p-5 ">
-                <p style="color:#898989; font-size:3vw;" class="my-5 ">Destaques</p>
-                <h1 style="color:black; font-size:5vw;" class="text-wrap ppins600">Conheça o <br/>novo BB Protect</h1>
+            <div class="col-sm-6 p-5 ">
+                <p  class="my-5 destaques ">Destaques</p>
+                <h1 class="titulo_destaques text-wrap ppins600 my-3">Conheça o <br/>novo BB Protect</h1>
                
-                       <button class="btn">Conheça nossos produtos</button>
+                       <button class="btn text-nowrap botao_destaques">Conheça nossos produtos</button>
               </div>
-             <div class="col p-5">
+             <div class="col-sm p-5">
                 <img src="imagens/produto_cinco.PNG" class="w-100 h-100" >
              </div>
           </div>
@@ -339,13 +356,13 @@
          <div class="carousel-item  " >
             <div class="row">
 
-                <div class="col p-5  ">
-                    <p style="color:#898989; font-size:3vw;" class="my-5 ">Destaques</p>
-                    <h1 style="color:black; font-size:5vw;" class="text-wrap ppins600">Conheça o <br/>novo BB Protect</h1>
+                <div class="col-sm-6 p-5 ">
+                    <p class="my-5 destaques">Destaques</p>
+                    <h1  class="text-wrap ppins600 my-3 titulo_destaques">Conheça o <br/>novo BB Protect</h1>
                    
-                           <button class="btn">Conheça nossos produtos</button>
+                           <button class="btn text-nowrap botao_destaques" >Conheça nossos produtos</button>
                   </div>
-                 <div class="col">
+                 <div class="col-sm-6 p-5">
                     <img src="imagens/produto_cinco.PNG" class="w-100 h-100" >
                  </div>
               </div>
@@ -354,13 +371,13 @@
           
             <div class="row">
 
-                <div class="col">
-                    <p style="color:#898989; font-size:3vw;" class="my-5 ">Destaques</p>
-                    <h1 style="color:black; font-size:5vw;" class="text-wrap ppins600">Conheça o <br/>novo BB Protect</h1>
+                <div class="col-sm-6 p-5 ">
+                    <p  class="my-5 destaques ">Destaques</p>
+                    <h1 class="text-wrap ppins600 my-3 titulo_destaques">Conheça o <br/>novo BB Protect</h1>
                    
-                           <button class="btn">Conheça nossos produtos</button>
+                           <button class="btn text-nowrap botao_destaques" >Conheça nossos produtos</button>
                   </div>
-                 <div class="col">
+                 <div class="col-sm-6 p-5">
                     <img src="imagens/produto_cinco.PNG" class="w-100 h-100" >
                  </div>
               </div>
@@ -378,7 +395,7 @@
         </a>-->
       </div>
 
-
+    
 
 <script src="jquery-3.5.1.min.js"></script>
 <script src="jquery-3.5.1.js"></script>
