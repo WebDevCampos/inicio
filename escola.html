@@ -137,7 +137,12 @@ height:150px;
   </head> 
 
 <body>
-  
+
+
+
+<div class="border border-danger" style="width:300px;"></div>
+
+
 <div class="container-fluid">  
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <div class="container-fluid">
@@ -184,14 +189,14 @@ height:150px;
 
  </div>            
 
-<div class="container-fluid">
-<div class="card">
+<div class="container-fluid ">
+    <div class="card ">
     <img class="card-img imgcr" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRn1ewGhh3fnCoNZklwjW20liM1qzy2aUBlOA&usqp=CAU" class="w3-image imgcr" />
 
-    <div class="card-img-overlay">
-        <div class="col  mx-auto w-75  h-100 p-3 text-center  d-flex flex-column justify-content-around ">
-            <div class="border align-self-center text-white p-sm-5" style="background-color: rgba(0,0,0, 0.4);">
-                <h1 class="card-title">Escola Linda</h1>
+    <div class="card-img-overlay d-flex justify-content-around">
+        
+            <div class="text-white align-self-center p-1 p-sm-5" style="background-color: rgba(0,0,0, 0.4);">
+                <h1 class="text-center">Escola Linda</h1>
                 <h4 class="card-text">É uma escola infantil</h4>
                 <p class="card-text">como você pode ver pelas crianças brincando na foto.</p>
             </div>
@@ -204,17 +209,11 @@ height:150px;
 </div>
  
 
- </div>
-
-    
-               
-    
-
 
 <div class="container-fluid my-2">
         <div id="Carro_Um" class="Carro">
                 <div class=" CarroSlide ">
-                   <div class="border position-relative">
+                   <div class=" position-relative">
                     <img src="https://escolasdisruptivas.com.br/wp-content/uploads/2019/10/original-7ed59262dc09ac8521548428e3456dea.jpeg" class="CarroImg " >
 
 
@@ -228,7 +227,7 @@ height:150px;
                 </div>
 
                 <div class="CarroSlide ">
-                  <div class="border position-relative">
+                  <div class="position-relative">
                     <img src="https://p2.trrsf.com/image/fget/cf/460/0/images.terra.com/2020/09/01/1597089727434.jpg" class="CarroImg" >
 
                     <div class="position-absolute bottom-0 CarroCaption">
@@ -241,7 +240,7 @@ height:150px;
                 </div>
 
                 <div class="CarroSlide  ">
-                  <div class="border position-relative">
+                  <div class="position-relative">
                     <img src="https://cronos-media.sesisenaisp.org.br//api/media/1-0/files?img=img_65_180119_72d44d47-f7c1-40e0-823d-b0a7891fba2d_o.jpg" class="CarroImg " >
                   </div>
                   <div class="position-absolute bottom-0 CarroCaption">
@@ -253,57 +252,49 @@ height:150px;
     
 </div>
 
+<div class="container-fluid">
 
+  
+</div>
+<div id="contato" class="container-fluid">
+  <h3>Entre em contato</h3>
+  <form action="/action_page.php" method="post">
+    <label for="pnome" class="form-label">Nome</label>
+    <input class="form-control"  type="text" id="pnome" name="primeironome" placeholder="Seu nome">
 
+    <label for="ultinome" class="form-label">Sobrenome</label>
+    <input class="form-control" type="text" id="unome" name="ultinome" placeholder="Sobrenome">
 
-
-
-
-<h3>Entre em contato</h3>
-
-<div id="contato" class="container">
-  <form action="/action_page.php">
-    <label for="pnome">Nome</label>
-    <input type="text" id="pnome" name="primeironome" placeholder="Seu nome">
-
-    <label for="ultinome">Sobrenome</label>
-    <input type="text" id="unome" name="ultinome" placeholder="Sobrenome">
-
-    <label for="cidade">Cidade</label>
-    <select id="cidade" name="cidade">
+    <label class="form-label" for="cidade">Cidade</label>
+    <select class="form-control"  id="cidade" name="cidade">
       <option value="camposrj">Campos dos Goytacazes, RJ</option>
       <option value="itaperunarj">Itaperuna, RJ</option>
       <option value="saojoaodabarrarj">São João da Barra, RJ</option>
     </select>
 
-    <label for="assunto">Assunto</label>
-    <textarea id="assunto" name="assunto" placeholder="Críticas, sugestões, comentários, dúvidas. Fique à vontade para falar conosco!" style="height:200px; resize:none;"></textarea>
+    <label   for="assunto">Assunto</label>
+    <textarea class="form-control" id="assunto" name="assunto" placeholder="Críticas, sugestões, comentários, dúvidas. Fique à vontade para falar conosco!" style="height:200px; resize:none;"></textarea>
 
-    <a  href="mailto:" style="background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;text-decoration:none;">Enviar</a>
+    <a  href="mailto:" class="btn rounded-3 my-3 btn-primary border-0 p-2 w-25" style="background-color: #4CAF50; ">Enviar</a>
   </form>
 
 </div>
 
+<div class="container-fluid">
 
-      <div class="footer">
 
-        <h4><i>Desenvolvido por </i><a href="https://wdcampos.neocities.org/" style="background-color:#4f58d1; text-decoration:none; padding:6px;"><span Style="font-size: 22px; font-family: 'Tajawal', sans-serif; color:#16fa3c;">WD </span><span><strong>Campos</strong></span></a><i>, 2020. Campos dos Goytacazes, RJ - Brasil. <br />
-            site: wdcampos.neocities.org<br />
-            tel.:(22) 981 872 916<br />
-            e-mail:webdevcampos@gmail.com<br/>
-            redes sociais: @webdevcampos<br/>
-            </i></h4>
-        <div>
-           
-            <img src="neocities.png" style="width:130px; height:50px;"/>
-             help from: <a href="https://www.w3schools.com" target="_blank">w3schools.com</a>
-        </div>
-</div>
+ <p style="font-size:12px; ">
+   Desenvolvido por WD Campos, 2021. Campos dos Goytacazes, RJ - Brasil.<br/>
+    site: wdcampos.neocities.org<br/>      
+    tel.:(22) 981 872 916<br/>    
+    e-mail:webdevcampos@gmail.com<br/>
+    redes sociais: @webdevcampos
+  </p>
+
+
+</div>     
+   
+   
 
 
 
