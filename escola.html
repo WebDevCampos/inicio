@@ -41,7 +41,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
  <!--Fonts-->
  
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -49,17 +49,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Tajawal:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+:root{
+
+--laranja:#eb4b11;
+--roxo:purple;
+--verde:rgb(4, 63, 2);
+--azul:rgb(9, 94, 100);
+}
+
+a{
+  text-decoration: none ;
+  color:black;
+}
+ ul li a{
+color:var(--roxo)!important;
+font: 20px 'RocknRoll One', sans-serif;
+transition:all 1s;
+
+}
+
+ul li a:hover{
+color:var(--verde)!important;
+border-bottom:1px solid var(--laranja);
+
+}
 .escola{
   
 font:300 40px 'Henny Penny'  , cursive;
-background-image: url('https://dbdzm869oupei.cloudfront.net/img/sticker/preview/392.png'); background-position: 22% 22%;
+background-image: url('https://dbdzm869oupei.cloudfront.net/img/sticker/preview/392.png'); 
+background-position: 22% 22%;
 background-repeat: no-repeat;
 background-size: 100%;
 
 }
+.R_One{
+  font-family: 'RocknRoll One', sans-serif;
+}
+.R_Three{
+  font-family: 'RocknRoll One', sans-serif;
+  text-shadow:1px 1px 1px  rgb(80, 80, 79), -1px -1px 1px  rgb(80,80,79); color:rgb(9, 94, 100)
+}
 
+.R_Two{
+  font-family: 'RocknRoll One', sans-serif;
+  color:var(--azul);
+}
 
+.btao_saiba{
+  border:1px solid green; 
+  border-radius:30px; 
+  color:#eb4b11;
+  background-color:white;
+  padding:10px 16px;
+}
+.btao_saiba:hover{
+  border:1px solid #eb4b11; 
+  border-radius:30px; 
+  color:var(--roxo);
+  background-color:white;
+  padding:10px 16px;
+}
 .imgcr{
  
  width:100%;
@@ -142,9 +192,9 @@ height:150px;
 
 <div class="border border-danger" style="width:300px;"></div>
 
-
+<!--Navbar-->
 <div class="container-fluid">  
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand escola" href="#">Escola</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -153,22 +203,22 @@ height:150px;
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active " aria-current="page" href="#" style="color:purple;">inicio</a>
+              <a class="nav-link active " aria-current="page" href="#" style="color:var(--roxo)">inicio</a>
             </li>
            
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 sobre
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">a escola</a></li>
+                <li><a class="dropdown-item" href="#sobre_a_escola">a escola</a></li>
                 <li><a class="dropdown-item" href="#">a equipe</a></li>
-                <li><hr class="dropdown-divider"></li>
+              
                 <li><a class="dropdown-item" href="#">nossas conquistas</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   serviços
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -188,17 +238,19 @@ height:150px;
 </nav>
 
  </div>            
+<!--Navbar-->
 
-<div class="container-fluid ">
+<!--Hero Image-->
+<div class="container-fluid animate__animated animate__fadeIn">
     <div class="card ">
     <img class="card-img imgcr" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRn1ewGhh3fnCoNZklwjW20liM1qzy2aUBlOA&usqp=CAU" class="w3-image imgcr" />
 
     <div class="card-img-overlay d-flex justify-content-around">
         
-            <div class="text-white align-self-center p-1 p-sm-5" style="background-color: rgba(0,0,0, 0.4);">
-                <h1 class="text-center">Escola Linda</h1>
-                <h4 class="card-text">É uma escola infantil</h4>
-                <p class="card-text">como você pode ver pelas crianças brincando na foto.</p>
+            <div class="animate__animated animate__slideInUp  align-self-center p-1 p-sm-5" style="background-color: rgba(0,0,0, 0.4);color:#ffffff">
+                <h1 class="text-center R_One">Escola Linda</h1>
+                <h4 class=" R_One">É uma escola infantil</h4>
+                <p class=" R_One">como você pode ver pelas crianças brincando na foto.</p>
             </div>
         
       
@@ -207,9 +259,103 @@ height:150px;
     </div>
 
 </div>
+<!--Hero Image-->
+
+<div  id="sobre_a_escola" class="container-fluid">
+<div class="row ">
+<div class="col-12 col-md-6">
+    <h1 class="R_One">A <span class="R_Two" style="font-size:14px;">{{Logo Escola Infantil}}</span></h1>
+    <p class="R_One">
+      Surgiu em {{ano}}, com a melhor proposta educacional visando contribuir com o mundo educando alunos e alunas com carinho, responsabilidade, e objetividade. 
+      
+    </p>
+
+    <p class="R_One">
+      Localizada em vários bairros da cidade, atendendo crianças de 0 a 6 anos, com metodologia {{Excelente Metodologia}}. 
+
+    </p>
+    <ul>
+      <li class="R_One">3 campus</li>
+      <li class="R_One">130 professores</li>
+      <li class="R_One"> 1000+ alunos</li>
+    </ul>
+    <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
+</div>
+
+<div class="col-12 col-md-6 p-3">
+
+  <img src="imagens/escola1.jpg" class="w-100">
+</div>
+</div>
+
+
+
+<div class="row my-3">
+
+  
+  <div class="col-12 col-md-6">
+  
+    <h1 class="R_One" >Diferenciais:</h1>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item ">
+        <h2 class="accordion-header border-0" id="headingOne">
+          <button class="border-0 bg-white collapsed" style="color:var(--azul);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           <span class="fa fa-plus-circle  ">&nbsp;</span>Educação Musical
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+             Nas aulas de <strong>Musicalização Infantil</strong> são desenvolvidas as habilidades musicais.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header border-0" id="headingTwo">
+          <button class=" border-0 collapsed bg-white" style="color:var(--azul);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <span class="fa fa-plus-circle  ">&nbsp;</span>Culinária
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Nas aulas de <strong>Culinária</strong> são desenvolvidas as habilidades culinárias.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="border-0 bg-white collapsed" style="color:var(--azul);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <span class="fa fa-plus-circle  ">&nbsp;</span>Educação Ambiental
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Nas aulas de <strong>Educação Ambiental</strong> são desenvolvidas as habilidades de conscientização ambiental.
+          </div>
+        </div>
+      </div>
+
+    
+    </div>
  
 
+    <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
 
+    
+  
+</div>
+  
+  
+  <div class=" col-12 col-md-6  p-3 ">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXemqAEdS98rL6IYQDJ8LE6b9n4LYy0Oy5Pw&usqp=CAU" class="w-100"/>
+  
+  
+  </div>
+
+
+  </div>
+
+</div>
+<!--Carrossel UM-->
 <div class="container-fluid my-2">
         <div id="Carro_Um" class="Carro">
                 <div class=" CarroSlide ">
@@ -251,12 +397,74 @@ height:150px;
 
     
 </div>
+<!--Carrossel UM-->
+
 
 <div class="container-fluid">
+<div class="text-center">
+  <h1 class="R_Three" >
+Notícias
+</h1>
+</div>
+<div class="row">
+
+
+    <div class="col-6 col-md-4">
+      <div class="card shadow " style="background-color: white; border:1px solid #175005;">
+        <div class="card-header R_One border-0">
+          <h5  style="color:#eb4b11;">Festa do <span class="R_Two">Dia da Árvore</span> </h5>
+          <img src="https://www.campos.rj.gov.br/up/photos.php?id_fotos=25122" class="card-img-top ">
+        </div>
+          <div class="card-body R_One ">
+            <h5 class="text-truncate"  >As festividades
+            <small class="" >aconteceram no campus Novo com a presença de pais e professores</small></h5>
+            <a href="#" style="color:#eb4b11;" >Saiba mais <span class="fa fa-chevron-right"></span></a>
+         </div>
+      </div>
+  
+    </div>
 
   
+    
+    <div class="col-6 col-md-4">
+      <div class="card shadow " style="background-color: white; border:1px solid #175005;">
+        <div class="card-header R_One border-0">
+          <h5  style="color:#eb4b11;">Festa do <span class="R_Two">Dia da Árvore</span> </h5>
+          <img src="https://www.campos.rj.gov.br/up/photos.php?id_fotos=25122" class="card-img-top ">
+        </div>
+          <div class="card-body R_One ">
+            <h5 class="text-truncate"  >As festividades
+            <small class="" >aconteceram no campus Novo com a presença de pais e professores</small></h5>
+            <a href="#" style="color:#eb4b11;" >Saiba mais <span class="fa fa-chevron-right"></span></a>
+         </div>
+      </div>
+  
+    </div>
+
+    <div class="col col-md-4 my-2 my-md-0">
+      <div class="card shadow " style="background-color: white; border:1px solid #175005;">
+        <div class="card-header R_One border-0">
+          <h5  style="color:#eb4b11;">Festa do <span class="R_Two">Dia da Árvore</span> </h5>
+          <img src="https://www.campos.rj.gov.br/up/photos.php?id_fotos=25122" class="card-img-top ">
+        </div>
+          <div class="card-body R_One ">
+            <h5 class="text-truncate"  >As festividades
+            <small class="" >aconteceram no campus Novo com a presença de pais e professores</small></h5>
+            <a href="#" style="color:#eb4b11;" >Saiba mais <span class="fa fa-chevron-right"></span></a>
+         </div>
+      </div>
+  
+    </div>
+
+
 </div>
-<div id="contato" class="container-fluid">
+
+
+</div>
+
+
+
+<div id="contato" class="container-fluid R_One">
   <h3>Entre em contato</h3>
   <form action="/action_page.php" method="post">
     <label for="pnome" class="form-label">Nome</label>
@@ -274,8 +482,10 @@ height:150px;
 
     <label   for="assunto">Assunto</label>
     <textarea class="form-control" id="assunto" name="assunto" placeholder="Críticas, sugestões, comentários, dúvidas. Fique à vontade para falar conosco!" style="height:200px; resize:none;"></textarea>
-
-    <a  href="mailto:" class="btn rounded-3 my-3 btn-primary border-0 p-2 w-25" style="background-color: #4CAF50; ">Enviar</a>
+<div  class="my-3"  >
+  <a  href="mailto:" class="btao_saiba text-center text-decoration-none" >Enviar</a>
+</div>
+    
   </form>
 
 </div>
