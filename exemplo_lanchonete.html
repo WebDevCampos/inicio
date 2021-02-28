@@ -33,7 +33,58 @@
  <!--Fonts-->
  <!--Fonts-->
     <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    font-family: 'Lobster', cursive;
+}
+   .meuPrevArrow{
+    top:45%; 
+    left:0px;
+    z-index:1; 
+    width:40px; 
+    font-size:40px;
+    opacity:0.4
+   }
+   .meuNextArrow{
+    top:45%; 
+    right:0px;
+    z-index:1;
+    width:40px; 
+    font-size:40px;
+    opacity:0.4
+   }
+   .meuNextArrow:hover, .meuPrevArrow:hover{
+       opacity:1;
+   }
+
+   .carro_um img{
+       width:100%;
+       height:500px;
+   }
+
    
+   @media screen and (max-width:730px){
+    .carro_um img{
+       width:100%;
+       height:400px;
+   }
+   }
+
+   @media screen and (max-width:600px){
+    .carro_um img{
+       width:100%;
+       height:300px;
+   }
+   }
+
+   @media screen and (max-width:400px){
+    .carro_um img{
+       width:100%;
+       height:200px;
+   }
+   }
     </style>
 </head>
 
@@ -105,17 +156,53 @@
         </div>
     </div>
 
-    <div class=" ">
-        <div class="">
-            <div class="">
-                <img src="https://supermercadosrondon.com.br/guiadecarnes/images/postagens/quer_fazer_hamburger_artesanal_perfeito_2019-05-14.jpg" class="w3-image cel" />
+   <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1> Lanchonete </h1>
+                <p> a melhor lanchonete do mercado </p>
             </div>
-            <h1> Lanchonete </h1>
-            <p> a melhor lanchonete do mercado </p>
-
-
-
+            
         </div>
+
+        <div class="row ">
+            <div class="col position-relative">
+                <div class="meuNextArrow position-absolute   bg-dark p-1  text-white"  ><span  class="fa fa-chevron-right"></span></div>
+
+                <div class="meuPrevArrow position-absolute bg-dark  text-end p-1  text-white" ><span class="fa fa-chevron-left"></span></div>
+                
+                <div class="carro_um ">
+        
+                        
+                        <div>
+                            <img src="https://respostas.sebrae.com.br/wp-content/uploads/2020/06/como_fazer_hamburguer_caseiro-806x440.jpg"  />
+                        </div>
+        
+        
+                        <div>
+                            <img src="imagens/milkShake.jpg" />
+                        </div>
+        
+                        <div>
+                            <img src="https://supermercadosrondon.com.br/guiadecarnes/images/postagens/quer_fazer_hamburger_artesanal_perfeito_2019-05-14.jpg" />
+                        </div>
+        
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-En8LFb0v3yyYlc6wBRXOHSdbAK5q-5Drng&usqp=CAU" />
+                        </div>
+        
+                        <div>
+                            <img src="https://i.pinimg.com/originals/59/79/8c/59798c2d8e12444e0a827af78355c3fa.jpg"  />
+                        </div>
+        
+                        
+                </div>
+
+
+            </div>
+        </div>
+      
+   </div>
 
         <div class="  ">
             <div class="">
@@ -138,7 +225,7 @@
         <table id="">
             <tr class="">
                 <th>Lanche</th>
-                <th text-align:right;">Ingredientes</th>
+                <th>Ingredientes</th>
             </tr>
 
             <tr>
@@ -244,51 +331,26 @@
         
     </div>
 
+
+
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery-3.5.1.js"></script>
+    <script src="bootstrap.min.js" crossorigin="anonymous"></script>
+    
+    <script src="slick.min.js"></script>
+    <script src="slick.js"></script>
     <script>
-        function myFunction() {
-            var input, filter, table, tr, td, i, txtValue;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("myTable");
-            tr = table.getElementsByTagName("tr");
-            for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0];
-                if (td) {
-                    txtValue = td.textContent || td.innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                }
-            }
-        }
-
-        function funcao() {
-            var x = document.getElementById('Demo3');
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-
-        function funcao2() {
-            var x = document.getElementById('Demo4');
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
+   $('document').ready(function(){
+$('.carro_um').slick({
+    arrows:true,
+    appendArrows:$('.meuPrevArrow'),
+    appendArrows:$('.meuNextArrow'),
+    prevArrow:$('.meuPrevArrow'),
+    nextArrow:$('.meuNextArrow'),
+    
+    });
+  });
     </script>
 </body>
 
