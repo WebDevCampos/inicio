@@ -183,6 +183,68 @@ height:150px;
 }
 
 }
+
+.minha_curva{
+  width:200px; height:200px;
+  min-width: 150px;
+  float: left;
+  margin-right:2rem; 
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+
+
+
+.meuflex{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.flex-item{
+ flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: all 0.5s ease;
+  
+}
+
+.flex-item:hover{
+  flex:7;
+}
+
+
+.fundo_um{
+  box-shadow:inset 0 0 1000px rgba(0,0,0,.5);
+  background-image:url(imagens/musicaInfant.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.fundo_dois{
+  box-shadow:inset 0 0 1000px rgba(0,0,0,.5);
+  background-image:url(imagens/cozinha-experimental.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.fundo_tres{
+  box-shadow:inset 0 0 1000px rgba(0,0,0,.5);
+  background-image:url(imagens/ambiental.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+@media screen and (max-width:500px){
+  .meuflex{
+flex-flow:column;
+  }
+
+}
 </style>
   </head> 
 
@@ -261,100 +323,191 @@ height:150px;
 </div>
 <!--Hero Image-->
 
-<div  id="sobre_a_escola" class="container-fluid">
-<div class="row ">
-<div class="col-12 col-md-6">
-    <h1 class="R_One">A <span class="R_Two" style="font-size:14px;">{{Logo Escola Infantil}}</span></h1>
+<div  id="sobre_a_escola" class="container-fluid my-4">
+<div class="row">
+  <div class="col-12">
+    <img src="imagens/escola1.jpg" class="minha_curva">
+    <h1 class="R_One">A <span >Escola</span></h1>
     <p class="R_One">
       Surgiu em {{ano}}, com a melhor proposta educacional visando contribuir com o mundo educando alunos e alunas com carinho, responsabilidade, e objetividade. 
       
-    </p>
-
-    <p class="R_One">
-      Localizada em vários bairros da cidade, atendendo crianças de 0 a 6 anos, com metodologia {{Excelente Metodologia}}. 
-
-    </p>
-    <ul>
-      <li class="R_One">3 campus</li>
-      <li class="R_One">130 professores</li>
-      <li class="R_One"> 1000+ alunos</li>
-    </ul>
-    <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
-</div>
-
-<div class="col-12 col-md-6 p-3">
-
-  <img src="imagens/escola1.jpg" class="w-100 h-100">
-</div>
-</div>
-
-
-
-<div class="row my-3">
+      Localizada em vários bairros da cidade, 
+      atendendo crianças de 0 a 6 anos, com metodologia {{Excelente Metodologia}}. </p>
+      <p>Lorem Ipsum is simply dummy text of the 
+        printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text 
+        ever since the 1500s, when an unknown printer took a galley 
+        of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also 
+        the leap into electronic typesetting, remaining essentially unchanged. 
+        It was popularised in the 1960s with the release of Letraset sheets 
+        containing Lorem Ipsum passages, and more recently with desktop publishing 
+        software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+  </div>
 
   
-  <div class="col-12 col-md-6">
-  
-    <h1 class="R_One" >Diferenciais:</h1>
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item ">
-        <h2 class="accordion-header border-0" id="headingOne">
-          <button class="border-0 bg-white collapsed" style="color:var(--azul);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-           <span class="fa fa-plus-circle  ">&nbsp;</span>Educação Musical
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-             Nas aulas de <strong>Musicalização Infantil</strong> são desenvolvidas as habilidades musicais.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header border-0" id="headingTwo">
-          <button class=" border-0 collapsed bg-white" style="color:var(--azul);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <span class="fa fa-plus-circle  ">&nbsp;</span>Culinária
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Nas aulas de <strong>Culinária</strong> são desenvolvidas as habilidades culinárias.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="border-0 bg-white collapsed" style="color:var(--azul);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            <span class="fa fa-plus-circle  ">&nbsp;</span>Educação Ambiental
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Nas aulas de <strong>Educação Ambiental</strong> são desenvolvidas as habilidades de conscientização ambiental.
-          </div>
-        </div>
-      </div>
+<div class="col-12">
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li class="R_One">3 campus</li>
+        <li class="R_One">130 professores</li>
+        <li class="R_One"> 1000+ alunos</li>
+      </ul>
+      <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
+    </div>
 
+    <div class="col">
+      <ul>
+        <li class="R_One">3 campus</li>
+        <li class="R_One">130 professores</li>
+        <li class="R_One"> 1000+ alunos</li>
+      </ul>
+      <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
+    </div>
+
+    <div class="col">
+      <ul>
+        <li class="R_One">3 campus</li>
+        <li class="R_One">130 professores</li>
+        <li class="R_One"> 1000+ alunos</li>
+      </ul>
+      <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
+    </div>
+  </div>
+  
+
+</div>
+
+
+
+
+<div class="container-fluid">
+  <div class="row my-3">
+
+  
+    <div class="col-12 col-md-6">
+    
+      <h1 class="R_One" >Diferenciais:</h1>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item ">
+          <h2 class="accordion-header border-0" id="headingOne">
+            <button class="border-0 bg-white collapsed" style="color:var(--azul);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+             <span class="fa fa-plus-circle  ">&nbsp;</span>Educação Musical
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+               Nas aulas de <strong>Musicalização Infantil</strong> são desenvolvidas as habilidades musicais.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header border-0" id="headingTwo">
+            <button class=" border-0 collapsed bg-white" style="color:var(--azul);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <span class="fa fa-plus-circle  ">&nbsp;</span>Culinária
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Nas aulas de <strong>Culinária</strong> são desenvolvidas as habilidades culinárias.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="border-0 bg-white collapsed" style="color:var(--azul);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <span class="fa fa-plus-circle  ">&nbsp;</span>Educação Ambiental
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Nas aulas de <strong>Educação Ambiental</strong> são desenvolvidas as habilidades de conscientização ambiental.
+            </div>
+          </div>
+        </div>
+  
+      
+      </div>
+   
+  
+      <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
+  
+      
+    
+  </div>
+    
+    
+    <div class=" col-12 col-md-6  p-3 ">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXemqAEdS98rL6IYQDJ8LE6b9n4LYy0Oy5Pw&usqp=CAU" class="w-100"/>
+    
     
     </div>
- 
-
-    <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
-
-    
   
+  
+    </div>
 </div>
+
+<div class="container-fluid">
+  <div class="meuflex">
+
+
+  <div class="flex-item fundo_um text-white position-relative">
   
+        <div >
+
+      
+            <h2>Educação Musical.</h2>
+      
+            <h5>Nas aulas de <strong>Musicalização Infantil</strong> são desenvolvidas as habilidades musicais.</h5>
+          </div>
   
-  <div class=" col-12 col-md-6  p-3 ">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXemqAEdS98rL6IYQDJ8LE6b9n4LYy0Oy5Pw&usqp=CAU" class="w-100"/>
-  
-  
+          <div class="position-absolute bottom-0 " >
+
+            <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
+          </div>
   </div>
 
 
+
+  <div class="flex-item fundo_dois text-white bg-warning position-relative">
+   
+
+      <div >
+        <h2>Educação Culinária.</h2>
+  
+        <h5>Nas aulas de <strong>Culinária</strong> são desenvolvidas as habilidades culinárias.
+
+        </h5>
+      </div>
+
+      <div class="position-absolute bottom-0">
+
+        <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
+      </div>
+    </div>
+
+
+  <div class="flex-item fundo_tres text-white bg-success position-relative">
+     <div>
+        <h2>Educação Ambiental.</h2>
+  
+        <h5>Nas aulas de <strong>Educação Ambiental</strong> são desenvolvidas as habilidades de conscientização ambiental.
+        </h5>
+      </div>
+
+      <div class="position-absolute bottom-0">
+
+        <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
+      </div>
+    </div>
+
   </div>
 
+  
 </div>
+
 <!--Carrossel UM-->
 <div class="container-fluid my-2">
         <div id="Carro_Um" class="Carro">
