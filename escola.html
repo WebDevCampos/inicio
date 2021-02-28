@@ -183,6 +183,21 @@ height:150px;
 }
 
 }
+
+.img_shape{
+  width:300px; height:300px;shape-outside: circle();float:left;
+  margin:15px; box-shadow:0 10px 50px rgba(0,0,0, 0.4);
+  transition:0.5s;
+}
+
+@media screen and (max-width:500px){
+.img_shape{
+  width:150px;
+  height:150px;
+  margin:10px;
+
+}
+}
 </style>
   </head> 
 
@@ -261,31 +276,61 @@ height:150px;
 </div>
 <!--Hero Image-->
 
-<div  id="sobre_a_escola" class="container-fluid">
-<div class="row ">
-<div class="col-12 col-md-6">
-    <h1 class="R_One">A <span class="R_Two" style="font-size:14px;">{{Logo Escola Infantil}}</span></h1>
-    <p class="R_One">
-      Surgiu em {{ano}}, com a melhor proposta educacional visando contribuir com o mundo educando alunos e alunas com carinho, responsabilidade, e objetividade. 
+<div  id="sobre_a_escola" class="container-fluid my-5">
+<div class="row">
+  <div class="col-12">
+    <img src="imagens/escola1.jpg" class=" rounded-circle img_shape">
+   
+
+ 
+
+    <p class="R_One" ><span class="fs-1">A</span> <span class="escola" >Escola</span>
+    
+      Surgiu em {{ano}}, com a melhor proposta educacional visando contribuir com o mundo educando alunos e alunas com carinho, responsabilidade, e objetividade. </p>
       
-    </p>
+    
 
     <p class="R_One">
       Localizada em vários bairros da cidade, atendendo crianças de 0 a 6 anos, com metodologia {{Excelente Metodologia}}. 
 
     </p>
-    <ul>
-      <li class="R_One">3 campus</li>
-      <li class="R_One">130 professores</li>
-      <li class="R_One"> 1000+ alunos</li>
-    </ul>
-    <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
-</div>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </div>
 
-<div class="col-12 col-md-6 p-3">
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li class="R_One">3 campus</li>
+        <li class="R_One">130 professores</li>
+        <li class="R_One"> 1000+ alunos</li>
+      </ul>
+      <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
+    </div>
 
-  <img src="imagens/escola1.jpg" class="w-100 h-100">
-</div>
+    <div class="col">
+      <ul>
+        <li class="R_One">3 campus</li>
+        <li class="R_One">130 professores</li>
+        <li class="R_One"> 1000+ alunos</li>
+      </ul>
+      <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
+    </div>
+
+    <div class="col">
+      <ul>
+        <li class="R_One">3 campus</li>
+        <li class="R_One">130 professores</li>
+        <li class="R_One"> 1000+ alunos</li>
+      </ul>
+      <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
+    </div>
+  </div>
+    
+    
+  </div>
+    
+
+
 </div>
 
 
