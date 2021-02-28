@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Lanchonete</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Montserrat&family=Racing+Sans+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Montserrat&family=Racing+Sans+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&family=Quicksand:wght@300&display=swap');
+
+        /* input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    
+    
+    .container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px 0 30px 0;
+} 
+
+*/
+        .arealogin,
+        .btn {
+            width: 100%;
+            padding: 5px;
+            border: none;
+            border-radius: 4px;
+            margin: 2px 0;
+            opacity: 0.85;
+            display: inline-block;
+            font-size: 13px;
+            line-height: 14px;
+            text-decoration: none;
+        }
+
+        input:hover,
+        .btn:hover {
+            opacity: 1;
+        }
+
+
+        .fb {
+            background-color: #3B5998;
+            color: white;
+        }
+
+        .twitter {
+            background-color: #55ACEE;
+            color: white;
+        }
+
+        .google {
+            background-color: #dd4b39;
+            color: white;
+        }
+
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+
+        .col {
+            float: left;
+            width: 50%;
+            margin: auto;
+            padding: 0 50px;
+            margin-top: 6px;
+        }
+
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        .vl {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            border: 2px solid #ddd;
+            height: 175px;
+        }
+
+
+        .vl-innertext {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            padding: 8px 10px;
+        }
+
+
+        .hide-md-lg {
+            display: none;
+        }
+
+
+        .bottom-container {
+            text-align: center;
+            background-color: #666;
+            border-radius: 0px 0px 4px 4px;
+        }
+
+
+
+
+        #myTable {
+            width: 80%;
+            text-align: left;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        #myTable th {
+            padding: 2%;
+            text-align: center;
+            font-size: 3vw;
+        }
+
+        #myTable td {
+
+            font-size: 3.2vw;
+
+        }
+
+        #Demo3 ul li {
+            padding: 1%;
+
+        }
+
+        .footer  {
+                margin: 0 4%;
+                background-color: #95b2ed;
+                color: white;
+                text-shadow: 1px 1px 15px grey;
+                padding: 2%;
+                font-family: 'Racing Sans One', cursive;
+                font-size: 20px;
+
+
+            }
+            
+            .footer p  {
+            
+            font-size: 16px;
+            
+            }
+             .footer h5  {
+            
+            font-size: 20px;
+            
+            }
+
+
+        .inicio h1 {
+
+            font-family: 'Lobster', cursive;
+            font-size: 9vw;
+
+
+        }
+
+
+        .inicio p {
+
+            font-family: 'Racing Sans One', cursive;
+            font-size: 3.2vw;
+
+        }
+
+
+        .menu {
+            position: relative;
+            font-size: 5vw;
+            background-color: #7197e3;
+
+        }
+
+        .menu a {
+            position: relative;
+            font-size: 5vw;
+            left: 20%;
+            font-family: 'Racing Sans One', cursive;
+            color: #f2fcf5;
+            text-decoration: none;
+            transition: 0.4s;
+        }
+
+
+        .menu a:hover {
+
+            text-shadow: -2px -2px 3px #cbdff5;
+            box-shadow: 5px 5px 2px #9ecdff;
+            background-color: #9473f0;
+            color: white;
+
+        }
+
+        .menu button {
+            background-color: #77ad76;
+            color: white;
+        }
+
+        .menu button:hover {
+            background-color: #9473f0;
+            color: white;
+        }
+
+        .w3-card {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .w3-bar {
+            width: 100%;
+            position: relative;
+            margin: 0 1%;
+            background-color: #7197e3;
+        }
+
+        @media screen and (max-width: 650px) {
+            .col {
+                width: 100%;
+                margin-top: 0;
+            }
+
+            .vl {
+                display: none;
+            }
+
+            .hide-md-lg {
+                display: block;
+                text-align: center;
+            }
+
+            .cel {
+                width: 88%;
+            }
+            
+            .footer  {
+                margin: 0 4%;
+                background-color: #95b2ed;
+                color: white;
+                text-shadow: 1px 1px 15px grey;
+                padding: 2%;
+                font-family: 'Racing Sans One', cursive;
+                font-size: 10px;
+
+
+            }
+            
+            .footer p  {
+            
+            font-size: 8px;
+            
+            }
+             .footer h5  {
+            
+            font-size: 12px;
+            
+            } 
+             
+
+        }
+
+
+
+
+
+        @media screen and (max-width:500px) {
+
+            #Demo3 ul li,
+            #Demo4 ul li {
+                padding: 1%;
+
+                font-size: 4.3vw;
+
+
+            }
+
+            .cel {
+                width: 88%;
+            }
+
+             .footer  {
+                margin: 0 4%;
+                background-color: #95b2ed;
+                color: white;
+                text-shadow: 1px 1px 15px grey;
+                padding: 2%;
+                font-family: 'Racing Sans One', cursive;
+                font-size: 10px;
+
+
+            }
+            
+            .footer p  {
+            
+            font-size: 8px;
+            
+            }
+             .footer h5  {
+            
+            font-size: 12px;
+            
+            }
+
+            .menu a {
+                position: relative;
+                font-size: 5vw;
+                left: 10%;
+
+
+            }
+        
+
+            .inicio h1 {
+
+                font-size: 11vw;
+
+
+            }
+
+
+            .inicio p {
+
+                font-size: 5vw;
+
+
+            }
+             .mapa{
+             width:150px;
+            height:150px;
+              
+              
+              }
+
+
+
+        }
+
+        @media screen and (max-width:300px) {
+
+            #menu a {
+                position: relative;
+                font-size: 5vw;
+                left: 10%;
+
+
+            }
+            
+            .footer  {
+                margin: 0 4%;
+                background-color: #95b2ed;
+                color: white;
+                text-shadow: 1px 1px 15px grey;
+                padding: 2%;
+                font-family: 'Racing Sans One', cursive;
+                font-size: 10px;
+
+
+            }
+            
+            .footer p  {
+            
+            font-size:8px;
+            
+            }
+             .footer h5  {
+            
+            font-size: 12px;
+            
+            }
+            .mapa{
+             width:150px;
+            height:150px;
+              
+              
+              }
+
+        }
+
+        @media screen and(max-width:900px) {
+
+
+            #Demo3 ul li,
+            #Demo4 ul li {
+                padding: 1%;
+
+                font-size: 2.3vw;
+
+
+            }
+            
+            
+             .footer{
+               
+               background-color:;
+               color:;
+               padding:;
+               margin: 2%;
+               
+               
+               
+               }  
+        }
+
+        @media screen and (max-width:1800px) {
+
+
+            #Demo3 ul li,
+            #Demo4 ul li {
+                padding: 1%;
+
+                font-size: 2.3vw;
+
+
+            }
+
+ .footer{
+               
+               background-color:;
+               color:;
+               padding:;
+               margin: 2%;
+               
+               
+               
+               }  
+
+    .mapa{
+             width:650px;
+            height:450px;
+              
+              
+              }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-card w3-top  w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px;" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Fechar</a>
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                    <h2 style="text-align:center"> Entrar/Cadastrar</h2>
+                    <div class="vl">
+                        <span class="vl-innertext">ou</span>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" class="fb btn">
+                            <i class="fa fa-facebook fa-fw"></i> Login com Facebook
+                        </a>
+                        <a href="#" class="twitter btn">
+                            <i class="fa fa-twitter fa-fw"></i> Login com Twitter
+                        </a>
+                        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                            </i> Login com Google
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <div class="hide-md-lg">
+                            <p>Ou entre com seu e-mail:</p>
+                        </div>
+
+                        <input class="arealogin" type="text" name="username" placeholder="Nome de usuário/e-mail" required>
+                        <input class="arealogin" type="password" name="password" placeholder="Senha" required>
+                        <input class="arealogin" type="submit" value="Login">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="bottom-container">
+            <div class="row">
+                <div class="col">
+                    <a href="#" style="color:white" class="btn">Cadastrar</a>
+                </div>
+                <div class="col">
+                    <a href="#" style="color:white" class="btn">Esqueceu sua senha?</a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Top menu -->
+    <div class="w3-top">
+        <div class=" w3-xlarge" style="max-width:1200px;margin:auto">
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()" style="background-color:#e6effa;">☰</div>
+
+        </div>
+    </div>
+
+    <div class="w3-container w3-center ">
+        <div class="inicio">
+            <div class="w3-container">
+                <img src="https://supermercadosrondon.com.br/guiadecarnes/images/postagens/quer_fazer_hamburger_artesanal_perfeito_2019-05-14.jpg" class="w3-image cel" />
+            </div>
+            <h1> Lanchonete </h1>
+            <p> a melhor lanchonete do mercado </p>
+
+
+
+        </div>
+
+        <div class="w3-bar  w3-right">
+            <div class="menu">
+                <a href="#" class="w3-bar-item ">início</a>
+                <a href="#cardapio"  class="w3-bar-item ">cardápio</a>
+                <a href="#" class="w3-bar-item ">contato</a>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Procurar..." title="Procure seu lanche" style="width:100%;">
+                <button type="button" href="#" class="w3-bar-item" style="width:100%;">OK</button>
+            </div>
+        </div>
+
+        <div class="w3-container  w3-center">
+            <div id="cardapio">
+                <h3 style="font-size:6vw; text-align:center;"> Cardápio </h3>
+
+            </div>
+        </div>
+
+
+        <table id="myTable">
+            <tr class="header">
+                <th>Lanche</th>
+                <th style="text-align:right;">Ingredientes</th>
+            </tr>
+
+            <tr>
+                <td id="">Cheese</td>
+                <td class="w3-container  w3-mobile ">
+                    <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/master/pass/Smashburger-recipe-120219.jpg" class="w3-image w3-right">
+                    <button onclick="funcao()" class="w3-btn w3-block w3-red">CheeseBurguer </button>
+
+                    <div id="Demo3" class="w3-hide w3-container w3-center w3-pale-red">
+                        <ul class="w3-ul" style="list-style:none;">
+                            <li>Ingrediente 1<span class="w3-orange w3-text-white w3-margin"> R$1,00 cada </span><span id="igrum" class="w3-button w3-teal">+</span> <span class="w3-button w3-teal"> - </span>
+                            </li>
+
+                            <li>Ingrediente 2<span class="w3-orange w3-text-white w3-margin"> R$1,00 cada </span><span id="igrdois" class="w3-button w3-teal">+</span> <span class="w3-button w3-teal"> - </span>
+                            </li>
+
+
+                            <li>Ingrediente 3<span class="w3-orange w3-text-white w3-margin">R$1,00 cada </span><span id="igrtres" class="w3-button w3-teal">+</span> <span class="w3-button w3-teal"> - </span>
+                            </li>
+
+
+                            <li>Ingrediente 4<span class="w3-orange w3-text-white w3-margin"> R$1,00 cada </span><span id="igrquatro" class="w3-button w3-teal">+</span> <span class="w3-button w3-teal"> - </span>
+                            </li>
+
+
+                            <li>TOTAL = <span id="totalxburguer"></span> </li>
+                            <span class="w3-btn w3-green">Fazer pedido</span>
+
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td id="">Hamburger</td>
+                <td class="w3-container  w3-mobile">
+                    <img src="https://mlwebefgvwxw.i.optimole.com/2rdJhqI-esIFHQx5/w:auto/h:auto/q:78/https://www.lavsguide.com/wp-content/uploads/2019/07/burger-close-up-delicious-1639565.jpg" class="w3-image">
+                    <button onclick="funcao2()" class="w3-btn w3-block w3-red">Hamburguer </button>
+
+                    <div id="Demo4" class="w3-hide w3-container w3-center w3-pale-red">
+                        <ul class="w3-ul" style="list-style:none;">
+                            <li>Ingrediente 1<span class="w3-orange w3-text-white w3-margin"> R$1,00 cada </span><span id="igrum" class="w3-button w3-teal">+</span> <span class="w3-button w3-teal"> - </span>
+                            </li>
+
+                            <li>Ingrediente 2<span class="w3-orange w3-text-white w3-margin"> R$1,00 cada </span><span id="igrdois" class="w3-button w3-teal">+</span> <span class="w3-button w3-teal"> - </span>
+                            </li>
+
+
+                            <li>Ingrediente 3<span class="w3-orange w3-text-white w3-margin">R$1,00 cada </span><span id="igrtres" class="w3-button w3-teal">+</span> <span class="w3-button w3-teal"> - </span>
+                            </li>
+
+
+                            <li>Ingrediente 4<span class="w3-orange w3-text-white w3-margin"> R$1,00 cada </span><span id="igrquatro" class="w3-button w3-teal">+</span> <span class="w3-button w3-teal"> - </span>
+                            </li>
+
+
+                            <li>TOTAL = <span id="totalhamburguer"></span> </li>
+                            <span class="w3-btn w3-green">Fazer pedido</span>
+
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+
+<div style="display:flex; flex-flow:column nowrap;" >
+<div> 
+<hr/><p style="font-size:4vw;">entregar em:</p></div>
+<div>
+<iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14820.97924323665!2d-41.33102935!3d-21.77078425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1607808644412!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;  " allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+</div>
+    </div>
+    <!--<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>-->
+
+    <div class="footer">
+
+        <h5>Desenvolvido por <a href="https://wdcampos.neocities.org/" style="background-color:#4f58d1; text-decoration:none; padding:6px;"><span Style="font-size: 22px; font-family: 'Tajawal', sans-serif; color:#16fa3c;">WD </span><span><strong>Campos</strong></span></a> 2020. Campos dos Goytacazes, RJ - Brasil. <br /></h5>
+           <p> site: wdcampos.neocities.org<br />
+            tel.:(22) 981 872 916<br />
+            redes sociais: @webdevcampos<br/>
+            </p>
+        
+    </div>
+
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+        function funcao() {
+            var x = document.getElementById('Demo3');
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function funcao2() {
+            var x = document.getElementById('Demo4');
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
