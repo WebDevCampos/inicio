@@ -215,7 +215,7 @@ height:150px;
   background-size: cover;
   background-repeat: none;
   transition: all 0.5s ease;
-  
+  content: " <h2>Educação Musical.</h2><h5>Nas aulas de <strong>Musicalização Infantil</strong> são desenvolvidas as habilidades musicais.</h5>";
 }
 
 .flex-item:hover{
@@ -242,6 +242,13 @@ height:150px;
   background-image:url(imagens/ambiental.jpg);
   background-repeat:no-repeat;
   background-size:cover;
+}
+
+@media screen and (max-width:500px){
+  .meuflex{
+flex-flow:column;
+  }
+
 }
 </style>
   </head> 
@@ -452,14 +459,14 @@ height:150px;
 
 
   <div class="flex-item fundo_um text-white position-relative">
-  
-        <div class="border">
+    <div class="border">
 
-      
-            <h2>Educação Musical.</h2>
-      
-            <h5>Nas aulas de <strong>Musicalização Infantil</strong> são desenvolvidas as habilidades musicais.</h5>
-          </div>
+            
+      <h2>Educação Musical.</h2>
+
+      <h5>Nas aulas de <strong>Musicalização Infantil</strong> são desenvolvidas as habilidades musicais.</h5>
+    </div>
+       
   
           <div class="position-absolute bottom-0 border" >
 
