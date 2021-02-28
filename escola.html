@@ -9,8 +9,9 @@
     <!--BS-->
    
     
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css" >
   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!--BS-->
     
     <!--SLICK-->
@@ -43,8 +44,11 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <style>
-
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Tajawal:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
 :root{
 
@@ -179,73 +183,6 @@ height:150px;
 }
 
 }
-
-.img_shape{
-  width:300px; height:300px;shape-outside: circle();float:left;
-  margin:15px; box-shadow:0 10px 50px rgba(0,0,0, 0.4);
-  transition:0.5s;
-}
-
-@media screen and (max-width:500px){
-.img_shape{
-  width:150px;
-  height:150px;
-  margin:10px;
-
-}
-}
-
-
-
-.meuflex{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 70vh;
-}
-
-.flex-item{
- flex: 1;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: none;
-  transition: all 0.5s ease;
-  content: " <h2>Educação Musical.</h2><h5>Nas aulas de <strong>Musicalização Infantil</strong> são desenvolvidas as habilidades musicais.</h5>";
-}
-
-.flex-item:hover{
-  flex:7;
-}
-
-
-.fundo_um{
-  box-shadow:inset 0 0 1000px rgba(0,0,0,.5);
-  background-image:url(imagens/musicaInfant.jpg);
-  background-repeat:no-repeat;
-  background-size:cover;
-}
-
-.fundo_dois{
-  box-shadow:inset 0 0 1000px rgba(0,0,0,.5);
-  background-image:url(imagens/cozinha-experimental.jpg);
-  background-repeat:no-repeat;
-  background-size:cover;
-}
-
-.fundo_tres{
-  box-shadow:inset 0 0 1000px rgba(0,0,0,.5);
-  background-image:url(imagens/ambiental.jpg);
-  background-repeat:no-repeat;
-  background-size:cover;
-}
-
-@media screen and (max-width:500px){
-  .meuflex{
-flex-flow:column;
-  }
-
-}
 </style>
   </head> 
 
@@ -324,65 +261,35 @@ flex-flow:column;
 </div>
 <!--Hero Image-->
 
-<div  id="sobre_a_escola" class="container-fluid my-5">
-<div class="row">
-  <div class="col-12">
-    <img src="imagens/escola1.jpg" class=" rounded-circle img_shape">
-   
-
- 
-
-    <p class="R_One" ><span class="fs-1">A</span> <span class="escola" >Escola</span>
-    
-      Surgiu em {{ano}}, com a melhor proposta educacional visando contribuir com o mundo educando alunos e alunas com carinho, responsabilidade, e objetividade. </p>
+<div  id="sobre_a_escola" class="container-fluid">
+<div class="row ">
+<div class="col-12 col-md-6">
+    <h1 class="R_One">A <span class="R_Two" style="font-size:14px;">{{Logo Escola Infantil}}</span></h1>
+    <p class="R_One">
+      Surgiu em {{ano}}, com a melhor proposta educacional visando contribuir com o mundo educando alunos e alunas com carinho, responsabilidade, e objetividade. 
       
-    
+    </p>
 
-  
+    <p class="R_One">
       Localizada em vários bairros da cidade, atendendo crianças de 0 a 6 anos, com metodologia {{Excelente Metodologia}}. 
 
- 
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  </div>
+    </p>
+    <ul>
+      <li class="R_One">3 campus</li>
+      <li class="R_One">130 professores</li>
+      <li class="R_One"> 1000+ alunos</li>
+    </ul>
+    <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
+</div>
 
-  <div class="row">
-    <div class="col">
-      <ul>
-        <li class="R_One">3 campus</li>
-        <li class="R_One">130 professores</li>
-        <li class="R_One"> 1000+ alunos</li>
-      </ul>
-      <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
-    </div>
+<div class="col-12 col-md-6 p-3">
 
-    <div class="col">
-      <ul>
-        <li class="R_One">3 campus</li>
-        <li class="R_One">130 professores</li>
-        <li class="R_One"> 1000+ alunos</li>
-      </ul>
-      <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
-    </div>
-
-    <div class="col">
-      <ul>
-        <li class="R_One">3 campus</li>
-        <li class="R_One">130 professores</li>
-        <li class="R_One"> 1000+ alunos</li>
-      </ul>
-      <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
-    </div>
-  </div>
-    
-    
-  </div>
-    
-
-
+  <img src="imagens/escola1.jpg" class="w-100 h-100">
+</div>
 </div>
 
 
-<div class="container-fluid">
+
 <div class="row my-3">
 
   
@@ -448,67 +355,6 @@ flex-flow:column;
   </div>
 
 </div>
-
-
-<div class="container-fluid">
-  <div class="meuflex">
-
-
-  <div class="flex-item fundo_um text-white position-relative">
-    <div>
-
-            
-      <h2>Educação Musical.</h2>
-
-      <h5>Nas aulas de <strong>Musicalização Infantil</strong> são desenvolvidas as habilidades musicais.</h5>
-    </div>
-       
-  
-          <div class="position-absolute bottom-0 " >
-
-            <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
-          </div>
-  </div>
-
-
-
-  <div class="flex-item fundo_dois text-white bg-warning position-relative">
-   
-
-      <div>
-        <h2>Educação Culinária.</h2>
-  
-        <h5>Nas aulas de <strong>Culinária</strong> são desenvolvidas as habilidades culinárias.
-
-        </h5>
-      </div>
-
-      <div class=" position-absolute bottom-0">
-
-        <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
-      </div>
-    </div>
-
-
-  <div class="flex-item fundo_tres text-white bg-success position-relative">
-     <div>
-        <h2>Educação Ambiental.</h2>
-  
-        <h5>Nas aulas de <strong>Educação Ambiental</strong> são desenvolvidas as habilidades de conscientização ambiental.
-        </h5>
-      </div>
-
-      <div class=" position-absolute bottom-0">
-
-        <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
-      </div>
-    </div>
-
-  </div>
-
-  
-</div>
-
 <!--Carrossel UM-->
 <div class="container-fluid my-2">
         <div id="Carro_Um" class="Carro">
@@ -665,7 +511,7 @@ Notícias
 
 <script src="jquery-3.5.1.min.js"></script>
 <script src="jquery-3.5.1.js"></script>
-<script src="bootstrap.min.js" ></script>
+<script src="bootstrap.min.js" crossorigin="anonymous"></script>
 
 <script src="slick.min.js"></script>
 <script src="slick.js"></script>
@@ -688,6 +534,8 @@ autoplay:true
 
 
 });
+
+
 });
 
 </script>
