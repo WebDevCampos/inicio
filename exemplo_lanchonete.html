@@ -31,6 +31,15 @@
 
  
  <!--Fonts-->
+ <link rel="stylesheet" type="text/css"
+ href="../inicio/Fontes/HomeSchool/style.css"/>
+
+ <link rel="stylesheet" type="text/css"
+ href="../inicio/Fontes/gitaluevo-cufonfonts-webfont/style.css">
+
+ 
+ <link rel="stylesheet" type="text/css"
+ href="../inicio/Fontes/miso-cufonfonts-webfont/style.css">
  <!--Fonts-->
     <style>
 
@@ -91,77 +100,52 @@
 <body>
 
 
-
-
-    <!-- Sidebar (hidden by default) -->
-    <nav class=""  id="mySidebar">
-        <a href="" class="">Fechar</a>
-        <div class="">
-            <form action="">
-                <div class="">
-                    <h2 > Entrar/Cadastrar</h2>
-                    <div >
-                        <span>ou</span>
-                    </div>
-
-                    <div >
-                        <a href="#" class="">
-                            <i class="fa fa-facebook fa-fw">
-
-                            </i> Login com Facebook
-                        </a>
-                        <a href="#" class="">
-                            <i class="fa fa-twitter fa-fw">
-
-                            </i> Login com Twitter
-                        </a>
-                        <a href="#" class="">
-                            <i class="fa fa-google fa-fw">
-                            </i> Login com Google
-                        </a>
-                    </div>
-
-                    <div class="">
-                        <div class="">
-                            <p>Ou entre com seu e-mail:</p>
-                        </div>
-
-                        <input  type="text" name="username" placeholder="Nome de usuário/e-mail" required>
-                        <input  type="password" name="password" placeholder="Senha" required>
-                        <input  type="submit" value="Login">
-                    </div>
-
-                </div>
+   
+        
+<div class="container-fluid">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h3 style="color:rgb(50, 27, 56);">Lanchonete</h3>
+            <h6 style="color:rgb(108, 132, 153);">a melhor lanchonete do mercado</h6>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
+          </div>
         </div>
-
-        <div class="">
-            <div class="">
-                <div class="">
-                    <a href="#"  class="">Cadastrar</a>
-                </div>
-                <div class="col">
-                    <a href="#" class="">Esqueceu sua senha?</a>
-                </div>
-            </div>
-        </div>
-
-    </nav>
-
-    <!-- Top menu -->
-  
-            <div class=""><span class="fa fa-bars"></span></div>
-
-
-   <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <h1> Lanchonete </h1>
-                <p> a melhor lanchonete do mercado </p>
-            </div>
-            
-        </div>
-
+      </nav>
+</div>
+   
+<div class="container">
         <div class="row ">
             <div class="col position-relative">
                 <div class="meuNextArrow position-absolute   bg-dark p-1  text-white"  ><span  class="fa fa-chevron-right"></span></div>
@@ -198,19 +182,45 @@
 
             </div>
         </div>
-      
-   </div>
+   
+</div>
+
+<div id="cardapio" class="container-fluid   ">
+    
+    <div class="text-center">
+        <h1 style="color:rgb(50, 27, 56);">Lanchonete</h1>
+        <h4 style="color:rgb(108, 132, 153);">a melhor lanchonete do mercado</h4>
+    </div>
+    <h3 class="text-center" style="font-family:'Miso'; color:rgb(133, 9, 9);" >Escolha seu lanche</h3>
+  <div class="row ">
+  
+            <div v-for="lanche in lanches" :key="lanches.idLanche" class="col-12 col-sm-6 col-md-3 text-center">
+                <div >
+                    <p style="font-family: 'Home School Regular'; color:rgb(252, 99, 99);">{{lanche.nomeDoLanche}}</p>
+                    <img v-bind:src="lanche.imagensDosLanches" width="200" height="160">
+                    <div class="m-2 p-1 ">
+                        <button class="btn btn-primary" @click="diminui">-</button>
+                        <span class="text-center  p-2 ">{{lanche.qtd}}</span>
+
+                        <button class="btn btn-primary" @click="soma">+</button>
+                        <input  v-bind:value="lanche.qtd" size="2" min="0" max="20" class="text-center rounded-3 p-1 " style="border:0.01rem solid lightgrey" placeholder="total" >
+                    </div>
+                </div>
+               
+            </div>
+           
+        </div>
+    
+   
+</div>
+   
+
+
+
 
       
  
 
-<div id="app">
-    <h1>{{mensagem}}</h1>
-    <p>Essa é outra {{mensagem}}</p>
-
-    <h1>{{mensagem}}</h1>
-    <p>Essa é outra {{mensagem}}</p>
-</div>
 
 
 
@@ -223,7 +233,7 @@
     <script src="slick.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-
+    <script src="vuelessons.js"></script>
     <script>
    $('document').ready(function(){
 $('.carro_um').slick({
@@ -236,12 +246,7 @@ $('.carro_um').slick({
     });
   });
 
-  var app = new Vue({
-  el: '#app',
-  data: {
-    mensagem: 'Hello Vue!'
-  }
-})
+  
     </script>
 </body>
 
