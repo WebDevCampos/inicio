@@ -35,13 +35,15 @@
     <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 </style>
 </head>
 
 <body>
+    
 
 
-    <h3 class="text-center">Escolha seu lanche</h3>
+    <h3 class="text-center" >Escolha seu lanche</h3>
 
 <div id="cardapio" class="container-fluid   ">
 
@@ -53,10 +55,10 @@
                     <img v-bind:src="lanche.imagensDosLanches" width="200" height="160">
                     <div class="m-2 p-1 ">
                         <button class="btn btn-primary" @click="diminui">-</button>
-                        <span class="text-center  p-2 ">{{qtd}}</span>
+                        <span class="text-center  p-2 ">{{lanche.qtd}}</span>
 
                         <button class="btn btn-primary" @click="soma">+</button>
-                        <input  size="2" min="0" max="20" class="text-center rounded-3 p-1 " style="border:0.01rem solid lightgrey" placeholder="total" >
+                        <input  v-bind:value="qtd" size="2" min="0" max="20" class="text-center rounded-3 p-1 " style="border:0.01rem solid lightgrey" placeholder="total" >
                     </div>
                 </div>
                
@@ -66,7 +68,9 @@
     
    
 </div>
-    
+   
+
+
 
     <script src="jquery-3.5.1.min.js"></script>
     <script src="jquery-3.5.1.js"></script>
@@ -76,53 +80,32 @@
     <script src="slick.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="vuelessons.js"></script>
 
     <script>
- var cardapio = new Vue({
-el:"#cardapio",
-data:{
-    qtd:0,
-   
-    lanches:[
+var app = new Vue({
 
+    el:"#app",
+    data:{
+        fundoazul:{
+            backgroundColor:'#123456',
+            color:'green',
+            minWidth:'300px',
+            minHeigth:'200px',
+           
 
-        { idLanche:"0001",
-        nomeDoLanche:"Hamburguer",
-        imagensDosLanches:"./imagens/hamburguer.jpg",
-        
-        
-    },
-    { idLanche:"0002",
-        nomeDoLanche:"Milk Shake",
-        imagensDosLanches:"./imagens/milkShake.jpg",
-        
-    },
-    { idLanche:"0003",
-        nomeDoLanche:"Pizza",
-        imagensDosLanches:"./imagens/pizza.jpg",
-        
-    },
-    { idLanche:"0004",
-        nomeDoLanche:"Salgadinhos",
-        imagensDosLanches:"./imagens/salgadinhos.jpg",
-        
-    },
+        },
+        oba:{
+            backgroundColor:'red',
+            color:'green',
+            width:'300px',
+            heigth:'200px',
+            margin:'10px;'
+           
 
-    ]
-    
-},
-
-methods:{
-soma(){
-    this.qtd += 1
-},
-diminui(){
-    this.qtd -= 1
-},
-}
- });
-
-
+        }
+    }
+});
 
     </script>
 </body>
