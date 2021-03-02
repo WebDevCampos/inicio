@@ -16,9 +16,8 @@
    <!--BS-->
    
    <!--SLICK-->
- <link rel="stylesheet" href="slick-theme.css">
+ 
  <link rel="stylesheet" href="slick.css"/>
-    
    <!--SLICK-->
 
  
@@ -26,21 +25,26 @@
  <link rel="stylesheet" href="all.css" />
  <link rel="stylesheet" href="all.min.css" />
  
+ <link rel="stylesheet" href="homeSchool.css">
  <script src="https://kit.fontawesome.com/dbce8a62cb.js" crossorigin="anonymous"></script>
 <!--FA-->
 
  
  <!--Fonts-->
+ <link rel="stylesheet" type="text/css"
+ href="../inicio/Fontes/HomeSchool/style.css"/>
+
+ <link rel="stylesheet" type="text/css"
+ href="../inicio/Fontes/gitaluevo-cufonfonts-webfont/style.css">
+
+ 
+ <link rel="stylesheet" type="text/css"
+ href="../inicio/Fontes/miso-cufonfonts-webfont/style.css">
  <!--Fonts-->
     <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@font-face {
-    font-family: 'Home School Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Home School Regular'), url('Home School.woff') format('woff');
-    }
+
 
 *{
     font-family:'Lobster', sans-serif
@@ -49,22 +53,22 @@
 </head>
 
 <body>
-
+   
 
    
 
 <div id="cardapio" class="container-fluid   ">
     
     <div class="text-center">
-        <h1>Lanchonete</h1>
-        <h4>a melhor lanchonete do mercado</h4>
+        <h1 style="color:rgb(50, 27, 56);;">Lanchonete</h1>
+        <h4 style="color:rgb(108, 132, 153);">a melhor lanchonete do mercado</h4>
     </div>
-    <h3 class="text-center" >Escolha seu lanche</h3>
+    <h3 class="text-center" style="font-family:'Miso'; color:rgb(133, 9, 9);" >Escolha seu lanche</h3>
   <div class="row ">
   
             <div v-for="lanche in lanches" :key="lanches.idLanche" class="col-12 col-sm-6 col-md-3 text-center">
-                <div style="font-family:'Home School Regular';">
-                    <p>{{lanche.nomeDoLanche}}</p>
+                <div >
+                    <p style="font-family: 'Home School Regular'; color:rgb(219, 16, 16);">{{lanche.nomeDoLanche}}</p>
                     <img v-bind:src="lanche.imagensDosLanches" width="200" height="160">
                     <div class="m-2 p-1 ">
                         <button class="btn btn-primary" @click="diminui">-</button>
