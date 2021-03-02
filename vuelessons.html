@@ -35,22 +35,35 @@
     <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@font-face {
+    font-family: 'Home School Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Home School Regular'), url('Home School.woff') format('woff');
+    }
 
+*{
+    font-family:'Lobster', sans-serif
+}
 </style>
 </head>
 
 <body>
-    
 
 
-    <h3 class="text-center" >Escolha seu lanche</h3>
+   
 
 <div id="cardapio" class="container-fluid   ">
-
+    
+    <div class="text-center">
+        <h1>Lanchonete</h1>
+        <h4>a melhor lanchonete do mercado</h4>
+    </div>
+    <h3 class="text-center" >Escolha seu lanche</h3>
   <div class="row ">
   
             <div v-for="lanche in lanches" :key="lanches.idLanche" class="col-12 col-sm-6 col-md-3 text-center">
-                <div>
+                <div style="font-family:'Home School Regular';">
                     <p>{{lanche.nomeDoLanche}}</p>
                     <img v-bind:src="lanche.imagensDosLanches" width="200" height="160">
                     <div class="m-2 p-1 ">
@@ -83,29 +96,7 @@
     <script src="vuelessons.js"></script>
 
     <script>
-var app = new Vue({
 
-    el:"#app",
-    data:{
-        fundoazul:{
-            backgroundColor:'#123456',
-            color:'green',
-            minWidth:'300px',
-            minHeigth:'200px',
-           
-
-        },
-        oba:{
-            backgroundColor:'red',
-            color:'green',
-            width:'300px',
-            heigth:'200px',
-            margin:'10px;'
-           
-
-        }
-    }
-});
 
     </script>
 </body>

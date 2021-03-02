@@ -1,7 +1,8 @@
 var cardapio = new Vue({
     el:"#cardapio",
     data:{
-       
+       marca:"Lanchonete",
+       marca_dois:"a melhor lanchonete do mercado",
        qtd:0,
         lanches:[
     
@@ -42,7 +43,8 @@ var cardapio = new Vue({
        
     },
     
-    }
+    },
+    
      });
     
     
