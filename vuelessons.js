@@ -35,11 +35,11 @@ var cardapio = new Vue({
     },
     
     methods:{
-    soma(){
-        this.qtd += 1
+    soma(lanches){
+       
     },
     diminui(){
-        this.qtd -= 1
+       
     },
     
     }
