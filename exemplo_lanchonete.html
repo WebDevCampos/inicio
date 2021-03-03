@@ -94,6 +94,12 @@
        height:200px;
    }
    }
+
+   .botaoDetalhe{
+background-color:black;
+color:white;
+border-radius:3px;
+   }
     </style>
 </head>
 
@@ -184,34 +190,28 @@
         </div>
    
 </div>
-
 <div id="cardapio" class="container-fluid   ">
-    
-    <div class="text-center">
-        <h1 style="color:rgb(50, 27, 56);">Lanchonete</h1>
-        <h4 style="color:rgb(108, 132, 153);">a melhor lanchonete do mercado</h4>
-    </div>
-    <h3 class="text-center" style="font-family:'Miso'; color:rgb(133, 9, 9);" >Escolha seu lanche</h3>
+  <div class="text-center">
+    <h1 style="color:rgb(50, 27, 56);;">Lanchonete</h1>
+    <h4 style="color:rgb(108, 132, 153);">a melhor lanchonete do mercado</h4>
+  </div>
+  <h3 class="text-center" style="font-family:'Miso'; color:rgb(133, 9, 9);">Escolha seu lanche</h3>
   <div class="row ">
-  
-            <div v-for="lanche in lanches" :key="lanches.idLanche" class="col-12 col-sm-6 col-md-3 text-center">
-                <div >
-                    <p style="font-family: 'Home School Regular'; color:rgb(252, 99, 99);">{{lanche.nomeDoLanche}}</p>
-                    <img v-bind:src="lanche.imagensDosLanches" width="200" height="160">
-                    <div class="m-2 p-1 ">
-                        <button class="btn btn-primary" @click="diminui">-</button>
-                        <span class="text-center  p-2 ">{{lanche.qtd}}</span>
-
-                        <button class="btn btn-primary" @click="soma">+</button>
-                        <input  v-bind:value="lanche.qtd" size="2" min="0" max="20" class="text-center rounded-3 p-1 " style="border:0.01rem solid lightgrey" placeholder="total" >
-                    </div>
-                </div>
-               
-            </div>
-           
+    <div v-for="(lanche,index) in lanches" :key="lanches.idLanche" class="col-12 col-sm-6 col-md-3 text-center">
+      <div>
+        <p style="font-family: 'Home School Regular'; color:rgb(252, 99, 99);">{{lanche.nomeDoLanche}} 
+      
+        <img v-bind:src="lanche.imagensDosLanches" width="200" height="160">
+        <div class="m-2 p-1 ">
+          
+          <button class="btn btn-primary" @click="diminui(index)">-</button>
+          
+          <button class="btn btn-primary" @click="soma(index)">+</button>
+          <input v-model="lanche.qtd" class="text-center rounded-3 p-1 " style="border:0.01rem solid lightgrey" size="2" disabled >
         </div>
-    
-   
+      </div>
+    </div>
+  </div>
 </div>
    
 
@@ -246,7 +246,12 @@ $('.carro_um').slick({
     });
   });
 
-  
+ $(document).ready(function(){
+$('.botaoDetalhe').click(function(){
+  $('.detalhe').toggle()
+})
+
+ }) 
     </script>
 </body>
 

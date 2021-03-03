@@ -49,6 +49,12 @@
 *{
     font-family:'Lobster', sans-serif
 }
+.displaynone{
+  display:none;
+}
+.displayinblock{
+  display:inline-block;
+}
 </style>
 </head>
 
@@ -92,11 +98,21 @@
         </div>
       </nav>
 </div>
-   
-<div class="container">
-    <div id="app">
-      <imfg :src="imag"/>
-        <p>{{titulo}}</p>
+
+
+<div id="app" class="container">
+
+      <img :src="imag" />
+        <p><span id="nume">0 &nbsp;</span><span id="hambu">hamburguer</span></p>
+        <button >Detalhes</button>
+        <button id="soma">Soma</button>
+        <button id="diminui" class="">Diminui</button>
+       </div>
+
+    <div>
+<p v-if="detalhes">
+  Este sanduíche é feito com 
+</p>
     </div>
 </div>
 
@@ -112,26 +128,32 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <script src="vuelessons.js"></script>
-
+   
     <script>
 
-var app = new Vue({
-el:'#app',
+let num = 0;
 
-data:{
-numero:1,
-txto:"texto",
-imag:'./imagens/salgadinhos.jpg'
+$(document).ready(function(){
+$('#soma').click(function(){num++;
+$('#nume').text(num + " ");
 
-},
-
-computed:{
-  titulo(){
-    return this.numero + " " + this.txto
-  }
-}
+if (num >= 2){ $('#hambu').text("hamburegueres")} })
 
 });
+
+
+$(document).ready(function(){
+$('#diminui').click(function(){num--;
+$('#nume').text(num + " ");
+if(num === 0){
+  $('#diminui').hide()
+}else if(num >= 1){$('#diminui').show()}
+
+});
+});
+
+
+
 
     </script>
 </body>
