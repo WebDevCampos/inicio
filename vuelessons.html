@@ -102,21 +102,27 @@
 
 <div id="app" class="container">
 
-      <img :src="imag" />
+      <img src="algumaimagem.jpg" width="200" height="160" alt="alguma imagem">
         <p><span id="nume">0 &nbsp;</span><span id="hambu">hamburguer</span></p>
-        <button >Detalhes</button>
+        <button id="detalhes">Detalhes</button>
         <button id="soma">Soma</button>
         <button id="diminui" class="">Diminui</button>
        </div>
 
     <div>
-<p v-if="detalhes">
-  Este sanduíche é feito com 
-</p>
-    </div>
+<div class="detalhes">
+  Detalhes do lanche
 </div>
 
+</div>
 
+<div id="app2">
+  <meu-componente></meu-componente>
+</div>
+
+<div id="components-demo">
+  <button-counter></button-counter>
+</div>
 
 
     <script src="jquery-3.5.1.min.js"></script>
@@ -143,18 +149,39 @@ if (num >= 2){ $('#hambu').text("hamburegueres")} })
 
 
 $(document).ready(function(){
-$('#diminui').click(function(){num--;
+$('#diminui').click(function(){
+  num--;
 $('#nume').text(num + " ");
-if(num === 0){
-  $('#diminui').hide()
-}else if(num >= 1){$('#diminui').show()}
+if(num <= 0){
+  num = 0};
+
 
 });
 });
 
+var app2 = new Vue({
+  el:'#app2'
+});
 
+Vue.component("meu-componente",{
+template:`<div><p>{{nome}}</p></div>`,
+data:function(){
+return{
+  nome:"Marcus"
+}
+}
+});
+new Vue({ el: '#components-demo' })
 
-
+// Define a new component called button-counter
+Vue.component('button-counter', {
+  data: function () {
+    return {
+      count: 0
+    }
+  },
+  template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+})
     </script>
 </body>
 
