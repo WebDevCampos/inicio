@@ -1,4 +1,436 @@
-<div class="container-fluid">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Lanchonete</title>
+    
+   <!--BS-->
+   
+    
+   <link rel="stylesheet" href="bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+ 
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+   <!--BS-->
+   
+   <!--SLICK-->
+ 
+ <link rel="stylesheet" href="slick.css"/>
+   <!--SLICK-->
+
+ 
+<!--FA-->
+ <link rel="stylesheet" href="all.css" />
+ <link rel="stylesheet" href="all.min.css" />
+ 
+ <link rel="stylesheet" href="homeSchool.css">
+ <script src="https://kit.fontawesome.com/dbce8a62cb.js" crossorigin="anonymous"></script>
+<!--FA-->
+
+ 
+ <!--Fonts-->
+ <link rel="stylesheet" type="text/css"
+ href="../inicio/Fontes/HomeSchool/style.css"/>
+
+ <link rel="stylesheet" type="text/css"
+ href="../inicio/Fontes/gitaluevo-cufonfonts-webfont/style.css">
+
+ 
+ <link rel="stylesheet" type="text/css"
+ href="../inicio/Fontes/miso-cufonfonts-webfont/style.css">
+ <!--Fonts-->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Tajawal:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+      .itens{display:block;}
+    @media screen and (max-width:400px){
+       .itens{display:none}
+    }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 30px 0 10px 0;
+  margin:0 10px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+ 
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #020202;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    
+.escola{
+  
+  font:300 40px 'Henny Penny'  , cursive;
+  background-image: url('https://dbdzm869oupei.cloudfront.net/img/sticker/preview/392.png'); 
+  background-position: 22% 22%;
+  background-repeat: no-repeat;
+  background-size: 81%;
+  
+  }
+  
+ ul li a{
+  color:rgb(21, 3, 72) !important;
+font:500 23px 'Miso';
+transition:all 1s;
+
+}
+
+ul li a:hover{
+color:green !important;
+border-bottom:1px solid orange;
+
+}
+
+
+
+
+.meuflex{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.flex-item{
+ flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: all 0.5s ease;
+  
+}
+
+.flex-item:hover{
+  flex:7;
+}
+
+
+.fundo_um{
+  box-shadow:inset 0 0 1000px rgba(0,0,0,.5);
+  background-image:url(imagens/musicaInfant.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.fundo_dois{
+  box-shadow:inset 0 0 1000px rgba(0,0,0,.5);
+  background-image:url(imagens/cozinha-experimental.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.fundo_tres{
+  box-shadow:inset 0 0 1000px rgba(0,0,0,.5);
+  background-image:url(imagens/ambiental.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+@media screen and (max-width:500px){
+  .meuflex{
+flex-flow:column;
+height:600px;
+
+  }
+ 
+}    </style>
+    </head>
+    <body>
+
+ <!--Navbar(s)-->     
+<div class="container-fluid  mt-1 d-none d-sm-block">
+  <nav class="navbar navbar-expand-lg  minhanav" >
+    <div class="container-fluid">
+      <a class="navbar-brand escola " href="#" style="color:#072b4f;">Escola</a>
+
+      <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars text-info"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">início</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              sobre
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">a escola</a></li>
+              <li><a class="dropdown-item" href="#">a equipe</a></li>
+            
+              <li><a class="dropdown-item" href="#">nossas conquistas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              serviços
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">matrícula online</a></li>
+              <li><a class="dropdown-item" href="#">agendamento de reforço</a></li>
+         
+              <li><a class="dropdown-item" href="#">calendário acadêmico</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+
+        
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item align-self-lg-center">
+            <a class="nav-link " href="#" tabindex="-1">entrar <span class="fa fa-user-circle"></span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" ><sup style="font-size:10px;"><span class="fa fa-phone"></span>&nbsp; +55(11)111-111-111</sup></a>
+         
+            <a class="nav-link" href="#" tabindex="-1"><sub style="font-size:10px"><span class="fa fa-mail-bulk"></span>&nbsp; escolamuitoboa@felicidade.com</sub></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+
+ <div class="d-sm-none">
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">início</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          sobre
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">a escola</a></li>
+          <li><a class="dropdown-item" href="#">a equipe</a></li>
+        
+          <li><a class="dropdown-item" href="#">nossas conquistas</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          serviços
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">matrícula online</a></li>
+          <li><a class="dropdown-item" href="#">agendamento de reforço</a></li>
+     
+          <li><a class="dropdown-item" href="#">calendário acadêmico</a></li>
+        </ul>
+      </li>
+      
+    </ul>
 
     
+    <form class="d-flex mx-2">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+
+
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+      <li class="nav-item align-self-lg-center">
+        <a class="nav-link " href="#" tabindex="-1">entrar <span class="fa fa-user-circle"></span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" tabindex="-1" ><sup style="font-size:13px;"><span class="fa fa-phone"></span>&nbsp; +55(11)111-111-111</sup></a>
+     
+        <a class="nav-link" href="#" tabindex="-1"><sub style="font-size:13px"><span class="fa fa-mail-bulk"></span>&nbsp; escolamuitoboa@felicidade.com</sub></a>
+      </li>
+    </ul>
+  </div>
+  
+
+
+    <button class="navbar-toggler bg-warning" type="button" style="cursor:pointer" class="escola" onclick="openNav()">
+      <span class="fa fa-bars text-info"></span>
+    </button>
+  
+ 
+    <span style="cursor:pointer" class="escola offset-3" onclick="openNav()"> 
+      &nbsp; Escola
+   
+   </span>
+  </div>
+
+ <!--Navbar(s)-->    
+ 
+ 
+
+<!--Slides Flex--> 
+<div class="container-fluid my-2">
+  <div class="meuflex">
+
+<!--Slide um-->
+
+  <div class="flex-item fundo_um text-white position-relative">
+    <style>
+      .btao_saiba{
+        font-family:'Miso'; 
+        color:white;
+        background-color: purple; 
+        border-radius: 30px;
+        border:none; 
+        padding:5px 10px;
+      }
+    </style>   
+    
+    <div class='position-relative'>
+
+        
+          <div style="font-family: 'Miso';">
+
+      
+        <h2>Educação Musical.</h2>
+  
+        <h5>Nas aulas de <strong>Musicalização Infantil</strong> são desenvolvidas as habilidades musicais.</h5>
+          </div>
+
+          <div class=" border border-success  position-absolute " style="bottom:21%;">
+    
+            <a href="https://wdcampos.lojaintegrada.com.br/none-81163552" class="btao_saiba ms-1 mt-5">Saiba mais
+            </a>
+        
+          </div>
+     
+          </div>
+         
+  </div>
+<!--Slide um-->
+
+<!--Slide dois-->
+
+  <div class="flex-item fundo_dois text-white position-relative">
+    <div class='position-relative'>
+
+    
+      <div style="font-family: 'Miso';">
+
+  
+    <h2>Educação Culinária.</h2>
+
+    <h5>Nas aulas de <strong>Educação Culinária</strong> são desenvolvidas as habilidades culinárias.</h5>
+      </div>
+
+      <div class=" border border-success  position-absolute " style="bottom:21%;">
+
+        <a href="https://wdcampos.lojaintegrada.com.br/none-81163552" class="btao_saiba ms-1 mt-5">Saiba mais
+        </a>
+    
+      </div>
+ 
+      </div>
+     
 </div>
+
+<!--Slide dois-->
+
+
+<!--Slide tres-->
+<div class="flex-item fundo_tres text-white position-relative">
+  <div class='position-relative'>
+
+  
+    <div style="font-family: 'Miso';">
+
+
+  <h2>Educação Ambiental.</h2>
+
+  <h5>Nas aulas de <strong>Educação Ambiental</strong> são desenvolvidas as habilidades de conscientização ambiental.</h5>
+    </div>
+
+    <div class=" border border-success  position-absolute " style="bottom:21%;">
+
+      <a href="https://wdcampos.lojaintegrada.com.br/none-81163552" class="btao_saiba ms-1 mt-5">Saiba mais
+      </a>
+    </div>
+
+    </div>
+   
+</div>
+<!--Slide tres-->
+  </div>
+
+  
+</div>
+<!--Slides Flex--> 
+
+
+
+
+  
+ <script src="jquery-3.5.1.min.js"></script>
+        <script src="jquery-3.5.1.js"></script>
+        <script src="bootstrap.min.js" crossorigin="anonymous"></script>
+        
+        <script src="slick.min.js"></script>
+        <script src="slick.js"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+       
+       
+        <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+        </script>
+    
+  </body>
+</html>
+
+    
+   
