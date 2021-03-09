@@ -59,69 +59,10 @@
 </head>
 
 <body>
-   
-<div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Lanchonete</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nossa história</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-</div>
-
-
-<div id="app" class="container">
-
-      <img src="algumaimagem.jpg" width="200" height="160" alt="alguma imagem">
-        <p><span id="nume">0 &nbsp;</span><span id="hambu">hamburguer</span></p>
-        <button id="detalhes">Detalhes</button>
-        <button id="soma">Soma</button>
-        <button id="diminui" class="">Diminui</button>
-       </div>
-
-    <div>
-<div class="detalhes">
-  Detalhes do lanche
-</div>
-
-</div>
-
-<div id="app2">
-  <meu-componente></meu-componente>
-</div>
-
-<div id="components-demo">
-  <button-counter></button-counter>
+  
+<div id="app">
+ <ola nome="Marcus"></ola>
+ <comovai estado="bem"></comovai>
 </div>
 
 
@@ -132,8 +73,8 @@
     <script src="slick.min.js"></script>
     <script src="slick.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-    <script src="vuelessons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js"></script>
+
    
     <script>
 
@@ -159,30 +100,24 @@ if(num <= 0){
 });
 });
 
-var app2 = new Vue({
-  el:'#app2'
-});
 
-Vue.component("meu-componente",{
-template:`<div><p>{{nome}}</p></div>`,
-data:function(){
-return{
-  nome:"Marcus"
-}
-}
-});
-new Vue({ el: '#components-demo' })
-
-// Define a new component called button-counter
-Vue.component('button-counter', {
-  data: function () {
-    return {
-      count: 0
-    }
-  },
-  template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+Vue.component('ola',{
+  props:['nome'],
+  template:'<h1>Olá, {{nome}} </h1>',
 })
-    </script>
+
+Vue.component('comovai',{
+  props:['estado'],
+  template:'<h1>Eu vou {{estado}} </h1>',
+})
+
+  var app = new Vue({
+  el: '#app'
+})
+
+ 
+  
+</script>
 </body>
 
 </html>
