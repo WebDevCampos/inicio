@@ -57,8 +57,21 @@ Nome
 
 $nome = $_POST['nome'];
 
-echo "Olá, [$nome]."
+echo "Olá,".$nome;
 
 ?>
+
+
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery-3.5.1.js"></script>
+    <script src="bootstrap.min.js" crossorigin="anonymous"></script>
+    
+    <script src="slick.min.js"></script>
+    <script src="slick.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js"></script>
+
+    
 </body>
 </html>
