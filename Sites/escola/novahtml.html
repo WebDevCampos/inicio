@@ -9,9 +9,8 @@
    <!--BS-->
    
     
-   <link rel="stylesheet" href="bootstrap.min.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
- 
+   <link rel="stylesheet" href="../escola/bootstrap.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
    <!--BS-->
    
@@ -141,21 +140,21 @@ border-bottom:1px solid orange;
 
 .fundo_um{
   box-shadow:inset 0 0 1000px rgba(0,0,0,.5);
-  background-image:url(imagens/musicaInfant.jpg);
+  background-image:url(../imagens/musicaInfant.jpg);
   background-repeat:no-repeat;
   background-size:cover;
 }
 
 .fundo_dois{
   box-shadow:inset 0 0 1000px rgba(0,0,0,.5);
-  background-image:url(imagens/cozinha-experimental.jpg);
+  background-image:url(../imagens/cozinha-experimental.jpg);
   background-repeat:no-repeat;
   background-size:cover;
 }
 
 .fundo_tres{
   box-shadow:inset 0 0 1000px rgba(0,0,0,.5);
-  background-image:url(imagens/ambiental.jpg);
+  background-image:url(../imagens/ambiental.jpg);
   background-repeat:no-repeat;
   background-size:cover;
 }
@@ -260,8 +259,8 @@ border:none;
 width:30px;
 height:30px;
 background-repeat: no-repeat;
-background-image:url(imagens/home.svg);
-background-size:30px;
+background-image:url(../imagens/home.svg);
+background-size:15px;
 }
 
 .slick-dots :nth-child(2) button{
@@ -273,8 +272,8 @@ border:none;
 width:30px;
 height:30px;
 background-repeat: no-repeat;
-background-image:url(imagens/home.svg);
-background-size:30px;
+background-image:url(../imagens/home.svg);
+background-size:15px;
 }
 
 .slick-dots :nth-child(3) button{
@@ -286,8 +285,8 @@ border:none;
 width:30px;
 height:30px;
 background-repeat: no-repeat;
-background-image:url(imagens/home.svg);
-background-size:30px;
+background-image:url(../imagens/home.svg);
+background-size:15px;
 }
 
 .slick-dots :nth-child(4) button{
@@ -299,9 +298,34 @@ border:none;
 width:30px;
 height:30px;
 background-repeat: no-repeat;
-background-image:url(imagens/home.svg);
-background-size:30px;
+background-image:url(../imagens/home.svg);
+background-size:15px;
 }
+
+
+
+.minha_curva{
+  width:200px; height:200px;
+  min-width: 150px;
+  float: left;
+  margin-right:2rem; 
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+
+@media screen and (max-width:400px){
+  
+.minha_curva{
+  width:100%; 
+  min-width: 150px;
+  border-radius: 0%;
+  -webkit-shape-outside:none;
+  shape-outside: none;
+  
+}
+}
+
   </style>
     </head>
     <body>
@@ -478,7 +502,34 @@ background-size:30px;
 </div>
 </div>
 
+<!--Sobre-->
+<div  id="sobre_a_escola" class="container-fluid my-4">
+  <div class="row">
+    <div class="col-12">
+      <img src="../imagens/escola1.jpg" class="minha_curva">
+      <h1 class="R_One">A <span >Escola</span></h1>
+      <p class="R_One">
+        Surgiu em {{ano}}, com a melhor proposta educacional visando contribuir com o mundo educando alunos e alunas com carinho, responsabilidade, e objetividade. 
+        
+        Localizada em vários bairros da cidade, 
+        atendendo crianças de 0 a 6 anos, com metodologia {{Excelente Metodologia}}. </p>
+        <p style="  line-height: 1.8; font-family: Open Sans, sans-serif; ">Lorem Ipsum is simply dummy text of the 
+          printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text 
+          ever since the 1500s, when an unknown printer took a galley 
+          of type and scrambled it to make a type specimen book. 
+          It has survived not only five centuries, but also 
+          the leap into electronic typesetting, remaining essentially unchanged. 
+          It was popularised in the 1960s with the release of Letraset sheets 
+          containing Lorem Ipsum passages, and more recently with desktop publishing 
+          software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
 
+</div>
+</div>
+
+<!--Sobre-->
 
 
 
@@ -571,7 +622,8 @@ background-size:30px;
  <script src="jquery-3.5.1.min.js"></script>
         <script src="jquery-3.5.1.js"></script>
         <script src="bootstrap.min.js" crossorigin="anonymous"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> 
+
         <script src="slick.min.js"></script>
         <script src="slick.js"></script>
     

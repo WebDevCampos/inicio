@@ -56,42 +56,9 @@
 </head>
 
     <body >
-      <div id='app'>
+     
+ <?php echo "Yes" ?>
 
-        <label for="nome">Nome</label><br/>
-        <input id="nome" name="nome" v-model="nome"><br/>
-        <label for="tel">Telefone</label><br/>
-        <input id="tel" name="tel" v-model="tel"><br/>
-        <p>Gostaria de receber novidades?</p>
-        <input type="radio" value="Sim" id="novidades" name="novidades" v-model="novidades"> Sim <br/>
-        <input type="radio" value="Não" id="novidades" name="novidades" v-model="novidades"> Não <br/>
-
-        <p>Intreresses</p>
-        <input type="checkbox" id="interesses" name="interesses" v-model="interesses">Futebol<br/>
-        <input type="checkbox" id="interesses" name="interesses" v-model="interesses">Formula 1<br/>
-        <input type="checkbox" id="interesses" name="interesses" v-model="interesses">Corrida<br/>
-
-        <p>Como nos conheceu?</p>
-        <select v-model="conheceu">
-          <option value="">Escolha </option>
-          <option value="google">Google </option>
-          <option value="tv">Tv</option>
-          <option value="revista">Revista</option>
-        </select> <br/><br/>
-      
-
-        <button>Enviar</button>
-        
-        <hr>
-
-        Nome: {{nome}} <br/>
-        Tel: {{tel}} <br/>
-        Novidades: {{novidades}} <br/>
-        Interesses: {{interesses}} <br/>
-        Como nos conheceu: {{conheceu}}
-      </div>
- 
-</script>
     
     <script src="./jquery-3.5.1.js"></script>
     <script src="./jquery-3.5.1.min.js"></script>
@@ -103,16 +70,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
       
 <script>
- var app = new Vue({
-   el:"#app",
-   data:{
-    nome:'',
-    tel:'',
-    novidades:'',
-    interesses:'',
-    conheceu:''
-   }
- });
+
   
 </script>
 
