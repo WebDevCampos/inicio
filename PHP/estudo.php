@@ -16,7 +16,7 @@
    
    <!--SLICK-->
  
- <link rel="stylesheet" href="../lanchonete/slick.css"/>
+ <link rel="stylesheet" href="./slick.css"/>
     
    <!--SLICK-->
 
