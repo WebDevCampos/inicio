@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Site de delivery</title>
+    <meta name="title" content="Delivery">
+
+    <meta name="Language" content="Portuguese">
+    <meta charset="UTF-8">
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+
+    <!--BS-->
+
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!--BS-->
+
+    <!--SLICK-->
+    <link rel="stylesheet" href="slick.css" />
+
+    <!--SLICK-->
+
+
+    <!--FA-->
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="all.min.css" />
+
+    <script src="https://kit.fontawesome.com/dbce8a62cb.js" crossorigin="anonymous"></script>
+    <!--FA-->
+
+
+    <!--Fonts-->
+    <link rel="stylesheet" type="text/css" href="../inicio/Fontes/HomeSchool/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="../inicio/Fontes/gitaluevo-cufonfonts-webfont/style.css">
+
+
+    <link rel="stylesheet" type="text/css" href="../inicio/Fontes/miso-cufonfonts-webfont/style.css">
+    <!--Fonts-->
+    <style>
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            bottom: 24px;
+            color: transparent;
+        }
+
+        .slick-dots li {
+            display: inline-block;
+            margin: 0 3px;
+            padding: 2px;
+            color: transparent;
+        }
+
+        .slick-dots button {
+            border: 1px solid white;
+            border-radius: 50%;
+            color: transparent;
+            width: 7px;
+            height: 14px;
+            background-color: transparent;
+            padding: 6px;
+        }
+
+        .slick-dots .slick-active button {
+
+            background-color: white;
+        }
+
+
+
+        #parallax_One {
+            height: auto;
+            background-color: #004c82;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(banner_cinco.png) 50% 0 fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+        }
+
+        #parallax_Two {
+            height: 400px;
+            background-color: #004c82;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(banner_cinco.png) 50% 0 fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+        }
+
+        .myPrev {
+            top: 45%;
+            left: 13px;
+            z-index: 1;
+            width: 20px;
+            font-size: 20px;
+            opacity: 0.4
+        }
+
+        .myNext {
+            top: 45%;
+            right: 13px;
+            z-index: 1;
+            width: 20px;
+            font-size: 20px;
+            opacity: 0.4
+        }
+
+        .myNext:hover,
+        .myPrev:hover {
+            opacity: 1;
+        }
+
+        .carro img {
+            width: 100%;
+            height: 360px;
+        }
+
+        .wdrw {
+            width: 75%
+        }
+
+        .ordr {
+            width: 75%
+        }
+
+        .CEPinform {
+            width: 60%
+        }
+
+        @media screen and (max-width:600px) {
+            .carro img {
+                width: 100%;
+                height: 260px;
+            }
+
+            .CEPinform {
+                width: 100%
+            }
+
+
+            .wdrw {
+                width: 100%
+            }
+
+            .ordr {
+                width: 100%
+            }
+        }
+
+
+        .carro {
+            margin-bottom: -56px
+        }
+
+
+        .upper {
+            text-transform: uppercase;
+        }
+
+
+        .bege {
+            background-color: #e2bb3c;
+        }
+
+        .cardImg {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px
+        }
+
+        @media screen and (max-width:450px) {
+            .cardImg {
+                width: 70px;
+                height: 70px
+            }
+
+        }
+
+        #nav-login-tab {
+            text-align: center;
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: grey;
+
+        }
+
+        #nav-login-tab:hover {
+
+            border-bottom: 2px solid orange;
+            color: orange;
+        }
+
+
+        #nav-cadastro-tab {
+            text-align: center;
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: grey;
+
+        }
+
+        #nav-cadastro-tab:hover {
+
+            border-bottom: 2px solid orange;
+            color: orange;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            /* display: none; <- Crashes Chrome on hover */
+            -webkit-appearance: none;
+            margin: 0;
+            /* <-- Apparently some margin are still there even though it's hidden */
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+
+
+
+</head>
+
+
+
+<div class="container-fluid">
+    <div class="row" style="background-color: #c91919;">
+
+
+        <div class="col-8 col-sm-10 text-center  ">
+            <div class="row">
+                <div class="offset-1 ">
+                    <img src="logo.png" style="background-color: white;">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="col-4  col-sm-2 align-self-end">
+
+            <button class="btn  rounded-pill w-100 my-1 bege" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Entrar</button>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="col position-relative">
+           
+<div class="myPrev position-absolute bg-dark p-1  text-white">
+   <span class="fa fa-chevron-left"></span>
+</div>
+
+<div class="myNext position-absolute bg-dark  text-end p-1  text-white">
+    <span class="fa fa-chevron-right"></span>
+</div>
+
+<div class="carro ">
+    <div><img src="crostini.jpg" ></div>
+    <div><img src="toqueespecial.jpg"></div>
+    <div><img src="vegano"></div>
+    <div><img src="banner_quatro.png"></div>
+    <div><img src="banner_cinco.png"></div>
+</div>
+
+
+</div>
+    
