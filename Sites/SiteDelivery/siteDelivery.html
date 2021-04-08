@@ -1,52 +1,167 @@
 <!DOCTYPE html>
 
 <head>
-	<title>Site de delivery</title>
-	<meta name="title" content="Delivery">
+    <title>Site de delivery</title>
+    <meta name="title" content="Delivery">
 
-	<meta name="Language" content="Portuguese">
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-	
-	
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">        
-
-	
-<!--BS-->
-   
-    
-<link rel="stylesheet" href="bootstrap.min.css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-<!--BS-->
-
-<!--SLICK-->
-<link rel="stylesheet" href="slick.css"/>
- 
-<!--SLICK-->
+    <meta name="Language" content="Portuguese">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
 
-<!--FA-->
-<link rel="stylesheet" href="all.css" />
-<link rel="stylesheet" href="all.min.css" />
-
-<script src="https://kit.fontawesome.com/dbce8a62cb.js" crossorigin="anonymous"></script>
-<!--FA-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 
 
-<!--Fonts-->
-<link rel="stylesheet" type="text/css"
-href="../inicio/Fontes/HomeSchool/style.css"/>
-
-<link rel="stylesheet" type="text/css"
-href="../inicio/Fontes/gitaluevo-cufonfonts-webfont/style.css">
+    <!--BS-->
 
 
-<link rel="stylesheet" type="text/css"
-href="../inicio/Fontes/miso-cufonfonts-webfont/style.css">
-<!--Fonts-->
-<style>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!--BS-->
 
-</style>
+    <!--SLICK-->
+    <link rel="stylesheet" href="slick.css" />
+
+    <!--SLICK-->
+
+
+    <!--FA-->
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="all.min.css" />
+
+    <script src="https://kit.fontawesome.com/dbce8a62cb.js" crossorigin="anonymous"></script>
+    <!--FA-->
+
+
+    <!--Fonts-->
+    <link rel="stylesheet" type="text/css" href="../inicio/Fontes/HomeSchool/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="../inicio/Fontes/gitaluevo-cufonfonts-webfont/style.css">
+
+
+    <link rel="stylesheet" type="text/css" href="../inicio/Fontes/miso-cufonfonts-webfont/style.css">
+    <!--Fonts-->
+    <style>
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            bottom: 24px;
+            color: transparent;
+        }
+
+        .slick-dots li {
+            display: inline-block;
+            margin: 0 3px;
+            padding: 2px;
+            color: transparent;
+        }
+
+        .slick-dots button {
+            border: 1px solid white;
+            border-radius: 50%;
+            color: transparent;
+            width: 7px;
+            height: 14px;
+            background-color: transparent;
+            padding: 6px;
+        }
+
+        .slick-dots .slick-active button {
+
+            background-color: white;
+        }
+
+
+
+        #parallax_One {
+            height: auto;
+            background-color: #004c82;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(banner_cinco.png) 50% 0 fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+        }
+
+        .myPrev {
+            top: 45%;
+            left: 0px;
+            z-index: 1;
+            width: 20px;
+            font-size: 20px;
+            opacity: 0.4
+        }
+
+        .myNext {
+            top: 45%;
+            right: 0px;
+            z-index: 1;
+            width: 20px;
+            font-size: 20px;
+            opacity: 0.4
+        }
+
+        .myNext:hover,
+        .myPrev:hover {
+            opacity: 1;
+        }
+
+        .carro img {
+            width: 100%;
+            height: 360px;
+        }
+
+        .wdrw {
+            width: 75%
+        }
+
+        .ordr {
+            width: 75%
+        }
+
+        .CEPinform {
+            width: 60%
+        }
+
+        @media screen and (max-width:600px) {
+            .carro img {
+                width: 100%;
+                height: 260px;
+            }
+
+            .CEPinform {
+                width: 100%
+            }
+
+
+            .wdrw {
+                width: 100%
+            }
+
+            .ordr {
+                width: 100%
+            }
+        }
+
+
+        .carro {
+            margin-bottom: -56px
+        }
+
+
+        .upper {
+            text-transform: uppercase;
+        }
+
+
+        .bege {
+            background-color: #e2bb3c;
+        }
+    </style>
 
 
 
@@ -54,21 +169,173 @@ href="../inicio/Fontes/miso-cufonfonts-webfont/style.css">
 
 <body>
 
-<div class="carro">
-    <div><img src=""></div>
-</div>
 
 
-    
+    <div class="container-fluid">
+        <div class="row" style="background-color: #c91919;">
+
+
+            <div class="col-8 col-sm-10 text-sm-center  ">
+                <div class="row">
+                    <div class="offset-1 ">
+                        <img src="logo.png" style="background-color: white;">
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="col-4  col-sm-2 align-self-end">
+
+                <button class="btn  rounded-pill w-100 my-1 bege">Entrar</button>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="container-fluid">
+
+        <div class="row ">
+            <div class="col position-relative">
+
+                <div class="myPrev position-absolute bg-dark p-1  text-white"><span class="fa fa-chevron-left"></span>
+                </div>
+
+
+                <div class="myNext position-absolute bg-dark  text-end p-1  text-white"><span
+                        class="fa fa-chevron-right"></span></div>
+                <div class="carro">
+                    <div><img src="bannerUm.png"></div>
+                    <div><img src="banner_dois.png"></div>
+                    <div><img src="banner_tres.png"></div>
+                    <div><img src="banner_quatro.png"></div>
+                    <div><img src="banner_cinco.png"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="parallax_One" data-speed="6" data-type="background" class="container-fluid">
+        <div class="container p-5 CEPinform " style=" box-shadow:inset 0 0 0 1000px rgba(102, 101, 101, 0.438); ">
+            <p class="text-white text-center " style=" text-transform: uppercase;">Informe seu cep e faça pedido na
+                unidade mais próxima de você.</p>
+            <form>
+                <div class="input-group mb-3 ">
+                    <input type="text" class="form-control" placeholder="CEP" aria-label="search"
+                        aria-describedby="basic-addon2">
+                    <span class="input-group-text upper" id="basic-addon2">buscar</span>
+                </div>
+                <div class="text-center"><a class="text-white">não sabe seu cep?</a></div>
+
+            </form>
+        </div>
+
+        <div class="container text-center">
+
+            <button class="btn bege  mt-2 upper wdrw">retirar em uma loja</button>
+
+            <button class="btn bg-white my-2 upper ordr">pedir na mesa</button>
+        </div>
+
+        <div class=" row bege p-2">
+            <input type="" class="form-control my-2 upper" placeholder="Todas as cidades">
+        </div>
+    </div>
+
+
+
+    <div id="app" class="container-fluid">
+
+
+        <div class="row row-cols-1 row-cols-sm-2 ">
+
+            <div class="card" v-for="(place,index) in places" :key="places.id">
+                {{place.name }}<br/> {{ place.address}} <br/> 
+                {{place.rate}} {{place.timeWait}} <br/>
+                {{place.opened}}
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+
+
+
+
     <script src="jquery-3.5.1.min.js"></script>
     <script src="jquery-3.5.1.js"></script>
     <script src="bootstrap.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
 
     <script src="slick.min.js"></script>
     <script src="slick.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
 
+        $(document).ready(function () {
+            $window = $(window);
+            //Captura cada elemento section com o data-type "background"
+            $('section[data-type="background"]').each(function () {
+                var $scroll = $(this);
+                //Captura o evento scroll do navegador e modifica o backgroundPosition de acordo com seu deslocamento.
+                $(window).scroll(function () {
+                    var yPos = -($window.scrollTop() / $scroll.data('speed'));
+                    var coords = '50% ' + yPos + 'px';
+                    $scroll.css({ backgroundPosition: coords });
+                });
+            });
+        });
+        $(document).ready(function () {
+
+            $('.carro').slick({
+                dots: true,
+                arrows: true,
+                prevArrow: $('.myPrev'),
+                nextArrow: $('.myNext'),
+            })
+        })
+
+        var app = new Vue({
+                el: "#app",
+                data: {
+                    places: [{
+                        id: 000,
+                        name:'Dom Delivery',
+                        address:'Endereço 1',
+                        rate:'five stars',
+                        timeWait:'30 - 40 min',
+                        opened:true,
+
+
+                    },
+                    {
+                        id: 001,
+                        name:'Dom Delivery',
+                        address:'Endereço 2',
+                        rate:'tree stars',
+                        timeWait:'40 - 60 min',
+                        opened:false,
+                    },
+                    ]
+                }
+            })
+    </script>
 </body>
+
 </html>
