@@ -44,43 +44,19 @@
 
     <link rel="stylesheet" type="text/css" href="../inicio/Fontes/miso-cufonfonts-webfont/style.css">
     <!--Fonts-->
+
+    <link rel="stylesheet" href="neemo.css">
     <style>
-        .slick-dots {
-            display: flex;
-            justify-content: center;
-            position: relative;
-            bottom: 24px;
-            color: transparent;
-        }
 
-        .slick-dots li {
-            display: inline-block;
-            margin: 0 3px;
-            padding: 2px;
-            color: transparent;
-        }
+     
+        
+       
 
-        .slick-dots button {
-            border: 1px solid white;
-            border-radius: 50%;
-            color: transparent;
-            width: 7px;
-            height: 14px;
-            background-color: transparent;
-            padding: 6px;
-        }
-
-        .slick-dots .slick-active button {
-
-            background-color: white;
-        }
-
-
-
+        
         #parallax_One {
             height: auto;
             background-color: #004c82;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(banner_cinco.png) 50% 0 fixed;
+            background:  url(banner_cinco.png) 50% 0 fixed;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
@@ -88,7 +64,7 @@
         }
 
         #parallax_Two {
-            height: 400px;
+            height: 300px;
             background-color: #004c82;
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(banner_cinco.png) 50% 0 fixed;
             background-repeat: no-repeat;
@@ -103,7 +79,7 @@
             z-index: 1;
             width: 20px;
             font-size: 20px;
-            opacity: 0.4
+          
         }
 
         .myNext {
@@ -112,57 +88,17 @@
             z-index: 1;
             width: 20px;
             font-size: 20px;
-            opacity: 0.4
+          
         }
 
-        .myNext:hover,
-        .myPrev:hover {
-            opacity: 1;
-        }
+       
 
         .carro img {
             width: 100%;
-            height: 360px;
+            height:100%;
         }
 
-        .wdrw {
-            width: 75%
-        }
-
-        .ordr {
-            width: 75%
-        }
-
-        .CEPinform {
-            width: 60%
-        }
-
-        @media screen and (max-width:600px) {
-            .carro img {
-                width: 100%;
-                height: 260px;
-            }
-
-            .CEPinform {
-                width: 100%
-            }
-
-
-            .wdrw {
-                width: 100%
-            }
-
-            .ordr {
-                width: 100%
-            }
-        }
-
-
-        .carro {
-            margin-bottom: -56px
-        }
-
-
+       
         .upper {
             text-transform: uppercase;
         }
@@ -174,13 +110,14 @@
 
         .cardImg {
             border-radius: 50%;
-            width: 100px;
-            height: 100px
+            width: 80px;
+            height:80px;
+            margin-top:10px
         }
 
         @media screen and (max-width:450px) {
             .cardImg {
-                width: 70px;
+                width: 80px;
                 height: 70px
             }
 
@@ -226,168 +163,123 @@
         input[type=number] {
             -moz-appearance: textfield;
         }
-    </style>
+.card{width:48%}
+  @media screen and (max-width:770px){
+      .card{width:100%}
+  }      
+.arial{
+    font-family: 'Arial';
+}
 
+
+.btao{
+    font-size:24px;
+    background-color: #fa6200; 
+}
+
+@media screen and (max-width:500px){
+    .btao{
+    font-size:16px;
+   
+} 
+}
+    </style>
 
 
 </head>
 
 <body>
-    <!-- Button trigger modal -->
 
 
+    
     <!-- Modal -->
     <div class=" modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen-xxl-down">
             <div class=" modal-content">
                 <div class="  modal-header border-0">
-
+    
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body border-0">
-                    <nav>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item w-50 " role="presentation" >
+      <button class="nav-link active w-100 log"  id="login" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" style="background-color: transparent; border:none">LOGIN</button>
+    </li>
+    <li class="nav-item w-50 text-center" role="presentation">
+      <button class="nav-link w-100 cada"   id="cadastrar" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" style="background-color: transparent; border:none">CADASTRAR-SE</button>
+    </li>
+    
+  </ul>
+  
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="login" > 
+       
+        <form class="w-75 mx-auto arial">
+        <a href="#"><p class="p-2 my-3 fs-4 text-white " style="background-color:#183793"><span class="fa fa-facebook"></span> Continuar com o Facebook</p></a>
+        <input type="email" class="form-control my-3  " placeholder="Seu email" required style="font-size: 18px!important; padding:8px!important;">
+        
+        <input type="password" class="form-control my-3  " placeholder="Senha" required style="font-size: 18px!important; padding:8px!important;">
 
+        <p style="font-size:12px;"><a href="#"  style="text-decoration:underline!important;color:#fa6200">esqueci minha senha</a></p><br/>
+        <input type="checkbox" checked style="background-color:#fa6200!important"> Mantenha-me conectado<br/>
+        <div class="d-flex justify-content-center my-3">
+            <button class="btn border-0 text-white text-center w-50 btao" ><strong>Entrar</strong></button>
 
+        </div>
+        </form>
+    </div>
+    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="cadastrar" style="border:none; background-color:transparent">
+        <form class="w-75 mx-auto arial">
+            <a href="#"><p class="p-2 my-3 fs-4 text-white " style="background-color:#183793"><span class="fa fa-facebook"></span> Cadastrar com o Facebook</p></a>
+            <input type="text" class="form-control my-3" placeholder="Nome Completo" style="font-size: 18px!important; padding:8px!important;">
+        
+            <input type="email" class="form-control my-3" placeholder="Email"style="font-size: 18px!important; padding:8px!important;">
 
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <input type="number" class="form-control my-3" placeholder="Informe seu CPF"style="font-size: 18px!important; padding:8px!important;">
 
-                            <p class="nav-link w-50 tabModal" id="nav-login-tab" data-bs-toggle="tab"
-                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                                aria-selected="true">Login</p>
-
-                            <p class="nav-link w-50 tabModal" id="nav-cadastro-tab" data-bs-toggle="tab"
-                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
-                                aria-selected="false">Cadastrar</p>
-
-
-                        </div>
-                    </nav>
-                    <div class="tab-content" id="nav-tabContent">
-
-                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                            aria-labelledby="nav-home-tab">
-                            <div class="container my-2 w-75">
-                                <div class="row">
-
-                                    <form>
-
-                                        <div class="col text-center">
-                                            <a class="btn  w-100 text-start  my-2" href="#"
-                                                style="background-color: #183973; color:white"><span
-                                                    class="fa fa-facebook"></span> Continuar com o facebook</a><br />
-                                            <input type="email" required="required" placeholder="seuemail@email.com.br"
-                                                class="form-control my-2">
-                                            <input type="password" required="required" placeholder="senha"
-                                                class="form-control my-2">
-
-                                            <p class="text-start">esqueceu sua senha?</p> <br />
-                                            <div class="col text-start">
-                                                <input type="checkbox" class="text-start" checked> mantenha-me conectado
-
-                                            </div>
-
-                                            <div class="col text-center">
-
-
-                                                <button class="bege border-0 text-white fs-4 px-5 mt-3"
-                                                    style="border-radius:5px">Entrar</button>
-                                            </div>
-                                        </div>
-
-                                    </form>
-
-
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-
-                            <div class="container my-2 w-75">
-                                <div class="row">
-
-                                    <form>
-
-                                        <div class="col text-center">
-                                            <a class="btn  w-100 text-start my-2" href="#"
-                                                style="background-color: #183973; color:white"><span
-                                                    class="fa fa-facebook"></span> Entrar com o facebook</a><br />
-                                            <input type="text" required placeholder="Nome Completo"
-                                                class="form-control my-2">
-
-                                            <input type="email" required="required" placeholder="seuemail@email.com.br"
-                                                class="form-control my-2">
-
-                                            <input type="number" required="required" placeholder="Informe seu CPF"
-                                                class="form-control my-2">
-
-
-                                            <div class="row my-2">
-                                                <div class='col-2'>
-                                                    <input type="number" placeholder="(DDD)" class="form-control ">
-                                                </div>
-
-                                                <div class='col-10'>
-                                                    <input type="number" placeholder="Celular" class="form-control ">
-
-                                                </div>
-                                            </div>
-
-                                            <input type="password" class="form-control" placeholder="Senha"><br />
-                                            <input type="password" class="form-control"
-                                                placeholder="Repetir Senha"><br />
-
-
-                                            <div class="col text-start ">
-                                                <input type="checkbox" class="text-start" checked> Mantenha-me
-                                                conectado<br />
-                                                <input type="checkbox" class="text-start" checked> Quero descontos e
-                                                promoções
-
-                                            </div>
-                                            <div class="col text-center">
-
-
-                                                <button class="bege border-0 text-white fs-4 px-5 mt-3"
-                                                    style="border-radius:5px">Cadastrar</button>
-                                            </div>
-                                        </div>
-
-
-
-
-
-
-
-
-
-                                    </form>
-
-
-                                </div>
-
-
-                            </div>
-
-                        </div>
-
-                    </div>
+            <div class="row">
+                <div class="col-3">
+                    <input type="number" class="form-control my-3" placeholder="DDD"style="font-size: 18px!important; padding:8px!important;">
                 </div>
 
+                <div class="col-9">
+                    <input type="number" class="form-control my-3" placeholder="Telefone"style="font-size: 18px!important; padding:8px!important;">
+                </div>
             </div>
+
+            <input type="password" class="form-control my-3" placeholder="Senha"style="font-size: 18px!important; padding:8px!important;">
+
+            <input type="password" class="form-control my-3" placeholder="Repetir Senha"style="font-size: 18px!important; padding:8px!important;"><br/>
+
+
+            <input type="checkbox" checked style="background-color:#fa6200!important"> Mantenha-me conectado<br/>
+            <input type="checkbox" checked style="background-color:#fa6200!important"> Quero me inscrever para receber comunicações com descontos e promoções<br/>
+        <div class="d-flex justify-content-center my-3">
+            <button class="btn border-0 text-white text-center w-50 btao " ><strong>CADASTRAR</strong></button>
+
         </div>
+        </form>
+    </div>
+    
+  </div>
+                   
+                </div>    
+                    
+    </div>
+</div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row" style="background-color: #c91919;">
+
+
+<div class="row" style="background-color: #5b010c;">
 
 
             <div class="col-8 col-sm-10 text-center  ">
                 <div class="row">
                     <div class="offset-1 ">
-                        <img src="logo.png" style="background-color: white;">
+                        <img src="logo.png" >
                     </div>
 
                 </div>
@@ -396,30 +288,25 @@
 
             </div>
 
-            <div class="col-4  col-sm-2 align-self-end">
+            <div class="col-4 col-sm-2 align-self-end">
 
-                <button class="btn  rounded-pill w-100 my-1 bege" type="button" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">Entrar</button>
+                <div  class="text-white text-center " data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #deb174; border-radius:10px;  max-width:90px; padding: 0 12px; ">
+                    <p> Entrar </p>
+                </div>
 
 
             </div>
-        </div>
-
-    </div>
-
-
-
-    
+</div>
 
         
-            <div class="col position-relative">
+<div class="col position-relative">
                
-                <div class="myPrev position-absolute bg-dark p-1  text-white">
+                <div class="myPrev position-absolute p-1  text-grey">
                     <span class="fa fa-chevron-left"></span>
                 </div>
 
 
-                <div class="myNext position-absolute bg-dark  text-end p-1  text-white"><span
+                <div class="myNext position-absolute  text-end p-1  text-grey"><span
                         class="fa fa-chevron-right"></span>
                 </div>
 
@@ -433,56 +320,85 @@
             </div>
 
 
-            </div>
+</div>
         
 
 
+<div id="parallax_One" class="p-3">
 
-    <div id="parallax_One" data-speed="6" data-type="background" class="container-fluid p-3">
-        <div class="container p-5 CEPinform " style=" box-shadow:inset 0 0 0 1000px rgba(102, 101, 101, 0.438); ">
-            <p class="text-white text-center "
-                style=" text-transform: uppercase; font:100 26px 'Open Sans', sans-serif">
-                Informe seu cep e faça pedido na
-                unidade mais próxima de você.</p>
-            <form>
-                <div class="input-group mb-3 ">
-                    <input type="text" class="form-control " placeholder="CEP" aria-label="search"
-                        aria-describedby="basic-addon2">
-                    <span class="input-group-text upper" id="basic-addon2">buscar</span>
-                </div>
-                <div class="text-center"><a class="text-white" href="#">não sabe seu cep?</a></div>
+    <div id="franquia_busca_endereco"> <!-- <div id="delivery_cep_consulta"> -->
+        <p class="title_form_cep">Informe seu CEP e faça pedido na unidade mais próxima de você:</p>
 
-            </form>
+
+        <!--O método submit desse formulário foi definido no application.js para ser possível passar o CEP como parametro-->
+        <form accept-charset="UTF-8" action="/home/consulta_atendimento_por_cep?franquia_id=3097" data-remote="true" id="form_cep" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="QnvXs8hy8w5JDmmGCZWwXEuws0cdkIh9+L0Bmbov4TA="></div>
+          <div class="input_cep_submit">
+            <input autofocus="autofocus" class="delivery_show_master_country" id="cep" maxlength="9" name="cep" placeholder="CEP" type="text">
+            <input class="delivery_show_master_country" id="country" name="country" type="hidden" value="BRA">
+            <input class="form_cep_submit franquia_cep_disable" name="commit" type="submit" value="BUSCAR">
+          </div>
+</form>          <div class="nao_sei_meu_cep">
+          <p id="#">Não sabe seu CEP?</p>
         </div>
+      </div>
+</form>        
 
-        <div class="container text-center">
+     
 
-            <button class="btn bege  mt-2 upper wdrw">retirar em uma loja</button>
-
-            <button class="btn bg-white my-2 upper ordr">pedir na mesa</button>
+      <div class="franquia-pedido-mesa-container">
+        <a href="#">
+          <div class="botao botao-destaque" style="box-sizing: border-box; background-color: #deb174;">
+            RETIRAR EM UMA LOJA
+          </div>
+</a>       
+ </div>
+      <div class="franquia-pedido-mesa-container">
+        <div  class="botao" style="box-sizing: border-box;">
+          PEDIR NA MESA
         </div>
+      </div>
+</div>
 
-        <div class=" row bege p-2">
-            <input type="" class="form-control my-2 upper" placeholder="Todas as cidades">
+<div class=" row" style="margin-bottom: -13px !important; background-color: #deb174;">
+        <div class=" filter-background">
+              <div class="select-default franquia-select" style="width: 100%; box-sizing: border-box; padding: 15px">
+                <select data-account-master-id="3097" id="filter_by_city_new" name="filter_by_city_new"><option selected="" value="0">Todas as Cidades</option>
+      <option value="6808">Belo Horizonte</option>
+      <option value="7362">Brasília</option>
+      <option value="7364">Contagem</option>
+      <option value="6592">Curitiba</option>
+      <option value="6339">Guarulhos</option>
+      <option value="5708">Maceió</option>
+      <option value="5382">Petrópolis </option>
+      <option value="6593">Piracicaba</option>
+      <option value="6810">Salvador</option>
+      <option value="6809">Santo André</option>
+      <option value="3493">São Paulo</option>
+      <option value="7363">Taboão da Serra</option>
+      <option value="5137">Volta Redonda</option></select>
+              </div>
         </div>
-    </div>
+      
+</div>
+ </div>          
+
+<div id="app" class="container-fluid">
 
 
+        <div class="row row-cols-sm-1 row-cols-md-2  p-2 g-3 ">
 
-    <div id="app" class="container-fluid">
-
-
-        <div class="row row-cols-sm-1 row-cols-md-2 p-2 g-3 justify-content-between">
-
-            <div class="card " v-for="(place,index) in places" :key="places.id" >
+            <div class="card p-3  mx-1 shadow" v-for="(place,index) in places" :key="places.id" style="border-radius:15px">
                 <div class="row">
                     <div class="col-3 col-sm-3">
                         <img :src="place.img" class="cardImg  ">
                     </div>
                     <div class="col ">
-                       <h3>{{place.name }}</h3> 
-                       <h5>{{ place.address}}</h5> 
-                        {{place.rate}} {{place.timeWait}} <br /> {{place.opened}}
+                        
+                       <p class="upper" style="line-height: 10px;">{{place.name }}</p> 
+                       <p class="upper" style="line-height: 10px; font-size:12px;">{{ place.address}}</p> 
+                        <img :src="place.star" width='12' height='12'> {{place.rate}} <img :src="place.clock" width='20' height="20"> {{place.timeWait}}
+                         <p v-if="place.opened" style="color:green">aberto agora</p> 
+                         <p v-else style="color:red;">fechado agora</p>
                     </div>
                 </div>
 
@@ -490,11 +406,11 @@
 
         </div>
 
-    </div>
+</div>
 
 
 
-    <div id="parallax_Two" data-speed="6" data-type="background" class="container-fluid p-3 ">
+<div id="parallax_Two" data-speed="6" data-type="background" class="container-fluid p-3 ">
         
 
         <div class="mt-5">
@@ -521,7 +437,7 @@
        
        
 
-    </div>
+</div>
 
 
 
@@ -537,6 +453,7 @@
     <script src="slick.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    
     <script>
 
         $(document).ready(function () {
@@ -570,9 +487,12 @@
                     img: './logo.png',
                     name: 'Dom Delivery',
                     address: 'Endereço 1',
-                    rate: 'five stars',
+                    star:'./star.png',
+                    rate: 5,
+                    clock:'./clock.png',
                     timeWait: '30 - 40 min',
                     opened: true,
+                    
 
 
                 },
@@ -581,9 +501,12 @@
                     img: './logo.png',
                     name: 'Dom Delivery',
                     address: 'Endereço 2',
-                    rate: 'tree stars',
+                    star:'./star.png',
+                    rate: 5,
+                    clock:'./clock.png',
                     timeWait: '40 - 60 min',
                     opened: false,
+                   
                 },
 
                 {
@@ -591,9 +514,12 @@
                     img: './logo.png',
                     name: 'Dom Delivery',
                     address: 'Endereço 3',
-                    rate: 'tree stars',
+                    star:'./star.png',
+                    rate: 5,
+                    clock:'./clock.png',
                     timeWait: '40 - 60 min',
-                    opened: false,
+                    opened: true,
+                   
                 },
 
 
@@ -602,9 +528,12 @@
                     img: './logo.png',
                     name: 'Dom Delivery',
                     address: 'Endereço 4',
-                    rate: 'tree stars',
+                    star:'./star.png',
+                    rate: 5,
+                    clock:'./clock.png',
                     timeWait: '40 - 60 min',
                     opened: false,
+                   
                 },
 
 
@@ -613,9 +542,12 @@
                     img: './logo.png',
                     name: 'Dom Delivery',
                     address: 'Endereço 5',
-                    rate: 'tree stars',
+                    star:'./star.png',
+                    rate: 5,
+                    clock:'./clock.png',
                     timeWait: '40 - 60 min',
                     opened: false,
+                   
                 },
 
                 {
@@ -623,13 +555,19 @@
                     img: './logo.png',
                     name: 'Dom Delivery',
                     address: 'Endereço 6',
-                    rate: 'tree stars',
+                    star:'./star.png',
+                    rate: 5,
+                    clock:'./clock.png',
                     timeWait: '40 - 60 min',
                     opened: false,
+                    
                 },
                 ]
             }
         })
+
+
+      
     </script>
 </body>
 

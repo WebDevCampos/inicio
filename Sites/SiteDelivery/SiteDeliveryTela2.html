@@ -6,7 +6,8 @@
 
     <meta name="Language" content="Portuguese">
     <meta charset="UTF-8">
-
+    <link href="https://cdn.neemo.com.br/assets/application-7eb6f6f4d10fb11d8c4f1adb2639fa42.css" media="all"
+    rel="stylesheet" type="text/css">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
@@ -120,7 +121,7 @@
             opacity: 1;
         }
 
-        .carro img {
+        .carroDois img {
             width: 100%;
             height: 360px;
         }
@@ -273,10 +274,10 @@
     <span class="fa fa-chevron-right"></span>
 </div>
 
-<div class="carro ">
+<div class="carroDois ">
     <div><img src="crostini.jpg" ></div>
     <div><img src="toqueespecial.jpg"></div>
-    <div><img src="vegano"></div>
+    <div><img src="vegano.jpg"></div>
     <div><img src="banner_quatro.png"></div>
     <div><img src="banner_cinco.png"></div>
 </div>
@@ -284,3 +285,111 @@
 
 </div>
     
+
+
+<script src="jquery-3.5.1.min.js"></script>
+<script src="jquery-3.5.1.js"></script>
+<script src="bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+<script src="slick.min.js"></script>
+<script src="slick.js"></script>
+<script src="https://cdn.neemo.com.br/assets/webdelivery-7299b62f69f04498d36f876236d3b2f7.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $window = $(window);
+        //Captura cada elemento section com o data-type "background"
+        $('section[data-type="background"]').each(function () {
+            var $scroll = $(this);
+            //Captura o evento scroll do navegador e modifica o backgroundPosition de acordo com seu deslocamento.
+            $(window).scroll(function () {
+                var yPos = -($window.scrollTop() / $scroll.data('speed'));
+                var coords = '50% ' + yPos + 'px';
+                $scroll.css({ backgroundPosition: coords });
+            });
+        });
+    });
+    $(document).ready(function () {
+
+        $('.carroDois').slick({
+           
+        })
+    })
+
+    var app = new Vue({
+        el: "#app",
+        data: {
+            places: [{
+                id: 000,
+                img: './logo.png',
+                name: 'Dom Delivery',
+                address: 'Endereço 1',
+                rate: 'five stars',
+                timeWait: '30 - 40 min',
+                opened: true,
+
+
+            },
+            {
+                id: 001,
+                img: './logo.png',
+                name: 'Dom Delivery',
+                address: 'Endereço 2',
+                rate: 'tree stars',
+                timeWait: '40 - 60 min',
+                opened: false,
+            },
+
+            {
+                id: 002,
+                img: './logo.png',
+                name: 'Dom Delivery',
+                address: 'Endereço 3',
+                rate: 'tree stars',
+                timeWait: '40 - 60 min',
+                opened: false,
+            },
+
+
+            {
+                id: 004,
+                img: './logo.png',
+                name: 'Dom Delivery',
+                address: 'Endereço 4',
+                rate: 'tree stars',
+                timeWait: '40 - 60 min',
+                opened: false,
+            },
+
+
+            {
+                id: 005,
+                img: './logo.png',
+                name: 'Dom Delivery',
+                address: 'Endereço 5',
+                rate: 'tree stars',
+                timeWait: '40 - 60 min',
+                opened: false,
+            },
+
+            {
+                id: 006,
+                img: './logo.png',
+                name: 'Dom Delivery',
+                address: 'Endereço 6',
+                rate: 'tree stars',
+                timeWait: '40 - 60 min',
+                opened: false,
+            },
+            ]
+        }
+    })
+</script>
+</body>
+
+</html>
