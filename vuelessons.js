@@ -1,3 +1,4 @@
+/*
 var cardapio = new Vue({
     el:"#cardapio",
    
@@ -58,6 +59,14 @@ var cardapio = new Vue({
 
   }
   });
-
+*/
 
   
+function myFunction(a,b) {
+
+
+   return a + b.shift(a)
+}
+
+console.log(myFunction("cheese", "cake"))
+console.log(myFunction("lips", "s"))
