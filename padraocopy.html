@@ -44,34 +44,19 @@
 </style>
  </head>
  <body>
-  <p>Usando async</p>
   
-
-  <p id="demo"></p>
     
- <button >Clique</button>
 
-
-
-  <!--Form-->
+     <!--Form-->
       
-  <div class="col-12 col-sm-12 col-md-6 shadow p-3" style="background-color:var(--bgDarkRed)">
+     <div class="col-12 col-sm-12 col-md-6 shadow p-3" style="background-color:var(--bgDarkRed)">
           
-    <form action="padraocopy.html"  class="p-3">
-
-        <input type="text" class="form-control my-5 p-4" placeholder="Informe seu nome" required style="border-radius: 24px;">
-
-        <input type="email" class="form-control my-5 p-4 " placeholder="Informe seu e-mail" required style="border-radius: 24px;">
-
-        <button onclick="getFile()"   class="text-white border-0 rounded-pill p-3 text-center mx-auto w-100" style="font: 700 25px 'Open Sans', sans-serif; background-image:linear-gradient(90deg, #12D01A 17.21%, #12D01A 78.69%);">
-          Sim, quero ser um afiliado
-        </button>
-    
-      </form>
-    
-    </div>
-    
-    <!--Form-->
+     <p style="color:white;">Sucesso</p>
+      
+      </div>
+      
+      <!--Form-->
+ 
 <!--#region Scripts -->
 
 <!--#region JQuery-->
@@ -108,26 +93,6 @@
 
 <!--#region Mine JS-->
 <script>
-
-async function getFile() {
-
-  let myPromise = new Promise(function(myResolve, myReject) {
-    let req = new XMLHttpRequest();
-    req.open('GET', "padraocopy.html");
-    req.onload = function() {
-      if (req.status == 200) {
-        myResolve(req.response);
-      } else {
-        myResolve("File not Found");
-      }
-    };
-    req.send();
-  });
-  document.getElementById("demo").innerHTML = await myPromise;
-}
-
-
-
 $(document).ready(function(){
   $('.carro').slick({
     infinite:true,
