@@ -65,7 +65,7 @@ var cardapio = new Vue({
 function myFunction(a,b) {
 
 
-   return a + b.shift(a)
+   return a.includes(b) ? b + a : a + b
 }
 
 console.log(myFunction("cheese", "cake"))
