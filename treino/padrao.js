@@ -3,7 +3,7 @@
 
 
 
-
+//#region vue
 Vue.component('header-nome',{
     template: `
     <div class='container-fluid bg-danger text-white text-center p-4 fs-1'>
@@ -22,7 +22,10 @@ Vue.component('header-nome',{
     el:'#STDheader',
   })
   
+//#endregion vue
 
+
+//#region slick
 
   $(document).ready(function(){
     $('.carro').slick({
@@ -32,6 +35,6 @@ Vue.component('header-nome',{
       autoplay:true,
     })
   })
-
+//#endregion slick
 
   
