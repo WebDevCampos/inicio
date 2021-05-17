@@ -1,21 +1,15 @@
-
-
-const user = {
-
-  name:'Marcus',
-  age: 31,
-  posts:[
-    {greet:'Bom dia!' , time:09 }, 
-    {greet:'Boa noite!', time:21}
-  ],
-  postsInfo(){
-
-   
-
-     this.posts.forEach((post) => { return post })
-
-  
-  }
+function soma(a, b) {
+  console.log( a + b);
 }
 
-console.log(user.postsInfo())
+function sum(callback) {
+  var a = 2
+  let b = 6
+  callback(a, b);
+}
+
+
+sum(soma)
+
+
+
