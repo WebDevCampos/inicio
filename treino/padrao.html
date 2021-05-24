@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="validaForm.js"></script>
     <title>Padrão</title>
+    <title>Understanding Grid</title>
     
 <!--#region BS-->
    
@@ -33,7 +34,32 @@
 
 <!--#endregion FA-->
 <style>
-  
+  .grid{
+    display: grid;
+    grid-gap:3px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    
+   
+   }
+
+  .grid > div {
+    background-color: red; 
+    color: white; 
+    font:600 20px 'Open Sans', sans-serif;
+   
+       
+    
+    }
+    .grid > div.item1{
+      grid-column: span 4;
+      grid-row: 1;
+     
+    }
+
+
+    
+    
 </style>
  </head>
  <body>
@@ -44,8 +70,23 @@
      
    </div>  
   
-<p id="user"></p>
+<div class="grid">
 
+<div class="item1 p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem esse itaque deserunt rem non temporibus accusantium voluptatum voluptates molestiae quibusdam mollitia consectetur reiciendis ipsum at ad, quis sunt maiores magni?</div>
+<div class="item2">2</div>
+<div class="item3">3</div>
+<div class="item4">4</div>
+<div class="item5">5</div>
+<div class="item6">6</div>
+<div class="item7">7</div>
+<div class="item8">8</div>
+<div class="item9">9</div>
+<div class="item10">10</div>
+<div class="item11">11</div>
+<div class="item12">12</div>
+
+
+</div>
 
   
 <!--#region Scripts -->
