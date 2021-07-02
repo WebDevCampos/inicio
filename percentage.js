@@ -1,7 +1,7 @@
 const percentage = (a, b) => {
+  return (a * 100) / b;
+};
 
-    return (a * 100) / b
-}
+console.log(percentage(3760, 5000));
 
-console.log(percentage(3760, 5000))
-
+const name = "Marcus";
