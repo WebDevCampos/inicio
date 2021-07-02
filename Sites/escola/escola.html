@@ -4,180 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padrão</title>
+    <title>Exemplo Lanchonete</title>
     
-<!--#region BS-->
+   <!--BS-->
    
     
    <link rel="stylesheet" href="bootstrap.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+ 
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-<!--#endregion BS-->
+   <!--BS-->
    
-
-<!--#region SLICK-->
+   <!--SLICK-->
  
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-<link rel="stylesheet" href="slick.css"/>
-    
-<!--#endregion SLICK-->
+ <link rel="stylesheet" href="slick.css"/>
+   <!--SLICK-->
 
  
-<!--#region FA-->
+<!--FA-->
+ <link rel="stylesheet" href="all.css" />
+ <link rel="stylesheet" href="all.min.css" />
  
-<script src="https://kit.fontawesome.com/dbce8a62cb.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="homeSchool.css">
+ <script src="https://kit.fontawesome.com/dbce8a62cb.js" crossorigin="anonymous"></script>
+<!--FA-->
 
-<!--#endregion FA-->
+ 
+ <!--Fonts-->
+ <link rel="stylesheet" type="text/css"
+ href="Fontes/HomeSchool/style.css"/>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Tajawal:wght@300&display=swap');
+ <link rel="stylesheet" type="text/css"
+ href="Fontes/gitaluevo-cufonfonts-webfont/style.css">
+
+ 
+ <link rel="stylesheet" type="text/css"
+ href="Fontes/miso-cufonfonts-webfont/style.css">
+ <!--Fonts-->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Tajawal:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
-:root{
 
---laranja:#eb4b11;
---roxo:purple;
---verde:rgb(4, 63, 2);
---azul:rgb(9, 94, 100);
+      .itens{display:block;}
+    @media screen and (max-width:400px){
+       .itens{display:none}
+    }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 30px 0 10px 0;
+  margin:0 10px;
 }
 
-a{
-  text-decoration: none ;
-  color:black;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+ 
+  display: block;
+  transition: 0.3s;
 }
+
+.sidenav a:hover {
+  color: #020202;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    
+.escola{
+  
+  font:300 40px 'Henny Penny'  , cursive;
+  background-image: url('https://dbdzm869oupei.cloudfront.net/img/sticker/preview/392.png'); 
+  background-position: 22% 22%;
+  background-repeat: no-repeat;
+  background-size: 81%;
+  
+  }
+  
  ul li a{
-color:var(--roxo)!important;
-font: 20px 'RocknRoll One', sans-serif;
+  color:rgb(21, 3, 72) !important;
+font:500 23px 'Miso';
 transition:all 1s;
 
 }
 
 ul li a:hover{
-color:var(--verde)!important;
-border-bottom:1px solid var(--laranja);
-
-}
-.escola{
-  
-font:300 40px 'Henny Penny'  , cursive;
-background-image: url('https://dbdzm869oupei.cloudfront.net/img/sticker/preview/392.png'); 
-background-position: 22% 22%;
-background-repeat: no-repeat;
-background-size: 100%;
-
-}
-.R_One{
-  font-family: 'RocknRoll One', sans-serif;
-}
-.R_Three{
-  font-family: 'RocknRoll One', sans-serif;
-  text-shadow:1px 1px 1px  rgb(80, 80, 79), -1px -1px 1px  rgb(80,80,79); color:rgb(9, 94, 100)
-}
-
-.R_Two{
-  font-family: 'RocknRoll One', sans-serif;
-  color:var(--azul);
-}
-
-.btao_saiba{
-  border:1px solid var(--roxo);
-  border-radius:30px; 
-  color:var(--laranja);
-  background-color:white;
-  padding:10px 16px;
-}
-.btao_saiba:hover{
-  border:1px solid #eb4b11; 
-  border-radius:30px; 
-  color:var(--verde);
-  background-color:white;
-  padding:10px 16px;
-}
-.imgcr{
- 
- width:100%;
-
- filter: blur(2px);
- -webkit-filter: blur(2px);
- 
- }
-#Carro_Um .slick-track{
-
- width:100%;
+color:green !important;
+border-bottom:1px solid orange;
 
 }
 
-#Carro_Um .slick-list{
-
-  width:100%;
- 
-}
-#Carro_Um .slick-slide{
-  width:100%;
-height:auto;
-
-}
-
-#Carro_Um .Carro{
-
-  width:100%;
- 
-}
-#Carro_Um .CarroCaption{
-  color:white;
-  font:500 'Montserrat', sans serif;
-}
-
-
-#Carro_Um  .CarroImg{
- 
- width:100%;
- height:300px;
- 
-}
-
-#Carro_Um  .CarroSlide{
-width:100%;
-height:100%;
-
-}
-
-
-@media screen and (max-width:850px){
-
-  
-#Carro_Um  .CarroImg{
-
-width:100%;
-height:250px;
-
-}
-
-}
-
-@media screen and (max-width:600px){
-
-  
-#Carro_Um  .CarroImg{
-
-width:100%;
-height:150px;
-
-}
-
-}
-
-.minha_curva{
-  width:200px; height:200px;
-  min-width: 150px;
-  float: left;
-  margin-right:2rem; 
-  border-radius: 50%;
-  -webkit-shape-outside:circle();
-  shape-outside:circle();
-}
 
 
 
@@ -185,7 +121,7 @@ height:150px;
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 70vh;
+  height: 400px;
 }
 
 .flex-item{
@@ -224,451 +160,309 @@ height:150px;
   background-size:cover;
 }
 
-@media screen and (max-width:500px){
+      .txto_sld{
+  height:200px; 
+  font-family: 'Miso'; 
+  color:#1752d3; 
+  background-color: rgba(255, 153, 0, 0.809);
+  overflow:hidden;
+  transition:0.5s;
+}
+
+.span_sld{
+  color:white;
+  
+}
+
+.saiba_mais{
+  transition:0.5s
+}
+.saiba_mais::before{
+  content:'';
+  width:100px;
+  height:100px;
+  background-color:blue;
+}
+@media screen and (max-width:768px){
   .meuflex{
 flex-flow:column;
+height:600px;
+
   }
+ .txto_sld{
+height:150px;
 
+ }
+
+ .txto_sld:hover{
+height:210px;
+
+ }
+ .saiba_mais:hover{
+  
+  color:white;
+border-bottom:1px solid green ;
 }
-</style>
-  </head> 
 
-<body>
+}    </style>
+    </head>
+    <body>
+<div class="bg-info text-white fs-1">
 
-
-
-<div class="border border-danger" style="width:300px;"></div>
-
-<!--Navbar-->
-<div class="container-fluid">  
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
+     (22) 981 872 916  
+</div>  
+ <!--Navbar(s)-->     
+<div class="container-fluid  mt-1 d-none d-sm-block">
+  <nav class="navbar navbar-expand-lg  minhanav" >
     <div class="container-fluid">
-        <a class="navbar-brand escola" href="#">Escola</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active " aria-current="page" href="#" style="color:var(--roxo)">inicio</a>
-            </li>
-           
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                sobre
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#sobre_a_escola">a escola</a></li>
-                <li><a class="dropdown-item" href="#">a equipe</a></li>
-              
-                <li><a class="dropdown-item" href="#">nossas conquistas</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  serviços
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">matrícula online</a></li>
-                  <li><a class="dropdown-item" href="#">agendamento de reforço</a></li>
-                 
-                </ul>
-              </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="procurar..." aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">pesquise</button>
-          </form>
-        </div>
-      </div>
+      <a class="navbar-brand escola " href="#" style="color:#072b4f;">Escola</a>
 
-</nav>
+      <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars text-info"></span>
+      </button>
 
- </div>            
-<!--Navbar-->
 
-<!--Hero Image-->
-  <div class="container-fluid animate__animated animate__fadeIn">
-      <div class="card ">
-      <img class="card-img imgcr" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRn1ewGhh3fnCoNZklwjW20liM1qzy2aUBlOA&usqp=CAU" class="w3-image imgcr" />
+      <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">início</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              sobre
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">a escola</a></li>
+              <li><a class="dropdown-item" href="#">a equipe</a></li>
+            
+              <li><a class="dropdown-item" href="#">nossas conquistas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              serviços
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">matrícula online</a></li>
+              <li><a class="dropdown-item" href="#">agendamento de reforço</a></li>
+         
+              <li><a class="dropdown-item" href="#">calendário acadêmico</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              notícias
+            </a>
+        </ul>
 
-      <div class="card-img-overlay d-flex justify-content-around">
-          
-              <div class="animate__animated animate__slideInUp  align-self-center p-1 p-sm-5" style="background-color: rgba(0,0,0, 0.4);color:#ffffff">
-                  <h1 class="text-center R_One">Escola Linda</h1>
-                  <h4 class=" R_One">É uma escola infantil</h4>
-                  <p class=" R_One">como você pode ver pelas crianças brincando na foto.</p>
-              </div>
-          
         
-          </div>
-      
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item align-self-lg-center">
+            <a class="nav-link " href="#" tabindex="-1">entrar <span class="fa fa-user-circle"></span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" ><sup style="font-size:10px;"><span class="fa fa-phone"></span>&nbsp; +55(11)111-111-111</sup></a>
+         
+            <a class="nav-link" href="#" tabindex="-1"><sub style="font-size:10px"><span class="fa fa-mail-bulk"></span>&nbsp; escolamuitoboa@felicidade.com</sub></a>
+          </li>
+        </ul>
       </div>
-
-  </div>
-<!--Hero Image-->
-
-<!--Sobre-->
-<div  id="sobre_a_escola" class="container-fluid my-4">
-  <div class="row">
-    <div class="col-12">
-      <img src="../imagens/escola1.jpg" class="minha_curva">
-      <h1 class="R_One">A <span >Escola</span></h1>
-      <p class="R_One">
-        Surgiu em {{ano}}, com a melhor proposta educacional visando contribuir com o mundo educando alunos e alunas com carinho, responsabilidade, e objetividade. 
-        
-        Localizada em vários bairros da cidade, 
-        atendendo crianças de 0 a 6 anos, com metodologia {{Excelente Metodologia}}. </p>
-        <p style="  line-height: 1.8; font-family: Open Sans, sans-serif; ">Lorem Ipsum is simply dummy text of the 
-          printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text 
-          ever since the 1500s, when an unknown printer took a galley 
-          of type and scrambled it to make a type specimen book. 
-          It has survived not only five centuries, but also 
-          the leap into electronic typesetting, remaining essentially unchanged. 
-          It was popularised in the 1960s with the release of Letraset sheets 
-          containing Lorem Ipsum passages, and more recently with desktop publishing 
-          software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
     </div>
-
+  </nav>
 </div>
-</div>
-
-<!--Sobre-->
 
 
 
-<div class="container-fluid">
-  <div class="row my-3">
+ <div class="d-sm-none">
 
-  
-    <div class="col-12 col-md-6">
-    
-      <h1 class="R_One" >Diferenciais:</h1>
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item ">
-          <h2 class="accordion-header border-0" id="headingOne">
-            <button class="border-0 bg-white collapsed" style="color:var(--azul);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-             <span class="fa fa-plus-circle  ">&nbsp;</span>Educação Musical
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-               Nas aulas de <strong>Musicalização Infantil</strong> são desenvolvidas as habilidades musicais.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header border-0" id="headingTwo">
-            <button class=" border-0 collapsed bg-white" style="color:var(--azul);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <span class="fa fa-plus-circle  ">&nbsp;</span>Culinária
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Nas aulas de <strong>Culinária</strong> são desenvolvidas as habilidades culinárias.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="border-0 bg-white collapsed" style="color:var(--azul);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <span class="fa fa-plus-circle  ">&nbsp;</span>Educação Ambiental
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Nas aulas de <strong>Educação Ambiental</strong> são desenvolvidas as habilidades de conscientização ambiental.
-            </div>
-          </div>
-        </div>
-  
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">início</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          sobre
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">a escola</a></li>
+          <li><a class="dropdown-item" href="#">a equipe</a></li>
+        
+          <li><a class="dropdown-item" href="#">nossas conquistas</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          serviços
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">matrícula online</a></li>
+          <li><a class="dropdown-item" href="#">agendamento de reforço</a></li>
+     
+          <li><a class="dropdown-item" href="#">calendário acadêmico</a></li>
+        </ul>
+      </li>
       
-      </div>
+    </ul>
+
+    
+    <form class="d-flex mx-2">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+
+
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+      <li class="nav-item align-self-lg-center">
+        <a class="nav-link " href="#" tabindex="-1">entrar <span class="fa fa-user-circle"></span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" tabindex="-1" ><sup style="font-size:13px;"><span class="fa fa-phone"></span>&nbsp; +55(11)111-111-111</sup></a>
+     
+        <a class="nav-link" href="#" tabindex="-1"><sub style="font-size:13px"><span class="fa fa-mail-bulk"></span>&nbsp; escolamuitoboa@felicidade.com</sub></a>
+      </li>
+    </ul>
+  </div>
+  
+
+
+    <button class="navbar-toggler bg-warning" type="button" style="cursor:pointer" class="escola" onclick="openNav()">
+      <span class="fa fa-bars text-info"></span>
+    </button>
+  
+ 
+    <span style="cursor:pointer" class="escola offset-3" onclick="openNav()"> 
+      &nbsp; Escola
    
-  
-      <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
-  
-      
-    
+   </span>
   </div>
-    
-    
-    <div class=" col-12 col-md-6  p-3 ">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXemqAEdS98rL6IYQDJ8LE6b9n4LYy0Oy5Pw&usqp=CAU" class="w-100"/>
-    
-    
-    </div>
-  
-  
-    </div>
-</div>
 
-<div class="container-fluid">
+ <!--Navbar(s)-->    
+ <div class="container-fluid">
+  <img class="w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRn1ewGhh3fnCoNZklwjW20liM1qzy2aUBlOA&usqp=CAU"  />
+
+ </div>
+
+
+
+
+<!--Slides Flex--> 
+<div class="container-fluid my-2">
   <div class="meuflex">
 
+<!--Slide um-->
 
   <div class="flex-item fundo_um text-white position-relative">
   
-        <div >
+    
+    <div class='position-relative'>
+
+          <div class="txto_sld">
 
       
-            <h2>Educação Musical.</h2>
-      
-            <h5>Nas aulas de <strong>Musicalização Infantil</strong> são desenvolvidas as habilidades musicais.</h5>
-          </div>
+        <h2>Educação Musical.</h2>
   
-          <div class="position-absolute " style="bottom:10%;">
+        <h3 style="color:#1d1b3d">Nas aulas de <strong>Musicalização Infantil</strong> são desenvolvidas as <span class="span_sld">habilidades musicais.</span>
+          <a><span class="saiba_mais"style="width:80px; padding:5px 10px; font: 20px 'Miso';">Saiba Mais <i class="fa fa-chevron-right"></i></span>  </a>
 
-            <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
+        </h3>
+      </div>
+
+         
+     
           </div>
+         
+  </div>
+<!--Slide um-->
+
+<!--Slide dois-->
+
+  <div class="flex-item fundo_dois text-white position-relative">
+    <div class='position-relative'>
+
+    
+      <div class="txto_sld">
+
+  
+    <h2>Educação Culinária.</h2>
+
+    <h3 style="color:#072b4f">Nas aulas de <strong>Educação Culinária</strong> são desenvolvidas as <span style="color:white;">habilidades culinárias.</span>
+      <a><span class="saiba_mais"style="width:80px; padding:5px 10px; font: 20px 'Miso';">Saiba Mais <i class="fa fa-chevron-right"></i></span>  </a>    
+
+    </h3>
   </div>
 
-
-
-  <div class="flex-item fundo_dois text-white  position-relative">
-   
-
-      <div >
-        <h2>Educação Culinária.</h2>
-  
-        <h5>Nas aulas de <strong>Culinária</strong> são desenvolvidas as habilidades culinárias.
-
-        </h5>
-      </div>
-
-      <div class="position-absolute " style="bottom:10%;">
-
-        <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
-      </div>
-    </div>
-
-
-  <div class="flex-item fundo_tres text-white  position-relative">
-     <div>
-        <h2>Educação Ambiental.</h2>
-  
-        <h5>Nas aulas de <strong>Educação Ambiental</strong> são desenvolvidas as habilidades de conscientização ambiental.
-        </h5>
-      </div>
-
-      <div class="position-absolute " style="bottom:10%;">
-
-        <button href="#" class="btao_saiba mt-4" >Saiba mais</button>
-      </div>
-    </div>
-
-  </div>
-
-  
-</div>
-
-<!--Carrossel UM-->
-<div class="container-fluid my-2">
-        <div id="Carro_Um" class="Carro">
-                <div class=" CarroSlide ">
-                   <div class=" position-relative">
-                    <img src="https://escolasdisruptivas.com.br/wp-content/uploads/2019/10/original-7ed59262dc09ac8521548428e3456dea.jpeg" class="CarroImg " >
-
-
-                    <div class="position-absolute bottom-0 CarroCaption">
-                      <p >Nós e a Educação 4.0. </p>
-  
-                     </div>
-                   </div>
-                   
-                      
-                </div>
-
-                <div class="CarroSlide ">
-                  <div class="position-relative">
-                    <img src="https://p2.trrsf.com/image/fget/cf/460/0/images.terra.com/2020/09/01/1597089727434.jpg" class="CarroImg" >
-
-                    <div class="position-absolute bottom-0 CarroCaption">
-                   
-                      <p>Como estamos nos adaptando</p>
-                     </div>
-                  </div>
-
-                  
-                </div>
-
-                <div class="CarroSlide  ">
-                  <div class="position-relative">
-                    <img src="https://cronos-media.sesisenaisp.org.br//api/media/1-0/files?img=img_65_180119_72d44d47-f7c1-40e0-823d-b0a7891fba2d_o.jpg" class="CarroImg " >
-                  </div>
-                  <div class="position-absolute bottom-0 CarroCaption">
-                    <p>Educação <strong>é</strong> inclusão</p>
-                    </div>
-                </div>
-        </div>        
-
-    
-</div>
-<!--Carrossel UM-->
-
-
-<div class="container-fluid">
-<div class="text-center">
-  <h1 class="R_Three" >
-Notícias
-</h1>
-</div>
-<div class="row">
-
-
-    <div class="col-6 col-md-4">
-      <div class="card shadow " style="background-color: white; border:1px solid #175005;">
-        <div class="card-header R_One border-0">
-          <h5  style="color:#eb4b11;">Festa do <span class="R_Two">Dia da Árvore</span> </h5>
-          <img src="https://www.campos.rj.gov.br/up/photos.php?id_fotos=25122" class="card-img-top ">
-        </div>
-          <div class="card-body R_One ">
-            <h5 class="text-truncate"  >As festividades
-            <small class="" >aconteceram no campus Novo com a presença de pais e professores</small></h5>
-            <a href="#" style="color:#eb4b11;" >Saiba mais <span class="fa fa-chevron-right"></span></a>
-         </div>
-      </div>
-  
-    </div>
-
-  
-    
-    <div class="col-6 col-md-4">
-      <div class="card shadow " style="background-color: white; border:1px solid #175005;">
-        <div class="card-header R_One border-0">
-          <h5  style="color:#eb4b11;">Festa do <span class="R_Two">Dia da Árvore</span> </h5>
-          <img src="https://www.campos.rj.gov.br/up/photos.php?id_fotos=25122" class="card-img-top ">
-        </div>
-          <div class="card-body R_One ">
-            <h5 class="text-truncate"  >As festividades
-            <small class="" >aconteceram no campus Novo com a presença de pais e professores</small></h5>
-            <a href="#" style="color:#eb4b11;" >Saiba mais <span class="fa fa-chevron-right"></span></a>
-         </div>
-      </div>
-  
-    </div>
-
-    <div class="col col-md-4 my-2 my-md-0">
-      <div class="card shadow " style="background-color: white; border:1px solid #175005;">
-        <div class="card-header R_One border-0">
-          <h5  style="color:#eb4b11;">Festa do <span class="R_Two">Dia da Árvore</span> </h5>
-          <img src="https://www.campos.rj.gov.br/up/photos.php?id_fotos=25122" class="card-img-top ">
-        </div>
-          <div class="card-body R_One ">
-            <h5 class="text-truncate"  >As festividades
-            <small class="" >aconteceram no campus Novo com a presença de pais e professores</small></h5>
-            <a href="#" style="color:#eb4b11;" >Saiba mais <span class="fa fa-chevron-right"></span></a>
-         </div>
-      </div>
-  
-    </div>
-
-
-</div>
-
-
-</div>
-
-
-
-<div id="contato" class="container-fluid R_One">
-  <h3>Entre em contato</h3>
-  <form action="/action_page.php" method="post">
-    <label for="pnome" class="form-label">Nome</label>
-    <input class="form-control"  type="text" id="pnome" name="primeironome" placeholder="Seu nome">
-
-    <label for="ultinome" class="form-label">Sobrenome</label>
-    <input class="form-control" type="text" id="unome" name="ultinome" placeholder="Sobrenome">
-
-    <label class="form-label" for="cidade">Cidade</label>
-    <select class="form-control"  id="cidade" name="cidade">
-      <option value="camposrj">Campos dos Goytacazes, RJ</option>
-      <option value="itaperunarj">Itaperuna, RJ</option>
-      <option value="saojoaodabarrarj">São João da Barra, RJ</option>
-    </select>
-
-    <label   for="assunto">Assunto</label>
-    <textarea class="form-control" id="assunto" name="assunto" placeholder="Críticas, sugestões, comentários, dúvidas. Fique à vontade para falar conosco!" style="height:200px; resize:none;"></textarea>
-<div  class="my-3"  >
-  <a  href="mailto:" class="btao_saiba text-center text-decoration-none" >Enviar</a>
-</div>
-    
-  </form>
-
-</div>
-
-<div class="container-fluid">
-
-
- <p style="font-size:12px; ">
-   Desenvolvido por WD Campos, 2021. Campos dos Goytacazes, RJ - Brasil.<br/>
-    site: wdcampos.neocities.org<br/>      
-    tel.:(22) 981 872 916<br/>    
-    e-mail:webdevcampos@gmail.com<br/>
-    redes sociais: @webdevcampos
-  </p>
-
-
-</div>     
-   
-   
-
-
-
-
+     
  
-<!--#region Scripts -->
+      </div>
+     
+</div>
 
-<!--#region JQuery-->
-
-  <script src="jquery-3.6.0.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
-
-<!--#endregion JQuery-->  
-
-<!--#region BS-->
-
-  <script src="bootstrap.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-<!--#endregion BS-->  
-
-<!--#region Slick-->
-
-  <script src="slick.min.js"></script>
-  <script src="slick.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
-  </script>
-
-<!--#endregion Slick-->
-
-<!--#region Vue-->
-
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-
-<!--#endregion Vue-->  
+<!--Slide dois-->
 
 
-<!--#region Mine JS-->
-  <script>
-  $(document).ready(function(){
-    $('.carro').slick({
-      infinite:true,
-      arrows:true,
-      dots:true,
-      autoplay:true,
-    })
-  })
-  </script>
+<!--Slide tres-->
+<div class="flex-item fundo_tres text-white position-relative">
+  <div class='position-relative'>
 
-<!--#endregion Mine JS-->
+  
+    <div class="txto_sld">
 
-<!--#endregion Scripts-->
 
-</body>
+  <h2 >Educação Ambiental.</h2>
 
+  <h3 style="color:#072b4f">Nas aulas de <strong>Educação Ambiental</strong> são desenvolvidas as <span style="color:white;">habilidades de conscientização ambiental.</span>
+    <a><span class="saiba_mais"style="width:80px; padding:5px 10px; font: 20px 'Miso';">Saiba Mais <i class="fa fa-chevron-right"></i></span>  </a>  
+</h3>
+</div>
+
+   
+
+    </div>
+   
+</div>
+<!--Slide tres-->
+  </div>
+
+  
+</div>
+<!--Slides Flex--> 
+
+
+
+
+  
+ <script src="jquery-3.5.1.min.js"></script>
+        <script src="jquery-3.5.1.js"></script>
+        <script src="bootstrap.min.js" crossorigin="anonymous"></script>
+        
+        <script src="slick.min.js"></script>
+        <script src="slick.js"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+       
+       
+        <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+        </script>
+    
+  </body>
 </html>
+
+    
+   
