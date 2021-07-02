@@ -27,4 +27,4 @@ const submitAnswers = (event) => {
 
 form.addEventListener("submit", submitAnswers);
 
-const name = "Marcus";
+const name = 'Marcus'
