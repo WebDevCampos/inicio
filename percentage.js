@@ -4,4 +4,4 @@ const percentage = (a, b) => {
 
 console.log(percentage(3760, 5000));
 
-const name = "Marcus";
+const n = 'aokj'
