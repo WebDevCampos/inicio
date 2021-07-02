@@ -1,11 +1,11 @@
 //#region slick
-
-$(document).ready(function () {
-  $(".carro").slick({
-    infinite: true,
+$("document").ready(function () {
+  $(".carro_um").slick({
     arrows: true,
-    dots: true,
-    autoplay: true,
+    appendArrows: $(".meuPrevArrow"),
+    appendArrows: $(".meuNextArrow"),
+    prevArrow: $(".meuPrevArrow"),
+    nextArrow: $(".meuNextArrow"),
   });
 });
 //#endregion slick
