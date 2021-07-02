@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 400%;
+  font-weight: bold;
+}
+h2 {
+  font-size: 320%;
+}
+h3 {
+  font-size: 220%;
+}
+h4 {
+  font-size: 120%;
+}
+h5 {
+  font-size: 80%;
+}
+h6 {
+  font-size: 60%;
+}
+a {
+  text-decoration: none;
+}
+
+p,
+label,
+input,
+option,
+select,
+button,
+a {
+  font-size: 160%;
+}
