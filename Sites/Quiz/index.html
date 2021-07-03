@@ -2,272 +2,277 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta lang="pt-br">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizApp</title>
-    
-<!--#region BS-->
-   
-    
-   <link rel="stylesheet" href="bootstrap.min.css">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-<!--#endregion BS-->
-   
+  <meta charset="UTF-8">
+  <meta lang="pt-br">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizApp</title>
 
-<!--#region SLICK-->
- 
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-<link rel="stylesheet" href="slick.css"/>
-    
-<!--#endregion SLICK-->
-
- 
-<!--#region FA-->
- 
-<script src="https://kit.fontawesome.com/dbce8a62cb.js" crossorigin="anonymous"></script>
-
-<!--#endregion FA-->
-
-<!--#region MyCSS-->
-    <link rel="stylesheet" href="index.css"/>
-    <!--#endregion MyCSS-->
-<style>
+  <!--#region BS-->
 
 
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!--#endregion BS-->
 
-</style>  
 
- </head>
+  <!--#region SLICK-->
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" href="slick.css" />
+
+  <!--#endregion SLICK-->
+
+
+  <!--#region FA-->
+
+  <script src="https://kit.fontawesome.com/dbce8a62cb.js" crossorigin="anonymous"></script>
+
+  <!--#endregion FA-->
+
+  <!--#region MyCSS-->
+  <link rel="stylesheet" href="index.css" />
+  <!--#endregion MyCSS-->
+  <style>
+
+
+
+  </style>
+
+</head>
 
 <body>
 
-<picture class="position-absolute ">
-        <source media="(max-width:650px)" srcset="imgs/fotoTraveller.jpg" style="width:100vw;  height:100vh" >
-        <source media="(max-width:465px)" srcset="imgs/motoTravel.jpg" style="width:100vw;  height:100vh" >
-        <img src="imgs/withArmsWideOpen.jpg" alt="A man with up in a mountain, with his arms wide open, celebrating his climbing" style="width:100vw; height:100vh;" >
-</picture>
+  <picture class="position-absolute ">
+    <source media="(max-width:650px)" srcset="imgs/fotoTraveller.jpg" style="width:100vw;  height:100vh">
+    <source media="(max-width:465px)" srcset="imgs/motoTravel.jpg" style="width:100vw;  height:100vh">
+    <img src="imgs/withArmsWideOpen.jpg"
+      alt="A man with up in a mountain, with his arms wide open, celebrating his climbing"
+      style="width:100vw; height:100vh;">
+  </picture>
 
-<section id="first__Section" class="container-fluid ">
-    
+  <section id="first__Section" class="container-fluid ">
+
     <h1 class="first__heading ">
-        The world is wating for <span class="you__heading">you!</span>
+      The world is wating for <span class="you__heading">you!</span>
     </h1>
-   
-   
 
-    
+
+
+
     <section class="text-center ">
-        <p class="quiz__paragraph" >
-            Answer
-            <span class="quiz__start px-2 pt-1 ">
-                <strong>this QUIZ </strong>
-            </span> 
-            
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+      <p class="quiz__paragraph">
+        Answer
+        <span class="quiz__start px-2 pt-1 ">
+          <strong>this QUIZ </strong>
+        </span>
 
-            Win tickets. <i class="fa fa-ticket ticket" aria-hidden="true" ></i> <br/>
-            Your dream trip, only four correct answers away!
-           
-          
-        </p> 
- 
+        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+        Win tickets. <i class="fa fa-ticket ticket" aria-hidden="true"></i> <br />
+        Your dream trip, only four correct answers away!
+
+
+      </p>
+
     </section>
-    
 
 
-    
-</section>
 
-<section class="quiz__block container-fluid " >
+
+  </section>
+
+  <section class="quiz__block container-fluid ">
 
     <form>
 
-        <div class="card p-1">
+      <div class="card p-1">
 
-            <div class="card-body question invi visi  ">
-            
-                <h2 class=" text-white  text-center display-5 p-3">Is England part of Europe?</h2>
-          
-        
-            <div class="alternatives py-5">
-              
-                <label id="A1" class="text-white display-6" for="Answer1" >
-                    <input id="Answer1" name="Answer1" type="radio" class="form-check-inline " value='A' > 
-                    Never was and never will be
-                </label>
-            
-                <label id="A2" class="text-white display-6" for="Answer2" >
-                    <input id="Answer2" name="Answer1" type="radio" class="form-check-inline" value='B'>
-                    Since Always
-                </label>
-        
-                              
-            </div>
-        
-        
-            </div>       
-        
-        
-            <div class="card-body question invi  ">
-            
-                <h2 class=" text-white  text-center display-5 p-3">Puerto Rico is located in</h2>
-          
-        
-            <div class="alternatives py-5 ">
-              
-                <label id="A3" class="text-white display-6" for="Answer3" >
-                    <input id="Answer3" name="Answer2" type="radio" class="form-check-inline" value='A'> 
-                  North America
-                </label>
-            
-                <label id="A4" class="text-white display-6" for="Answer4" >
-                    <input id="Answer4" name="Answer2" type="radio" class="form-check-inline" value='B'>
-                    Central America
-                </label>
-        
-                              
-            </div>
-        
-           
-            </div>     
-                    
-            <div class="card-body question invi  ">
-            
-                <h2 class=" text-white  text-center display-5 p-3">How many destinations our company offer?</h2>
-          
-        
-            <div class="alternatives py-5 ">
-              
-                <label id="A5" class="text-white display-6" for="Answer5" >
-                    <input id="Answer5" name="Answer3" type="radio" class="form-check-inline" value='A'> 
-                    Ten countries.
-                </label>
-            
-                <label id="A6" class="text-white display-6" for="Answer6" >
-                    <input id="Answer6" name="Answer3" type="radio" class="form-check-inline" value='B'>
-                  The whole world!
-                </label>
-        
-                              
-            </div>
-        
-           
-            </div>   
+        <div class="card-body question invi visi  ">
 
-            <div class="card-body question invi  ">
-            
-                <h2 class=" text-white  text-center display-5 p-3">This company is</h2>
-          
-        
-            <div class="alternatives py-5 ">
-              
-                <label id="A7" class="text-white display-6" for="Answer7" >
-                    <input id="Answer7" name="Answer4" type="radio" class="form-check-inline" value='A'> 
-                    ok
-                </label>
-            
-                <label id="A8" class="text-white display-6" for="Answer8" >
-                    <input id="Answer8" name="Answer4" type="radio" class="form-check-inline" value='B'>
-                    The best Travel Company EVER!
-                </label>
-        
-                              
-            </div>
-        
-           
-            </div>   
+          <h2 class=" text-white  text-center display-5 p-3">Is England part of Europe?</h2>
 
 
-            <div class="card-body question invi  ">
-            
-                <h2 class=" text-white  text-center display-1 p-3">You made:<span class="points"></span></h2>
-          
-        
-            <div class=" py-5 ">
-              
-                <h1 class="text-white text-center display"></h1>
-                <h1 class="message text-white text-center"></h1>
-            
-        
-                              
-            </div>
-        
-           
-            </div>   
+          <div class="alternatives py-5">
+
+            <label id="A1" class="text-white display-6" for="Answer1">
+              <input id="Answer1" name="Answer1" type="radio" class="form-check-inline " value='A'>
+              Never was and never will be
+            </label>
+
+            <label id="A2" class="text-white display-6" for="Answer2">
+              <input id="Answer2" name="Answer1" type="radio" class="form-check-inline" value='B'>
+              Since Always
+            </label>
+
+
+          </div>
+
+
         </div>
 
-         
-        
+
+        <div class="card-body question invi  ">
+
+          <h2 class=" text-white  text-center display-5 p-3">Puerto Rico is located in</h2>
 
 
-         <div class="d-flex justify-content-center ">
-            
-                <button class="btn btn-light shadow next invi visi w-50 ">Next</button> 
+          <div class="alternatives py-5 ">
 
-            
-         
-           
-           
-                <button class="btn btn-success send invi w-50 ">Send Answers</button> 
-           
-            </div>
-            
-         
+            <label id="A3" class="text-white display-6" for="Answer3">
+              <input id="Answer3" name="Answer2" type="radio" class="form-check-inline" value='A'>
+              North America
+            </label>
 
-      
+            <label id="A4" class="text-white display-6" for="Answer4">
+              <input id="Answer4" name="Answer2" type="radio" class="form-check-inline" value='B'>
+              Central America
+            </label>
 
-     
-       
-       
+
+          </div>
+
+
+        </div>
+
+        <div class="card-body question invi  ">
+
+          <h2 class=" text-white  text-center display-5 p-3">How many destinations our company offer?</h2>
+
+
+          <div class="alternatives py-5 ">
+
+            <label id="A5" class="text-white display-6" for="Answer5">
+              <input id="Answer5" name="Answer3" type="radio" class="form-check-inline" value='A'>
+              Ten countries.
+            </label>
+
+            <label id="A6" class="text-white display-6" for="Answer6">
+              <input id="Answer6" name="Answer3" type="radio" class="form-check-inline" value='B'>
+              The whole world!
+            </label>
+
+
+          </div>
+
+
+        </div>
+
+        <div class="card-body question invi  ">
+
+          <h2 class=" text-white  text-center display-5 p-3">This company is</h2>
+
+
+          <div class="alternatives py-5 ">
+
+            <label id="A7" class="text-white display-6" for="Answer7">
+              <input id="Answer7" name="Answer4" type="radio" class="form-check-inline" value='A'>
+              ok
+            </label>
+
+            <label id="A8" class="text-white display-6" for="Answer8">
+              <input id="Answer8" name="Answer4" type="radio" class="form-check-inline" value='B'>
+              The best Travel Company EVER!
+            </label>
+
+
+          </div>
+
+
+        </div>
+
+
+        <div class="card-body question invi  ">
+
+          <h2 class=" text-white  text-center display-1 p-3">You made:<span class="points"></span></h2>
+
+
+          <div class=" py-5 ">
+
+            <h1 class="text-white text-center display"></h1>
+            <h1 class="message text-white text-center"></h1>
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+
+      <div class="d-flex justify-content-center ">
+
+        <button class="btn btn-light shadow next invi visi w-50 ">Next</button>
+
+
+
+
+
+        <button class="btn btn-success send invi w-50 ">Send Answers</button>
+
+      </div>
+
+
+
+
+
+
+
+
     </form>
-    </section>
-    
-    <p style="position: absolute; bottom: 0;" >version 0.2</p>
- 
-<!--#region Scripts -->
+  </section>
 
-<!--#region JQuery-->
+  <p style="position: absolute; bottom: 0;">version 0.2</p>
 
-<script src="jquery-3.6.0.js"></script>
+  <!--#region Scripts -->
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+  <!--#region JQuery-->
 
-<!--#endregion JQuery-->  
+  <script src="jquery-3.6.0.js"></script>
 
-<!--#region BS-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-<script src="bootstrap.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-<!--#endregion BS-->  
+  <!--#endregion JQuery-->
 
-<!--#region Slick-->
+  <!--#region BS-->
 
-<script src="slick.min.js"></script>
-<script src="slick.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
-</script>
+  <script src="bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!--#endregion BS-->
 
-<!--#endregion Slick-->
+  <!--#region Slick-->
 
-<!--#region Vue-->
+  <script src="slick.min.js"></script>
+  <script src="slick.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+  </script>
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <!--#endregion Slick-->
 
-<!--#endregion Vue-->  
+  <!--#region Vue-->
 
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 
-    <!--#region Mine JS-->      
+  <!--#endregion Vue-->
 
 
-    <script src="index.js">
-    </script>
-    <!--#endregion Mine JS-->
+  <!--#region Mine JS-->
 
-<!--#endregion Scripts-->
+
+  <script src="index.js">
+  </script>
+  <!--#endregion Mine JS-->
+
+  <!--#endregion Scripts-->
 </body>
+
 </html>
