@@ -34,63 +34,10 @@
 
   <link rel="stylesheet" type="text/css" href="./Fontes/miso-cufonfonts-webfont/style.css" />
   <!--Fonts-->
+
+  <link href="CSS/index.css" />
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: "Lobster", cursive;
-    }
-
-    .meuPrevArrow {
-      top: 45%;
-      left: 0px;
-      z-index: 1;
-      width: 40px;
-      font-size: 40px;
-      opacity: 0.4;
-    }
-
-    .meuNextArrow {
-      top: 45%;
-      right: 0px;
-      z-index: 1;
-      width: 40px;
-      font-size: 40px;
-      opacity: 0.4;
-    }
-
-    .meuNextArrow:hover,
-    .meuPrevArrow:hover {
-      opacity: 1;
-    }
-
-    .carro_um img {
-      width: 100%;
-      height: 500px;
-    }
-
-    @media screen and (max-width: 730px) {
-      .carro_um img {
-        width: 100%;
-        height: 400px;
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      .carro_um img {
-        width: 100%;
-        height: 300px;
-      }
-    }
-
-    @media screen and (max-width: 400px) {
-      .carro_um img {
-        width: 100%;
-        height: 200px;
-      }
-    }
   </style>
 </head>
 
@@ -229,41 +176,26 @@
 
       <div class="card col-12 col-sm-5 m-1" v-for="(place,index) in places" :key="place.id" style="border-radius: 15px">
 
-        <div class="card-body">
-          <div class="row d-flex border ">
-
-            <div class="col border text-center align-content-center align-items-center">
-              <img :src="place.img">
-
-            </div>
-
-            <div class="col ">
-              <p class="lead m-0">{{place.name}} </p>
-              <p>{{place.address}}</p>
-            </div>
-
-          </div>
-
-        </div>
-
       </div>
 
     </div>
 
-    <script src="JS/jquery-3.6.0.js"></script>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"></script>
+  <script src="JS/jquery-3.6.0.js"></script>
 
-    <script src="slick/slick.min.js"></script>
-    <script src="slick/slick.js"></script>
-    <script src="JS/myJS/mySlick.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="slick/slick.js"></script>
+  <script src="JS/myJS/mySlick.js"></script>
 
-    <script src="JS/myJS/myVue.js"></script>
-    <script></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+  <script src="JS/myJS/myVue.js"></script>
+  <script></script>
 </body>
 
 </html>
