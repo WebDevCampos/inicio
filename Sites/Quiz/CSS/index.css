@@ -60,12 +60,7 @@
 .card-body{
     background-color: rgba(0, 0, 0, 0.433); 
 }
-.alternatives {
-    display:flex;
-    flex-flow: row wrap;
-    justify-content:space-around;
-    align-items:baseline
-}
+
 
 @media screen and (max-width:500px){
     .alternatives {
