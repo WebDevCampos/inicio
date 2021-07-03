@@ -35,13 +35,69 @@
   <link rel="stylesheet" type="text/css" href="./Fontes/miso-cufonfonts-webfont/style.css" />
   <!--Fonts-->
 
-  <link href="CSS/index.css" />
-  <style>
 
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Lobster", cursive;
+    }
+
+    .meuPrevArrow {
+      top: 45%;
+      left: 0px;
+      z-index: 1;
+      width: 40px;
+      font-size: 40px;
+      opacity: 0.4;
+    }
+
+    .meuNextArrow {
+      top: 45%;
+      right: 0px;
+      z-index: 1;
+      width: 40px;
+      font-size: 40px;
+      opacity: 0.4;
+    }
+
+    .meuNextArrow:hover,
+    .meuPrevArrow:hover {
+      opacity: 1;
+    }
+
+    .carro_um img {
+      width: 100%;
+      height: 500px;
+    }
+
+    @media screen and (max-width: 730px) {
+      .carro_um img {
+        width: 100%;
+        height: 400px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .carro_um img {
+        width: 100%;
+        height: 300px;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .carro_um img {
+        width: 100%;
+        height: 200px;
+      }
+    }
   </style>
 </head>
 
-<body>
+<body class="container-fluid">
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -136,7 +192,7 @@
     </div>
   </div>
 
-  <div id="cardapio" class="container-fluid">
+  <div id="cardapio">
     <div class="text-center">
       <h1 style="color: rgb(50, 27, 56)">Lanchonete</h1>
       <h4 style="color: rgb(108, 132, 153)">
@@ -170,17 +226,7 @@
     </div>
   </div>
 
-  <div id="app">
 
-    <div class="row justify-content-center">
-
-      <div class="card col-12 col-sm-5 m-1" v-for="(place,index) in places" :key="place.id" style="border-radius: 15px">
-
-      </div>
-
-    </div>
-
-  </div>
 
   <script src="JS/jquery-3.6.0.js"></script>
 
